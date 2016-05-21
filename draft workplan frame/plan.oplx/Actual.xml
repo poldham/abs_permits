@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="hkOYgMEDdIF">
+  <start-date>2016-03-30T07:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t8"/>
+    <child-task idref="t44"/>
+    <child-task idref="t29"/>
+    <child-task idref="t43"/>
+    <child-task idref="t92"/>
+    <child-task idref="t144"/>
+    <child-task idref="t133"/>
+    <child-task idref="t134"/>
+    <child-task idref="t128"/>
+  </task>
+  <task id="t1">
+    <title>Element 1: Mapping Existing Research Permit Systems</title>
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t6"/>
+    <child-task idref="t5"/>
+    <child-task idref="t4"/>
+    <child-task idref="t3"/>
+  </task>
+  <task id="t2">
+    <title>Map Permit Granting Authorities</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t3">
+    <title>Task 5. Workshop to discuss experience and the desirability (or otherwise) of a single electronic system serving multiple permit granting authorities. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t4">
+    <title>Task 4. Generate process diagrams for permits within a country. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t5">
+    <title>Task 3. Consult with permit authorities on experience to date including what has worked for them and problem areas. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t6">
+    <title>Task 2. Identify the persons responsible for administering permits in the country as a basis for consultations. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t8">
+    <title>Element 2: Map existing permit data with the scientific and patent literature</title>
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t14"/>
+    <child-task idref="t13"/>
+    <child-task idref="t12"/>
+  </task>
+  <task id="t12">
+    <title>Task 4. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. Examples include the programmatic use of crossref or the EPO Open Patent Services or WIPO Patentscope databases and the rOpenSci and biosciences packages in languages such as R or Python. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t13">
+    <title>Task 3. Develop search patterns for patent literature using patent databases and identify appropriate tools and match criteria to distinguish between positive and negative results. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t14">
+    <title>Task 2. Obtain scientific literature for a specific country</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t15">
+    <title>Task 1. Obtain copies of permit data (preferably in electronic form) to </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t17">
+    <title>Task 5. Report on experience gained and future development plans (Year 2, Year 3)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t18">
+    <title>Task 4. Implement and continue the development of the system with regular periodic review by users.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t19">
+    <title>Task 3. Develop a pilot system at an early stage (Year 1) accommodating the principles of agile development 		(iterative and flexible software development) wherever possible.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t20">
+    <title>Task 2. Develop a costed plan of implementation over a period of 3 years</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t28">
+    <title>Task 1. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system consisting of </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t29">
+    <title>Element 4: Developing an online electronic permit and monitoring system</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t28"/>
+    <child-task idref="t20"/>
+    <child-task idref="t19"/>
+    <child-task idref="t18"/>
+    <child-task idref="t17"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t30">
+    <title>Task 4. Test using services such as Google forms or Wufoo and refine to final version. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t31">
+    <title>Task 3. Define data fields for applications in consultation with relevant permit granting authorities. Use checkboxes wherever possible (e.g. Marine, terrestrial, national park etc.)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t32">
+    <title>Task 2. Establish secure username and password system</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t33">
+    <title>Task 1. Create applicant home page system</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t34">
+    <title>Element 5.1.2. Applications</title>
+    <type>group</type>
+    <child-task idref="t33"/>
+    <child-task idref="t32"/>
+    <child-task idref="t31"/>
+    <child-task idref="t30"/>
+  </task>
+  <task id="t36">
+    <title>Task 4. Provide information on appeals process (see authority side)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t37">
+    <title>Task 3. Test utility with selected applicants (survey/practical tests)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t38">
+    <title>Task 2. Develop a checklist of required information for applicants</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t39">
+    <title>Task 1. Develop a guide for applicants</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t40">
+    <title>Element 5.1.1. Information</title>
+    <type>group</type>
+  </task>
+  <task id="t43">
+    <title>Element 5: Applicants Portal</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t40"/>
+    <child-task idref="t39"/>
+    <child-task idref="t38"/>
+    <child-task idref="t37"/>
+    <child-task idref="t36"/>
+    <child-task idref="t34"/>
+    <child-task idref="t58"/>
+    <child-task idref="t66"/>
+    <child-task idref="t83"/>
+    <child-task idref="t91"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t44">
+    <title>Element 3: Demonstration Model and Field Testing</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t143"/>
+    <child-task idref="t142"/>
+    <child-task idref="t141"/>
+    <child-task idref="t140"/>
+    <child-task idref="t139"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t53">
+    <title>Task 4. Establish a system that: a) lists the stages in the application procedure; b) provides the name and contact details (email) for the person responsible for that stage of the procedur really rubbish at cleare; c) updates the record upon completion to show the next stage in the procedure and persons responsible; d) generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t54">
+    <title>Task 3. Establish a system for applicants to respond to requests and channel (email) the response to the originator with a notification. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t55">
+    <title>Task 2. Define a standard list of information request types (authority side) while allowing authorities to provide specific details (headings for the request and content or body of the request).</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t56">
+    <title>Task 1. Establish a system for transmitting requests from the authority side to the applicant side with appropriate data fields (title, date, originator etc.).</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t58">
+    <title>Element 5.1.3 Notifications</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t56"/>
+    <child-task idref="t55"/>
+    <child-task idref="t54"/>
+    <child-task idref="t53"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t59">
+    <title>Task 7. Test mobile readers with authorities for “permit passes” and adjust based on feedback received.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t60">
+    <title>Task 6. Investigate the use of either persistent identifiers(BS20151234) and QR/Barcodes/html tags to build redundancy into the system (e.g. triple redundancy principle)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t61">
+    <title>Task 5. Establish uniform persistent identifiers (BS20151234) for use in conjunction with publications, patents, products and electronic data. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t62">
+    <title>Task 4. Create a system for HTML embed codes (for sequence data/publications etc.).</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t63">
+    <title>Task 3. Create a system to generate labels for sample bags, jars and individual samples.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t64">
+    <title>Task 2.  Create system to generate a permit pass and QR code generation for mobile phones and tablets. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t65">
+    <title>Task 1. Create a system to generate a permit as a .pdf (links to authority generated master permit).</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t66">
+    <title>Element 5.1.4 Approvals</title>
+    <type>group</type>
+    <child-task idref="t65"/>
+    <child-task idref="t64"/>
+    <child-task idref="t63"/>
+    <child-task idref="t62"/>
+    <child-task idref="t61"/>
+    <child-task idref="t60"/>
+    <child-task idref="t59"/>
+  </task>
+  <task id="t68">
+    <title>Task 6. Adjust system based on user feedback. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t69">
+    <title>Task 5. Test system with applicants</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t70">
+    <title>i) other information on activities arising from the permit</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t71">
+    <title>h) products for which market approval is sought or approved</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t72">
+    <title>g) patent applications and grants</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t73">
+    <title>f) transfers of materials to third parties and the terms and conditions of transfer</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t74">
+    <title>e) locations where collected samples are stored</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t75">
+    <title>d) accession numbers for sequence data or deposits of genetic material</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t76">
+    <title>c) links to home pages and academic social media sites such as researchgate.com or academia.edu etc. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t77">
+    <title>b) doi (document identifier links to publications for automated retrieval)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t78">
+    <title>a) uploads of publications (pre-print or published)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t79">
+    <title>Task 4. Establish data fields for reporting, including, inter alia: </title>
+    <type>group</type>
+    <child-task idref="t78"/>
+    <child-task idref="t77"/>
+    <child-task idref="t76"/>
+    <child-task idref="t75"/>
+    <child-task idref="t74"/>
+    <child-task idref="t73"/>
+    <child-task idref="t72"/>
+    <child-task idref="t71"/>
+    <child-task idref="t70"/>
+  </task>
+  <task id="t80">
+    <title>Task 3. Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes). [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t81">
+    <title>Task 2. Decide on mandatory and voluntary reporting options. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t82">
+    <title>Task 1. Establish reporting section of the applicant site.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t83">
+    <title>Element 5.1.5 Reporting</title>
+    <type>group</type>
+    <child-task idref="t82"/>
+    <child-task idref="t81"/>
+    <child-task idref="t80"/>
+    <child-task idref="t79"/>
+    <child-task idref="t69"/>
+    <child-task idref="t68"/>
+  </task>
+  <task id="t85">
+    <title>Task 6. Identify form of notification to applicant within system for unambiguous final acceptance or final rejection. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t86">
+    <title>Task 5. Identify criteria for accepting or rejecting an appeal. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t87">
+    <title>Task 4. Identify person(s) responsible and provide contact details. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t88">
+    <title>Task 3. Define form of documents for appeals. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t89">
+    <title>Task 2. Define roadmap and timeline for appeals process. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t90">
+    <title>Task 1. Identify grounds for appeal. [Legal component]</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t91">
+    <title>Element 4.1.6 Appeals:</title>
+    <type>group</type>
+    <child-task idref="t90"/>
+    <child-task idref="t89"/>
+    <child-task idref="t88"/>
+    <child-task idref="t87"/>
+    <child-task idref="t86"/>
+    <child-task idref="t85"/>
+  </task>
+  <task id="t92">
+    <title>Element 6: Authorities Portal</title>
+    <type>group</type>
+    <child-task idref="t96"/>
+    <child-task idref="t105"/>
+    <child-task idref="t114"/>
+    <child-task idref="t121"/>
+    <child-task idref="t127"/>
+  </task>
+  <task id="t95">
+    <title>Task 1. Establish standard responses to enquiries as inputs into the online permit system.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t96">
+    <title>Element 5.1 Enquiries [Legal component]</title>
+    <type>group</type>
+    <child-task idref="t95"/>
+  </task>
+  <task id="t97">
+    <title>Task 8. Define next steps for non-commercial research (e.g. compliance with environmental legislation, local partners, deposit of samples etc.), taking note of Article 8(a) of the Nagoya Protocol.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t98">
+    <title>Task 7. Establish criteria for validating if non-commercial or commercial research (or both)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t99">
+    <title>Task 6. Develop individual authority checklist (or lists as appropriate to authority)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t100">
+    <title>Task 5. Develop standard notifications to applicants on receipt and completeness. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t101">
+    <title>Task 4. Include visual validation of unique identifier in checklist</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t102">
+    <title>Task 3. Develop checklist for completeness by authorities (authority side should match to applicant side)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t103">
+    <title>Task 2. Develop Applicants Checklist</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t104">
+    <title>Task 1. Develop Guide for Applicants</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t105">
+    <title>Element 5.2 Review {Legal component]</title>
+    <type>group</type>
+    <child-task idref="t104"/>
+    <child-task idref="t103"/>
+    <child-task idref="t102"/>
+    <child-task idref="t101"/>
+    <child-task idref="t100"/>
+    <child-task idref="t99"/>
+    <child-task idref="t98"/>
+    <child-task idref="t97"/>
+  </task>
+  <task id="t106">
+    <title>	g) Establish criteria for acceptance or rejection of commercial applications. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t107">
+    <title>	f) Establish criteria on Intellectual Property Rights. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t108">
+    <title>	e) Establish criteria for benefit-sharing. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t109">
+    <title>	d) Establish environmental legislation and procedure criteria.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t110">
+    <title>	c) Establish time frame for negotiations. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t111">
+    <title>	b) Identify standard list of participants in negotiations. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t112">
+    <title>	a) Establish criteria for negotiations.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t113">
+    <title>Task 1. Define next steps for commercial research</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t114">
+    <title>Element 5.3 Negotiation [Legal component]</title>
+    <type>group</type>
+    <child-task idref="t113"/>
+    <child-task idref="t112"/>
+    <child-task idref="t111"/>
+    <child-task idref="t110"/>
+    <child-task idref="t109"/>
+    <child-task idref="t108"/>
+    <child-task idref="t107"/>
+    <child-task idref="t106"/>
+  </task>
+  <task id="t116">
+    <title>Task 5. System to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side).</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t117">
+    <title>Task 4. Establish harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and supplementary agreements are maintained across time and space. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t118">
+    <title>Task 3. Define any supplementary (ABS or Impact) agreements to the permit. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t119">
+    <title>Task 2. Define areas where specific terms and conditions are likely to be needed (menu of clauses). </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t120">
+    <title>Task 1. Define standard terms and conditions (menu of clauses) for use in generating permits. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t121">
+    <title>Element 5.4. Approve/Reject [Legal component]</title>
+    <type>group</type>
+    <child-task idref="t120"/>
+    <child-task idref="t119"/>
+    <child-task idref="t118"/>
+    <child-task idref="t117"/>
+    <child-task idref="t116"/>
+  </task>
+  <task id="t122">
+    <title>Task 5. Define the form of a clear final decision. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t123">
+    <title>Task 4. Generate standard notifications for appeals to be sent to applicants on the stage in the procedure. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t124">
+    <title>Task 3. Develop a timeline for appeals. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t125">
+    <title>Task 2. Develop guidance on the appeals process for authorities and applicants.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t126">
+    <title>Task 1. Establish a clear and transparent appeals process.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t127">
+    <title>Element 5.5. Appeals [Legal component]</title>
+    <type>group</type>
+    <child-task idref="t126"/>
+    <child-task idref="t125"/>
+    <child-task idref="t124"/>
+    <child-task idref="t123"/>
+    <child-task idref="t122"/>
+  </task>
+  <task id="t128">
+    <title>Element 10: Data Archive</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t132"/>
+    <child-task idref="t131"/>
+    <child-task idref="t130"/>
+    <child-task idref="t129"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t129">
+    <title>Task 4. Harmonise with physical archives</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t130">
+    <title>Task 3. Establish secure Cloud back up (see Task 2)</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t131">
+    <title>Task 2. Establish secure back up infrastructure and routines</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t132">
+    <title>Task 1. Establish Data archive in core system including permit data in text and table form and stored as .pdf.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t133">
+    <title>Element 8: Monitoring</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t156"/>
+    <child-task idref="t155"/>
+    <child-task idref="t154"/>
+    <child-task idref="t153"/>
+    <child-task idref="t152"/>
+    <child-task idref="t151"/>
+    <child-task idref="t150"/>
+    <child-task idref="t149"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t134">
+    <title>Element 9: Reporting </title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t138"/>
+    <child-task idref="t137"/>
+    <child-task idref="t136"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t136">
+    <title>Task 3. Establish programmatic solutions to automate data generation to meet reporting requirements in the formats required. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t137">
+    <title>Task 2. Identify components of permit and related datasets that can contribute to reporting requirements. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t138">
+    <title>Task 1. Identify national and international reporting requirements under the Nagoya Protocol and, as appropriate, related international environmental agreements. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t139">
+    <title>Task 5. In consultation with relevant international collections identify appropriate options for the inclusion of permit data in sample labels and for sequence data.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t140">
+    <title>Task 4. Arrange field tests of solution such as barcodes, QR code readers, html etc. with relevant authorities and adapt solutions focusing on meeting actual needs. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t141">
+    <title>Task 3. Identify how checks by local authorities can be most effectively linked to the online permit and monitoring system. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t142">
+    <title>Task 2. Consult with authorities involved in checking permit data on the ground (National Parks, Customs, police and others) and identify existing approaches and tools, what already works, problems encountered and potential solutions. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t143">
+    <title>Task 1. Develop one or more working models of the system including identifying solutions using different tools that may be best suited to the diversity of circumstances and capacities in a country. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t144">
+    <title>Element 7: Legal</title>
+    <type>group</type>
+    <start-constraint-date>2016-04-01T07:00:00.000Z</start-constraint-date>
+    <child-task idref="t148"/>
+    <child-task idref="t147"/>
+    <child-task idref="t146"/>
+    <child-task idref="t145"/>
+    <start-no-earlier-than>2016-04-01T07:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t145">
+    <title>Task 3. Identify future requirements for legal review.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t146">
+    <title>Task 3. Collaborate with technical staff in incorporating legal elements into the system.  </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t147">
+    <title>Task 2. Engage in legal drafting for relevant elements of the permit and monitoring system.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t148">
+    <title>Task 1. Identify areas of the online permit and monitoring system requiring legal input.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t149">
+    <title>Task 8. Develop an open access manual on ABS monitoring for use by staff and in training future trainers.  </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t150">
+    <title>Task 7. Build a network of staff engaged in monitoring from participating countries. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t151">
+    <title>Task 6. Provide follow up training as required</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t152">
+    <title>Task 5. Provide training for key staff focusing on local capacity</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t153">
+    <title>Task 4. Discuss and mutually agree on the most appropriate monitoring tools for use in the partner country. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t154">
+    <title>Task 3. Identify relevant commercial databases and analytics software to facilitate monitoring. </title>
+    <effort>28800</effort>
+  </task>
+  <task id="t155">
+    <title>Task 2. Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches.</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t156">
+    <title>Task 1. Develop search queries key data fields from research permit data for searches of scientific literature, patent literature, product information and general web searches. </title>
+    <effort>28800</effort>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

@@ -1,0 +1,143 @@
+---
+title: "Core Principles"
+author:
+- Paul Oldham
+- Hartmut Meyer
+- Olivier Rukundo
+date: "17 May 2016"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This section sets out the Core Principles to guide the design, implementation and long term future of an online permit and monotoring system. The following core principles are intended to focus on the objectives for the system, how the objective is to be realised, and the features of the system. 
+
+1. General features of the electronic system
+
+1.1 *Useful*
+
+1.1.1 User-friendly web-based interface. The use of the system by applicants should be as simple as possible and not require specialist knowledge or software. It is intended to rely on simple checkboxes and entries in forms.
+
+1.1.2 *Responsive.* 
+
+The system should be sufficiently flexible to adapt to the needs of different authorities, including their reporting needs. 
+
+The needs of police, customs and national park authorities should be addressed through responsive mobile formats (phones and tablets) including use of “permit passes” with QR codes (Quick Response codes) and barcodes similar to a mobile airline boarding pass. The “permit pass” would be carried by applicants and could be checked by relevant authorities on the ground using reader software on mobile phones with minimal effort. Consultation and practical testing with the relevant authorities is required to implement this principle.
+
+1.1.3 *Long Term.* The research and development cycle involving genetic resources or associated traditional knowledge may take place over a period of years, even decades. It is therefore important to take a long term perspective on the functioning of the permit system and its integrity over time, including proper back-ups.
+
+1.2 Structure
+
+1.2.1 *A single system*. A single online system should serves the needs of permit granting authorities and applicants seeking to access genetic resources and/or traditional knowledge associated with genetic resources within a country’s jurisdiction in a clear and transparent way.
+
+1.2.2 *A Hub Approach*. In existing systems a permit application may be circulated by email or by post to various permit granting authorities. In this system the application, once submitted in electronic form, stays in place at a central server based hub. 
+
+It is assumed that more than one authority may be involved in reviewing or authorising a permit. In this system notifications are dispatched automatically to relevant authorities to inform them of the need for action on a particular application. Authorities log in to the system and take action accordingly, including communications with applicants that are transmitted through the notification system. Communications arising from an application are stored with the application as part of the electronic file register for the application. The central hub can also send reminders when the necessary activities were not performed in time or incompletely.
+
+1.3 Technical Standards
+
+1.3.1 *Secure.* The system should meet standard security requirements (e.g. https:) and comply with applicable data protection laws. Attention should be paid to the provisions of the Nagoya Protocol on confidentiality (Article 14.2, 17.3, 17.4).
+
+1.3.2 *Robust.* Backups of the system should be maintained securely and encrypted in accordance with existing standards for the protection of digital information. A physical archive of the documents should be maintained in accordance with existing practice. 
+
+1.3.2 *Independent.* The system should be based on, and maintained, using standard open source software tools (e.g. MySQL database software and Apache server software) and standard text formats to avoid dependency on a single supplier/contractor or data format. No third party should own all or part of the system. Note that public procurement rules are likely to be of relevance in implementing this principle.
+
+1.3.3 *Triple Redundancy.* Triple redundancy is an engineering design principle that means that three distinct systems perform the same function. Because they are independent systems, if one system fails the two others will continue to work. If a second system fails then one other system, normally the simplest, will continue to work. The permit system should build in the principle of triple redundancy in its tracking system rather than relying on a single point of reference. 
+
+For a permit monitoring system the starting point could be a unique identifier such as a standardised international country code (e.g. BS for the Bahamas or UG for Uganda and KE for Kenya), the date (2015) and unique number (1234) to produce unique identifiers such as BS20151234, UG20151234 or KE20151234. This system functions very effectively for over 60 million patent documents in multiple countries and is recommended. The technical details of the principle of triple reduncancy will be described in **chapter xxx**.
+
+1.3.4 *Minimal human intervention.* Primary responsibility for data input should rest with applicants in entering legally required information. Government action should be confined, as far as possible, to approval of electronic applications, communications related to approvals, and archiving of physical copies of records. The basis of this principle is that human intervention introduces typological errors (such as spelling mistakes) or errors of interpretation (such as interpretations of person or institutional names). These errors affect the integrity and utility of the system over the long term, particularly with respect to monitoring and reporting.
+
+1.3.5 *Tidy Data.* The principle of Tidy Data relates to the conditions for using permit data as a monitoring tool and for reporting. Tidy data is the principle that a field in a data table should contain a single piece of information (e.g. a name) and no other information ([Wickham 2014](https://www.jstatsoft.org/article/view/v059i10)). A variable (normally a column) should only contain information of the same type (e.g. a country name, not a country name and an organisation name). While this may appear to be a minor consideration in practice the majority of an analysts time is spent cleaning "messy" data. Anticipating this problem at the design stage will produce significant cost savings for monitoring and statistical analysis at a later stage. *LINK TO WICKHAM*
+
+###2 ABS-relevant features of the electronic system
+
+2.1 ***Support effective implementation of Art. 6.3.*** The Nagoya Protocol sets out minimum access standards. Article 6.3(d) requires that Parties to the Protocol:
+
+“…provide for a clear and transparent written decision by a competent national authority, in a cost-effective manner and written within a reasonable period of time”. [CHECK QUOTE]
+
+2.1.1 *Clarity.* The single permit system should facilitate compliance with the terms of the Protocol by the governments operating this system. This could include creating an applicants portal providing clear information on the progress of applications in the procedure, the name and contact details of the relevant person at each stage of the procedure and extend to the generation of automatic emails notifying applicants when a stage in the procedure has been approved or providing written information on issues requiring resolution. Implementation of this principle could also include a clear, transparent and time limited appeals process.
+
+There should be no backdoor routes to obtaining permit data outside of the single system or the integrity of the overall system will be undermined. Multiple entry points to obtaining permits may allow applicants to avoid the full disclosure requirements of the electronic system at the expense of longer term benefit-sharing for conservation and sustainable use. Equally, there should be no backdoor into the electronic permit system itself (doorways built in at the programming stage). 
+
+2.1.2 *Transparency.* This principle has two aspects:
+
+a) Applicants should be required to provide full and accurate information on each legal person applying for a permit and the legal entities (universities, companies etc.) with whom the government is entering into a relationship through the research permit. Failure to provide accurate information could be grounds for revocation of a permit and other appropriate sanctions. 
+
+b) In accordance with Article 6 of the Nagoya Protocol government authorities will provide clarity on the steps in the procedure, and the status of applications. Clear written reasons should be given for rejection of applications. A menu of standard reasons for rejection (e.g. incomplete information, inaccurate information, failure to comply with environmental impact assessment legislation etc.) could facilitate timely and transparent communications with applicants while meeting the terms of Article 6 of the Protocol.
+
+2.1.3 *Cost-effective.* The web-based electronic system based on widely used open source software and communication tools will keep costs low for authorities and applicants. 
+
+
+2.2 Supporting the implementation of NP Art. 29. The system should contribute to the efforts of the Parties to meet the obligations under Article 29 of the Nagoya Protocol. Particular attention may be paid to COP MOP Decision NP-1/3 setting out guidelines and the format for [interim national reports under Article 29](https://www.cbd.int/decision/np-mop/default.shtml?id=13403). 
+
+The online permit system can facilitate information on subjects such as:
+1. Numbers of permits granted by type
+2. Organisations/Companies involved
+3. Funding bodies involved
+4. Countries involved
+5. Publications/patent applications or products arising
+6. Provision of information to the ABS Clearing House Mechanism.
+ I would also add that the  online permit system can provide a broad range of benefits, including 
+•	standardized permit related information
+•	The system allows applicants and the public to check the status of pending permit applications or plan approvals.
+•	
+•	 improved record keeping and reliable archiving of permitting activities
+•	enhanced communication between permit granting authorities in terms reviews, permit applications, and customer service for the user, 
+•	more efficient use of staff time and less duplication of effort within permit granting authorities  
+•	better internal management tools for gauging department efficiency and spotting problems
+•	Ect ect….. the text provided by Hartmut on the following page could be integrated as part of this section that should aim at outlining the benefits associated with setting up such a system.
+
+
+2.3 Supporting the implementation of NP Art. 17. The system can be used for user-triggered monitoring as foreseen in NP Art. 17 and for provider-triggered monitoring as described in the previous chapters.
+
+2.3 Supporting the implementation of NP Art. 8a. Types of Permit and Change of Intent. Permits may be granted for different types of research, notably non-commercial or commercial research. The Nagoya Protocol in Article 8(a) also anticipates the possibility of a change of intent from non-commercial to commercial research purposes. The single permit system should provide a basic set of options for applicants (e.g. is this non-commercial or commercial research) that then triggers different pathways for the processing of the applications by authorities in accordance with the requirements for non-commercial and commercial applications. Issues relating to change of intent could be dealt with through a formal requirement to declare a change of intent.  
+2.5 Supporting compliance with MAT by the user. The system provides applicants with a means to easily submit information on scientific publications, patent applications, products or other information relevant to the terms and conditions of the permit. Making it easier to provide information will at least partly overcome the limitations of reporting by researchers in the existing system.
+
+16. Anticipate Legacy. A development cycle approach to the permit system should be established that involves forward planning and transitioning from an existing system (that becomes the legacy system) to a new system over time. A formal development plan should be developed and periodically reviewed based on experience gained. 
+
+17. Valuing Permit Staff. The permit system is important to the ability of a country to generate benefit-sharing and understand the economic uses of genetic resources and associated traditional knowledge over period ranging from decades to hundreds of years. While most countries have a permit system it is also important to value the staff who process permit data. This role will become increasingly important in future years in terms of the capacity to bring benefits for conservation and sustainable use. Consideration should therefore be given to recognition of the importance of staff roles and maintaining continuity in the skills required to run and maintain the system. 
+
+18. Integrating Technical and Legal Components. The development of an online permits and monitoring system is a technical development that is directed towards the effective realisation of legal obligations on the part of Parties to the Protocol and establishing clear legal requirements on the part of applicants. As such, the legal aspects of the system, notably with respect to the terms of permits and contracts as well as change of intent should be recognised at the design stage. In practice this means that the development of the technical aspects of the system and the legal aspects should be closely linked. Longer term legal advice should be built into the development plan to respond to changing legal requirements. 
+
+The Principle of Triple Redundancy
+
+The way this system works is as follows: 
+
+1. Each country with a patent office has a two letter country code defined in international standard ***ISO3166-1 (e.g. see this Wikipedia entry and the ISO browsing platform here)***. For example, the unique two letter country code for the Bahamas is BS.
+
+2. The patent system uses a combination of country codes, the year and unique identifiers to code over 60 million patent documents from multiple countries. The example below is for a patent application from the United States that makes reference to collections from the Bahamas and can be viewed on the main worldwide patent database here.
+ 
+ INSERT IMAGE
+
+In this example we can see that the unique document identifier US2001049387A1 consists of the following [US] – the country code – [2001] the year of application – [049387] – the unique numeric identifier, and [A1] known as the “kind code” for the type of document (in this case an application). 
+
+The strength of this system is that the components combine into a unique identifier that is; 
+
+a) distinctive, and; 
+b) easy to retrieve.  
+
+The relevance of this type of numbering system becomes apparent when we consider the section of this patent application that makes reference to biological collections in the country. In this case the example is from the Bahamas (See the first paragraph in the image *[ADD ONLINE VERSION]). 
+
+In this case, the applicants make reference to a sponge specimen 23-XI-98-3-002 and a HBOI CatNo. 003:00973. Under the proposal advanced in this document the permit system could require recipients of a permit to disclose the permit number (e.g. BS20151234) in the description section of any patent application arising from the research. 
+
+This type of unique identifier is simple, easy to use and robust over time. For that reason it is recommended as the first component of the triple system.  
+
+The second system is the standard barcode which can be optically scanned to reveal basic information. The barcode system was developed in the 1960s and became ubiquitous for tracking and scanning products from the 1970s onwards. A range of barcode types are available along with free barcode generators. A simple example using a free tool is provided below. This barcode could be attached to documents and information could be encoded into the barcode. Barcode labels appear to be routinely attached to voucher specimens in major collections. 
+ 
+INSERT
+ 
+The third system is QR (Quick Response) codes which provide a greater level of embedded detail than barcodes and can be used to embed geographic and other information. An example is provided below. 
+ 
+INSERT IMAGE
+ 
+
+The information in this QR code can be read using free software on a smart phone such as an iPhone or Android phone, as can be seen in the image below. QR codes are normally open. However, encryption of data may potentially be desirable so that only authorised users (police, customs, port authorities) can scan the contents.
+ 
+The combination of the three systems would meet the requirement for triple redundancy. Additional options include HTML embed codes containing a link to the basic permit data to accompany sequence data or other electronic records.
+
+INSERT EXAMPLE FROM THE ABOVE
