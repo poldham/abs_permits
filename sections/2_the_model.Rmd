@@ -6,13 +6,13 @@ author:
 - Olivier Rukundo
 date: "14 May 2016"
 output:
-  pdf_document:
+  word_document:
     toc: yes
   html_document:
     toc: yes
-  github_document:
+  pdf_document:
     toc: yes
-  word_document:
+  github_document:
     toc: yes
 ---
 <!---

@@ -6,7 +6,7 @@ author:
 - Hartmut Meyer
 - Olivier Rukundo
 date: "21 May 2016"
-output: html_document
+output: pdf_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
