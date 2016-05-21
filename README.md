@@ -1,5 +1,4 @@
-# abs_permits
-An Online Permit and Monitoring System under the Nagoya Protocol
+#An Online Permit and Monitoring System under the Nagoya Protocol
 
 This project repository contains documents and materials for a model online permit and monitoring system under the Nagoya Protocol. 
 
