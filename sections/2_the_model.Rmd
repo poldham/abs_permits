@@ -6,13 +6,13 @@ author:
 - Olivier Rukundo
 date: "14 May 2016"
 output:
-  word_document:
+  pdf_document:
     toc: yes
   html_document:
     toc: yes
-  pdf_document:
-    toc: yes
   github_document:
+    toc: yes
+  word_document:
     toc: yes
 ---
 <!---
@@ -35,7 +35,7 @@ This section provides an outline of the model for an online research permit and 
 
 The core concept behind the model is:
 
->"A single electronic permit system that makes it easy to apply for permits and   for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol" <!---check consistency throughout--->
+>"A single electronic permit system that makes it easy to apply for permits and for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol"^[Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”]
 
 The model consists of a set of 6 components that contain functional elements. The model is informed by the set of Core Principles provided in [Section 3](). To assist Parties interested in implementation of the model a draft Work Plan for implementation of the model is provided in [Section 4]().
 
