@@ -1,15 +1,19 @@
 ---
 title: "A Model for an Online Permit and Monitoring System"
-author: 
-- "Paul Oldham"
-- "Hartmut Meyer"
-- "Olivier Rukundo"
+author:
+- Paul Oldham
+- Hartmut Meyer
+- Olivier Rukundo
 date: "14 May 2016"
-output: 
+output:
+  word_document:
+    toc: yes
   html_document:
-    toc: true
+    toc: yes
+  pdf_document:
+    toc: yes
   github_document:
-    toc: true
+    toc: yes
 ---
 <!---
 1. check consistency in use of terms
