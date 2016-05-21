@@ -5,7 +5,10 @@ author:
 - "Hartmut Meyer"
 - "Olivier Rukundo"
 date: "14 May 2016"
-output: html_document
+output: 
+  html_document:
+  github_document:
+    toc: true
 ---
 <!---
 1. check consistency in use of terms
