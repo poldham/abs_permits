@@ -31,11 +31,11 @@ The core concept behind the model is:
 
 The model consists of a set of 6 components that contain functional elements. The model is informed by the set of Core Principles provided in [Section 3](). To assist Parties interested in implementation of the model a draft Work Plan for implementation of the model is provided in [Section 4]().
 
-This section begins with a brief dicsussion of the existing characteristics of research permit systems and then moves step by step through the components of the system. The schematics were originally designed as a guide for a computer programmer seeking to develop the system. As discussed below, a legal component is identified as a cross-cutting issue throughout the model system. 
+This section begins with a brief discussion of the existing characteristics of research permit systems and then moves step by step through the components of the system. The schematics were originally designed as a guide for a computer programmer seeking to develop the system. As discussed below, a legal component is identified as a cross-cutting issue throughout the model system. 
 
 ### Existing Permit Systems
 
-The majority of countries are likely to possess research permit systems. Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as research involving human subjects and vulnerable populations or the collection of biological materials) or to research in specific places (e.g. protected areas, marine environments etc). 
+The majority of countries are likely to possess research permit systems. Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as research involving human subjects and vulnerable populations or the collection of biological materials) or to research in specific places (e.g. protected areas, marine environments etc.). 
 
 Research permit systems have typically evolved organically over time to meet a range of government needs. We have not been able to identify a literature on the general subject of research permit systems and no international overview of research permit systems appears to exist. However, existing experience suggests that research permit systems in many countries are likely to display some, or all, of the following features: 
 
@@ -57,11 +57,11 @@ Research permit systems have typically evolved organically over time to meet a r
 
 9. Permit granting authorities may have no knowledge of the final destination or uses made of biological or genetic materials collected under a permit.
 
-The characterstics of permit systems will inevitably vary between countries. We would not therefore expect that all national systems possess the features identified above.
+The characteristics of permit systems will inevitably vary between countries. We would not therefore expect that all national systems possess the features identified above.
 
 One common feature of permit systems appears to be that *applications circulate* between permit granting authorities in either physical or electronic form. A purely hypothetical version of such a system is presented below. 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/fig1_permit_system_existing.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig1_permit_system_existing.png)
 
 This schematic merely illustrates that once an application is received by a permit granting authority it may circulate in a variety of ways between other authorities involved in the process. How this plays out in practice will vary between countries and systems. We propose an alternative approach whereby applications are administered from a central online hub where permit applications are received, stored and administered. 
 
@@ -69,13 +69,13 @@ This schematic merely illustrates that once an application is received by a perm
 
 An alternative approach to the circulation of permit applications between authorities is a hub model whether the application stays in one place (an electronic system) and both the applicant and the authorities log in to access the application. Under this approach the above schematic would be transformed into the following raw model. 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/fig2_simplified.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig2_simplified.png)
 
 In this model, the permit application is lodged in the online system and the relevant authorities and applicants communicate around the electronic application inside the electronic hub. The hub approach allows for formalised intra-institutional communication and exchange of information between permit granting authorities and applicants around an application. Communications relating to an application can also be archived electronically.
 
 The importance of this apparently simply shift in approach is that it allows for the construction of a formal model with definable components tailored to the requirements of the Nagoya Protocol that can also be adapted to meet other needs. This model and its core components are presented below. This schematic is linked with a detailed process model that can be accessed for display in presentation mode in [powerpoint](http://bit.ly/1qmforS) or [pdf](http://bit.ly/1oq7DQm). <!---update and add the rpres--->
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_formalmodel2.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig3_formalmodel2.png)
 
 The core model is discussed in more detail below but consists of the following components. 
 
@@ -86,7 +86,7 @@ The core model is discussed in more detail below but consists of the following c
 5. Reporting
 6. An Online Front Page and Core System (the hub)
 
-In considering the basic components of this model we would note that the legal component is a cross cutting issue. The reason for this is that the permit system and the functions required of it must be considered in the context of the overall environmental regulatory system. The overall system is generally seen as a cycle that starts with policy planning and the setting of standards and objectives, together with the establishment of legislation and regulations in order to give them legal effect. A number of countries are currently in the process of developing new or amending existing administrative, legislative and policy measures to meet the requirements set out in the Nagoya Protoco. In this context, consideration of the legal implications associated with adopting an online permit system is quite key. As the online permit system requires cross agency/departmental coordination, legal mechanisms to give effect to this coordination have to be carefully assessed and designed. For these reasons we emphasise that the technical components of the system should not be seen in isolation from the legal component as a cross cutting issue. 
+In considering the basic components of this model we would note that the legal component is a cross cutting issue. The reason for this is that the permit system and the functions required of it must be considered in the context of the overall environmental regulatory system. The overall system is generally seen as a cycle that starts with policy planning and the setting of standards and objectives, together with the establishment of legislation and regulations in order to give them legal effect. A number of countries are currently in the process of developing new or amending existing administrative, legislative and policy measures to meet the requirements set out in the Nagoya Protocol. In this context, consideration of the legal implications associated with adopting an online permit system is quite key. As the online permit system requires cross agency/departmental coordination, legal mechanisms to give effect to this coordination have to be carefully assessed and designed. For these reasons we emphasise that the technical components of the system should not be seen in isolation from the legal component as a cross cutting issue. 
 
 Furthermore, a permit system as a technical system designed to fulfil specific objectives must in our view be informed by Core Principles that guide the design, maintenance and long term future of the system. The Core Principles are provided in **[Section 3]()**
 
@@ -98,9 +98,9 @@ For ease of explanation discussion of the core system (component 6) will be cons
 
 ### Component 1. The Authorities Portal
 
-Figure *x* displays the core elements of the Authorities Portal displaying 7 functions. The numbering system below refers to the numbered elements in Figure *x*.
+Figure *x* displays the core elements of the Authorities Portal displaying 7 functions. The numbering system below refers to the numbered elements in Figure 4.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_authorities.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig4_authorities.png)
 
 The Authorities portal is informed by a Concept and a set of basic principles/objectives.
 
@@ -110,7 +110,7 @@ The Authorities portal is informed by a Concept and a set of basic principles/ob
 
 a) Efficiency, timeliness and avoiding duplication of effort
 b) Fulfil the Article 6 Access obligations of the Nagoya Protocol
-c) Support implementation of Article 17 of the Nagoya Protocol (monitoring utilization of genetic resources and, as approriate, associated traditional knowledge of indigenous peoples and local communities)
+c) Support implementation of Article 17 of the Nagoya Protocol (monitoring utilization of genetic resources and, as appropriate, associated traditional knowledge of indigenous peoples and local communities)
 d) Support Article 29 obligations (monitoring and reporting on national implementation of the Nagoya Protocol). 
 e) Support the ABS Clearing House Mechanism. 
 
@@ -189,15 +189,15 @@ b) A timeline for appeals
 c) Generates notifications for applicants on the progress with their appeal
 d) A clear written final decision.
 
-The appeals process is proposed as a response to Article 6 of the Nagoya Protocol requiring "fair and non-arbitary rules and procedures on accessing genetic resources"" (Art. 6.3(b)). The appeals process is also an important consideration with respect to the establishment of the Compliance Committee of the Nagoya Protocol in so far that it provides a chain of evidence that due process has been followed in rejecting a request for access on reasoned grounds. 
+The appeals process is proposed as a response to Article 6 of the Nagoya Protocol requiring "fair and non-arbitrary rules and procedures on accessing genetic resources"" (Art. 6.3(b)). The appeals process is also an important consideration with respect to the establishment of the Compliance Committee of the Nagoya Protocol in so far that it provides a chain of evidence that due process has been followed in rejecting a request for access on reasoned grounds. 
 
 The Monitoring and Reporting elements of the Authorities Portal are addressed under the respective main components of the system. This includes linkage with the ABS Clearing House Mechanism. 
 
 ### Component 2. The Applicants Portal 
 
-Figure *x* displays the main elements of the Applicants Portal. Numbering refers to elements of the Applicants Portal
+Figure 5 displays the main elements of the Applicants Portal. Numbering refers to elements of the Applicants Portal
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_applicants.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig5_applicants.png)
 
 *Concept:* A single online space for applicants to submit applications and supporting information, receive notifications to monitor progress, receive permits and fulfil reporting requirements. 
 
@@ -270,7 +270,7 @@ The granting of a permit for the specified purposes could be considered to const
 
 This section of the applicant portal should make it easy for applicants to report on outputs and activities arising from utilisation. Reporting is envisaged to take the form of:
 
-i. Publications arising from the research (DOIs (document identifiers) and links to publications and research profiles (e.g. ORCID profile, Researchgate etc.). Open access versions of publications are likely to be preferred and may be specified in MAT or funding requirements. The aim here is to reduce reporting by permitting automated retrieval of electronic information on publications.
+i. Publications arising from the research (DOIs (document identifiers) and links to publications and research profiles (e.g. [ORCID profiles](http://orcid.org/0000-0002-1013-4390), [Researchgate](https://www.researchgate.net/) etc.). Open access versions of publications, through services such as the [Directory of Open Access Journals](open source journals) or preprints through services such as [bioRxiv](bioarxvhome), are likely to be preferred and may be specified in MAT or funding requirements. The aim here is to reduce reporting by permitting automated retrieval of electronic information on publications.
 ii. Patent applications arising from the research (including electronic links)
 iii. Commercial products (market approvals)
 iv. Other (for discussion)
@@ -290,9 +290,9 @@ d) Definition of the criteria for rejection of applications and any appeals proc
 
 ### Component 4. Monitoring
 
-Figure *x* displays the elements of the Monitoring component and the details of the element for monitoring publications.
+Figure 6 displays the elements of the Monitoring component and the details of the element for monitoring publications.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_monitoring_publications.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig6_monitoring_publications.png)
 
 *Concept:* A cost effective monitoring system for scientific publications, patents, and products arising from research and development involving genetic resources and/or traditional knowledge from the providing Party.
 
@@ -329,9 +329,9 @@ It is anticipated that this information, subject to confidentiality consideratio
 
 The provisions of Article 17 are also linked with Article 29 (Monitoring and Reporting on implementation of the Protocol) with respect to a requirement for Parties to monitor implementation of their obligations under the Protoco. This should be borne in mind when considering a monitoring system and its relationship with reporting (below). Close attention should be paid to the interim national reporting guidelines agreed at the First Meeting of Parties to the Nagoya Protocol as provided in Decision NP-1/3 and any subsequent COP-MOP decisions in this area.
 
-Data Analysis is a sub-component of Monitoring and involves the processing and analysis of data collected under Monitoring. A schematic for a typical data analysis workflow is provided in **Figure x**
+Data Analysis is a sub-component of Monitoring and involves the processing and analysis of data collected under Monitoring. A schematic for a typical data analysis workflow is provided in Figure 7.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_analysis.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig7_analysis.png)
 
 The data analysis step involves a set of methodological steps that may involve a range of software tools. Increasingly, sophisticated data analysis is becoming possible using programming languages such as R, Python, MySQL (for databases). Languages such as R are widely used in biological research and initiatives a range of free packages exist for accessing taxonomic and DNA databases and scientific literature databases  (such as [PubMed](http://www.ncbi.nlm.nih.gov/pubmed) and [crossref](http://www.crossref.org)) from R. A growing emphasis on open access publications as a requirement of funding in European Union countries, the United States (and other countries) facilitates both monitoring and data analysis.  
 
@@ -339,9 +339,9 @@ The data analysis sub-component is closely linked to reporting under Component 5
 
 ### Component 5: Reporting
 
-Figure **x** displays the elements of the reporting component. 
+Figure 8 displays the elements of the reporting component. 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/figx_reporting.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig8_reporting.png)
 
 *Concept:* Facilitate national reporting under the Nagoya Protocol and other relevant environmental agreements. 
 
@@ -372,9 +372,9 @@ d) Maintain an archive of information used in reports (as part of the main elect
 
 The Core System refers to the core software and infrastructure required to create an integrated system. 
 
-**Figure x** displays the components in relation to the core system
+Figure 9 displays the components in relation to the core system
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/fig3_formal_model.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig3_formalmodel2.png)
 
 Viewed from this perspectice the core system consists of the following elements
 
@@ -398,11 +398,13 @@ The precise details of how the system is implemented are likely to depend on the
 
 ### Outline Structure
 
-**Figure x** provides an outline of the structure of the system. 
+Figure 10 provides a simplified outline of the structure of the system. At the core of this system is server software (e.g. Apache) attached to a database (e.g. MySQL). 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/schematics/schematics.033.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig10_structure.png)
 
 ### Resources Needed
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/images/schematics/schematics.035.png)
+Figure 11 provides an outline of the resources needed to implement the system. Entries on the right are indicative and are likely to include a mix of free and commercial software tools (e.g. databases and analytics tools). The model anticipates that, in the case of monitoring and analysis tools, a phased approach will be taken to the use of tools with off the shelf commercial tools being employed in the first instance accompanied by the adoption of free software tools (e.g. [RStudio](https://www.rstudio.com)) for monitoring and analytics accompanied by the use of open source packages for accessing scientific literature, taxonomic data and patent information. The use of free tools such as the [R](https://www.r-project.org) language is suggested here because of the large number of resources focusing on biology such as [Bioconductor](http://www.bioconductor.org) and the link towards statistics, mapping and modelling. In particular attention is drawn to the suite of free packages being developed by [rOpenSci](http://ropensci.org/packages/). Widely used alternatives or complements to R include [Python](https://www.python.org). The long term advantage of the open source route is a large ecosystem of users and culture of collaboration to share common needs. However, open source tools depend on investments in training people to use them. It is sensible to anticipate a period of capacity building before the transition from off the shelf to open source tools is made. It is also sensible to anticipate that a mix of approaches and tools may prove to be the most cost effective. In short, it is important to concentrate on what will work best for a Party taking into account its circumstances and needs. 
+
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig11_resources.png)
 
