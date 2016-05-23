@@ -6,13 +6,13 @@ author:
 - Olivier Rukundo
 date: "14 May 2016"
 output:
-  word_document:
-    toc: yes
   html_document:
+    toc: yes
+  github_document:
     toc: yes
   pdf_document:
     toc: yes
-  github_document:
+  word_document:
     toc: yes
 ---
 <!---
@@ -83,7 +83,7 @@ In this model, the permit application is lodged in the online system and the rel
 
 The importance of this apparently simply shift in approach is that it allows for the construction of a formal model with definable components tailored to the requirements of the Nagoya Protocol that can also be adapted to meet other needs. This model and its core components are presented below. This schematic is linked with a detailed process model that can be accessed for display in presentation mode in [powerpoint](http://bit.ly/1qmforS) or [pdf](http://bit.ly/1oq7DQm). <!---update and add the rpres--->
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig3_formalmodel2.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.002.png)
 
 The core model is discussed in more detail below but consists of the following components. 
 
@@ -108,7 +108,7 @@ For ease of explanation discussion of the core system (component 6) will be cons
 
 Figure *x* displays the core elements of the Authorities Portal displaying 7 functions. The numbering system below refers to the numbered elements in Figure 4.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig4_authorities.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.004.png)
 
 The Authorities portal is informed by a Concept and a set of basic principles/objectives.
 
@@ -126,13 +126,13 @@ e) Support the ABS Clearing House Mechanism.
 
 The functions of the permit granting authority portal can be divided into seven broad categories. Each of these contains a subset of activities with varying time frames. Note that the legal component is a cross-cutting issue embedded in many of these functions.  
 
-2.1. Enquiries
+1.1. Enquiries
 
 Receive enquiries and direct applicants to the applicants portal to review the applicants guide and checklist. 
 
 Once committed to a single online system permit authorities we anticipate that authorities would uniformly direct applicants to the applicant portal as the only point of access to the permit system or the integrity of the system will be undermined (see **[Core Principles]()**). Note that applicants may seek to avoid using the system because of the obligations to provide full disclosure that it imposes.  
 
-2.2. Review
+1.2. Review
 
 a) Receive applications through the applicants portal
 
@@ -142,9 +142,9 @@ c) Notification to applicant on the status of the application (complete/incomple
 
 d) If complete validate the unique identifier (e.g. BS20151234) for use in the system (the identifier should be automatically generated, but requires a visual check)
 
-2.2.1 Review type of request (non-commercial, commercial, both)
+1.2.1 Review type of request (non-commercial, commercial, both)
 
-2.2.1.1 At this point the system will divide depending on whether the applicant is pursuing non-commercial or commercial research and development or both, if relevant in the context of the domestic ABS framework.
+1.2.1.1 At this point the system will divide depending on whether the applicant is pursuing non-commercial or commercial research and development or both, if relevant in the context of the domestic ABS framework.
 
 a) Define next steps accordingly; 
 	i) using  standard Mutually Agreed Terms (MAT) or negotiation or a combination as required
@@ -155,7 +155,7 @@ b) Issue a Notification to the applicant:
 	ii) Request more information
 	iii) Reject
 
-2.2.1.2 Review application in light of environmental and other relevant legislation
+1.2.1.2 Review application in light of environmental and other relevant legislation
 
  	a) Communicate with applications for clarification, as appropriate
 	b) Based on applicants response, either:
@@ -164,10 +164,10 @@ b) Issue a Notification to the applicant:
 		iii) Reject
 	c) Issue Notification to applicant
 	
-2.2.2. Specify standard terms and conditions (using a menu of clauses) for inclusion in the permit.
-2.2.3. Specify specific terms and conditions for inclusion in the permit (using a menu of clauses).
+1.2.2. Specify standard terms and conditions (using a menu of clauses) for inclusion in the permit.
+1.2.3. Specify specific terms and conditions for inclusion in the permit (using a menu of clauses).
 
-2.3. Negotiate
+1.3. Negotiate
 
 Typically for commercially related research the following broad steps can be identified. Note that each of these steps may require additional steps and that the list may be incomplete. 
 
@@ -179,7 +179,7 @@ e) Conditions of agreement
 
 Note that a negotiation phase may also be necessary for non-commercial research or circumstances where researchers plan to conduct both non-commercial and commercial research. 
 
-2.4 Approve/Reject
+1.4 Approve/Reject
 
 The authority will approve or reject the application. If approved the system will trigger: 
 i. A .pdf permit containing the relevant details and terms and conditions as defined by the authorities headed by a unique identifier (two letter country code, the year and numeric identifier e.g. BS20151234 for Bahamas 2015 1234), a QR Code, a barcode. 
@@ -188,7 +188,7 @@ iii. Labels containing the unique identifier, QR code and barcode for labelling 
 iv. HTML Embed Code. A html version of the above that can be embedded with sequence or other electronic data.
 v. If rejected the application will be linked to the proposed appeals process. 
 
-2.5. Appeals
+1.5. Appeals
 
 This element provides:
 
@@ -205,7 +205,7 @@ The Monitoring and Reporting elements of the Authorities Portal are addressed un
 
 Figure 5 displays the main elements of the Applicants Portal. Numbering refers to elements of the Applicants Portal
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig5_applicants.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.011.png)
 
 *Concept:* A single online space for applicants to submit applications and supporting information, receive notifications to monitor progress, receive permits and fulfil reporting requirements. 
 
@@ -224,21 +224,21 @@ f) Triple redundancy for monitoring (unique country identifier, QR codes, barcod
 
 The applicants portal would be divided into six elements with different functions. 
 [correct in word]
-3.1 Information (applicant guide and checklists)
-3.2 Applications (applications in progress)
-3.3  Notifications (communications)
-3.4 Approvals (permits, permit passes, labels)
-3.5 Reporting
-3.6 Appeals
+2.1 Information (applicant guide and checklists)
+2.2 Applications (applications in progress)
+2.3  Notifications (communications)
+2.4 Approvals (permits, permit passes, labels)
+2.5 Reporting
+2.6 Appeals
 
 Please see the accompanying slides in the [**Annex**] for details. 
 
-3.1. Information
+2.1. Information
 
 a) Provides a guide to the application process and documents required.
 b) Provides a checklist for the completeness of applications.
 
-3.2. Applications
+2.2. Applications
 
 Information to be provided by applicants (indicative list):
 
@@ -254,14 +254,14 @@ i) Measures to address potential environmental impacts
 j) Statement on compliance with national legislation on ABS
 k) Statement on meeting other requirements under relevant national laws
 
-3.3 Notifications
+2.3 Notifications
 
 A single space for applicants to: 
 
 a) Receive and respond to requests for information from permit granting authorities.
 b) Review notifications on the stage in the procedure of applications pursuant to Article 6 of the Nagoya Protocol. 
 
-3.4. Approvals
+2.4. Approvals
 
 The approvals section of the applicants portal allows applicants to retrieve approved permits as:
 
@@ -274,7 +274,7 @@ c) To facilitate monitoring the system will also generate:
 
 The granting of a permit for the specified purposes could be considered to constitute evidence that the applicant has received prior informed consent from the government of the country granting the permit for the purposes of the domestic ABS framework. 
 
-3.5. Reporting
+2.5. Reporting
 
 This section of the applicant portal should make it easy for applicants to report on outputs and activities arising from utilisation. Reporting is envisaged to take the form of:
 
@@ -283,7 +283,7 @@ ii. Patent applications arising from the research (including electronic links)
 iii. Commercial products (market approvals)
 iv. Other (for discussion)
 
-3.6. Appeals
+2.6. Appeals
 
 This area of the applicants portal would allow applicants to file and receive information on any appeals for rejected permit applications. 
 
@@ -300,7 +300,7 @@ d) Definition of the criteria for rejection of applications and any appeals proc
 
 Figure 6 displays the elements of the Monitoring component and the details of the element for monitoring publications.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig6_monitoring_publications.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.019.png)
 
 *Concept:* A cost effective monitoring system for scientific publications, patents, and products arising from research and development involving genetic resources and/or traditional knowledge from the providing Party.
 
@@ -339,7 +339,7 @@ The provisions of Article 17 are also linked with Article 29 (Monitoring and Rep
 
 Data Analysis is a sub-component of Monitoring and involves the processing and analysis of data collected under Monitoring. A schematic for a typical data analysis workflow is provided in Figure 7.
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig7_analysis.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.024.png)
 
 The data analysis step involves a set of methodological steps that may involve a range of software tools. Increasingly, sophisticated data analysis is becoming possible using programming languages such as R, Python, MySQL (for databases). Languages such as R are widely used in biological research and initiatives a range of free packages exist for accessing taxonomic and DNA databases and scientific literature databases  (such as [PubMed](http://www.ncbi.nlm.nih.gov/pubmed) and [crossref](http://www.crossref.org)) from R. A growing emphasis on open access publications as a requirement of funding in European Union countries, the United States (and other countries) facilitates both monitoring and data analysis.  
 
@@ -349,7 +349,7 @@ The data analysis sub-component is closely linked to reporting under Component 5
 
 Figure 8 displays the elements of the reporting component. 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig8_reporting.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.030.png)
 
 *Concept:* Facilitate national reporting under the Nagoya Protocol and other relevant environmental agreements. 
 
@@ -382,7 +382,7 @@ The Core System refers to the core software and infrastructure required to creat
 
 Figure 9 displays the components in relation to the core system
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig3_formalmodel2.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.002.png)
 
 Viewed from this perspectice the core system consists of the following elements
 
@@ -408,11 +408,11 @@ The precise details of how the system is implemented are likely to depend on the
 
 Figure 10 provides a simplified outline of the structure of the system. At the core of this system is server software (e.g. Apache) attached to a database (e.g. MySQL). 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig10_structure.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.033.png)
 
 ### Resources Needed
 
 Figure 11 provides an outline of the resources needed to implement the system. Entries on the right are indicative and are likely to include a mix of free and commercial software tools (e.g. databases and analytics tools). The model anticipates that, in the case of monitoring and analysis tools, a phased approach will be taken to the use of tools with off the shelf commercial tools being employed in the first instance accompanied by the adoption of free software tools (e.g. [RStudio](https://www.rstudio.com)) for monitoring and analytics accompanied by the use of open source packages for accessing scientific literature, taxonomic data and patent information. The use of free tools such as the [R](https://www.r-project.org) language is suggested here because of the large number of resources focusing on biology such as [Bioconductor](http://www.bioconductor.org) and the link towards statistics, mapping and modelling. In particular attention is drawn to the suite of free packages being developed by [rOpenSci](http://ropensci.org/packages/). Widely used alternatives or complements to R include [Python](https://www.python.org). The long term advantage of the open source route is a large ecosystem of users and culture of collaboration to share common needs. However, open source tools depend on investments in training people to use them. It is sensible to anticipate a period of capacity building before the transition from off the shelf to open source tools is made. It is also sensible to anticipate that a mix of approaches and tools may prove to be the most cost effective. In short, it is important to concentrate on what will work best for a Party taking into account its circumstances and needs. 
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/fig11_resources.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.035.png)
 
