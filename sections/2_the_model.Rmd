@@ -1,19 +1,21 @@
 ---
-title: "2. A Model for an Online Permit and Monitoring System"
+title: "A Model for an Online Permit and Monitoring System"
 author:
 - Paul Oldham
 - Hartmut Meyer
 - Olivier Rukundo
-date: "14 May 2016"
+date: "25 May 2016"
 output:
   word_document:
     toc: yes
   html_document:
     toc: yes
+    toc_float: yes
   pdf_document:
     toc: yes
   github_document:
     toc: yes
+    toc_float: yes
 ---
 <!---
 1. check consistency in use of terms
@@ -29,7 +31,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Introduction
+## Introduction
 
 This section provides an outline of the model for an online research permit and monitoring system in support of implementation of the [Nagoya Protocol on Access to Genetic Resources and Benefit Sharing](https://www.cbd.int/abs/about/).^[The research in this paper was conducted with the support of The Bahamas Environment, Science & Technology Commission (BEST) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of the ABS Capacity Development Initiative through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] 
 
@@ -41,7 +43,7 @@ The model consists of a set of 6 components that contain functional elements. Th
 
 This section begins with a brief discussion of the existing characteristics of research permit systems and then moves step by step through the components of the system. The schematics were originally designed as a guide for IT specialists seeking to develop the system. As discussed below, a legal component is identified as a cross-cutting issue throughout the model system. 
 
-### Existing Permit Systems
+## Existing Permit Systems
 
 The majority of countries are likely to possess research permit systems. Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as the collection of biological materials or research involving human subjects) or to research in specific places (e.g. protected areas, marine environments etc.). 
 
@@ -83,7 +85,7 @@ In this model, the permit application is lodged in the online system and the rel
 
 The importance of this apparently simply shift in approach is that it allows for the construction of a formal model with definable components tailored to the requirements of the Nagoya Protocol that can also be adapted to meet other needs. This model and its core components are presented below. This schematic is linked with a detailed process model that can be accessed for display in presentation mode in [powerpoint](http://bit.ly/1qmforS) or [pdf](http://bit.ly/1oq7DQm). **[update and add the rpres}**
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.002.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.033.png)
 
 The core model is discussed in more detail below but consists of the following components. 
 
@@ -98,7 +100,7 @@ In considering the basic components of this model we would note that the legal c
 
 Furthermore, a permit system as a technical system designed to fulfil specific objectives must in our view be informed by Core Principles that guide the design, maintenance and long term future of the system. The Core Principles are provided in **[Section 3]()**
 
-## Structure: Components and Elements.
+## An Online Permit and Monitoring System
 
 **We now turn to more detailed discussion of the proposed structure of the online system and its components. To facilitate discussion a series of process diagrams are provided in the Annex and downloadable format as a PowerPoint presentation(http://bit.ly/1qmforS) and .pdf (http://bit.ly/1oq7DQm). The process diagrams demonstrate the workings of the components of the system. We will confine images in this discussion to the main images and leave the reader to view the process aspects in the Annex.** 
 

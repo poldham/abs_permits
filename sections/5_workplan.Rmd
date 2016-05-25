@@ -1,14 +1,21 @@
 ---
-title: "Draft Workplan for Implementation of the Online Permit and Monitoring System"
+title: "Draft Workplan for an Online Permit and Monitoring System"
 author: "Paul Oldham"
-date: "17 May 2016"
-output: word_document
+date: "25 May 2016"
+output:
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-###Introduction:
+##Introduction
 
 This section provides a draft workplan for countries interested in implementing the model for the online permit and monitoring system outlined in the previous sections. The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of outline headings for budget planning in the Annex.
 
@@ -19,21 +26,23 @@ Network advantages would include:
 1. Sharing computer code developed to address specific aspects of the system including specific modules.
 2. Sharing lessons learned, guides and protocols.
 3. Sharing methods for particular approaches to monitoring, analytics and statistics.
-
-The wider advantage of a network approach among participants would be avoiding duplication of effort and joint capacity building. 
+4. Avoiding duplication of effort.
+5. Shared capacity building in implementation. 
 
 The draft workplan is divided into two sections:
 
-1. Preparatory Activities (labelled A-D).
+1. Preparatory Activities (labelled A-C).
 2. Components, elements and tasks (numbered by Components in the model).
 
-##1. Preparatory Activities
+The legal component (Component 3) is a cross-cutting issue and an indication of relevant tasks is provided within relevant tasks. The list of legal related tasks is indicative and may require further elaboration. 
+
+## Preparatory Activities
 
 ### A: Map Existing Research Permit Systems
 
-In countries where there is more than one permit authority, it is essential to gain an understanding of the research permit process in a country as a basis for understanding the responsibilities of different permit granting authorities and for consultations on potential ways forward in either improving existing systems or establishing new systems. These activities should logically focus on:
+In countries where there is more than one permit authority, it is essential to gain an understanding of the research permit process in a country as a basis for understanding the responsibilities of different permit granting authorities and for consultations on potential ways forward in either improving existing systems or establishing new systems. These activities could logically focus on:
 
-i. Identifying existing permit granting authorities in the country
+i. Identifying existing permit granting authorities in the country.
 ii. The legislative mandates of permit authorities.
 iii. Application forms and terms and conditions in the permits.
 iv. Permit storage conditions.
@@ -56,7 +65,7 @@ d) Identify who has access to permit data and for what purposes.
 
 *Task 5*. Generate process diagrams for permits within a country. 
 
-*Task 6*. Workshop to discuss existing experiences and the desirability (or otherwise) of a single electronic system serving multiple permit granting authorities. 
+*Task 6*. Workshop to discuss existing experiences and the desirability (or otherwise) of a single electronic system serving permit granting authorities. 
 
 *Expected Outcomes:* 
 
@@ -64,7 +73,7 @@ d) Identify who has access to permit data and for what purposes.
 
 2. Agreement on appropriate ways forward in adapting the permit system to serve the needs of permit granting authorities and applicants in response to the entry into force of the Nagoya Protocol. 
 
-### B: Mapping existing permit data with the scientific and patent literature.
+### B: Baseline data on scientific and patent literature.
 
 The prerequisite for this activity is access to permit data in either physical or (preferably) electronic form. Ideally complete data will be made available to maximise the utility of the outputs. However, if necessary sample data may be used.  
 
@@ -78,9 +87,9 @@ The prerequisite for this activity is access to permit data in either physical o
 
 *Task 5*. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. Examples include the programmatic use of crossref or the EPO Open Patent Services or WIPO Patentscope databases and the rOpenSci and biosciences packages in languages such as R or Python. 
 
-*Expected Outcomes:* A clear baseline and overview of existing publication and patent activity that can be linked to existing research permits. This will typically involve permits issued prior to the entry into force of the Nagoya Protocol and is intended to create an evidence base and electronic repository of historic data on publications and patent data.  Historic data will also serve as a means of identifying key researchers working in a country as a basis for engagement activities to discuss ways of improving the permit and reporting system following the entry into force of the Nagoya Protocol. Note that this outcome fundamentally depends on the availability of permit data for use in searches.  
+*Expected Outcomes:* A clear baseline and overview of existing publication and patent activity that can be linked to existing research permits. This will typically involve permits issued prior to the entry into force of the Nagoya Protocol and is intended to create an evidence base and electronic repository of historic data on publications and patent data.  Historic data will also serve as a means to identify key researchers working in a country as a basis for engagement activities to discuss ways of improving the permit and reporting system following the entry into force of the Nagoya Protocol. Note that this outcome fundamentally depends on the availability of permit data for use in searches.  
 
-###D: Establish a development and implementation plan for an online electronic permit and monitoring system
+### C: Development and Implementation Plan
 
 Establish a costed development and implementation plan for an online permit and monitoring system . 
 
@@ -95,7 +104,7 @@ Establish a costed development and implementation plan for an online permit and 
 
 *Task 2*: Develop a working Model and Engage in Field Testing 
 
-Develop an experimental working model to test different approaches, identify key tools and for demonstration purposes using dummy data. Note that the purpose of this activity is learning by doing to inform planning and accurate identification of resource requirements not the development of the final system. This task involves a set of sub-tasks: 
+Develop an experimental working model to test different approaches, identify key tools and for demonstration purposes using dummy data. Note that the purpose of this activity is learning by doing to inform planning and accurate identification of resource requirements not the development of the final system. This task involves a set of sub-tasks. 
 
 *Task 2.1*. Develop one or more working models of the system including identifying solutions using different tools that may be best suited to the diversity of circumstances and existing capacities within a country. 
 
@@ -105,9 +114,9 @@ Develop an experimental working model to test different approaches, identify key
 
 *Task 2.4*. Arrange field tests of solutions such as barcodes, QR code readers, html embed codes etc. with relevant authorities and adapt solutions focusing on meeting actual needs. 
 
-*Task 2.5*. In consultation with relevant international collections identify appropriate options for the inclusion of permit identifiers in sample labels and sequence data. A network approach among participating countries is likely to be effective in identifying common solutions. Public collections in Europe interested in registered collection status under [EU Regulation No.511/2014](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0511&from=EN), a category likely to include most major collections in the EU, could be potential partners in testing this approach. 
+*Task 2.5*. In consultation with relevant national/international collections identify appropriate options for the inclusion of permit identifiers in sample labels and sequence data. A network approach among participating countries is likely to be effective in identifying common solutions. Public collections in Europe interested in registered collection status under [EU Regulation No.511/2014](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0511&from=EN), a category likely to include most major collections in the EU, could be potential partners in testing this approach. 
 
-*Task 3* Based on experience in Task 1 & 2, including assessment of existing capacities and strengths, identify appropriate software and hardware requirements for the Core System (Component 6).
+*Task 3*. Based on experience in Task 1 & 2, including assessment of existing capacities and strengths, identify appropriate software and hardware requirements for the Core System (Component 6).
 
 *Task 4*. Develop a costed development plan over a period of 3 years and projected costs for future years.
 
@@ -121,62 +130,68 @@ Develop an experimental working model to test different approaches, identify key
 2. An experimental working model accompanied by documented code, experiences and lessons learned.
 3. Identification of software and hardware for the core system based on assessment of internal capacity and strengths (e.g. MySQL, Apache, ASP.NET, Node.js etc.).
 
+## System Implementation
+
+The components of the overall system are provided below. The workplan focuses on the identification of tasks associated with the functional elements of each component.
+
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.002.png)
+
 ### Component 1: Authorities Portal
 
 *Objective*: Establish an authorities portal for the administration of permit applications. 
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.004.png)
 
-*Element 1.1* Enquiries [Legal component]
+*Element 1.1*. Enquiries [Legal component]
 
 *Task 1*. Establish standard responses to enquiries as inputs into the online permit system.
 
 *Element 1.2* Review [Legal component]
 
-*Task 1*. Develop Guide for Applicants
+*Task 1*. Develop Guide for Applicants.
 
-*Task 2*. Develop Applicants Checklist
+*Task 2*. Develop Applicants Checklist.
 
-*Task 3*. Develop checklist for completeness by authorities (authority side should match to applicant side)
+*Task 3*. Develop checklist for completeness by authorities (authority side should match to applicant side).
 
 *Task 4*. Develop standard notifications to applicants on receipt and completeness. 
 
-*Task 5*. Develop individual authority checklist (or lists as appropriate to authority)
+*Task 5*. Develop individual authority checklist (or lists as appropriate to authority).
 
-*Task 6*. Establish criteria for validating if non-commercial or commercial research (or both)
+*Task 6*. Establish criteria for validating if non-commercial or commercial research (or both).
 
 *Task 7*. Define next steps for non-commercial research including standardised MAT for non-commercial research under Article 8(a) of the Nagoya Protocol and addressing closely related issues (e.g. compliance with environmental legislation, local partners, national deposit of samples etc.).[Legal component]
 
-*Element 1.3* Negotiation [Legal component]
+*Element 1.3*. Negotiation [Legal component]
 
 *Task 1*. Define next steps for commercial research
 	
-	a) Establish criteria for negotiations. [Legal component.]
-	b) Identify standard list of participants in negotiations. [Legal component].
-	c) Establish time frame for negotiations. [Legal component].
-	d) Establish environmental legislation and procedure criteria. [Legal component].
+	a) Establish criteria for negotiations. [Legal component]
+	b) Identify standard list of participants in negotiations. [Legal component]
+	c) Establish time frame for negotiations. [Legal component]
+	d) Establish environmental legislation and procedure criteria. [Legal component]
 	e) Establish criteria for benefit-sharing. Note legal component.
 	f) Establish criteria on Intellectual Property Rights. Note legal component.
-	g) Establish criteria for acceptance or rejection of commercial applications. Note legal component.
-	h) Define written notifications. Note legal component.
+	g) Establish criteria for acceptance or rejection of commercial applications. [Legal component]
+	h) Define written notifications. [Legal component]
 	
-*Task 2*. Develop at template for standard MAT for commercial research taking into account that this may be a starting point for negotiations.
+*Task 2*. Develop a template for standard MAT for commercial research taking into account that this may be a starting point for negotiations.
 
-*Task 2*. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component].
+*Task 2*. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component]
 
-*Element 1.4* Approve/Reject [Legal component]
+*Element 1.4*. Approve/Reject [Legal component]
 
 *Task 1*. Define standard terms and conditions (menu of clauses) for use in generating permits. 
 
 *Task 2*. Define areas where specific terms and conditions are likely to be needed (menu of clauses). 
 
-*Task 3*. Define any supplementary (ABS or Impact) agreements to the permit. 
+*Task 3*. Define templates for MAT/ABS contracts linked to the permit. 
 
-*Task 4*. Implememnt the harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and ABS contracts are maintained across time and space. 
+*Task 4*. Implement the harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and MAT/ABS contracts are maintained across time and space. 
 
-*Task 5*. Implement the system to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side).
+*Task 5*. Implement the system to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side tasks for testing).
 
-*Element 1.5* Appeals [Legal component]
+*Element 1.5.* Appeals [Legal component]
 
 *Task 1*. Establish a clear and transparent appeals process.
 
@@ -196,7 +211,7 @@ Develop an experimental working model to test different approaches, identify key
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.011.png)
 
-*Element 2.1* Information.
+*Element 2.1.* Information.
 
 *Task 1*. Develop a guide for applicants.
 
@@ -224,7 +239,9 @@ Develop an experimental working model to test different approaches, identify key
 
 *Task 3*. Establish a system for applicants to respond to requests and channel (email) the response to the originator with a notification. 
 
-*Task 4*. Establish a system that: 
+*Task 4*. Establish a system linking unique identifiers (e.g. BS20151234) with notifications to create an integrated file register (file history) for applications within the data archive. 
+
+*Task 5*. Establish a system that: 
 
 a) Lists the stages in the application procedure
 b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
@@ -239,9 +256,9 @@ d) Generates the permit and associated material (passes, labels, embed codes) an
 
 *Task 3*. Create a system to generate labels for sample bags, jars and individual samples.
 
-*Task 4*. Create a system for HTML embed codes (for sequence data/publications etc.).
+*Task 4*. Create a system for HTML embed codes (for electronic data etc.).
 
-*Task 5*. Provide instructions on the use of unique identifiers ( e.g. BS20151234) in publications, patents, products and electronic data. 
+*Task 5*. Provide instructions on the use of unique identifiers (e.g. BS20151234) in publications, patents, products, sequence and electronic data. 
 
 *Task 6*. Test approaches, including "permit passes" with a selection of applicants and adjust based on lessons learned.
 
@@ -283,7 +300,7 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 6*. Provide notifications to applicant within the system including the final written decision. [Legal component]
 
-*Expected Outcome*: An easy to use applicants portal that provides legal certainty for applicants and contributes data to monitoring and reporting. 
+*Expected Outcome*: An easy to use applicants portal that provides legal certainty for applicants and provides data for monitoring and reporting. 
 
 ### Component 3: Legal
 
@@ -301,11 +318,11 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 6*. Identify future requirements for legal review as part of the system's development plan.
 
-*Expected Outcome*: The online permit and monitoring system complies with and supports relevant domestic laws and obligations under the Nagoya Protocol.
+*Expected Outcome*: The online permit and monitoring system complies with and supports relevant domestic laws and implementation of obligations under the Nagoya Protocol.
 
 ### Component 4: Monitoring
 
-*Objective*: Establish an effective electronic monitoring system for compliance with the terms of research permits, access and benefit-sharing agreements under the Nagoya Protocol. 
+*Objective*: Establish an effective electronic monitoring system for compliance with the terms of research permits and mutually agreed terms under the Nagoya Protocol. 
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.019.png)
 
@@ -315,19 +332,19 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 3*. Identify relevant commercial databases and analytics software to facilitate monitoring. 
 
-*Task 4*. Develop a plan for a phased transition from commercial to open sources tools. 
+*Task 4*. Develop a plan for a phased transition from commercial to open sources tools (or appropriate mix of tools). 
 
-*Task 5*. Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the aquisition of programming and analytics skills. 
+*Task 5*. Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the acquisition of programming and analytics skills. 
 
 *Task 6*. Implement monitoring following the basic workflow defined in Element 4.5 on Data Analysis in the model (Gather, Clean, Analyse, Visualise and Report).
 
 *Task 7*. Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use.
 
-*Task 8*. Improve internal capacity by participation in a network of staff and specialists engaged in monitoring from participating countries. 
+*Task 8*. Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries. 
 
-*Task 8*. Develop, or contribute to, an open access manual on ABS monitoring for use by staff and in training future trainers. 
+*Task 9*. Develop, or contribute to, an open access manual on ABS monitoring for use by staff and in training future trainers. 
 
-*Expected Outcome*: An effective electronic monitoring system adapted to the requirements of the participating country that is sustainable over the long term. 
+*Expected Outcome*: A cost-effective electronic monitoring system adapted to the requirements of the participating country that is sustainable over the long term. 
 
 ### Component 5: Reporting 
 
@@ -345,38 +362,66 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 5*. Integrate reporting templates and outputs with the core system data archive for future use.
 
-*Expected Outcome*: A system that provides information from the permit system in a form for inclusion in national reports and provides relevant inputs to support the ABS Clearing House Mechanism.
+*Expected Outcome*: A system that provides information from the permit system in a form suitable for inclusion in national reports and provides relevant inputs to support the ABS Clearing House Mechanism.
 
 ### Component 6: Core System
 
-*Objective*: Establish an efficient, secure, robust, cost effective and sustainable Core System to perform the functions described in Components 1-5 and additional functions described for the core model directed to the security and preservation of permit data.  
+*Objective*: Establish an efficient, secure, robust, cost effective and sustainable Core System to perform the functions described in Components 1-5 and additional functions described for the Core System on archiving and the security of permit data.  
 
-*Task 1*. Identify internal and external programming capacity for development and maintenance of the online system. (see Acticity D, task 1).
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.033.png)
 
-*Task 2*. As part of a network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code. 
+*Element 1: Preparatory*
 
-*Task 3*. Based on the outcomes of **Component x, Element x, Task x** and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context.
+*Task 1*. Identify internal and external programming capacity for development and maintenance of the online system. (see Activity C, task 1).
 
-*Task 4* Acquire relevant hardware, server and database software to begin developing the system.
+*Task 2*. As part of an open source network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code. 
 
-*Task 5*. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction [legal element].
+*Task 3*. Based on the outcomes of Activity C and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context.
 
-*Task 6*. Identify and explore appropriate options for the development and implementation of the notification system between authorities and applicants as one of the most technically challenging aspects of the system. 
+*Task 4*. Acquire relevant hardware, server and database software.
 
-*Task 7*. Establish a unique identifier based document filestore to easily retrieve and display all documentation linked to a permit application or grant. 
+*Element 2* Server Software
 
-*Task 8*. Identify additional software/coding needs for the generation of permits with particular attention to the technical aspects of:
+*Task 1*. Build online front page system and unique home page system for authorities and applicants. 
+
+*Task 2*. Install secure password system for home page access.
+
+*Task 3*. Install, adapt or build the notification system between applicants and authorities and link the system to the database and data archive. 
+
+*Task 4*. Based on lessons learned from Activity C, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities). (See also Element 3, task 4).
+
+*Element 3. Database software*
+
+*Task 1*. Develop scripts for key functions with components and elements
+
+*Task 2*. Establish file register (file history) system using unique identifiers (e.g. BS20151234).
+
+*Task 3*. Develop scripts to link to the Data Archive, Secure Backup and Physical Archive
+
+*Task 4*. Identify and address additional software/coding needs for the generation of permits with particular attention to the technical aspects of:
 
 a) QR Code based permit passes
-b) Labels for specimen bags and records
+b) Labels for specimen bags, specimens and related records
 
-*Task 9*. Based on lessons learned from **Component xx, Element xx, Task xx**, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities)
+*Element 4. Data Archive*
 
-*Task 10*. Operationalise the data archive for the core system, secure backups and procedure for outputting documentation to the physical archive.
+*Task 1*. Establish a Data archive including secure backups.
 
-*Task 11* Establish criteria and make provision for offline secure storage of confidential information. 
+*Task 2*. Identify and implement appropriate ways of outputting data to the physical archive while maintaining links with the unique identifier system. 
 
-*Task x* Establish a procedure for updating the development plan for the online system (Component x, Element x, task x)
+*Task 3*. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction and take appropriate decisions on adoption. [Legal element]
+
+*Task 4*. Identify appropriate options for secure offline storage of confidential information. 
+
+*Element 5.* Development Cycle Planning
+
+*Task 1*. Establish a procedure for updating the development plan for the online system (Activity C, task 4).
+
+### Resources List
+
+The figure below provides an indicative list of resources to assist with planning. Note that analytics tools such as VantagePoint and Tableau are available in a range of paid and (in the case of Tableau), free versions. Paid software is included as part of a phased approach from paid to open source software over time. This is also true for databases of the scientific literature and patent databases where commercial tools such as Thomson Innovation offer convenience in data access but significant cost while open source options require significant investments in knowledge of their use (e.g. R or Python resources). 
+
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.035.png)
 
 
 
@@ -384,18 +429,5 @@ b) Labels for specimen bags and records
 
 
 
-** WHERE DOES THIS BELONG?** Element 10. Data Archive
-
-Objective: Establish a long term data archive for research permits and access and benefit-sharing agreements.
-
-Task 1. Establish Data archive in the core system including permit data in text and table form and stored as .pdf.
-
-Task 2. Establish secure back up infrastructure and routines
-
-Task 3. Establish secure Cloud back up (see task 2)
-
-Task 3. Harmonise with physical archives or, as necessary, establish physical archives. 
-
-Expected Outcome: A long term data archive linked to a well organised physical archive.  
 
 

@@ -1,11 +1,16 @@
 ---
-title: "1. Background"
+title: "Background to an Online Permit and Monitoring System"
 author:
 - Paul Oldham
 - Hartmut Meyer
 - Olivier Rukundo
 date: "21 May 2016"
-output: pdf_document
+output:
+  word_document:
+    toc: yes
+  html_document:
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -83,7 +88,7 @@ The permit providing evidence of prior informed consent and mutually agreed term
 
 There is therefore a close relationship between a permit under the Nagoya Protocol as evidence of prior informed consent and the establishment of MAT and monitoring of compliance. However, it is also important to recognise that there are distinctions between types of research involving genetic resources and associated traditional knowledge that may trigger different procedures and MAT under the Nagoya Protocol. 
 
-## Permit Systems and Types of Research
+## Types of Research
 
 As discussed during negotiation of the Nagoya Protocol distinguishing between types of research involving genetic resources and associated traditional knowledge is difficult because the distinction between non-commercial and commercial research is mainly located at the level of the *intent* of researchers rather than in methods, techniques and materials. Focusing on clarifying the "why" of particular research and identifying specific situations is in our view likely to lead to effective approaches to administration. Here we identify five broad situations that are likely to emerge over time in implementing the Nagoya Protocol. 
 
@@ -99,7 +104,7 @@ As this makes clear Parties will create conditions to encourage research contrib
 
 The implication of this for the research permit system is that simplified measures could be developed to provide access using standard mutually agreed terms. Where an applicant agrees to the standard mutually agreed terms for non-commercial research (which might simply involve a tick to a check box signifying acceptance of such terms), and subject to acceptance of any other non-ABS requirements, a permit could simply be granted. 
 
-### Changes of Intent
+### Change of Intent
 
 However, as set out in Article 8(a) the negotiators of the Nagoya Protocol also recognised that what may begin as non-commercial research may become commercial research or "utilization" in the language of the Protocol.^[Article 2(c) specifies that: “Utilization of genetic resources” means to conduct research and development on the genetic and/or biochemical composition of genetic resources, including through the application of biotechnology as defined in Article 2 of the Convention]. It is therefore important that the terms and conditions of permits and associated standard MAT identify change of intent as a trigger for a requirement to return to the provider country for new or renewed prior informed consent and applicable mutually agreed terms for commercial research. 
 
@@ -111,7 +116,7 @@ A third situation may arise where applicants apply for a permit to conduct both 
 
 The fourth situation involves cases of explicit commercial research and collection. Viewed from the perspective of the permit system it is likely to be desirable that commercial research is signalled at the application stage and triggers a procedure for the negotiation of MAT with the applicants within a reasonable period of time (Article 6.3(d)). While it may be desirable to develop a standard template for MAT for commercial research this is likely to serve as the starting point for a negotiation phase in arriving at mutually agreed terms and granting prior informed consent. 
 
-### Research Involving Indigenous Peoples and Local Communities
+### Research with Indigenous Peoples & Local Communities
 
 As noted above, research involving human subjects, such as indigenous peoples and local communities, is typically the subject of requirements for permits both from relevant authorities (such as Ministries for Indigenous Affairs or their equivalent), subject to requirements for ethical conduct (including by agencies funding the research) and the prior informed consent of the participating communities and research participants. 
 
@@ -133,7 +138,7 @@ Article 6.3(f) further specifies that Parties shall:
 
 The emphasis in the Protocol with respect to prior informed consent with respect to a permit and monitoring system is placed on ensuring, in the relevant circumstances, that prior informed consent is obtained and setting out criteria or process for obtaining prior informed consent. In this respect, the emphasis is likely to be placed on the provision of information on how an applicant for a research permit might go about obtaining prior informed consent from relevant indigenous peoples and local communities.^[See for example the recently developed voluntary guidelines on prior informed consent from the Ninth meeting of the Working Group on Article 8j and related provisions sent for consideration by COP13 in document UNEP/CBD/COP/13/3 at I9/1] 
 
-### Avoidance of prior informed consent and mutually agreed terms
+### Avoidance of prior informed consent & mutually agreed terms
 
 A final situation of relevance to an online permit and monitoring system is a situation where an individual researcher or organisations seeks to avoid requirements for prior informed consent and mutually agreed terms altogether. In this situation the permit system will normally be blind. 
 
@@ -171,7 +176,7 @@ The use of electronic monitoring and analytics based on permit data and independ
 - Check compliance with MAT provisions related to information in patent applications
 -	Identify cases of utilization that appear not to be based on ABS permits and ABS contracts.
 
-## Enhancing Understanding of the Value of Genetic Resources and Traditional Knowledge
+###  Valuation of Genetic Resources and Traditional Knowledge
 
 One important challenge confronting countries involved in the negotiation of the Nagoya Protocol was the lack of reliable information on the economic value of genetic resources and associated traditional knowledge. Furthermore, as is now widely recognised, biodiversity and the knowledge, innovations and practices of indigenous peoples and local communities cannot be reduced purely to economic value. Rather, a broader approach to valuation, including ecosystem services, is required. A fundamental precondition for this type of analysis is data. The approach presented below would facilitate evidence based valuation of genetic resources and associated traditional knowledge over the long term and using a range of approaches to the definition of value. 
 

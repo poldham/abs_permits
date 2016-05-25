@@ -1,8 +1,13 @@
 ---
-title: "3. Core Principles"
+title: "Core Principles for an Online Permit and Monitoring System"
 author: "Paul Oldham"
 date: "22 May 2016"
-output: pdf_document
+output:
+  word_document:
+    toc: yes
+  html_document:
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
