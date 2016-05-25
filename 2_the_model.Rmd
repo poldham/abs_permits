@@ -75,7 +75,7 @@ In this model, the permit application is lodged in the online system and the rel
 
 The importance of this apparently simply shift in approach is that it allows for the construction of a formal model with definable components tailored to the requirements of the Nagoya Protocol that can also be adapted to meet other needs. This model and its core components are presented below. This schematic is linked with a detailed process model that can be accessed for display in presentation mode in [powerpoint](http://bit.ly/1qmforS) or [pdf](http://bit.ly/1oq7DQm). **[update and add the rpres}**
 
-![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.033.png)
+![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.002.png)
 
 The core model is discussed in more detail below but consists of the following components. 
 
