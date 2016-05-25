@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+
+<meta name="date" content="2016-05-25" />
+
+<title>Draft Workplan for an Online Permit and Monitoring System</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/textmate.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Model</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="executive_summary.html">Executive Summary</a>
+</li>
+<li>
+  <a href="1_background.html">Background</a>
+</li>
+<li>
+  <a href="2_the_model.html">The Model</a>
+</li>
+<li>
+  <a href="3_principles.html">Core Principles</a>
+</li>
+<li>
+  <a href="4_unique_identifiers.html">Unique Identifiers</a>
+</li>
+<li>
+  <a href="5_workplan.html">Draft Workplan</a>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="annex.html">Annex</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Draft Workplan for an Online Permit and Monitoring System</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>25 May 2016</em></h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This section provides a draft workplan for countries interested in implementing the model for the online permit and monitoring system outlined in the previous sections. The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of outline headings for budget planning in the Annex.</p>
+<p>The workplan is presented in terms of activities to be carried out in individual countries interested in implementing the system. However, there is a strong case for a network approach between governments seeking to develop and implement the model to meet their needs.</p>
+<p>Network advantages would include:</p>
+<ol style="list-style-type: decimal">
+<li>Sharing computer code developed to address specific aspects of the system including specific modules.</li>
+<li>Sharing lessons learned, guides and protocols.</li>
+<li>Sharing methods for particular approaches to monitoring, analytics and statistics.</li>
+<li>Avoiding duplication of effort.</li>
+<li>Shared capacity building in implementation.</li>
+</ol>
+<p>The draft workplan is divided into two sections:</p>
+<ol style="list-style-type: decimal">
+<li>Preparatory Activities (labelled A-C).</li>
+<li>Components, elements and tasks (numbered by Components in the model).</li>
+</ol>
+<p>The legal component (Component 3) is a cross-cutting issue and an indication of relevant tasks is provided within relevant tasks. The list of legal related tasks is indicative and may require further elaboration.</p>
+</div>
+<div id="preparatory-activities" class="section level2">
+<h2>Preparatory Activities</h2>
+<div id="a-map-existing-research-permit-systems" class="section level3">
+<h3>A: Map Existing Research Permit Systems</h3>
+<p>In countries where there is more than one permit authority, it is essential to gain an understanding of the research permit process in a country as a basis for understanding the responsibilities of different permit granting authorities and for consultations on potential ways forward in either improving existing systems or establishing new systems. These activities could logically focus on:</p>
+<ol style="list-style-type: lower-roman">
+<li>Identifying existing permit granting authorities in the country.</li>
+<li>The legislative mandates of permit authorities.</li>
+<li>Application forms and terms and conditions in the permits.</li>
+<li>Permit storage conditions.</li>
+<li>Experience to date in administering permits.</li>
+</ol>
+<p>This scoping exercise will allow the national permit system to be mapped and for consultations between permit granting authorities on appropriate ways forward.</p>
+<p><em>Task 1</em>. Identify the authorities in the country with responsibility for granting ABS related research permits and the details of their mandates with respect to permits.</p>
+<p><em>Task 2</em>. Identify the persons responsible for administering permits in the country as a basis for consultations.</p>
+<p><em>Task 3</em>. Consult with permit authorities on experience to date including what has worked for them and problem areas. Discuss options for accessing permit data held by the authority for use in Activity B and associated confidentiality issues.</p>
+<p><em>Task 4</em>. Obtain copies and information on:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Standard permit application forms.</li>
+<li>Copies of the terms and conditions within permits (and any associated agreements).</li>
+<li>Information on the storage of permit data (electronic, physical, both). This should including the name of any software and formats used for electronic data.</li>
+<li>Identify who has access to permit data and for what purposes.</li>
+</ol>
+<p><em>Task 5</em>. Generate process diagrams for permits within a country.</p>
+<p><em>Task 6</em>. Workshop to discuss existing experiences and the desirability (or otherwise) of a single electronic system serving permit granting authorities.</p>
+<p><em>Expected Outcomes:</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Clarity on permit granting authorities in the country, their mandates, permit forms and terms and conditions, data administration and storage including the generation of a national permit process diagram.</p></li>
+<li><p>Agreement on appropriate ways forward in adapting the permit system to serve the needs of permit granting authorities and applicants in response to the entry into force of the Nagoya Protocol.</p></li>
+</ol>
+</div>
+<div id="b-baseline-data-on-scientific-and-patent-literature." class="section level3">
+<h3>B: Baseline data on scientific and patent literature.</h3>
+<p>The prerequisite for this activity is access to permit data in either physical or (preferably) electronic form. Ideally complete data will be made available to maximise the utility of the outputs. However, if necessary sample data may be used.</p>
+<p><em>Task 1</em>. Obtain copies of permit data (preferably in electronic form) including use of confidentiality agreements and agreement on data storage (see Activity A, Task 3).</p>
+<p><em>Task 2</em>. Clean and then tidy permit data into formats that can used to carry out searches of scientific literature and patent databases.</p>
+<p><em>Task 3</em>. Obtain data on the scientific literature for a specific country focusing on biodiversity, genetic resources and associated traditional knowledge as the basis for analysis and refinement.</p>
+<p><em>Task 4</em>. Develop search patterns for patent literature using patent databases and identify appropriate tools and match criteria to distinguish between positive and negative results.</p>
+<p><em>Task 5</em>. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. Examples include the programmatic use of crossref or the EPO Open Patent Services or WIPO Patentscope databases and the rOpenSci and biosciences packages in languages such as R or Python.</p>
+<p><em>Expected Outcomes:</em> A clear baseline and overview of existing publication and patent activity that can be linked to existing research permits. This will typically involve permits issued prior to the entry into force of the Nagoya Protocol and is intended to create an evidence base and electronic repository of historic data on publications and patent data. Historic data will also serve as a means to identify key researchers working in a country as a basis for engagement activities to discuss ways of improving the permit and reporting system following the entry into force of the Nagoya Protocol. Note that this outcome fundamentally depends on the availability of permit data for use in searches.</p>
+</div>
+<div id="c-development-and-implementation-plan" class="section level3">
+<h3>C: Development and Implementation Plan</h3>
+<p>Establish a costed development and implementation plan for an online permit and monitoring system .</p>
+<p><em>Task 1</em>. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system consisting of:</p>
+<ul>
+<li>Component 1: An Authorities Portal</li>
+<li>Component 2: An Applicants Portal</li>
+<li>Component 3: Legal Component (cross-cutting)</li>
+<li>Component 4: Monitoring</li>
+<li>Component 5: Reporting</li>
+<li>Component 6: The Core System</li>
+</ul>
+<p><em>Task 2</em>: Develop a working Model and Engage in Field Testing</p>
+<p>Develop an experimental working model to test different approaches, identify key tools and for demonstration purposes using dummy data. Note that the purpose of this activity is learning by doing to inform planning and accurate identification of resource requirements not the development of the final system. This task involves a set of sub-tasks.</p>
+<p><em>Task 2.1</em>. Develop one or more working models of the system including identifying solutions using different tools that may be best suited to the diversity of circumstances and existing capacities within a country.</p>
+<p><em>Task 2.2</em>. Consult with staff from authorities involved in checking permit data on the ground (National Parks, Customs, police and others) and identify existing approaches and tools, what already works, problems encountered, and potential solutions.</p>
+<p><em>Task 2.3</em>. Identify how checks by local level authorities can be most effectively linked to an online permit and monitoring system.</p>
+<p><em>Task 2.4</em>. Arrange field tests of solutions such as barcodes, QR code readers, html embed codes etc. with relevant authorities and adapt solutions focusing on meeting actual needs.</p>
+<p><em>Task 2.5</em>. In consultation with relevant national/international collections identify appropriate options for the inclusion of permit identifiers in sample labels and sequence data. A network approach among participating countries is likely to be effective in identifying common solutions. Public collections in Europe interested in registered collection status under <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0511&amp;from=EN">EU Regulation No.511/2014</a>, a category likely to include most major collections in the EU, could be potential partners in testing this approach.</p>
+<p><em>Task 3</em>. Based on experience in Task 1 &amp; 2, including assessment of existing capacities and strengths, identify appropriate software and hardware requirements for the Core System (Component 6).</p>
+<p><em>Task 4</em>. Develop a costed development plan over a period of 3 years and projected costs for future years.</p>
+<p><em>Task 5</em>. Document experience gained and lessons learned.</p>
+<p><em>Task 6</em>. Where the project forms part of a network of participating countries and organisations, deposit working code and documentation in an open access repository (e.g. GitHub) for potential use and further development by partners.</p>
+<p><em>Expected Outcomes</em>:</p>
+<ol style="list-style-type: decimal">
+<li>A clear costed development plan for the online system with partners and stakeholders identified over a three year period.</li>
+<li>An experimental working model accompanied by documented code, experiences and lessons learned.</li>
+<li>Identification of software and hardware for the core system based on assessment of internal capacity and strengths (e.g. MySQL, Apache, ASP.NET, Node.js etc.).</li>
+</ol>
+</div>
+</div>
+<div id="system-implementation" class="section level2">
+<h2>System Implementation</h2>
+<p>The components of the overall system are provided below. The workplan focuses on the identification of tasks associated with the functional elements of each component.</p>
+<div class="figure">
+<img src="images/schematics/schematics.002.png" />
+
+</div>
+<div id="component-1-authorities-portal" class="section level3">
+<h3>Component 1: Authorities Portal</h3>
+<p><em>Objective</em>: Establish an authorities portal for the administration of permit applications.</p>
+<div class="figure">
+<img src="images/schematics/schematics.004.png" />
+
+</div>
+<p><em>Element 1.1</em>. Enquiries [Legal component]</p>
+<p><em>Task 1</em>. Establish standard responses to enquiries as inputs into the online permit system.</p>
+<p><em>Element 1.2</em> Review [Legal component]</p>
+<p><em>Task 1</em>. Develop Guide for Applicants.</p>
+<p><em>Task 2</em>. Develop Applicants Checklist.</p>
+<p><em>Task 3</em>. Develop checklist for completeness by authorities (authority side should match to applicant side).</p>
+<p><em>Task 4</em>. Develop standard notifications to applicants on receipt and completeness.</p>
+<p><em>Task 5</em>. Develop individual authority checklist (or lists as appropriate to authority).</p>
+<p><em>Task 6</em>. Establish criteria for validating if non-commercial or commercial research (or both).</p>
+<p><em>Task 7</em>. Define next steps for non-commercial research including standardised MAT for non-commercial research under Article 8(a) of the Nagoya Protocol and addressing closely related issues (e.g. compliance with environmental legislation, local partners, national deposit of samples etc.).[Legal component]</p>
+<p><em>Element 1.3</em>. Negotiation [Legal component]</p>
+<p><em>Task 1</em>. Define next steps for commercial research</p>
+<pre><code>a) Establish criteria for negotiations. [Legal component]
+b) Identify standard list of participants in negotiations. [Legal component]
+c) Establish time frame for negotiations. [Legal component]
+d) Establish environmental legislation and procedure criteria. [Legal component]
+e) Establish criteria for benefit-sharing. Note legal component.
+f) Establish criteria on Intellectual Property Rights. Note legal component.
+g) Establish criteria for acceptance or rejection of commercial applications. [Legal component]
+h) Define written notifications. [Legal component]</code></pre>
+<p><em>Task 2</em>. Develop a template for standard MAT for commercial research taking into account that this may be a starting point for negotiations.</p>
+<p><em>Task 2</em>. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component]</p>
+<p><em>Element 1.4</em>. Approve/Reject [Legal component]</p>
+<p><em>Task 1</em>. Define standard terms and conditions (menu of clauses) for use in generating permits.</p>
+<p><em>Task 2</em>. Define areas where specific terms and conditions are likely to be needed (menu of clauses).</p>
+<p><em>Task 3</em>. Define templates for MAT/ABS contracts linked to the permit.</p>
+<p><em>Task 4</em>. Implement the harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and MAT/ABS contracts are maintained across time and space.</p>
+<p><em>Task 5</em>. Implement the system to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side tasks for testing).</p>
+<p><em>Element 1.5.</em> Appeals [Legal component]</p>
+<p><em>Task 1</em>. Establish a clear and transparent appeals process.</p>
+<p><em>Task 2</em>. Develop guidance on the appeals process for authorities and applicants.</p>
+<p><em>Task 3</em>. Develop a timeline for appeals.</p>
+<p><em>Task 4</em>. Generate standard notifications for appeals to be sent to applicants on the stage in the procedure.</p>
+<p><em>Task 5</em>. Define the form of a clear final decision.</p>
+<p><em>Expected Outcome</em>: An easy to use authorities portal with a clear and transparent procedure and decision-making process that serves the needs of multiple permit granting authorities over the long term.</p>
+</div>
+<div id="component-2.-applicants-portal" class="section level3">
+<h3>Component 2. Applicants Portal</h3>
+<p><em>Objective</em>: Create a single online space for applicants to submit applications with supporting information/guidelines, to receive notifications and monitor the progress of applications, to receive permits and fulfil reporting requirements.</p>
+<div class="figure">
+<img src="images/schematics/schematics.011.png" />
+
+</div>
+<p><em>Element 2.1.</em> Information.</p>
+<p><em>Task 1</em>. Develop a guide for applicants.</p>
+<p><em>Task 2</em>. Develop a checklist of required information for applicants.</p>
+<p><em>Task 3</em>. Test utility with selected applicants (survey/practical tests).</p>
+<p><em>Task 4</em>. Provide information on appeals process (see authority side).</p>
+<p><em>Element 2.2</em> Applications</p>
+<p><em>Task 1</em>. Create applicant home page system.</p>
+<p><em>Task 2</em>. Establish secure username and password system.</p>
+<p><em>Task 3</em>. Define data fields for applications in consultation with relevant permit granting authorities. Use checkboxes wherever possible (e.g. Marine, terrestrial, national park etc.).</p>
+<p><em>Task 4</em>. Test and refine to final version.</p>
+<p><em>Element 2.3</em> Notifications</p>
+<p><em>Task 1</em>. Establish a system for transmitting requests from the authority side to the applicant side with appropriate data fields (title, date, originator etc.).</p>
+<p><em>Task 2</em>. Define a standard list of information request types (authority side) while allowing authorities to provide specific details (headings for the request and content or body of the request).</p>
+<p><em>Task 3</em>. Establish a system for applicants to respond to requests and channel (email) the response to the originator with a notification.</p>
+<p><em>Task 4</em>. Establish a system linking unique identifiers (e.g. BS20151234) with notifications to create an integrated file register (file history) for applications within the data archive.</p>
+<p><em>Task 5</em>. Establish a system that:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Lists the stages in the application procedure</li>
+<li>Provides the name and contact details (within the system) for the person responsible for that stage of the procedure.</li>
+<li>Updates the record upon completion to show the next stage in the procedure and persons responsible.</li>
+<li>Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section.</li>
+</ol>
+<p><em>Element 2.4</em> Approvals</p>
+<p><em>Task 1</em>. Create a system to generate a permit as a .pdf (links to authority generated master permit).</p>
+<p><em>Task 2</em>. Create a system to generate a time limited permit pass and QR code generation for mobile phones and tablets.</p>
+<p><em>Task 3</em>. Create a system to generate labels for sample bags, jars and individual samples.</p>
+<p><em>Task 4</em>. Create a system for HTML embed codes (for electronic data etc.).</p>
+<p><em>Task 5</em>. Provide instructions on the use of unique identifiers (e.g. BS20151234) in publications, patents, products, sequence and electronic data.</p>
+<p><em>Task 6</em>. Test approaches, including “permit passes” with a selection of applicants and adjust based on lessons learned.</p>
+<p><em>Element 2.5</em> Reporting</p>
+<p><em>Task 1</em>. Establish reporting section of the applicant site.</p>
+<p><em>Task 2</em>. Decide on mandatory and voluntary reporting options. [Legal component]</p>
+<p><em>Task 3</em>. Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]</p>
+<p><em>Task 4</em>. Establish data fields for reporting, including, inter alia:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Links to home pages and/or academic record sites such as ORCID, and social media sites such as researchgate.com or academia.edu etc. (ideally imported from information provided on application under Element 2.2).</li>
+<li>Uploads of publications and reports (pre-print or published).</li>
+<li>doi (document identifier links to publications for automated retrieval).</li>
+<li>Accession numbers for sequence data or deposits of genetic material.</li>
+<li>Locations where collected samples are stored.</li>
+<li>Transfers of materials to third parties and the terms and conditions of transfer.</li>
+<li>Patent applications and grants.</li>
+<li>Products for which market approval is sought or approved.</li>
+<li>Other information on activities arising from the permit and associated MAT.</li>
+</ol>
+<p><em>Task 5</em>. Test system with selected applicants</p>
+<p><em>Task 6</em>. Adjust system based on user feedback. [Legal component]</p>
+<p><em>Element 2.6</em> Appeals (see element 1.5)</p>
+<p><em>Task 1</em>. Provide information on the grounds for appeal. [Legal component]</p>
+<p><em>Task 2</em>. Provide information on the timeline for appeals. [Legal component]</p>
+<p><em>Task 3</em>. Provide documents for submitting appeals. [Legal component]</p>
+<p><em>Task 4</em>. Provide information on the person(s) responsible for handling appeals. [Legal component]</p>
+<p><em>Task 5</em>. Provide information on the criteria for accepting or rejecting an appeal. [Legal component]</p>
+<p><em>Task 6</em>. Provide notifications to applicant within the system including the final written decision. [Legal component]</p>
+<p><em>Expected Outcome</em>: An easy to use applicants portal that provides legal certainty for applicants and provides data for monitoring and reporting.</p>
+</div>
+<div id="component-3-legal" class="section level3">
+<h3>Component 3: Legal</h3>
+<p><em>Objective</em>: Ensure that the online permit and monitoring system complies with and supports relevant domestic laws and obligations under the Nagoya Protocol.</p>
+<p><em>Task 1</em>. Compile existing legislation relevant to permits and the terms and conditions in existing permits.</p>
+<p><em>Task 2</em>. Clarify and establish a clear legal relationship between permits and MAT (ABS contracts) for the purposes of legal certainty.</p>
+<p><em>Task 3</em>. Identify areas of the online permit and monitoring system requiring legal input.</p>
+<p><em>Task 4</em>. Engage in legal drafting for relevant elements of the permit and monitoring system.</p>
+<p><em>Task 5</em>. Collaborate with technical staff in incorporating legal elements into the system.</p>
+<p><em>Task 6</em>. Identify future requirements for legal review as part of the system’s development plan.</p>
+<p><em>Expected Outcome</em>: The online permit and monitoring system complies with and supports relevant domestic laws and implementation of obligations under the Nagoya Protocol.</p>
+</div>
+<div id="component-4-monitoring" class="section level3">
+<h3>Component 4: Monitoring</h3>
+<p><em>Objective</em>: Establish an effective electronic monitoring system for compliance with the terms of research permits and mutually agreed terms under the Nagoya Protocol.</p>
+<div class="figure">
+<img src="images/schematics/schematics.019.png" />
+
+</div>
+<p><em>Task 1</em>. Generate outputs from the core permit system (database) for use in the construction of search queries of scientific literature, patent literature, dna databases, product information and general web searches.</p>
+<p><em>Task 2</em>. Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches) (e.g. R, Python).</p>
+<p><em>Task 3</em>. Identify relevant commercial databases and analytics software to facilitate monitoring.</p>
+<p><em>Task 4</em>. Develop a plan for a phased transition from commercial to open sources tools (or appropriate mix of tools).</p>
+<p><em>Task 5</em>. Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the acquisition of programming and analytics skills.</p>
+<p><em>Task 6</em>. Implement monitoring following the basic workflow defined in Element 4.5 on Data Analysis in the model (Gather, Clean, Analyse, Visualise and Report).</p>
+<p><em>Task 7</em>. Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use.</p>
+<p><em>Task 8</em>. Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries.</p>
+<p><em>Task 9</em>. Develop, or contribute to, an open access manual on ABS monitoring for use by staff and in training future trainers.</p>
+<p><em>Expected Outcome</em>: A cost-effective electronic monitoring system adapted to the requirements of the participating country that is sustainable over the long term.</p>
+</div>
+<div id="component-5-reporting" class="section level3">
+<h3>Component 5: Reporting</h3>
+<p><em>Objective</em>: Facilitate national and international reporting under the Nagoya Protocol and other relevant agreements linked to the permit system.</p>
+<div class="figure">
+<img src="images/schematics/schematics.030.png" />
+
+</div>
+<p><em>Task 1</em>. Identify national and international reporting requirements under the Nagoya Protocol and, as appropriate, related international environmental agreements.</p>
+<p><em>Task 2</em>. Identify components of permit and related datasets that can contribute to meeting reporting requirements.</p>
+<p><em>Task 3</em>. Establish templates to automate data generation to meet reporting requirements in the formats required.</p>
+<p><em>Task 4</em>. Identify non-confidential information and develop a procedure to output appropriate data to the ABS Clearing House Mechanism.</p>
+<p><em>Task 5</em>. Integrate reporting templates and outputs with the core system data archive for future use.</p>
+<p><em>Expected Outcome</em>: A system that provides information from the permit system in a form suitable for inclusion in national reports and provides relevant inputs to support the ABS Clearing House Mechanism.</p>
+</div>
+<div id="component-6-core-system" class="section level3">
+<h3>Component 6: Core System</h3>
+<p><em>Objective</em>: Establish an efficient, secure, robust, cost effective and sustainable Core System to perform the functions described in Components 1-5 and additional functions described for the Core System on archiving and the security of permit data.</p>
+<div class="figure">
+<img src="images/schematics/schematics.033.png" />
+
+</div>
+<p><em>Element 1: Preparatory</em></p>
+<p><em>Task 1</em>. Identify internal and external programming capacity for development and maintenance of the online system. (see Activity C, task 1).</p>
+<p><em>Task 2</em>. As part of an open source network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code.</p>
+<p><em>Task 3</em>. Based on the outcomes of Activity C and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context.</p>
+<p><em>Task 4</em>. Acquire relevant hardware, server and database software.</p>
+<p><em>Element 2</em> Server Software</p>
+<p><em>Task 1</em>. Build online front page system and unique home page system for authorities and applicants.</p>
+<p><em>Task 2</em>. Install secure password system for home page access.</p>
+<p><em>Task 3</em>. Install, adapt or build the notification system between applicants and authorities and link the system to the database and data archive.</p>
+<p><em>Task 4</em>. Based on lessons learned from Activity C, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities). (See also Element 3, task 4).</p>
+<p><em>Element 3. Database software</em></p>
+<p><em>Task 1</em>. Develop scripts for key functions with components and elements</p>
+<p><em>Task 2</em>. Establish file register (file history) system using unique identifiers (e.g. BS20151234).</p>
+<p><em>Task 3</em>. Develop scripts to link to the Data Archive, Secure Backup and Physical Archive</p>
+<p><em>Task 4</em>. Identify and address additional software/coding needs for the generation of permits with particular attention to the technical aspects of:</p>
+<ol style="list-style-type: lower-alpha">
+<li>QR Code based permit passes</li>
+<li>Labels for specimen bags, specimens and related records</li>
+</ol>
+<p><em>Element 4. Data Archive</em></p>
+<p><em>Task 1</em>. Establish a Data archive including secure backups.</p>
+<p><em>Task 2</em>. Identify and implement appropriate ways of outputting data to the physical archive while maintaining links with the unique identifier system.</p>
+<p><em>Task 3</em>. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction and take appropriate decisions on adoption. [Legal element]</p>
+<p><em>Task 4</em>. Identify appropriate options for secure offline storage of confidential information.</p>
+<p><em>Element 5.</em> Development Cycle Planning</p>
+<p><em>Task 1</em>. Establish a procedure for updating the development plan for the online system (Activity C, task 4).</p>
+</div>
+<div id="resources-list" class="section level3">
+<h3>Resources List</h3>
+<p>The figure below provides an indicative list of resources to assist with planning. Note that analytics tools such as VantagePoint and Tableau are available in a range of paid and (in the case of Tableau), free versions. Paid software is included as part of a phased approach from paid to open source software over time. This is also true for databases of the scientific literature and patent databases where commercial tools such as Thomson Innovation offer convenience in data access but significant cost while open source options require significant investments in knowledge of their use (e.g. R or Python resources).</p>
+<div class="figure">
+<img src="images/schematics/schematics.035.png" />
+
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

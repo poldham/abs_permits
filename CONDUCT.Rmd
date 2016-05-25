@@ -1,6 +1,6 @@
 ---
 title: "CONDUCT"
-output: github_document
+output: html_document
 ---
 # Contributor Code of Conduct
 

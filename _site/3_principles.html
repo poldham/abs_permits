@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+
+<meta name="date" content="2016-05-22" />
+
+<title>Core Principles for an Online Permit and Monitoring System</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/textmate.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Model</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="executive_summary.html">Executive Summary</a>
+</li>
+<li>
+  <a href="1_background.html">Background</a>
+</li>
+<li>
+  <a href="2_the_model.html">The Model</a>
+</li>
+<li>
+  <a href="3_principles.html">Core Principles</a>
+</li>
+<li>
+  <a href="4_unique_identifiers.html">Unique Identifiers</a>
+</li>
+<li>
+  <a href="5_workplan.html">Draft Workplan</a>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="annex.html">Annex</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Core Principles for an Online Permit and Monitoring System</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>22 May 2016</em></h4>
+
+</div>
+
+
+<p>The development of a streamlined electronic system requires consideration of the principles that inform the development and maintenance of the system over a time frame involving decades. The following are a set of Core Principles that focus on the objective, how the objective is to be realised, and the features of the system.</p>
+<div id="design-principles" class="section level3">
+<h3>Design Principles</h3>
+<p>These principles refer to the design and implementation of the online permit and monitoring system.</p>
+<ol style="list-style-type: decimal">
+<li><p><em>A Single System</em> that serves the needs of permit granting authorities and applicants seeking to access genetic resources and/or traditional knowledge associated with genetic resources within a country’s jurisdiction.</p></li>
+<li><p><em>A Central Hub</em>. In existing systems a permit application may be circulated by email or by post to various permit granting authorities. In this system the application, once submitted in electronic form, stays in place at a central server based hub. It is assumed that more than one authority may be involved in reviewing or authorising a permit. In this system notifications are dispatched to relevant authorities to inform them of the need for action on a particular application. Authorities log in to the system and take action accordingly, including communications with applicants that are transmitted through the notification system. Communications arising from an application are stored with the application as part of the electronic file register for the application.</p></li>
+<li><p><em>Easy to Use</em>. The system should be as simple as possible and not require specialist knowledge or software to access or use the system. The system is intended to be used by non-specialists using simple check boxes and entries in forms.</p></li>
+<li><p><em>Responsive</em>. The system should be sufficiently flexible to adapt to the needs of different authorities, including their reporting needs. The needs of police, customs and national park authorities should be addressed through responsive mobile formats (phones and tablets) including use of “permit passes” with QR codes (Quick Response codes) and bar codes similar to a mobile airline boarding pass. The “permit pass” would be carried by applicants and could be checked by relevant authorities on the ground using reader software on mobile phones with minimal effort. Consultation and practical testing with the relevant authorities is required to implement this principle.</p></li>
+<li><p><em>Secure</em>. The system should meet standard security requirements (e.g. https:) and comply with applicable data protection laws. Attention should be paid to the provisions of the Nagoya Protocol on confidentiality (Article 14.2, 17.3, 17.4). Particular attention should be paid to the storage of commercially sensitive information linked to a permit and ABS contract including secure offline storage of such information. Backups of the system should be maintained securely and encrypted in accordance with existing standards for the protection of digital information. A physical archive of the documents should be maintained in accordance with existing practice.</p></li>
+</ol>
+<p>Attention may also be required to protect against back doors. A back-door is a secret route into an electronic system that bypasses normal authentication requirements. Back doors may be built in at the design stage (to provide a means of restoring access to the system resulting from lockout) or discovered by users seeking access to the system. Consideration should be given to limiting the potential for back doors in any code and monitoring to detect back doors that may subsequently be discovered by users. For discussion on types of back doors see <a href="http://www.veracode.com/sites/default/files/Resources/Whitepapers/static-detection-of-backdoors-1.0.pdf">Wysopal, C and Eng, C (2015) Static Detection of Application Backdoors.</a></p>
+<ol start="6" style="list-style-type: decimal">
+<li><p><em>Independent</em>. The system should be based on, and maintained, using widely available standard open source software tools and standard text formats to avoid dependency on a single supplier/contractor or data format. No third party should own all or part of the system. Note that public procurement rules are likely to be of relevance in implementing this principle.</p></li>
+<li><p><em>Long Term</em>. The research and development cycle involving biological and genetic resources or associated traditional knowledge may take place over a period of decades. It is therefore important to take a long term perspective on the functioning of the permit system and its integrity over time, including proper back-ups.</p></li>
+<li><p><em>Unique Identifiers</em>. Unique identifiers enable internal coherence within the system and monitoring outside the system. For a permit and monitoring system the starting point could be a unique identifier such as a standardised country code (e.g. BS for the Bahamas or UG for Uganda and ZA for South Africa), the date (2015) and unique number (1234) to produce unique identifiers such as BS20151234, UG20151234 or ZA20151234. This system functions very effectively for 90 million patent documents in multiple countries and is recommended.</p></li>
+<li><p><em>Triple Redundancy</em>. The permit system should build in the principle of triple redundancy in its tracking system rather than relying on a single point of reference. Triple redundancy is an engineering design principle that means that three distinct systems perform the same function. Because they are independent systems, if one system fails the two others will continue to work. If a second system fails then one other system, normally the simplest, will continue to work. Further details and examples of the implementation of this principle for ABS are provided below in the discussion of unique identifiers.</p></li>
+<li><p><em>Integrating Technical and Legal Components</em>. The development of an online permit and monitoring system is a technical development that is directed towards the effective realisation of legal obligations on the part of Parties to the Protocol and establishing clear legal requirements on the part of applicants. Legal aspects of the system, notably with respect to the terms of permits and contracts as well as change of intent should be recognised at the design stage. In practice this means that the development of the technical aspects of the system and the legal aspects should be closely linked. Longer term legal advice should be built into the development cycle to respond to changing legal requirements.</p></li>
+<li><p><em>Minimal Human Intervention</em>. Primary responsibility for data input should rest with applicants in entering legally required information. Government action should be confined, as far as possible, to approval of electronic applications, communications related to approvals, and archiving of physical copies of records. The basis of this principle is that human intervention introduces typological errors (such as spelling mistakes) or errors of interpretation (such as interpretations of person or institutional names). These errors affect the integrity and utility of the system over the long term, particularly with respect to monitoring and reporting.</p></li>
+<li><p><em>Anticipate Legacy</em>. A development cycle approach to the permit system should be established that involves forward planning and transitioning from an existing system (that becomes the legacy system) to a new system over time. A formal development plan should be developed and periodically reviewed based on experience gained.</p></li>
+<li><p><em>Value Permit Staff</em>. The permit system is important to the ability of Parties to the Protocol to implement their obligations, generate benefit-sharing and the valuation of genetic resources and associated traditional knowledge. The time horizon for the realisation of benefits may span decades. While most countries have a permit system it is also important to value the staff who process permit data. This role will become increasingly important in future years in terms of the capacity to bring benefits for conservation and sustainable use. Consideration should therefore be given to recognition of the importance of staff roles and maintaining continuity in the skills required to run and maintain the system.</p></li>
+</ol>
+</div>
+<div id="access-and-benefit-sharing-related-principles" class="section level3">
+<h3>Access and Benefit Sharing Related Principles</h3>
+<ol start="14" style="list-style-type: decimal">
+<li><em>Timeliness</em>. The Nagoya Protocol sets out minimum access standards. Article 6.3(d) requires that Parties to the Protocol:</li>
+</ol>
+<blockquote>
+<p>“…provide for a clear and transparent written decision by a competent national authority, in a cost-effective manner and written within a reasonable period of time”.</p>
+</blockquote>
+<p>The single permit system should facilitate compliance with the terms of the Protocol by the governments operating this system. This could include creating an applicants portal providing clear information on the progress of applications in the procedure, the name and contact details of the relevant person at each stage of the procedure and extend to the generation of automatic emails notifying applicants when a stage in the procedure has been approved or providing written information on issues requiring resolution. Implementation of this principle could also include a clear, transparent and time limited appeals process.</p>
+<ol start="14" style="list-style-type: decimal">
+<li><em>Transparency</em>. This principle has four aspects:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p><em>Accuracy</em>. Applicants should be required to provide full and accurate information on each legal person applying for a permit and the legal entities (universities, companies etc.) with whom the government is entering into a relationship through the research permit and ABS contract. Failure to provide accurate information should be grounds for revocation of a permit and other appropriate sanctions. “Group” or “bulk”&quot; permit applications by a lead investigator accompanied by unnamed others should not, in our view, exist as an option because it prevents monitoring of compliance.</p></li>
+<li><p><em>Clarity</em>. In accordance with Article 6 of the Nagoya Protocol government authorities will provide clarity on the steps in the procedure, and the status of applications.</p></li>
+<li><p><em>Responsibility</em>. To ensure clear lines of responsibility and prevent bottlenecks in the processing of applications the designation of a lead authority within the system is desirable. In cases where multiple permit granting authorities are involved in processing an application, applicants should be notified on the name of the authority holding the permit within the system at a given stage in the procedure. In cases of undue delay the designated lead authority should possess the authority to assist the authority involved to resolve the delay.</p></li>
+<li><p><em>Fair and Non-arbitrary</em>. Clear written reasons should be given for rejection of applications. A menu of standard reasons for rejection (e.g. incomplete information, inaccurate information, failure to comply with environmental impact assessment legislation etc.) could facilitate timely and transparent communications with applicants while meeting the terms of Article 6 of the Protocol. Applicants may be provided with the opportunity to appeal against rejected applications through a well defined and transparent procedure.</p></li>
+</ol>
+<ol start="15" style="list-style-type: decimal">
+<li><p><em>No Backdoor Access to Permits</em>. No legitimate means should exist to obtain a permit outside the electronic system. Users of the permit system may seek to avoid using the electronic system in order to avoid its obligations to disclose information and enter into mutually agreed terms. This is likely to be pursued through personal networking. There should be no back-door routes to obtaining permit data outside of the single system or the integrity of the overall system will be undermined at the expense of longer term benefit-sharing for conservation and sustainable use.</p></li>
+<li><p><em>Address Types of Permit and Anticipate Change of Intent</em>. Permits may be granted for different types of research, notably non-commercial or commercial research. The Nagoya Protocol in Article 8(a) also anticipates the possibility of a change of intent from non-commercial to commercial research and development. The single permit system should provide a basic set of options for applicants (e.g. is this non-commercial or commercial research?) that then triggers different pathways for the processing of the applications by authorities in accordance with the requirements for non-commercial and commercial applications. Issues relating to change of intent could be dealt with through a formal requirement set out in the permit and associated MAT to declare a change of intent and report such a change within the online system. A report of a change of intent (from non-commercial to commercial research and development) would then trigger a negotiation phase for informed consent and revised MAT appropriate for commercial research and development. This possibility should be anticipated at the design stage.</p></li>
+<li><p><em>Monitoring</em>. The system should support monitoring in two ways:</p></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>By facilitating automated searches for scientific literature, patent data and online sources or product registries with respect to the provisions of Article 17 of the Nagoya Protocol.</p></li>
+<li><p>By providing applicants with a means to easily provide information on scientific publications, patent applications, products or other information relevant to the terms and conditions of the permit. Making it easier to provide information will at least partly overcome the limitations of reporting by researchers in existing systems.</p></li>
+</ol>
+<ol start="18" style="list-style-type: decimal">
+<li><p><em>Tidy Data</em>. This technical principle relates to the conditions for using permit data as a tool for monitoring and reporting. Tidy data is the principle that a field in a data table should contain a single piece of information (e.g. a name) and no other information. A variable (normally a column) should only contain information of the same type (e.g. a country name, not a country name and an organisation name) (<a href="https://www.jstatsoft.org/article/view/v059i10">Wickham 2014</a>). This principle is important in creating a cost-effective and efficient monitoring and reporting system because the majority of an analysts time is typically taken up with cleaning messy data prior to analysis (see for example this <a href="http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0">New York Times article</a>). Anticipating the need for tidy data at the design stage will lead to cost savings at the implementation stage for monitoring and reporting.</p></li>
+<li><p><em>Reporting</em>. The system should contribute to the efforts of governments to meet internal national reporting requirements and to meet the obligations under Article 29 of the Nagoya Protocol on Monitoring and Reporting (national reporting and compliance with the obligations set out in the Protocol). Particular attention may be paid to COP MOP Decision NP-1/3 setting out guidelines and the format for interim national reports under <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">Article 29</a>.</p></li>
+</ol>
+<p>The online permit system can facilitate information on subjects such as:</p>
+<ol style="list-style-type: decimal">
+<li>Numbers of permits granted by type.</li>
+<li>Organisations/Companies involved.</li>
+<li>Funding bodies involved.</li>
+<li>Countries involved.</li>
+<li>Publications/patent applications or products arising.</li>
+<li>Provision of information to the ABS Clearing House Mechanism.</li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

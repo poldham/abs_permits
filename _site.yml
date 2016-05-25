@@ -1,0 +1,27 @@
+name: "Nagoya Protocol Permit Model"
+navbar:
+  left:
+    - text: "About"
+      href: index.html
+    - text: "Executive Summary"
+      href: executive_summary.html
+    - text: "Background"
+      href: 1_background.html
+    - text: "The Model"
+      href: 2_the_model.html
+    - text: "Core Principles"
+      href: 3_principles.html
+    - text: "Unique Identifiers"
+      href: 4_unique_identifiers.html 
+    - text: "Draft Workplan"
+      href: 5_workplan.html
+    - text: "Schematics"
+      href: presentations/schematics/index.html
+    - text: "Annex"
+      href: annex.html
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+output_dir: "."
+    

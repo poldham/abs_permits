@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+<meta name="author" content="Hartmut Meyer" />
+<meta name="author" content="Olivier Rukundo" />
+
+<meta name="date" content="2016-05-21" />
+
+<title>Executive Summary: An Online Permit and Monitoring System to support the Nagoya Protocol</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/textmate.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="executive_summary.html">Executive Summary</a>
+</li>
+<li>
+  <a href="1_background.html">Background</a>
+</li>
+<li>
+  <a href="2_the_model.html">The Model</a>
+</li>
+<li>
+  <a href="3_principles.html">Core Principles</a>
+</li>
+<li>
+  <a href="4_unique_identifiers.html">Unique Identifiers</a>
+</li>
+<li>
+  <a href="5_workplan.html">Draft Workplan</a>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="annex.html">Annex</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Executive Summary: An Online Permit and Monitoring System to support the Nagoya Protocol</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="author"><em>Hartmut Meyer</em></h4>
+<h4 class="author"><em>Olivier Rukundo</em></h4>
+<h4 class="date"><em>21 May 2016</em></h4>
+
+</div>
+
+
+<p>This concept paper sets out the concept and model for an online research permit and monitoring system to facilitate implementation of the access, benefit sharing, monitoring and reporting provisions of the <a href="https://www.cbd.int/abs/about/">Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization</a> to the <a href="https://www.cbd.int">United Nations Convention on Biological Diversity</a>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>The core of this proposal is that Parties to the Protocol, and governments who intend to ratify or accede to the Protocol, may wish to adopt:</p>
+<blockquote>
+<p>“A single electronic permit system that makes it easy to apply for permits and for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol.”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+</blockquote>
+<p>The majority of Parties to the Protocol will already possess national permit systems for research involving biodiversity and genetic resources within their jurisdiction and, in the case of indigenous peoples and local communities, for research involving human subjects.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Research permit systems are normally the first point of contact between researchers seeking to carry out research on biodiversity and traditional knowledge and government authorities. Research permit systems have an important role to play in:</p>
+<ol style="list-style-type: decimal">
+<li>Implementation of the permit providing evidence of prior informed consent and mutually agreed terms foreseen in <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-06">Article 6.3(a)</a> of the Nagoya Protocol on access to genetic resources.</li>
+<li>Creating simplified measures on access for non-commercial research purposes under <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-08">Article 8a</a> with due regard to the need to address change of intent.</li>
+<li>Realising fair and equitable benefit-sharing arising from research under <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-05">Article 5</a> of the Protocol and its <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-37">Annex</a>. Benefits arising from research of all types involving genetic resources may include, inter alia: funding, international collaborations, training, scientific publications, reports, patents, material transfer agreements and licenses, market approvals, clinical trials and commercial products.</li>
+<li>Enhancing transparency on the utilization of genetic resources and monitoring to support compliance under <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-17">Article 17</a> and providing a platform for evidence based valuation of genetic resources and associated traditional knowledge.</li>
+<li>National Reporting under <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-29">Article 29</a> and <a href="https://www.cbd.int/decisions/?id=13403">Decision NP-1/3</a> of COP-MOP1 and support for the effective operation of the <a href="https://www.cbd.int/abs/theabsch.shtml">ABS Clearing House Mechanism</a>.</li>
+</ol>
+<p>National research permit systems have typically developed organically over time in response to specific needs for the regulation of research (e.g. in protected areas or involving threatened species). Within a country multiple authorities may hold responsibility for issuing permits (e.g. scientific bodies, environment, national parks, agriculture, marine etc.) and coordination between authorities and consistency in permit provisions may be limited. The administration of research permits will also vary from purely papers systems to electronic systems or mixtures of the two.</p>
+<p>This paper addresses the question of how research permit systems might be adapted to facilitate effective implementation of the Nagoya Protocol. We propose that an online electronic permit and monitoring system will:</p>
+<ol style="list-style-type: decimal">
+<li>Make it easier for Parties to the Protocol to review and administer permit applications;</li>
+<li>Make it easier for applicants to apply for and receive a permit and obtain legal certainty based on compliance with the terms and conditions of the Party providing access;</li>
+<li>Enhance the capacity of Parties to determine if a permit application triggers domestic access and benefit sharing requirements and obligations under the Nagoya Protocol;</li>
+<li>Enhance the capacity of Parties to monitor compliance with permits and associated mutually agreed terms and contribute to building confidence in ABS and the Nagoya Protocol;</li>
+<li>Enhance the capacity of Parties to realise non-monetary and monetary benefits arising from both non-commercial research and commercial research and development involving genetic resources and associated traditional knowledge over the long term;</li>
+<li>Enhance the capacity of Parties to determine the actual and potential value of genetic resources;</li>
+<li>Make it easier for Parties to meet national and international reporting requirements under the Nagoya Protocol and related international environmental agreements.</li>
+</ol>
+<p>The core of this proposal is the use of “cost-effective communication tools and systems” as envisaged in Article 17.2 of the Protocol to simultaneously streamline the administration of research permits under Article 6, and make it easy for non-commercial and commercial researchers to apply for permits and report on the outcomes of research.</p>
+<p>Advances in information technology mean that it is now readily possible to combine electronic data from different sources. We propose that by exploiting these developments it will become possible to link permit systems with the monitoring of scientific publications, patent applications and product registrations to create an effective long term system for monitoring compliance. In the process Parties to the Protocol will be able to create an evidence base for the long term valuation of genetic resources and associated traditional knowledge.</p>
+<p>The concept paper is divided into 5 sections.</p>
+<ul>
+<li>Section 1: presents the Background to the proposal;</li>
+<li>Section 2: presents a Model for the online permit and monitoring system;</li>
+<li>Section 3: presents a set of Core Principles informing the design, maintenance and sustainability of the system;</li>
+<li>Section 4: Discusses the use of unique identifiers within the online system;</li>
+<li>Section 5: Presents a draft workplan to assist Parties interested in implementing the system;</li>
+<li>The Annex: Presents the draft work plan as a set of headings for log frame development;</li>
+<li>Schematics: A set of process schematics demonstrating the functioning of the system.</li>
+</ul>
+<p>We would emphasise that the aim of this proposal is not to impose a single model. Rather, our purpose is to present a practical model that is robust and flexible enough to respond to the different circumstances and needs of Parties to the Protocol. For this reason we present the model as a series of integrated components (or modules) that can be developed and adapted by Parties interested in implementing the model. We hope that this model will contribute to building shared capacity and collaboration between Parties interested in developing effective ways to meet the access, benefit-sharing, monitoring and reporting requirements of the Protocol. The model may also lead to contributions from research organisations, such as public collections, interested in research permits and effective monitoring of compliance.</p>
+<p>This concept paper is intended to evolve over time and is publicly available in an open access <a href="https://github.com/poldham/abs_permits">GitHub repository</a> in a variety of formats. Subject to interest in development and implementation of the model additional materials will be added over time and contributions are welcomed.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The research in this paper was conducted with the support of The Bahamas Environment, Science &amp; Technology Commission (BEST) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of The ABS Capacity Development Initiative through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Oldham, P (2015) <em>Concepts for an Electronic Monitoring Tool</em>. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>In decision XII/12 F para.1 the Conference of the Parties decided “to use the terminology “indigenous peoples and local communities” in future decisions and secondary documents under the Convention, as appropriate.” This paper uses this terminology in accordance with decision XII/12.<a href="#fnref3">↩</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
