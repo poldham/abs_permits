@@ -16,10 +16,14 @@ You can obtain a word versions of the sections [here]() *but not yet*. For pdf v
 
 The original model was written by Dr. Paul Oldham as part of work with Hartmut Meyer and Olivier Rukundo on implementation of the Nagoya Protocol in the Bahamas. The updated version is a joint work in progress and much better for it.
 
-The model was developed with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. We were able to do further work with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). We express our sincere thanks to the BEST Commission, UNEP/GEF and the ABS Capacity Development Initiative for their support. We would point out that the views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ. Spelling mistakes, misnumberings and disasters with diagrams are definitely somebody else's fault. 
+### Financial Support
+
+The model was developed with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. We were able to do further work with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). We express our sincere thanks to the BEST Commission, UNEP/GEF and the ABS Capacity Development Initiative and GIZ for their support. We would point out that the views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ. Spelling mistakes, misnumberings and disasters with diagrams are definitely somebody else's fault. 
 
 ### Suggested Citation
 
 Oldham, P; Meyer, H; Rukundo, O (2016) An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol. Concept Paper. [DOI to follow]
 
+### About this Site
 
+The site was written in [rmarkdown](http://rmarkdown.rstudio.com) in [RStudio](https://www.rstudio.com) and rendered using [knitr](http://yihui.name/knitr/) in the latest [Preview version](https://www.rstudio.com/products/rstudio/download/preview/) of RStudio supporting website builds. The site and its files are accessible in the [Github repository](https://github.com/poldham/abs_permits/tree/gh-pages).
