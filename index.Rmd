@@ -1,0 +1,29 @@
+---
+title: "index"
+author: "Paul Oldham"
+date: "25 May 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## An Online Permit and Monitoring System for Implementation of the Nagoya Protocol
+
+This project site is the home of a proposal for model Online Research Permit and Monitoring System to assist Parties to the [Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization](https://www.cbd.int/abs/about/) to the [United Nations Convention on Biological Diversity](https://www.cbd.int). 
+
+The model is a work in progress and will be periodically updated based on comments received. 
+The proposal is available in a number of formats. 
+ 
+ Section  |   html  | Word    | pdf   |
+======================================
+
+
+
+Online: Use the menu or links below to navigate sections of the proposal. 
+
+Word: Download the entire proposal here or by section from the links below.
+
+pdf: Download the entire proposal here or by section from the links below.
+

@@ -6,17 +6,17 @@ author:
 - Olivier Rukundo
 date: "21 May 2016"
 output:
-  word_document:
-    toc: yes
   html_document:
     toc: yes
     toc_float: yes
+  word_document:
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-# Introduction
+## Introduction
 In this concept paper we describe the use of the national research permit system as a platform for administering ABS permits, monitoring compliance and realising non-monetary and monetary benefits arising from collaborations with non-commercial and commercial researchers and research organisations under the Nagoya Protocol. We describe a model for an online permit and monitoring system for the efficient administration of research permits that can be linked to monitoring of scientific literature, patents and commercial products. 
 
 The purpose of the model is to support the implementation of domestic access and benefit-sharing frameworks and implementation of the obligations under the following articles of the Nagoya Protocol: 
@@ -180,7 +180,7 @@ The use of electronic monitoring and analytics based on permit data and independ
 
 One important challenge confronting countries involved in the negotiation of the Nagoya Protocol was the lack of reliable information on the economic value of genetic resources and associated traditional knowledge. Furthermore, as is now widely recognised, biodiversity and the knowledge, innovations and practices of indigenous peoples and local communities cannot be reduced purely to economic value. Rather, a broader approach to valuation, including ecosystem services, is required. A fundamental precondition for this type of analysis is data. The approach presented below would facilitate evidence based valuation of genetic resources and associated traditional knowledge over the long term and using a range of approaches to the definition of value. 
 
-##Conclusion
+## Conclusion
 
 In this section we have explored the background to the proposed model for an online permit and monitoring system provided below. We have argued that the effective implementation of the Nagoya Protocol will require recognition of the importance of linking permit data with recognition of the possibilities for cost effective monitoring opened up by the rise of large scale electronic data about biodiversity. This combination provides important opportunities to increase the confidence of provider countries in ABS and thus contribute to the successful implementation of the Nagoya Protocol. At the same time, permit systems and access and benefit-sharing require a vision that may span decades. For that reason in presenting the model system we encourage Parties to take a long term perspective. 
 
