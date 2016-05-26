@@ -1,5 +1,5 @@
 ---
-title: "A Model for an Online Permit and Monitoring System to Support the Nagoya Protocol"
+title: "A Model for an Online Permit and Monitoring System to support the Nagoya Protocol"
 author:
 - Paul Oldham
 - Hartmut Meyer

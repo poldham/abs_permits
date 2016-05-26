@@ -1,6 +1,6 @@
 ---
-title: 'Executive Summary: An Online Permit and Monitoring System to support the Nagoya
-  Protocol'
+title: "Executive Summary: An Online Permit and Monitoring System to support the Nagoya
+  Protocol"
 author:
 - Paul Oldham
 - Hartmut Meyer

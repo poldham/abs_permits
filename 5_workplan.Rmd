@@ -1,6 +1,6 @@
 ---
-title: Draft Workplan for an Online Permit and Monitoring System to Support the Nagoya
-  Protocol
+title: "Draft Workplan for an Online Permit and Monitoring System to support the Nagoya
+  Protocol"
 author:
 - Paul Oldham
 - Hartmut Meyer
