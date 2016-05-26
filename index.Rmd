@@ -14,6 +14,8 @@ The model focuses on the creation of an online permit and monitoring system to m
 
 You can download Word versions of the sections in a .zip file [here](https://github.com/poldham/abs_permits/blob/gh-pages/sections/word.zip?raw=true). For pdf versions go [here](https://github.com/poldham/abs_permits/blob/gh-pages/sections/pdf.zip?raw=true).
 
+You will also need to view the schematics which demonstrate the basic functions of the system. You can view them online from the Schematics menu or download them in [powerpoint](https://github.com/poldham/abs_permits/blob/master/presentations/schematics.pptx?raw=true), [keynote](https://github.com/poldham/abs_permits/blob/master/presentations/schematics.key?raw=true) or [pdf](https://github.com/poldham/abs_permits/blob/master/presentations/schematics.pdf). The schematics are meant to be viewed as a slide show in presentation mode.
+
 ### Who Developed This? 
 
 The original model was written by Dr. Paul Oldham as part of work with Hartmut Meyer and Olivier Rukundo on implementation of the Nagoya Protocol in the Bahamas. The updated version is a joint work in progress and much better for it.
