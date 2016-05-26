@@ -23,5 +23,5 @@ output:
   html_document:
     theme: flatly
     highlight: textmate
-    output_dir: "."
+output_dir: "."
     

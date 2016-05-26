@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+<meta name="author" content="Hartmut Meyer" />
+<meta name="author" content="Olivier Rukundo" />
+
+<meta name="date" content="2016-05-26" />
+
+<title>A Model for an Online Permit and Monitoring System to Support the Nagoya Protocol</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/textmate.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="executive_summary.html">Executive Summary</a>
+</li>
+<li>
+  <a href="1_background.html">Background</a>
+</li>
+<li>
+  <a href="2_the_model.html">The Model</a>
+</li>
+<li>
+  <a href="3_principles.html">Core Principles</a>
+</li>
+<li>
+  <a href="4_unique_identifiers.html">Unique Identifiers</a>
+</li>
+<li>
+  <a href="5_workplan.html">Draft Workplan</a>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="annex.html">Annex</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">A Model for an Online Permit and Monitoring System to Support the Nagoya Protocol</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="author"><em>Hartmut Meyer</em></h4>
+<h4 class="author"><em>Olivier Rukundo</em></h4>
+<h4 class="date"><em>26 May 2016</em></h4>
+
+</div>
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This section provides an outline of the model for an online research permit and monitoring system in support of implementation of the <a href="https://www.cbd.int/abs/about/">Nagoya Protocol on Access to Genetic Resources and Benefit Sharing</a>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>The core concept behind the model is:</p>
+<blockquote>
+<p>“A single electronic permit system that makes it easy to apply for permits and for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+</blockquote>
+<p>The model consists of a set of 6 components that contain functional elements. The model is informed by the set of Core Principles provided in <a href="http://poldham.github.io/abs_permits/3_principles.html">Section 3</a>. To assist Parties interested in implementation of the model a Draft Work Plan for implementation of the model is provided in <a href="http://poldham.github.io/abs_permits/5_workplan.html">Section 4</a>.</p>
+<p>This section begins with a brief discussion of the existing characteristics of research permit systems and then moves step by step through the components of the system. The schematics were originally designed as a guide for IT specialists seeking to develop the system. As discussed below, a legal component is identified as a cross-cutting issue throughout the model system.</p>
+</div>
+<div id="existing-permit-systems" class="section level2">
+<h2>Existing Permit Systems</h2>
+<p>The majority of countries are likely to possess research permit systems. Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as the collection of biological materials or research involving human subjects) or to research in specific places (e.g. protected areas, marine environments etc.).</p>
+<p>Research permit systems have typically evolved organically over time to meet a range of government needs. We have not been able to identify a literature on the general subject of research permit systems and no international overview of research permit systems appears to exist. However, existing experience suggests that research permit systems in many countries are likely to display some, or all, of the following features:</p>
+<ol style="list-style-type: decimal">
+<li><p>Multiple government ministries may hold responsibility for issuing permits based on their respective institutional and legislative competences (e.g. Environment, Agriculture, Marine, Indigenous Affairs etc.). In the case of research involving external researchers, foreign ministries may be involved in facilitating research permit applications (e.g. through embassies). Non-governmental organisations/semi-autonomous organisations may be delegated with responsibility for issuing permits (e.g. national scientific bodies, National Trusts).</p></li>
+<li><p>Applicants seeking permission to carry out research may be required to obtain multiple permits from different government or designated authorities. There may not be coordination between permit granting authorities and there may be multiple routes to obtaining a permit with different terms and conditions. As such, there may be a lack of coordination on the national level and applicants may face difficulties in navigating the system. In some cases relationships between ministries/organisations may be competitive with respect to claims to competence in granting permission for research of a particular type or in a specific geographic area.</p></li>
+<li><p>Permits granted by different authorities may contain different (and potentially conflicting) provisions or may not be up to date with legislative developments (such as ratification and implementation of the Nagoya Protocol).</p></li>
+<li><p>Personal relationships between researchers and officials may be an important factor in securing research permits where the system is complex. This introduces the possibility of “back door” access to research permits.</p></li>
+<li><p>No one within, or outside, government may have a clear overview of the national permit system with each authority seeing only their respective part or parts directly relevant to them.</p></li>
+<li><p>The maintenance of permit records may vary considerably within and between ministries/designated authorities. Records may be held in physical form in varying states of order and some records may be missing. Records may be transferred between ministries over time as responsibilities change.</p></li>
+<li><p>Permit granting authorities are increasingly turning to electronic systems but may use different systems and data formats.</p></li>
+<li><p>Permit granting authorities commonly require the submission of reports and publications arising from research conducted under a permit. However, follow up may be limited and it is unclear what use is made of written materials submitted by permit holders once received and filed.</p></li>
+<li><p>Permit granting authorities may have no knowledge of the final destination or uses made of biological or genetic materials collected under a permit.</p></li>
+</ol>
+<p>The characteristics of permit systems will inevitably vary between countries. We would not therefore expect that all national systems possess the features identified above.</p>
+<p>One common feature of permit systems appears to be that <em>applications circulate</em> between permit granting authorities in either physical or electronic form. A purely hypothetical version of such a system is presented in Figure 1 below.</p>
+<div class="figure">
+<img src="images/fig1_permit_system_existing.png" />
+
+</div>
+<p>This schematic merely illustrates that once an application is received by a permit granting authority it may circulate in a variety of ways between other authorities involved in the process. How this plays out in practice will vary between countries and systems. We propose an alternative approach whereby applications are administered from a central online hub where permit applications are received, stored and administered.</p>
+<div id="a-hub-approach" class="section level3">
+<h3>A Hub Approach</h3>
+<p>An alternative approach to the circulation of permit applications between authorities is a hub model whether the application stays in one place (an electronic system) and both the applicant and the authorities log in to access the application. Under this approach the above schematic would be transformed into the following raw model in Figure 2.</p>
+<div class="figure">
+<img src="images/fig2_simplified.png" />
+
+</div>
+<p>In this model, the permit application is lodged in the online system and the relevant authorities and applicants communicate around the electronic application inside the electronic hub. The hub approach allows for formalised intra-institutional communication and exchange of information between permit granting authorities and applicants around an application. Communications relating to an application can also be archived electronically in a retrievable file history or register.</p>
+<p>The importance of this apparently simply shift in approach is that it allows for the construction of a formal model with definable components tailored to the requirements of the Nagoya Protocol that can also be adapted to meet other needs. This model and its core components are presented in Figure 3 below.</p>
+<div class="figure">
+<img src="images/schematics/schematics.002.png" />
+
+</div>
+<p>The core model is discussed in more detail below but consists of the following components.</p>
+<ol style="list-style-type: decimal">
+<li>An Authorities Portal</li>
+<li>An Applicants Portal</li>
+<li>Legal (a cross-cutting issue)</li>
+<li>Monitoring</li>
+<li>Reporting</li>
+<li>The Core System (the hub)</li>
+</ol>
+<p>In considering the basic components of this model we would note that the legal component is a cross cutting issue. The reason for this is that the permit system and the functions required of it must be considered in the context of the overall environmental regulatory system. The overall system is generally seen as a cycle that starts with policy planning and the setting of standards and objectives, together with the establishment of legislation and regulations in order to give them legal effect. A number of countries are currently in the process of developing new or amending existing administrative, legislative and policy measures to meet the requirements set out in the Nagoya Protocol. In this context, consideration of the legal implications associated with adopting an online permit system is quite key. As the online permit system requires cross agency/departmental coordination, legal mechanisms to give effect to this coordination have to be carefully assessed and designed. For these reasons we emphasise that the technical components of the system should not be seen in isolation from the legal component as a cross cutting issue.</p>
+<p>Furthermore, a permit system as a technical system designed to fulfil specific objectives must in our view be informed by Core Principles that guide the design, maintenance and long term future of the system. The Core Principles are provided in <a href="http://poldham.github.io/abs_permits/3_principles.html">Section 3</a>.</p>
+</div>
+</div>
+<div id="an-online-permit-and-monitoring-system" class="section level2">
+<h2>An Online Permit and Monitoring System</h2>
+<p>We now turn to more detailed discussion of the proposed structure of the online system and its components. To facilitate discussion a series of process diagrams are available <a href="http://poldham.github.io/abs_permits/presentations/schematics/assets/player/KeynoteDHTMLPlayer.html#0">online</a> or for download and display in presentation mode in <a href="https://github.com/poldham/abs_permits/blob/master/presentations/schematics.pptx?raw=true">powerpoint</a>, <a href="https://github.com/poldham/abs_permits/blob/master/presentations/schematics.key?raw=true">Apple keynote</a> or <a href="https://github.com/poldham/abs_permits/raw/master/presentations/schematics.pdf">pdf</a>. The process diagrams demonstrate the workings of the components and elements of the system. We will confine images in this discussion to the main images but suggest that the process diagrams are viewed to assist with interpretation.</p>
+<p>The Core System consists of database and server software, programming code to execute the functions described below and hardware. For ease of explanation discussion of the core system (Component 6) will be considered last. Each component is informed by a concept setting out its purpose and a set of principles.</p>
+<div id="component-1.-the-authorities-portal" class="section level3">
+<h3>Component 1. The Authorities Portal</h3>
+<p>Figure 4 displays the core elements of the Authorities Portal displaying 7 functions. The numbering system below refers to the numbered elements in Figure 4.</p>
+<div class="figure">
+<img src="images/schematics/schematics.004.png" />
+
+</div>
+<p><em>Concept</em>: A single electronic system or permit hub used by all permit granting authorities to review applications, communicate amongst themselves and with applicants, generate permits and engage in relevant monitoring and reporting.</p>
+<p><em>Principles</em>:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Efficiency, timeliness and avoiding duplication of effort.</li>
+<li>Fulfil the Article 6 Access obligations of the Nagoya Protocol.</li>
+<li>Support implementation of Article 17 of the Nagoya Protocol (monitoring utilization of genetic resources and, as appropriate, associated traditional knowledge of indigenous peoples and local communities).</li>
+<li>Support Article 29 obligations (monitoring and reporting on national implementation of the Nagoya Protocol).</li>
+<li>Support the ABS Clearing House Mechanism.</li>
+</ol>
+<p><em>Functions</em>:</p>
+<p>The functions of the permit granting authority portal can be divided into seven broad categories. Each of these contains a subset of activities with varying time frames. Note that the legal component is a cross-cutting issue embedded in many of these functions.</p>
+<p><em>1.1. Enquiries</em></p>
+<p>Receive enquiries and direct applicants to the applicants portal to review the applicants guide and checklist. Once committed to a single online system permit authorities we anticipate that authorities would uniformly direct applicants to the applicant portal as the only point of access to the permit system or the integrity of the system will be undermined (see <a href="http://poldham.github.io/abs_permits/3_principles.html">Core Principles</a>). Note that applicants may seek to avoid using the system because of the obligations to provide full disclosure that it imposes.</p>
+<p><em>1.2. Review</em></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Receive applications through the applicants portal</p></li>
+<li><p>Review completeness of documentation (checklist)</p></li>
+<li><p>Notification to applicant on the status of the application (complete/incomplete)</p></li>
+<li><p>If complete validate the unique identifier (e.g. BS20151234) for use in the system (the identifier will be automatically generated, but requires a visual check)</p></li>
+</ol>
+<p>1.2.1 Review type of request (non-commercial, commercial, both)</p>
+<p>1.2.1.1 At this point the system will divide depending on whether the applicant is pursuing non-commercial or commercial research and development or both, if relevant in the context of the domestic ABS framework.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Define next steps accordingly;
+<ol style="list-style-type: lower-roman">
+<li>using standard Mutually Agreed Terms (MAT) or negotiation or a combination as required</li>
+<li>Record details in file system</li>
+</ol></li>
+<li>Issue a Notification to the applicant:
+<ol style="list-style-type: lower-roman">
+<li>Approve</li>
+<li>Request more information</li>
+<li>Reject</li>
+</ol></li>
+</ol>
+<p>1.2.1.2 Review application in light of environmental and other relevant legislation</p>
+<pre><code>a) Communicate with applications for clarification, as appropriate
+b) Based on applicants response, either:
+    i) Approve
+    ii) Request more information
+    iii) Reject
+c) Issue Notification to applicant</code></pre>
+<p>1.2.2. Specify standard terms and conditions (using a menu of clauses) for inclusion in the permit.</p>
+<p>1.2.3. Specify specific terms and conditions for inclusion in the permit (using a menu of clauses).</p>
+<p><em>1.3. Negotiate</em></p>
+<p>Typically for commercially related research the following broad steps can be identified. Note that each of these steps may require additional steps and that the list may be incomplete.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Purpose. What is the research for?</li>
+<li>Actors. Who are the parties to the research? Who are the legal representatives in the negotiation? Who should be involved at relevant stages in the negotiation process on the part of the government?</li>
+<li>Timeline. What is the timeline for commencement and conclusion of negotiations taking into account Article 6 of the Nagoya Protocol?</li>
+<li>Establishment of mutually agreed terms (MAT) and agreement on benefit sharing modalities within an agreed time period.</li>
+<li>Conditions of agreement</li>
+</ol>
+<p>Note that a negotiation phase may also be necessary for non-commercial research or circumstances where researchers plan to conduct both non-commercial and commercial research.</p>
+<p><em>1.4 Approve/Reject</em></p>
+<p>The authority will approve or reject the application. If approved the system will trigger:</p>
+<ol style="list-style-type: lower-roman">
+<li>A .pdf permit containing the relevant details and terms and conditions as defined by the authorities headed by a unique identifier (two letter country code, the year and numeric identifier e.g. BS20151234 for Bahamas 2015 1234), a QR Code, a barcode.</li>
+<li>A “permit pass” to approved applicants for use on smart phones or tablets if requested by the authorities containing, the unique identifier, a QR code and basic information about the permit and permit holder along with the barcode.</li>
+<li>Labels containing the unique identifier, QR code and barcode for labelling bags and jars of samples. It should be anticipated that the applicants will print multiple labels as samples are broken down and identified for record keeping.</li>
+<li>HTML Embed Code. A html version of the above that can be embedded with electronic data.</li>
+<li>If rejected the application will be linked to the proposed appeals process.</li>
+</ol>
+<p><em>1.5. Appeals</em></p>
+<p>This element provides:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Guidance on the appeals process</li>
+<li>A timeline for appeals</li>
+<li>Generates notifications for applicants on the progress with their appeal</li>
+<li>A clear written final decision.</li>
+</ol>
+<p>The appeals process is proposed as a response to Article 6 of the Nagoya Protocol requiring “fair and non-arbitrary rules and procedures on accessing genetic resources” (Art. 6.3(b)). The appeals process may potentially be useful with respect to the Compliance Committee of the Nagoya Protocol developed to assist Parties in complying with their obligations in so far that it provides a chain of evidence that due process has been followed in rejecting a request for access on non-arbitrary reasoned grounds.</p>
+<p>The Monitoring and Reporting elements of the Authorities Portal are addressed under the respective main components of the system. This includes linkages with the ABS Clearing House Mechanism.</p>
+</div>
+<div id="component-2.-the-applicants-portal" class="section level3">
+<h3>Component 2. The Applicants Portal</h3>
+<p>Figure 5 displays the main elements of the Applicants Portal. Numbering refers to elements of the Applicants Portal.</p>
+<div class="figure">
+<img src="images/schematics/schematics.011.png" />
+
+</div>
+<p><em>Concept:</em> A single online space for applicants to submit applications and supporting information, receive notifications to monitor progress, receive permits and fulfil reporting requirements.</p>
+<p>In a single applicant portal, applicants would be able to store information for future applications (such as legal status information) and to provide links to publications, conferences etc. arising from the permit that could, subject to confidentiality considerations, be made publicly available to highlight research and development on genetic resources and associated traditional knowledge.</p>
+<p><em>Principles:</em></p>
+<ol style="list-style-type: lower-alpha">
+<li>Full disclosure of the purposes of research, the actors involved and funding.</li>
+<li>Fulfil user reporting obligations.</li>
+<li>Enable monitoring of utilisation.</li>
+<li>Build lasting relationships.</li>
+<li>Promote research of benefit to the permit granting country.</li>
+<li>Triple redundancy for monitoring (unique country identifier, QR codes, barcodes, html embed codes).</li>
+</ol>
+<p><em>Functions:</em></p>
+<p>The applicants portal would be divided into six elements with different functions:</p>
+<ul>
+<li>2.1 Information (applicant guide and checklists).</li>
+<li>2.2 Applications (applications in progress).</li>
+<li>2.3 Notifications (communications).</li>
+<li>2.4 Approvals (permits, permit passes, labels).</li>
+<li>2.5 Reporting.</li>
+<li>2.6 Appeals.</li>
+</ul>
+<p>Please see the accompanying process slides <a href="http://poldham.github.io/abs_permits/presentations/schematics/assets/player/KeynoteDHTMLPlayer.html#0">online</a>, in <a href="https://github.com/poldham/abs_permits/blob/master/presentations/schematics.pptx?raw=true">powerpoint</a> or <a href="https://github.com/poldham/abs_permits/raw/master/presentations/schematics.pdf">pdf</a> for details.</p>
+<p><em>2.1. Information</em></p>
+<ol style="list-style-type: lower-alpha">
+<li>Provides a guide to the application process and documents required.</li>
+<li>Provides a checklist for the completeness of applications.</li>
+</ol>
+<p><em>2.2. Applications</em></p>
+<p>Information to be provided by applicants (indicative list):</p>
+<ol style="list-style-type: lower-alpha">
+<li>Legal information (researcher names, organisations, statutes, intellectual property policies etc.).</li>
+<li>Funding information (copies of approved funding applications including reference/contract numbers, funding agency conditions of grant).</li>
+<li>Type of research (non-commercial, commercial, both).</li>
+<li>Objectives of research.</li>
+<li>Proposed locations.</li>
+<li>Expected outcomes.</li>
+<li>Specific details of proposed collections.</li>
+<li>Anticipated environmental impacts.</li>
+<li>Measures to address potential environmental impacts.</li>
+<li>Statement on compliance with national legislation on ABS.</li>
+<li>Statement on meeting other requirements under relevant national laws.</li>
+</ol>
+<p><em>2.3 Notifications</em></p>
+<p>A single space for applicants to:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Receive and respond to requests for information from permit granting authorities.</li>
+<li>Review notifications on the stage in the procedure of applications pursuant to Article 6 of the Nagoya Protocol.</li>
+</ol>
+<p><em>2.4. Approvals</em></p>
+<p>The approvals section of the applicants portal allows applicants to retrieve approved permits as:</p>
+<ol style="list-style-type: lower-alpha">
+<li>A legal .pdf document (generated on the authority side) and any associated documentation.</li>
+<li>To facilitate checking by local authorities (police, customs, park authorities) the site will generate a time-limited “permit pass” using QR/barcodes that can be stored on a mobile phone or tablet by the applicants and scanned by relevant authorities using QR recognition software.</li>
+<li>To facilitate monitoring the system will also generate:
+<ol style="list-style-type: lower-roman">
+<li>Labels containing a unique identifier in QR/barcodes to be affixed to sample bags and individual sample records.</li>
+<li>An electronic version of the unique identifier for tagging electronic data (e.g. HTML embed codes).</li>
+<li>Instructions on the prescribed form for referencing in scientific publications and patent data using the unique identifier (e.g. BS20151234 or - “two letter country code - year - unique permit number”) and/or embed code links.</li>
+</ol></li>
+</ol>
+<p>The granting of a permit for the specified purposes could be considered to constitute evidence that the applicant has received prior informed consent from the government of the country granting the permit and that MAT has been established for the purposes of the domestic ABS framework.</p>
+<p><em>2.5. Reporting</em></p>
+<p>This section of the applicant portal should make it easy for applicants to report on outputs and activities arising from utilisation. Reporting is envisaged to take the form of:</p>
+<ol style="list-style-type: lower-roman">
+<li>Links to research profiles (e.g. <a href="http://orcid.org/0000-0002-1013-4390">ORCID profiles</a>, <a href="https://www.researchgate.net/">Researchgate</a> etc.) and publications arising from the research (DOIs (document identifiers). Open access versions of publications, through services such as the <a href="open%20source%20journals">Directory of Open Access Journals</a> or preprints through services such as <a href="bioarxvhome">bioRxiv</a>, are likely to be preferred and may be specified in MAT or funding requirements. The aim here is to reduce reporting by permitting automated retrieval of electronic information on publications.</li>
+<li>Patent applications arising from the research (including electronic links).</li>
+<li>Commercial products (market approvals).</li>
+<li>Other (for discussion).</li>
+</ol>
+<p><em>2.6. Appeals</em></p>
+<p>This area of the applicants portal would allow applicants to file and receive information on any appeals for rejected permit applications.</p>
+</div>
+<div id="component-3.-legal-component" class="section level3">
+<h3>Component 3. Legal Component</h3>
+<p>The legal component is treated as a cross-cutting component across the online permit and monitoring system. For example, indicative areas for legal review and drafting are likely to include, inter alia:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The guide to applicants.</li>
+<li>Terms and conditions for permits depending on the type of research.</li>
+<li>Mutually Agreed Terms.</li>
+<li>Definition of the criteria for rejection of applications and any appeals process.</li>
+</ol>
+</div>
+<div id="component-4.-monitoring" class="section level3">
+<h3>Component 4. Monitoring</h3>
+<p>Figure 6 displays the elements of the Monitoring component and the details of the element for monitoring publications. For additional details on each element see the process diagrams in presentation mode <a href="http://poldham.github.io/abs_permits/presentations/schematics/assets/player/KeynoteDHTMLPlayer.html#0">online</a>, in <a href="https://github.com/poldham/abs_permits/blob/master/presentations/schematics.pptx?raw=true">powerpoint</a> or <a href="https://github.com/poldham/abs_permits/raw/master/presentations/schematics.pdf">pdf</a>.</p>
+<div class="figure">
+<img src="images/schematics/schematics.019.png" />
+
+</div>
+<p><em>Concept:</em> A cost effective monitoring system for scientific publications, patents, and products arising from research and development involving genetic resources and/or traditional knowledge from the providing Party.</p>
+<p><em>Principles:</em></p>
+<ol style="list-style-type: lower-alpha">
+<li>Monitoring and enhancing transparency on the utilization of genetic resources and, where relevant, associated traditional knowledge.</li>
+<li>Use of cost effective communication tools and systems.</li>
+</ol>
+<p><em>Functions:</em></p>
+<p>One purpose of a monitoring system is to enable the providing Party to monitor utilisations of genetic resources and associated traditional knowledge originating from its jurisdiction as a basis for monitoring compliance by users with national access and benefit-sharing legislation and mutually agreed terms. A second purpose of a monitoring system is to allow Parties to identify cases where a user seeks to avoid or ignore regulatory requirements (e.g. for prior informed consent and MAT). A third purpose of a monitoring system is to enhance the capacity of Parties to know about research and development involving genetic resources and traditional knowledge as a basis for the valuation of genetic resources over the long term.</p>
+<p>There are three main considerations in establishing a cost-effective monitoring system:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The availability of information provided by applicants as a key tool for monitoring (person names, institutions, locations, species, funding organisations etc.).</li>
+<li>The need for independent information to validate and extend information provided by applicants with a view to capturing circumstances of potential non-compliance with national legislation and mutually agreed terms. Independent information is also required to identify cases of avoidance of regulatory requirements (absence of PIC and MAT).</li>
+<li>Monitoring under Article 17 of the Nagoya Protocol and linkages to National Reporting under the Monitoring and Reporting (Article 29) provisions of the Nagoya Protocol.</li>
+</ol>
+<p>In practice, a range of bibliometric/scientometric and analytical methods exist for mapping and monitoring research and patent activity. The growing availability of electronic data (on taxonomy, DNA sequences, publications, patents and products) allows for the mobilisation and application of these methods to access and benefit-sharing.</p>
+<p>The monitoring component is particularly relevant to implementation of Article 17 of the Nagoya Protocol. As noted above, there is a direct relationship between the permit foreseen under Article 6.3(e) and monitoring under Article 17.2, notably with respect to the use of a permit as an International Certificate of Compliance. In such cases the International Certificate of Compliance will provide the following information, where such information is not confidential (Article 17.4):</p>
+<ol style="list-style-type: lower-alpha">
+<li>Issuing authority</li>
+<li>Date of issuance</li>
+<li>The provider</li>
+<li>Unique identifier of the certificate</li>
+<li>The person or entity to who prior informed consent was granted</li>
+<li>Subject matter of genetic resources covered by the certificate</li>
+<li>Confirmation that mutually agreed terms were established</li>
+<li>Confirmation that prior informed consent was obtained; and</li>
+<li>Commercial and/or non-commercial use.</li>
+</ol>
+<p>It is anticipated that this information, subject to confidentiality considerations, will be made available to the ABS Clearing House Mechanism. Specific consideration will need to be given to information collected under the monitoring element that is submitted to the ABS Clearing House Mechanism (see <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13402">Decision NP-1/2</a>).</p>
+<p>The provisions of Article 17 are also linked with Article 29 (Monitoring and Reporting on implementation of the Protocol) with respect to a requirement for Parties to monitor implementation of their obligations under the Protocol. This should be borne in mind when considering a monitoring system and its relationship with reporting (below). Close attention should be paid to the interim national reporting guidelines agreed at the First Meeting of Parties to the Nagoya Protocol as provided in <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">Decision NP-1/3</a> and any subsequent COP-MOP decisions in this area.</p>
+<p>Data Analysis is a sub-component of Monitoring and involves the processing and analysis of data collected under Monitoring. A schematic for a typical data analysis workflow is provided in Figure 7.</p>
+<div class="figure">
+<img src="images/schematics/schematics.024.png" />
+
+</div>
+<p>The data analysis step involves a set of methodological steps that may involve a range of software tools. Increasingly, sophisticated data analysis is becoming possible using programming languages such as <a href="https://www.r-project.org">R</a>, <a href="https://www.python.org">Python</a>, and <a href="https://www.mysql.com">MySQL</a> (for databases). Languages such as R are widely used in biological research and a range of free packages exist for accessing taxonomic and DNA databases and scientific literature databases (such as <a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> and <a href="http://www.crossref.org">crossref</a>) from R. A growing emphasis on open access publications as a requirement of funding in European Union and other countries facilitates both monitoring and data analysis.</p>
+<p>The data analysis sub-component is closely linked to reporting under Component 5.</p>
+</div>
+<div id="component-5-reporting" class="section level3">
+<h3>Component 5: Reporting</h3>
+<p>Figure 8 displays the elements of the reporting component.</p>
+<div class="figure">
+<img src="images/schematics/schematics.030.png" />
+
+</div>
+<p><em>Concept:</em> Facilitate national reporting under the Nagoya Protocol and other relevant environmental agreements.</p>
+<p>Reporting takes place on two main levels:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Internal reporting (within ministries and to national Parliaments/Congresses).</li>
+<li>International reporting requirements linked to treaty obligations.</li>
+</ol>
+<p>It is anticipated that the reporting component of the online permit and monitoring system will contribute to supporting internal and international reporting. This will occur by identifying data under the monitoring component that can be fed into reporting (e.g. statistics on number of permit applications, summary statistics on applicants, number of permits granted, MAT established, publications generated and so on) and is likely to be mainly of a statistical type.</p>
+<p>We propose that at the design stage of monitoring that consultations take place on existing reporting requirements and how data collated under the monitoring component might be collated into reporting templates.</p>
+<p>National reporting is addressed under Article 29 of the Nagoya Protocol and is linked with issues relating to compliance by Parties with the obligations set out in the Nagoya Protocol. Particular attention is drawn to the 66 questions included in the interim national reporting format contained in decision <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">NP 1/3</a> that will be due for submission 12 months prior to the 3rd meeting of the Parties to the Nagoya Protocol <a href="https://www.cbd.int/decisions/np-mop/?m=np-mop-01">COP MOP NP3</a> that is expected to take place in 2018. Future decisions by COP-MOP on national reporting should also be taken into consideration.</p>
+<p><em>Principles:</em></p>
+<ol style="list-style-type: lower-alpha">
+<li>Facilitate national and international reporting.</li>
+<li>Reduce the burden of information compilation on research on genetic resources and associated traditional knowledge.</li>
+</ol>
+<p><em>Functions:</em></p>
+<ol style="list-style-type: lower-alpha">
+<li>Support the compilation of data for national reports under the Nagoya Protocol.</li>
+<li>Facilitate the provision of non-confidential information to the ABS Clearing House Mechanism.</li>
+<li>Support reporting needs for closely related treaties, such as the Plant Treaty, to which a country is a Party, as appropriate.</li>
+<li>Maintain an archive of information used in reports (as part of the main electronic data archive).</li>
+</ol>
+</div>
+<div id="component-6-the-core-system" class="section level3">
+<h3>Component 6: The Core System</h3>
+<p>The Core System refers to the core database and server software, code for specific functions and the infrastructure required to create an integrated system.</p>
+<p>Figure 9 displays the components in relation to the core system.</p>
+<div class="figure">
+<img src="images/schematics/schematics.002.png" />
+
+</div>
+<p>Viewed from this perspective the core system consists of the following elements</p>
+<p><em>6.1. Online Front Page</em>. The online front page for the system consisting of a simple home page and secure access to the applicants and authorities portals.</p>
+<p><em>6.2 Backups</em>.</p>
+<p>The standard of good practice in computing is to maintain multiple and secure backups of electronic information. The use of encryption in addition to standard security measures will be desirable to protect confidential information.</p>
+<p><em>6.3. Physical Archive</em>.</p>
+<p>Countries will typically maintain physical archives for legal purposes. Physical storage is particularly important in circumstances involving timelines of decades. The outputs of the system such as permit applications, permit grants, communications and other materials should be readily printable for storage in the physical archive.</p>
+<p><em>6.4. Mobile Access</em>.</p>
+<p>This element of the system is intended to respond to the needs of customs officials, police and national park authorities involved in on the spot checks of permit documentation. The growing use of mobile phones and tablets by authorities responsible for checking permits provides important opportunities to facilitate their work. Under this element we envisage the use of technologies such as a time limited “permit pass” (similar to an airport boarding pass with a QR code) that can be scanned by customs and other authorities with access to the relevant parts of the core system.</p>
+</div>
+<div id="system-requirements" class="section level3">
+<h3>System Requirements</h3>
+<p>The precise details of how the system is implemented are likely to depend on the needs and capacities of individual Parties. We propose that as far as possible, for reasons of cost, a wide user base, security and extendibility that standard versions of open source software should be used to implement the core system (e.g. a <a href="https://www.mysql.com">MySQL Database</a> and <a href="https://httpd.apache.org">Apache</a> web server). The use of open source tools is widespread in information technology (e.g. Apache serve software powers most websites). As discussed in the Core Principles, the use of open source software tools enjoys the benefit of permitting Parties to share and learn from and adopt software modules developed by other countries seeking to implement the system. In short, the use of open software provides a platform for collaboration and capacity-building between countries participating in implementing the model. Finally, the use of open source tools in the core architecture mitigates against the risk that contractors will seek to capture the system over the long term.</p>
+</div>
+<div id="outline-structure" class="section level3">
+<h3>Outline Structure</h3>
+<p>Figure 10 provides a simplified outline of the structure of the system. At the core of this system is server software (e.g. <a href="https://httpd.apache.org">Apache</a>) attached to a database (e.g. <a href="https://www.mysql.com">MySQL</a>) and code and subsidiary systems to perform the functions described above.</p>
+<div class="figure">
+<img src="images/schematics/schematics.033.png" />
+
+</div>
+<p>Two areas of the system are likely to present technical challenges:</p>
+<ol style="list-style-type: decimal">
+<li>The notification system. It is envisaged that this will be an email based system with existing systems (such as ticketing systems and open source push notification systems meriting investigation).</li>
+<li>Mobile access for permit checking authorities.</li>
+</ol>
+<p>Monitoring (using queries and APIs) will require investment in the development and refinement of search queries across a range of data sources and capacity building in the use of analytics software for those responsible. Opportunities may exist for shared capacity between countries in some of these areas.</p>
+</div>
+<div id="resources" class="section level3">
+<h3>Resources</h3>
+<p>Figure 11 provides an outline of the resources needed to implement the system. Entries on the right are indicative and are likely to include a mix of free and commercial software tools (e.g. databases and analytics tools).</p>
+<div class="figure">
+<img src="images/schematics/schematics.035.png" />
+
+</div>
+<p>The model anticipates that, in the case of monitoring and analysis tools, <em>a phased approach</em> will be taken depending on existing internal capacities. This may involve the use of off the shelf commercial tools requiring only limited skills and knowledge in the first instance to develop internal capacity followed by the adoption of more sophisticated free software tools (e.g. <a href="https://www.rstudio.com">RStudio</a>) for monitoring and analytics accompanied by the use of open source packages for accessing scientific literature, taxonomic data and patent information.</p>
+<p>The use of free tools such as the <a href="https://www.r-project.org">R</a> language is suggested here because of the large number of resources focusing on biology such as <a href="http://www.bioconductor.org">Bioconductor</a> and the link towards statistics, mapping and modelling. In particular attention is drawn to the suite of free packages being developed by <a href="http://ropensci.org/packages/">rOpenSci</a>. Widely used alternatives or complements to R include <a href="https://www.python.org">Python</a>.</p>
+<p>The long term advantage of the open source route is a large ecosystem of users and culture of collaboration to address common needs. However, open source tools depend on investments in training people to use them. It is sensible to anticipate a period of capacity building before the transition from off the shelf to open source tools is made. It is also sensible to anticipate that a mix of approaches and tools may prove to be the most cost effective. In short, it is important to concentrate on what will work best for a Party, or group of Parties, taking into account their circumstances, existing capacity and needs.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
