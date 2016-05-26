@@ -8,6 +8,6 @@ This repository contains documents and materials for a model online permit and m
 
 Documents are made available as html, word, pdf and markdown along with accompanying presentations and images.
 
-To download pdf and word versions navigate to the file (see sections) press on the name and then press Raw. The file will then download. The reason 
+To download pdf and word versions navigate to the file (see sections) press on the name and then press Raw. The file will then download. 
 
-Please cite as: Oldham P; Meyer H; Rukundo O (2016) An Online Permit and Monitoring System under the Nagoya Protocol. Working Paper. 
+Please cite as: Oldham P; Meyer H; Rukundo O (2016) An Online Permit and Monitoring System under the Nagoya Protocol. Concept Paper. 
