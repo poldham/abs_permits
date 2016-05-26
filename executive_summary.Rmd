@@ -5,14 +5,14 @@ author:
 - Paul Oldham
 - Hartmut Meyer
 - Olivier Rukundo
-date: "21 May 2016"
+date: "26 May 2016"
 output: html_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This concept paper sets out the concept and model for an online research permit and monitoring system to facilitate implementation of the access, benefit sharing, monitoring and reporting provisions of the [Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization](https://www.cbd.int/abs/about/) to the [United Nations Convention on Biological Diversity](https://www.cbd.int).^[The research in this paper was conducted with the support of The Bahamas Environment, Science & Technology Commission (BEST) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of The ABS Capacity Development Initiative through the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] 
+This concept paper sets out the concept and model for an online research permit and monitoring system to facilitate implementation of the access, benefit sharing, monitoring and reporting provisions of the [Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization](https://www.cbd.int/abs/about/) to the [United Nations Convention on Biological Diversity](https://www.cbd.int).^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.]  
 
 The core of this proposal is that Parties to the Protocol, and governments who intend to ratify or accede to the Protocol, may wish to adopt: 
 
@@ -54,4 +54,4 @@ The concept paper is divided into 5 sections.
 
 We would emphasise that the aim of this proposal is not to impose a single model. Rather, our purpose is to present a practical model that is robust and flexible enough to respond to the different circumstances and needs of Parties to the Protocol. For this reason we present the model as a series of integrated components (or modules) that can be developed and adapted by Parties interested in implementing the model. We hope that this model will contribute to building shared capacity and collaboration between Parties interested in developing effective ways to meet the access, benefit-sharing, monitoring and reporting requirements of the Protocol. The model may also lead to contributions from research organisations, such as public collections, interested in research permits and effective monitoring of compliance.
 
-This concept paper is intended to evolve over time and is publicly available in an open access [GitHub repository](https://github.com/poldham/abs_permits) in a variety of formats. Subject to interest in development and implementation of the model additional materials will be added over time and contributions are welcomed.  
+This concept paper is intended to evolve over time and is publicly available through the [project website](http://poldham.github.io/abs_permits/index.html) and open access [GitHub repository](https://github.com/poldham/abs_permits/tree/gh-pages) in a variety of formats. Subject to interest in development and implementation of the model additional materials will be added over time and contributions are welcomed.  

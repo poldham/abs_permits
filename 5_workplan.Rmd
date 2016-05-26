@@ -1,9 +1,12 @@
 ---
-title: "Draft Workplan for an Online Permit and Monitoring System"
-author: "Paul Oldham"
-date: "25 May 2016"
+title: Draft Workplan for an Online Permit and Monitoring System to Support the Nagoya
+  Protocol
+author:
+- Paul Oldham
+- Hartmut Meyer
+- Olivier Rukundo
+date: "26 May 2016"
 output: html_document
-
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ##Introduction
 
-This section provides a draft workplan for countries interested in implementing the model for the online permit and monitoring system outlined in the previous sections. The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of outline headings for budget planning in the Annex.
+This section provides a draft workplan for countries interested in implementing the model for the online permit and monitoring system outlined in the previous sections.^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of outline headings for budget planning in the Annex.
 
 The workplan is presented in terms of activities to be carried out in individual countries interested in implementing the system. However, there is a strong case for a network approach between governments seeking to develop and implement the model to meet their needs. 
 
@@ -140,7 +143,7 @@ The components of the overall system are provided below. The workplan focuses on
 
 *Task 1*. Establish standard responses to enquiries as inputs into the online permit system.
 
-*Element 1.2* Review [Legal component]
+*Element 1.2*. Review [Legal component]
 
 *Task 1*. Develop Guide for Applicants.
 
@@ -215,7 +218,7 @@ The components of the overall system are provided below. The workplan focuses on
 
 *Task 4*. Provide information on appeals process (see authority side).
  
-*Element 2.2* Applications
+*Element 2.2*. Applications
 
 *Task 1*. Create applicant home page system.
 
@@ -225,7 +228,7 @@ The components of the overall system are provided below. The workplan focuses on
 
 *Task 4*. Test and refine to final version. 
 
-*Element 2.3* Notifications
+*Element 2.3*. Notifications
 
 *Task 1*. Establish a system for transmitting requests from the authority side to the applicant side with appropriate data fields (title, date, originator etc.).
 
@@ -242,7 +245,7 @@ b) Provides the name and contact details (within the system) for the person resp
 c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
 d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. 
 
-*Element 2.4* Approvals
+*Element 2.4*. Approvals
 
 *Task 1*. Create a system to generate a permit as a .pdf (links to authority generated master permit).
 
@@ -256,7 +259,7 @@ d) Generates the permit and associated material (passes, labels, embed codes) an
 
 *Task 6*. Test approaches, including "permit passes" with a selection of applicants and adjust based on lessons learned.
 
-*Element 2.5* Reporting
+*Element 2.5.* Reporting
 
 *Task 1*. Establish reporting section of the applicant site.
 
@@ -280,7 +283,7 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 6*. Adjust system based on user feedback. [Legal component]
 
-*Element 2.6* Appeals (see element 1.5)
+*Element 2.6*. Appeals (see Element 1.5)
 
 *Task 1*. Provide information on the grounds for appeal. [Legal component]
 
@@ -364,7 +367,7 @@ i) Other information on activities arising from the permit and associated MAT.
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/schematics/schematics.033.png)
 
-*Element 1: Preparatory*
+*Element 1. Preparatory*
 
 *Task 1*. Identify internal and external programming capacity for development and maintenance of the online system. (see Activity C, task 1).
 
@@ -374,7 +377,7 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 4*. Acquire relevant hardware, server and database software.
 
-*Element 2* Server Software
+*Element 2.* Server Software
 
 *Task 1*. Build online front page system and unique home page system for authorities and applicants. 
 

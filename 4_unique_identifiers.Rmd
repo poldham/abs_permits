@@ -1,7 +1,11 @@
 ---
-title: "Unique Identifiers in an Online Permit and Monitoring System"
-author: "Paul Oldham"
-date: "24 May 2016"
+title: Unique Identifiers in an Online Permit and Monitoring System to Support the
+  Nagoya Protocol
+author:
+- Paul Oldham
+- Hartmut Meyer
+- Olivier Rukundo
+date: "26 May 2016"
 output: html_document
 ---
 ```{r setup, include=FALSE}
@@ -9,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ##Introduction
 
-This section discusses the use of unique identifiers for permits and related documents and the application of the principle of triple redundancy.  
+This section discusses the use of unique identifiers for permits and related documents and the application of the principle of triple redundancy.^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.]  
 
 Unique identifiers associated with permits and associated documents will allow for sets of documents linked to a specific application to be stored within a retrievable register or file history. As such, unique identifiers will enable internal coherence within the permit system. 
 
@@ -90,7 +94,7 @@ Additional options include a requirement to use the basic unique identifier (BS2
 
 In the case of DNA data an example of the existing use of identifiers, and the ability to monitor DNA sequence and amino acid information is provided by the [Barcode of Life Database (BOLD)](http://www.boldsystems.org).
 
-Information using species names or identifiers can be retrieved using the `taxize` package in R using [RStudio](https://www.rstudio.com) which generates the following link for a search for a species name:
+Information using species names or identifiers can be retrieved using the `taxize` package in R using [RStudio](https://www.rstudio.com) which generates the following link for a search for a species name.
 
 ```{r}
 library(taxize) # load the taxize package
@@ -98,7 +102,7 @@ get_boldid(searchterm = "Prunus africana") # search for the dna barcode id for a
 
 ```
 
-More information from the URL can then be accessed in R or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable [here](http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949)
+More information from the URL can then be accessed in R or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable [here](http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949).
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/figx_bold_1.png)
 
@@ -106,7 +110,7 @@ Selecting `Access Published & Released Data` produces the following list of [rec
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/figx_bold_2.png)
 
-The final record in this list includes a specimen image and the [following information](http://boldsystems.org/index.php/Public_RecordView?processid=KNPA139-08):
+The final record in this list includes a specimen image and the [following information](http://boldsystems.org/index.php/Public_RecordView?processid=KNPA139-08).
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/figx_bold_3.png)
 

@@ -1,7 +1,7 @@
 ---
 title: "About"
 author: "Paul Oldham"
-date: "25 May 2016"
+date: "26 May 2016"
 output: html_document
 ---
 This is the project site for a model Online Research Permit and Monitoring System to Support Implementation of the [Nagoya Protocol](https://www.cbd.int/abs/about/). 
@@ -10,7 +10,7 @@ The idea behind the model is to assist Parties to the [Nagoya Protocol on Access
 
 The model focuses on the creation of an online permit and monitoring system to make it easier for governments to administer research permit applications involving genetic resources and traditional knowledge and to monitor compliance under the Nagoya Protocol as well as making it easier to prepare national reports. 
 
-You can obtain a word versions of the sections [here]() *but not yet*. For pdf versions go [here]() *but not yet*.
+You can download Word versions of the sections [here](). For pdf versions go [here]().
 
 ### Who Developed This? 
 

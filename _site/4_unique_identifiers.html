@@ -10,14 +10,16 @@
 
 
 <meta name="author" content="Paul Oldham" />
+<meta name="author" content="Hartmut Meyer" />
+<meta name="author" content="Olivier Rukundo" />
 
-<meta name="date" content="2016-05-24" />
+<meta name="date" content="2016-05-26" />
 
-<title>Unique Identifiers in an Online Permit and Monitoring System</title>
+<title>Unique Identifiers in an Online Permit and Monitoring System to Support the Nagoya Protocol</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -99,34 +101,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 </style>
 
@@ -174,12 +176,12 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Model</a>
+      <a class="navbar-brand" href="index.html"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">About</a>
 </li>
 <li>
   <a href="executive_summary.html">Executive Summary</a>
@@ -217,16 +219,18 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Unique Identifiers in an Online Permit and Monitoring System</h1>
+<h1 class="title toc-ignore">Unique Identifiers in an Online Permit and Monitoring System to Support the Nagoya Protocol</h1>
 <h4 class="author"><em>Paul Oldham</em></h4>
-<h4 class="date"><em>24 May 2016</em></h4>
+<h4 class="author"><em>Hartmut Meyer</em></h4>
+<h4 class="author"><em>Olivier Rukundo</em></h4>
+<h4 class="date"><em>26 May 2016</em></h4>
 
 </div>
 
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>This section discusses the use of unique identifiers for permits and related documents and the application of the principle of triple redundancy.</p>
+<p>This section discusses the use of unique identifiers for permits and related documents and the application of the principle of triple redundancy.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <p>Unique identifiers associated with permits and associated documents will allow for sets of documents linked to a specific application to be stored within a retrievable register or file history. As such, unique identifiers will enable internal coherence within the permit system.</p>
 <p>Unique identifiers linked to a permit and corresponding MAT (an ABS contract) are also the key to monitoring the outcomes of research including the genetic resources. We propose a system consisting of the following unique identifiers</p>
 <ol style="list-style-type: decimal">
@@ -304,7 +308,7 @@ $(document).ready(function () {
 <h2>DNA and Amino Acid Sequences</h2>
 <p>Additional options include a requirement to use the basic unique identifier (BS20151234) in the documentation entered into databases for DNA and amino acid sequence data or html embed codes (for web publications).</p>
 <p>In the case of DNA data an example of the existing use of identifiers, and the ability to monitor DNA sequence and amino acid information is provided by the <a href="http://www.boldsystems.org">Barcode of Life Database (BOLD)</a>.</p>
-<p>Information using species names or identifiers can be retrieved using the <code>taxize</code> package in R using <a href="https://www.rstudio.com">RStudio</a> which generates the following link for a search for a species name:</p>
+<p>Information using species names or identifiers can be retrieved using the <code>taxize</code> package in R using <a href="https://www.rstudio.com">RStudio</a> which generates the following link for a search for a species name.</p>
 <pre class="r"><code>library(taxize) # load the taxize package
 get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcode id for a species</code></pre>
 <pre><code>## 
@@ -316,7 +320,7 @@ get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcod
 ## [1] &quot;found&quot;
 ## attr(,&quot;uri&quot;)
 ## [1] &quot;http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949&quot;</code></pre>
-<p>More information from the URL can then be accessed in R or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable <a href="http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949">here</a></p>
+<p>More information from the URL can then be accessed in R or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable <a href="http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949">here</a>.</p>
 <div class="figure">
 <img src="images/figx_bold_1.png" />
 
@@ -326,7 +330,7 @@ get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcod
 <img src="images/figx_bold_2.png" />
 
 </div>
-<p>The final record in this list includes a specimen image and the <a href="http://boldsystems.org/index.php/Public_RecordView?processid=KNPA139-08">following information</a>:</p>
+<p>The final record in this list includes a specimen image and the <a href="http://boldsystems.org/index.php/Public_RecordView?processid=KNPA139-08">following information</a>.</p>
 <div class="figure">
 <img src="images/figx_bold_3.png" />
 
@@ -341,6 +345,12 @@ get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcod
 <h3>Conclusion</h3>
 <p>In this section we have discussed the use of unique identifiers and the application of the principle of triple redundancy as part of the design of the online permit and monitoring system. Unique identifiers using standardised country codes, dates and sequences of numbers allow for the construction of an internal permit system that establishes and maintains links between a permit application and associated documents (MAT) and communications. This system already works well for millions of patent documents. The principle of triple redundancy was then applied to the generation of labels containing identifiers that could be used to maintain links between the original permit and samples, publications, patent applications, and sequence data originating from the grant of a permit under an ABS framework. The use of free tools (such as <code>taxize</code> in R) allows this information to be readily retrieved from a range of different data sources. While requiring further elaboration, the use of unique identifiers combined with the principle of triple redundancy provides a route to cost effective monitoring and is recommended.</p>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
+</ol>
 </div>
 
 

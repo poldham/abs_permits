@@ -10,10 +10,12 @@
 
 
 <meta name="author" content="Paul Oldham" />
+<meta name="author" content="Hartmut Meyer" />
+<meta name="author" content="Olivier Rukundo" />
 
-<meta name="date" content="2016-05-22" />
+<meta name="date" content="2016-05-26" />
 
-<title>Core Principles for an Online Permit and Monitoring System</title>
+<title>Core Principles for an Online Permit and Monitoring System to Support the Nagoya Protocol</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -174,12 +176,12 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Model</a>
+      <a class="navbar-brand" href="index.html"></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">About</a>
 </li>
 <li>
   <a href="executive_summary.html">Executive Summary</a>
@@ -217,14 +219,16 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Core Principles for an Online Permit and Monitoring System</h1>
+<h1 class="title toc-ignore">Core Principles for an Online Permit and Monitoring System to Support the Nagoya Protocol</h1>
 <h4 class="author"><em>Paul Oldham</em></h4>
-<h4 class="date"><em>22 May 2016</em></h4>
+<h4 class="author"><em>Hartmut Meyer</em></h4>
+<h4 class="author"><em>Olivier Rukundo</em></h4>
+<h4 class="date"><em>26 May 2016</em></h4>
 
 </div>
 
 
-<p>The development of a streamlined electronic system requires consideration of the principles that inform the development and maintenance of the system over a time frame involving decades. The following are a set of Core Principles that focus on the objective, how the objective is to be realised, and the features of the system.</p>
+<p>The development of a streamlined electronic system requires consideration of the principles that inform the development and maintenance of the system over a time frame involving decades.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> The following are a set of Core Principles that focus on the objective, how the objective is to be realised, and the features of the system.</p>
 <div id="design-principles" class="section level3">
 <h3>Design Principles</h3>
 <p>These principles refer to the design and implementation of the online permit and monitoring system.</p>
@@ -240,7 +244,7 @@ $(document).ready(function () {
 <li><p><em>Independent</em>. The system should be based on, and maintained, using widely available standard open source software tools and standard text formats to avoid dependency on a single supplier/contractor or data format. No third party should own all or part of the system. Note that public procurement rules are likely to be of relevance in implementing this principle.</p></li>
 <li><p><em>Long Term</em>. The research and development cycle involving biological and genetic resources or associated traditional knowledge may take place over a period of decades. It is therefore important to take a long term perspective on the functioning of the permit system and its integrity over time, including proper back-ups.</p></li>
 <li><p><em>Unique Identifiers</em>. Unique identifiers enable internal coherence within the system and monitoring outside the system. For a permit and monitoring system the starting point could be a unique identifier such as a standardised country code (e.g. BS for the Bahamas or UG for Uganda and ZA for South Africa), the date (2015) and unique number (1234) to produce unique identifiers such as BS20151234, UG20151234 or ZA20151234. This system functions very effectively for 90 million patent documents in multiple countries and is recommended.</p></li>
-<li><p><em>Triple Redundancy</em>. The permit system should build in the principle of triple redundancy in its tracking system rather than relying on a single point of reference. Triple redundancy is an engineering design principle that means that three distinct systems perform the same function. Because they are independent systems, if one system fails the two others will continue to work. If a second system fails then one other system, normally the simplest, will continue to work. Further details and examples of the implementation of this principle for ABS are provided below in the discussion of unique identifiers.</p></li>
+<li><p><em>Triple Redundancy</em>. The permit system should build in the principle of triple redundancy in its tracking system rather than relying on a single point of reference. Triple redundancy is an engineering design principle that means that three distinct systems perform the same function. Because they are independent systems, if one system fails the two others will continue to work. If a second system fails then one other system, normally the simplest, will continue to work. Further details and examples of the implementation of this principle for ABS are provided in <a href="http://poldham.github.io/abs_permits/4_unique_identifiers.html">Section 4</a> on unique identifiers.</p></li>
 <li><p><em>Integrating Technical and Legal Components</em>. The development of an online permit and monitoring system is a technical development that is directed towards the effective realisation of legal obligations on the part of Parties to the Protocol and establishing clear legal requirements on the part of applicants. Legal aspects of the system, notably with respect to the terms of permits and contracts as well as change of intent should be recognised at the design stage. In practice this means that the development of the technical aspects of the system and the legal aspects should be closely linked. Longer term legal advice should be built into the development cycle to respond to changing legal requirements.</p></li>
 <li><p><em>Minimal Human Intervention</em>. Primary responsibility for data input should rest with applicants in entering legally required information. Government action should be confined, as far as possible, to approval of electronic applications, communications related to approvals, and archiving of physical copies of records. The basis of this principle is that human intervention introduces typological errors (such as spelling mistakes) or errors of interpretation (such as interpretations of person or institutional names). These errors affect the integrity and utility of the system over the long term, particularly with respect to monitoring and reporting.</p></li>
 <li><p><em>Anticipate Legacy</em>. A development cycle approach to the permit system should be established that involves forward planning and transitioning from an existing system (that becomes the legacy system) to a new system over time. A formal development plan should be developed and periodically reviewed based on experience gained.</p></li>
@@ -250,13 +254,13 @@ $(document).ready(function () {
 <div id="access-and-benefit-sharing-related-principles" class="section level3">
 <h3>Access and Benefit Sharing Related Principles</h3>
 <ol start="14" style="list-style-type: decimal">
-<li><em>Timeliness</em>. The Nagoya Protocol sets out minimum access standards. Article 6.3(d) requires that Parties to the Protocol:</li>
+<li><em>Timeliness</em>. The Nagoya Protocol sets out minimum access standards. <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-06">Article 6.3(d)</a> requires that Parties to the Protocol:</li>
 </ol>
 <blockquote>
 <p>“…provide for a clear and transparent written decision by a competent national authority, in a cost-effective manner and written within a reasonable period of time”.</p>
 </blockquote>
 <p>The single permit system should facilitate compliance with the terms of the Protocol by the governments operating this system. This could include creating an applicants portal providing clear information on the progress of applications in the procedure, the name and contact details of the relevant person at each stage of the procedure and extend to the generation of automatic emails notifying applicants when a stage in the procedure has been approved or providing written information on issues requiring resolution. Implementation of this principle could also include a clear, transparent and time limited appeals process.</p>
-<ol start="14" style="list-style-type: decimal">
+<ol start="15" style="list-style-type: decimal">
 <li><em>Transparency</em>. This principle has four aspects:</li>
 </ol>
 <ol style="list-style-type: lower-alpha">
@@ -265,18 +269,18 @@ $(document).ready(function () {
 <li><p><em>Responsibility</em>. To ensure clear lines of responsibility and prevent bottlenecks in the processing of applications the designation of a lead authority within the system is desirable. In cases where multiple permit granting authorities are involved in processing an application, applicants should be notified on the name of the authority holding the permit within the system at a given stage in the procedure. In cases of undue delay the designated lead authority should possess the authority to assist the authority involved to resolve the delay.</p></li>
 <li><p><em>Fair and Non-arbitrary</em>. Clear written reasons should be given for rejection of applications. A menu of standard reasons for rejection (e.g. incomplete information, inaccurate information, failure to comply with environmental impact assessment legislation etc.) could facilitate timely and transparent communications with applicants while meeting the terms of Article 6 of the Protocol. Applicants may be provided with the opportunity to appeal against rejected applications through a well defined and transparent procedure.</p></li>
 </ol>
-<ol start="15" style="list-style-type: decimal">
+<ol start="16" style="list-style-type: decimal">
 <li><p><em>No Backdoor Access to Permits</em>. No legitimate means should exist to obtain a permit outside the electronic system. Users of the permit system may seek to avoid using the electronic system in order to avoid its obligations to disclose information and enter into mutually agreed terms. This is likely to be pursued through personal networking. There should be no back-door routes to obtaining permit data outside of the single system or the integrity of the overall system will be undermined at the expense of longer term benefit-sharing for conservation and sustainable use.</p></li>
-<li><p><em>Address Types of Permit and Anticipate Change of Intent</em>. Permits may be granted for different types of research, notably non-commercial or commercial research. The Nagoya Protocol in Article 8(a) also anticipates the possibility of a change of intent from non-commercial to commercial research and development. The single permit system should provide a basic set of options for applicants (e.g. is this non-commercial or commercial research?) that then triggers different pathways for the processing of the applications by authorities in accordance with the requirements for non-commercial and commercial applications. Issues relating to change of intent could be dealt with through a formal requirement set out in the permit and associated MAT to declare a change of intent and report such a change within the online system. A report of a change of intent (from non-commercial to commercial research and development) would then trigger a negotiation phase for informed consent and revised MAT appropriate for commercial research and development. This possibility should be anticipated at the design stage.</p></li>
+<li><p><em>Address Types of Permit and Anticipate Change of Intent</em>. Permits may be granted for different types of research, notably non-commercial or commercial research. The Nagoya Protocol in <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-08">Article 8(a)</a> also anticipates the possibility of a change of intent from non-commercial to commercial research and development. The single permit system should provide a basic set of options for applicants (e.g. is this non-commercial or commercial research?) that then triggers different pathways for the processing of the applications by authorities in accordance with the requirements for non-commercial and commercial applications. Issues relating to change of intent could be dealt with through a formal requirement set out in the permit and associated MAT to declare a change of intent and report such a change within the online system. A report of a change of intent (from non-commercial to commercial research and development) would then trigger a negotiation phase for informed consent and revised MAT appropriate for commercial research and development. This possibility should be anticipated at the design stage.</p></li>
 <li><p><em>Monitoring</em>. The system should support monitoring in two ways:</p></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
 <li><p>By facilitating automated searches for scientific literature, patent data and online sources or product registries with respect to the provisions of Article 17 of the Nagoya Protocol.</p></li>
 <li><p>By providing applicants with a means to easily provide information on scientific publications, patent applications, products or other information relevant to the terms and conditions of the permit. Making it easier to provide information will at least partly overcome the limitations of reporting by researchers in existing systems.</p></li>
 </ol>
-<ol start="18" style="list-style-type: decimal">
+<ol start="19" style="list-style-type: decimal">
 <li><p><em>Tidy Data</em>. This technical principle relates to the conditions for using permit data as a tool for monitoring and reporting. Tidy data is the principle that a field in a data table should contain a single piece of information (e.g. a name) and no other information. A variable (normally a column) should only contain information of the same type (e.g. a country name, not a country name and an organisation name) (<a href="https://www.jstatsoft.org/article/view/v059i10">Wickham 2014</a>). This principle is important in creating a cost-effective and efficient monitoring and reporting system because the majority of an analysts time is typically taken up with cleaning messy data prior to analysis (see for example this <a href="http://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html?_r=0">New York Times article</a>). Anticipating the need for tidy data at the design stage will lead to cost savings at the implementation stage for monitoring and reporting.</p></li>
-<li><p><em>Reporting</em>. The system should contribute to the efforts of governments to meet internal national reporting requirements and to meet the obligations under Article 29 of the Nagoya Protocol on Monitoring and Reporting (national reporting and compliance with the obligations set out in the Protocol). Particular attention may be paid to COP MOP Decision NP-1/3 setting out guidelines and the format for interim national reports under <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">Article 29</a>.</p></li>
+<li><p><em>Reporting</em>. The system should contribute to the efforts of governments to meet internal national reporting requirements and to meet the obligations under <a href="(https://www.cbd.int/decision/np-mop/default.shtml?id=13403)">Article 29</a> of the Nagoya Protocol on Monitoring and Reporting (national reporting and compliance with the obligations set out in the Protocol). Particular attention may be paid to COP MOP <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">Decision NP-1/3</a> setting out guidelines and the format for interim national reports under <a href="https://www.cbd.int/decision/np-mop/default.shtml?id=13403">Article 29</a>.</p></li>
 </ol>
 <p>The online permit system can facilitate information on subjects such as:</p>
 <ol style="list-style-type: decimal">
@@ -286,6 +290,12 @@ $(document).ready(function () {
 <li>Countries involved.</li>
 <li>Publications/patent applications or products arising.</li>
 <li>Provision of information to the ABS Clearing House Mechanism.</li>
+</ol>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
 </ol>
 </div>
 
