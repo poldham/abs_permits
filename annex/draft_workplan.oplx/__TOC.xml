@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opnx="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="1055" y="99" w="1526" h="1318">
+  <window x="416" y="69" w="1464" h="1348">
     <editing-scenario>hkOYgMEDdIF</editing-scenario>
     <view>task</view>
     <change-tracking/>
     <draw-folded/>
     <status-display>basic</status-display>
     <task-view>
-      <split-view-divider-position>944</split-view-divider-position>
-      <outline x="0" y="0" w="944" h="1196">
+      <split-view-divider-position>1173</split-view-divider-position>
+      <outline x="0" y="0" w="1173" h="1226">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="829"/>
+        <column name="Title" width="670"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t83 t96 t1 t34 t92 t144 t133 t127 t43 t105 t114 t44 t134 t40 t128 t29 t58 t121 t79 t66 t8 t91"/>
-        <selected-items-at-filter-time idrefs="t46 t67 t135 t9 t2 t144 t84 t47 t133 t43 t93 t10 t48 t44 t134 t128 t45 t16 t7 t58 t29 t8 t115"/>
+        <column name="Cost" width="75"/>
+        <column name="Resources Cost" width="109"/>
+        <column name="Planned Start" width="100"/>
+        <column name="Planned End" width="100"/>
+        <expanded-items idrefs="t83 t91 t210 t96 t1 t113 t34 t199 t92 t144 t133 t121 t213 t127 t218 t43 t105 t200 t114 t171 t134 t40 t128 t66 t58 t159 t29 t79 t8 t206"/>
+        <selected-items-at-filter-time idrefs="t180 t159 t173 t215 t188 t195 t208 t201 t174 t167 t181 t160 t216 t189 t196 t209 t202 t182 t168 t175 t161 t197 t217 t2 t203 t169 t43 t183 t176 t29 t210 t190 t133 t218 t198 t44 t162 t211 t134 t191 t177 t184 t204 t163 t199 t170 t8 t219 t205 t185 t178 t192 t212 t128 t157 t164 t171 t206 t213 t179 t193 t186 t165 t158 t172 t144 t187 t214 t194 t207 t58 t200 t166"/>
       </outline>
-      <gantt-view x="-56" y="0" w="566" h="1196">
+      <gantt-view x="-54" y="0" w="275" h="1226">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -63,13 +67,13 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="291" h="508">
+      <outline x="0" y="0" w="291" h="714">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="135"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="-70" y="0" w="549" h="508">
+      <timeline x="-840" y="0" w="1090" h="714">
         <offtime-display>none</offtime-display>
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
@@ -113,7 +117,7 @@
     </resource-view>
     <calendar>
       <split-view-divider-position>290</split-view-divider-position>
-      <outline x="0" y="0" w="275" h="473">
+      <outline x="0" y="0" w="275" h="679">
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="139"/>
@@ -123,7 +127,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>157</next-task-id>
+    <next-task-id>220</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="hkOYgMEDdIF" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="true" seconds="false"/>

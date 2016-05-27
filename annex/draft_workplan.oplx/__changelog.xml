@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Paul Oldham" date="2016-05-27T10:12:01.248Z" timestamp="2016-05-27T10:12:01.248Z">
+    <change idref="t44" from="t-1" from-position="2" resolved="yes">
+      <change idref="t44" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t44" attribute="noEarlierThanConstraintDate" type="date" to="2016-04-01T07:00:00.000Z"/>
+      <change idref="t44" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t44" attribute="title" type="string" to="Element 3: Demonstration Model and Field Testing"/>
+    </change>
+    <change idref="t92" from="t-1" from-position="4" to="t-1" to-position="3" resolved="yes"/>
+    <change idref="t1" attribute="title" type="string" from="Element 1: Mapping Existing Research Permit Systems" to="Component A: Map Existing Research Permit Systems" resolved="yes"/>
+    <change idref="t157" to="t1" to-position="3" resolved="yes">
+      <change idref="t157" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t157" attribute="title" type="string" to="Task 4. Obtain copies of permit application forms, terms and conditions, information on storage and existing persons with access to the data."/>
+    </change>
+    <change idref="t2" attribute="title" type="string" from="Map Permit Granting Authorities" to="Task 1. Identify the authorities in the country with responsibility for granting ABS related research permits and the details of their mandates with respect to permits." resolved="yes"/>
+    <change idref="t3" attribute="title" type="string" from="Task 5. Workshop to discuss experience and the desirability (or otherwise) of a single electronic system serving multiple permit granting authorities. " to="Task 6. Workshop to discuss experience and the desirability (or otherwise) of a single electronic system serving multiple permit granting authorities. " resolved="yes"/>
+    <change idref="t4" attribute="title" type="string" from="Task 4. Generate process diagrams for permits within a country. " to="Task 5. Generate process diagrams for permits within a country. " resolved="yes"/>
+    <change idref="t8" attribute="title" type="string" from="Element 2: Map existing permit data with the scientific and patent literature" to="Component B: Baseline data on scientific and patent literature" resolved="yes"/>
+    <change idref="t158" to="t8" to-position="1" resolved="yes">
+      <change idref="t158" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t158" attribute="title" type="string" to="Task 2. Clean and then tidy permit data into formats suitable for searchlng literature and patent databases"/>
+    </change>
+    <change idref="t12" attribute="title" type="string" from="Task 4. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. Examples include the programmatic use of crossref or the EPO Open Patent Services or WIPO Patentscope databases and the rOpenSci and biosciences packages in languages such as R or Python. " to="Task 5. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. " resolved="yes"/>
+    <change idref="t13" attribute="title" type="string" from="Task 3. Develop search patterns for patent literature using patent databases and identify appropriate tools and match criteria to distinguish between positive and negative results. " to="Task 4. Develop search patterns for patent literature using patent databases and identify appropriate tools and match criteria to distinguish between positive and negative results. " resolved="yes"/>
+    <change idref="t14" attribute="title" type="string" from="Task 2. Obtain scientific literature for a specific country" to="Task 3. Obtain scientific literature for a specific country on biodiversity, genetic resources and associated traditional knowledge (indigenous peoples and local communities)" resolved="yes"/>
+    <change idref="t15" attribute="title" type="string" from="Task 1. Obtain copies of permit data (preferably in electronic form) to " to="Task 1. Obtain copies of permit data (preferably in electronic form) to including use of confidentiality agreements and data storage." resolved="yes"/>
+    <change idref="t17" attribute="title" type="string" from="Task 5. Report on experience gained and future development plans (Year 2, Year 3)" to="Task 6. Where the project forms part of a network of participating countries and organisations, deposit working code and documentation in an open access repository (e.g. GitHub) for potential use and further development by partners. " resolved="yes"/>
+    <change idref="t19" attribute="title" type="string" from="Task 3. Develop a pilot system at an early stage (Year 1) accommodating the principles of agile development 		(iterative and flexible software development) wherever possible." to="Task 4. Develop a costed development plan over a period of 3 years and projected costs for future years." resolved="yes"/>
+    <change idref="t20" attribute="title" type="string" from="Task 2. Develop a costed plan of implementation over a period of 3 years" to="Task 3. Based on experience in Task 1 &amp; 2, including assessment of existing capacities and strengths, identify appropriate software and hardware requirements for the Core System (Component 6)." resolved="yes"/>
+    <change idref="t28" attribute="title" type="string" from="Task 1. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system consisting of " to="Task 1. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system." resolved="yes"/>
+    <change idref="t29" attribute="title" type="string" from="Element 4: Developing an online electronic permit and monitoring system" to="Component C: Development and Implementation Plan" resolved="yes"/>
+    <change idref="t18" from="t29" from-position="3" resolved="yes">
+      <change idref="t18" attribute="title" type="string" to="Task 4. Implement and continue the development of the system with regular periodic review by users."/>
+    </change>
+    <change idref="t159" to="t29" to-position="1" resolved="yes">
+      <change idref="t159" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t159" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t159" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t159" attribute="title" type="string" to="Task 2. Develop a working model and engage in field testing. "/>
+    </change>
+    <change idref="t165" to="t29" to-position="4" resolved="yes">
+      <change idref="t165" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t165" attribute="title" type="string" to="Task 5. Document experience gained and lessons learned."/>
+    </change>
+    <change idref="t30" attribute="title" type="string" from="Task 4. Test using services such as Google forms or Wufoo and refine to final version. " to="Task 4. Test and refine to final version." resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="Task 2. Establish secure username and password system" to="Task 2. Establish secure username and password system." resolved="yes"/>
+    <change idref="t33" attribute="title" type="string" from="Task 1. Create applicant home page system" to="Task 1. Create applicant home page system." resolved="yes"/>
+    <change idref="t34" attribute="title" type="string" from="Element 5.1.2. Applications" to="Element 2.2. Applications" resolved="yes"/>
+    <change idref="t40" attribute="title" type="string" from="Element 5.1.1. Information" to="Element 2.1. Information" resolved="yes"/>
+    <change idref="t43" attribute="title" type="string" from="Element 5: Applicants Portal" to="Component 2: Applicants Portal" resolved="yes"/>
+    <change idref="t53" attribute="title" type="string" from="Task 4. Establish a system that: a) lists the stages in the application procedure; b) provides the name and contact details (email) for the person responsible for that stage of the procedur really rubbish at cleare; c) updates the record upon completion to show the next stage in the procedure and persons responsible; d) generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. " to="Task 4. Establish a system linking unique identifiers (e.g. BS20151234) with notifications to create an integrated file register (file history) for applications within the data archive. " resolved="yes"/>
+    <change idref="t58" attribute="title" type="string" from="Element 5.1.3 Notifications" to="Element 2.3 Notifications" resolved="yes"/>
+    <change idref="t171" to="t58" to-position="4" resolved="yes">
+      <change idref="t171" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t171" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t171" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t171" attribute="title" type="string" to="Task 5. Establish a system that: 
+
+a) Lists the stages in the application procedure
+b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
+c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
+d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. "/>
+    </change>
+    <change idref="t60" attribute="title" type="string" from="Task 6. Investigate the use of either persistent identifiers(BS20151234) and QR/Barcodes/html tags to build redundancy into the system (e.g. triple redundancy principle)" to="Task 6. Test approaches, including “permit passes” with a selection of applicants and adjust based on lessons learned." resolved="yes"/>
+    <change idref="t61" attribute="title" type="string" from="Task 5. Establish uniform persistent identifiers (BS20151234) for use in conjunction with publications, patents, products and electronic data. " to="Task 5. Provide instructions on the use of unique identifiers (e.g. BS20151234) in publications, patents, products, sequence and electronic data. " resolved="yes"/>
+    <change idref="t62" attribute="title" type="string" from="Task 4. Create a system for HTML embed codes (for sequence data/publications etc.)." to="Task 4. Create a system for HTML embed codes (for electronic data)." resolved="yes"/>
+    <change idref="t64" attribute="title" type="string" from="Task 2.  Create system to generate a permit pass and QR code generation for mobile phones and tablets. " to="Task 2.  Create system to generate a time limited permit pass and QR code generation for mobile phones and tablets. " resolved="yes"/>
+    <change idref="t66" attribute="title" type="string" from="Element 5.1.4 Approvals" to="Element 2.4 Approvals" resolved="yes"/>
+    <change idref="t59" from="t66" from-position="6" resolved="yes">
+      <change idref="t59" attribute="title" type="string" to="Task 7. Test mobile readers with authorities for “permit passes” and adjust based on feedback received."/>
+    </change>
+    <change idref="t69" attribute="title" type="string" from="Task 5. Test system with applicants" to="Task 5. Test system with selected applicants." resolved="yes"/>
+    <change idref="t70" attribute="title" type="string" from="i) other information on activities arising from the permit" to="i) other information on activities arising from the permit and associated MAT." resolved="yes"/>
+    <change idref="t71" attribute="title" type="string" from="h) products for which market approval is sought or approved" to="h) Products for which market approval is sought or approved." resolved="yes"/>
+    <change idref="t72" attribute="title" type="string" from="g) patent applications and grants" to="g) Patent applications and grants." resolved="yes"/>
+    <change idref="t73" attribute="title" type="string" from="f) transfers of materials to third parties and the terms and conditions of transfer" to="f) Transfers of materials to third parties and the terms and conditions of transfer." resolved="yes"/>
+    <change idref="t74" attribute="title" type="string" from="e) locations where collected samples are stored" to="e) Locations where collected samples are stored." resolved="yes"/>
+    <change idref="t75" attribute="title" type="string" from="d) accession numbers for sequence data or deposits of genetic material" to="d) Accession numbers for sequence data or deposits of genetic material." resolved="yes"/>
+    <change idref="t76" attribute="title" type="string" from="c) links to home pages and academic social media sites such as researchgate.com or academia.edu etc. " to="a) Links to home pages and/or academic record sites such as ORCID, and social media sites such as researchgate.com or academia.edu etc. (ideally imported from information provided on application under Element 2.2)." resolved="yes"/>
+    <change idref="t77" attribute="title" type="string" from="b) doi (document identifier links to publications for automated retrieval)" to="c) doi (document identifier links to publications for automated retrieval)." resolved="yes"/>
+    <change idref="t78" attribute="title" type="string" from="a) uploads of publications (pre-print or published)" to="b) Uploads of publications (pre-print or published)." resolved="yes"/>
+    <change idref="t76" from="t79" from-position="2" to="t79" to-position="0" resolved="yes"/>
+    <change idref="t80" attribute="title" type="string" from="Task 3. Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes). [Legal component]" to="Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]" resolved="yes"/>
+    <change idref="t83" attribute="title" type="string" from="Element 5.1.5 Reporting" to="Element 2.5 Reporting" resolved="yes"/>
+    <change idref="t85" attribute="title" type="string" from="Task 6. Identify form of notification to applicant within system for unambiguous final acceptance or final rejection. [Legal component]" to="Task 6. Provide notifications to applicant within the system including the final written decision. [Legal component]" resolved="yes"/>
+    <change idref="t86" attribute="title" type="string" from="Task 5. Identify criteria for accepting or rejecting an appeal. [Legal component]" to="Task 5. Provide information on the criteria for accepting or rejecting an appeal. [Legal component]" resolved="yes"/>
+    <change idref="t87" attribute="title" type="string" from="Task 4. Identify person(s) responsible and provide contact details. [Legal component]" to="Task 4. Provide information on the person(s) responsible for handling appeals. [Legal component]" resolved="yes"/>
+    <change idref="t88" attribute="title" type="string" from="Task 3. Define form of documents for appeals. [Legal component]" to="Task 3. Provide documents for submitting appeals. [Legal component]" resolved="yes"/>
+    <change idref="t89" attribute="title" type="string" from="Task 2. Define roadmap and timeline for appeals process. [Legal component]" to="Task 2. Provide information on the timeline for appeals. [Legal component]" resolved="yes"/>
+    <change idref="t90" attribute="title" type="string" from="Task 1. Identify grounds for appeal. [Legal component]" to="Task 1. Provide information on the grounds for appeal. [Legal component]" resolved="yes"/>
+    <change idref="t91" attribute="title" type="string" from="Element 4.1.6 Appeals:" to="Element 2.6 Appeals:" resolved="yes"/>
+    <change idref="t92" attribute="title" type="string" from="Element 6: Authorities Portal" to="Component 1: Authorities Portal" resolved="yes"/>
+    <change idref="t96" attribute="title" type="string" from="Element 5.1 Enquiries [Legal component]" to="Element 1.1 Enquiries [Legal component]" resolved="yes"/>
+    <change idref="t97" attribute="title" type="string" from="Task 8. Define next steps for non-commercial research (e.g. compliance with environmental legislation, local partners, deposit of samples etc.), taking note of Article 8(a) of the Nagoya Protocol." to="Task 7. Define next steps for non-commercial research including standardised MAT for non-commercial research under Article 8(a) of the Nagoya Protocol and addressing closely related issues (e.g. compliance with environmental legislation, local partners, national deposit of samples etc.).[Legal component]" resolved="yes"/>
+    <change idref="t98" attribute="title" type="string" from="Task 7. Establish criteria for validating if non-commercial or commercial research (or both)" to="Task 6. Establish criteria for validating if non-commercial or commercial research (or both)" resolved="yes"/>
+    <change idref="t99" attribute="title" type="string" from="Task 6. Develop individual authority checklist (or lists as appropriate to authority)" to="Task 5. Develop individual authority checklist (or lists as appropriate to authority)" resolved="yes"/>
+    <change idref="t100" attribute="title" type="string" from="Task 5. Develop standard notifications to applicants on receipt and completeness. " to="Task 4. Develop standard notifications to applicants on receipt and completeness. " resolved="yes"/>
+    <change idref="t105" attribute="title" type="string" from="Element 5.2 Review {Legal component]" to="Element 1.2 Review {Legal component]" resolved="yes"/>
+    <change idref="t101" from="t105" from-position="3" resolved="yes">
+      <change idref="t101" attribute="title" type="string" to="Task 4. Include visual validation of unique identifier in checklist"/>
+    </change>
+    <change idref="t114" attribute="title" type="string" from="Element 5.3 Negotiation [Legal component]" to="Element 1.3 Negotiation [Legal component]" resolved="yes"/>
+    <change idref="t166" to="t114" to-position="8" resolved="yes">
+      <change idref="t166" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t166" attribute="title" type="string" to="Task 2. Develop a template for standard MAT for commercial research taking into account that this may be a starting point for negotiations."/>
+    </change>
+    <change idref="t167" to="t114" to-position="9" resolved="yes">
+      <change idref="t167" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t167" attribute="title" type="string" to="Task 3. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component]"/>
+    </change>
+    <change idref="t121" attribute="title" type="string" from="Element 5.4. Approve/Reject [Legal component]" to="Element 1.4. Approve/Reject [Legal component]" resolved="yes"/>
+    <change idref="t116" from="t121" from-position="4" resolved="yes">
+      <change idref="t116" attribute="title" type="string" to="Task 5. System to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side)."/>
+    </change>
+    <change idref="t117" from="t121" from-position="3" resolved="yes">
+      <change idref="t117" attribute="title" type="string" to="Task 4. Establish harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and supplementary agreements are maintained across time and space. "/>
+    </change>
+    <change idref="t118" from="t121" from-position="2" resolved="yes">
+      <change idref="t118" attribute="title" type="string" to="Task 3. Define any supplementary (ABS or Impact) agreements to the permit. "/>
+    </change>
+    <change idref="t168" to="t121" to-position="2" resolved="yes">
+      <change idref="t168" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t168" attribute="title" type="string" to="Task 3. Define templates for MAT/ABS contracts linked to the permit."/>
+    </change>
+    <change idref="t169" to="t121" to-position="3" resolved="yes">
+      <change idref="t169" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t169" attribute="title" type="string" to="Task 4. Implement the harmonised document identifier system (e.g. BS20151234) to ensure links between the permit and MAT/ABS contracts are maintained across time and space. "/>
+    </change>
+    <change idref="t170" to="t121" to-position="4" resolved="yes">
+      <change idref="t170" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t170" attribute="title" type="string" to="Task 5. Implement the system to generate .pdf permits, QR codes, barcodes, HTML embed codes and labels (see applicant side tasks for testing)."/>
+    </change>
+    <change idref="t127" attribute="title" type="string" from="Element 5.5. Appeals [Legal component]" to="Element 1.5. Appeals [Legal component]" resolved="yes"/>
+    <change idref="t128" attribute="title" type="string" from="Element 10: Data Archive" to="Component 6: Core System" resolved="yes"/>
+    <change idref="t129" from="t128" from-position="3" resolved="yes">
+      <change idref="t129" attribute="title" type="string" to="Task 4. Harmonise with physical archives"/>
+    </change>
+    <change idref="t130" from="t128" from-position="2" resolved="yes">
+      <change idref="t130" attribute="title" type="string" to="Task 3. Establish secure Cloud back up (see Task 2)"/>
+    </change>
+    <change idref="t131" from="t128" from-position="1" resolved="yes">
+      <change idref="t131" attribute="title" type="string" to="Task 2. Establish secure back up infrastructure and routines"/>
+    </change>
+    <change idref="t200" to="t128" to-position="0" resolved="yes">
+      <change idref="t200" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t200" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t200" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t200" attribute="title" type="string" to="Element 1: Preparatory"/>
+    </change>
+    <change idref="t199" to="t128" to-position="1" resolved="yes">
+      <change idref="t199" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t199" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t199" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t199" attribute="title" type="string" to="Element 2. Server Software"/>
+    </change>
+    <change idref="t206" to="t128" to-position="2" resolved="yes">
+      <change idref="t206" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t206" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t206" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t206" attribute="title" type="string" to="Element 3. Database Software"/>
+    </change>
+    <change idref="t132" attribute="title" type="string" from="Task 1. Establish Data archive in core system including permit data in text and table form and stored as .pdf." to="Task 4. Acquire relevant hardware, server and database software." resolved="yes"/>
+    <change idref="t133" attribute="title" type="string" from="Element 8: Monitoring" to="Component 4: Monitoring" resolved="yes"/>
+    <change idref="t149" from="t133" from-position="7" resolved="yes">
+      <change idref="t149" attribute="title" type="string" to="Task 8. Develop an open access manual on ABS monitoring for use by staff and in training future trainers.  "/>
+    </change>
+    <change idref="t150" from="t133" from-position="6" resolved="yes">
+      <change idref="t150" attribute="title" type="string" to="Task 7. Build a network of staff engaged in monitoring from participating countries. "/>
+    </change>
+    <change idref="t151" from="t133" from-position="5" resolved="yes">
+      <change idref="t151" attribute="title" type="string" to="Task 6. Provide follow up training as required"/>
+    </change>
+    <change idref="t152" from="t133" from-position="4" resolved="yes">
+      <change idref="t152" attribute="title" type="string" to="Task 5. Provide training for key staff focusing on local capacity"/>
+    </change>
+    <change idref="t153" from="t133" from-position="3" resolved="yes">
+      <change idref="t153" attribute="title" type="string" to="Task 4. Discuss and mutually agree on the most appropriate monitoring tools for use in the partner country. "/>
+    </change>
+    <change idref="t154" from="t133" from-position="2" resolved="yes">
+      <change idref="t154" attribute="title" type="string" to="Task 3. Identify relevant commercial databases and analytics software to facilitate monitoring. "/>
+    </change>
+    <change idref="t155" from="t133" from-position="1" resolved="yes">
+      <change idref="t155" attribute="title" type="string" to="Task 2. Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches."/>
+    </change>
+    <change idref="t156" from="t133" from-position="0" resolved="yes">
+      <change idref="t156" attribute="title" type="string" to="Task 1. Develop search queries key data fields from research permit data for searches of scientific literature, patent literature, product information and general web searches. "/>
+    </change>
+    <change idref="t182" to="t133" to-position="0" resolved="yes">
+      <change idref="t182" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t182" attribute="title" type="string" to="Task 1 Generate outputs from the core permit system (database) for use in the construction of search queries of scientific literature, patent literature, dna databases, product information and general web searches. "/>
+    </change>
+    <change idref="t183" to="t133" to-position="1" resolved="yes">
+      <change idref="t183" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t183" attribute="title" type="string" to="Task 2 Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches) (e.g. R, Python)."/>
+    </change>
+    <change idref="t184" to="t133" to-position="2" resolved="yes">
+      <change idref="t184" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t184" attribute="title" type="string" to="Task 3 Identify relevant commercial databases and analytics software to facilitate monitoring."/>
+    </change>
+    <change idref="t185" to="t133" to-position="3" resolved="yes">
+      <change idref="t185" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t185" attribute="title" type="string" to="Task 4 Develop a plan for a phased transition from commercial to open sources tools (or appropriate mix of tools). "/>
+    </change>
+    <change idref="t186" to="t133" to-position="4" resolved="yes">
+      <change idref="t186" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t186" attribute="title" type="string" to="Task 5 Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the acquisition of programming and analytics skills. "/>
+    </change>
+    <change idref="t187" to="t133" to-position="5" resolved="yes">
+      <change idref="t187" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t187" attribute="title" type="string" to="Task 6 Implement monitoring following the basic workflow defined in Element 4.5 on Data Analysis in the model (Gather, Clean, Analyse, Visualise and Report)."/>
+    </change>
+    <change idref="t188" to="t133" to-position="6" resolved="yes">
+      <change idref="t188" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t188" attribute="title" type="string" to="Task 7 Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use."/>
+    </change>
+    <change idref="t189" to="t133" to-position="7" resolved="yes">
+      <change idref="t189" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t189" attribute="title" type="string" to="Task 8 Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries."/>
+    </change>
+    <change idref="t190" to="t133" to-position="8" resolved="yes">
+      <change idref="t190" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t190" attribute="title" type="string" to="Task 9 Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. "/>
+    </change>
+    <change idref="t134" attribute="title" type="string" from="Element 9: Reporting " to="Component 5: Reporting " resolved="yes"/>
+    <change idref="t192" to="t134" to-position="3" resolved="yes">
+      <change idref="t192" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t192" attribute="title" type="string" to="Task 4. Identify non-confidential information and develop a procedure to output appropriate data to the ABS Clearing House Mechanism."/>
+    </change>
+    <change idref="t193" to="t134" to-position="4" resolved="yes">
+      <change idref="t193" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t193" attribute="title" type="string" to=" Task 5. Integrate reporting templates and outputs with the core system data archive for future use."/>
+    </change>
+    <change idref="t136" attribute="title" type="string" from="Task 3. Establish programmatic solutions to automate data generation to meet reporting requirements in the formats required. " to="Task 3. Establish templates to automate data generation to meet reporting requirements in the formats required." resolved="yes"/>
+    <change idref="t136" attribute="effort" type="real" from="28800" to="0" resolved="yes"/>
+    <change idref="t137" attribute="title" type="string" from="Task 2. Identify components of permit and related datasets that can contribute to reporting requirements. " to="Task 2. Identify components of permit and related datasets that can contribute to meeting reporting requirements. " resolved="yes"/>
+    <change idref="t144" attribute="title" type="string" from="Element 7: Legal" to="Component 3: Legal" resolved="yes"/>
+    <change idref="t178" to="t144" to-position="0" resolved="yes">
+      <change idref="t178" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t178" attribute="title" type="string" to="Task 1. Compile existing legislation relevant to permits and the terms and conditions in existing permits. "/>
+    </change>
+    <change idref="t179" to="t144" to-position="1" resolved="yes">
+      <change idref="t179" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t179" attribute="title" type="string" to="Task 2. Clarify and establish a clear legal relationship between permits and MAT (ABS contracts) for the purposes of legal certainty."/>
+    </change>
+    <change idref="t145" attribute="title" type="string" from="Task 3. Identify future requirements for legal review." to="Task 6.  Identify future requirements for legal review as part of the system&apos;s development plan." resolved="yes"/>
+    <change idref="t146" attribute="title" type="string" from="Task 3. Collaborate with technical staff in incorporating legal elements into the system.  " to="Task 5. Collaborate with technical staff in incorporating legal elements into the system.  " resolved="yes"/>
+    <change idref="t147" attribute="title" type="string" from="Task 2. Engage in legal drafting for relevant elements of the permit and monitoring system." to="Task 4. Engage in legal drafting for relevant elements of the permit and monitoring system." resolved="yes"/>
+    <change idref="t148" attribute="title" type="string" from="Task 1. Identify areas of the online permit and monitoring system requiring legal input." to="Task 3. Identify areas of the online permit and monitoring system requiring legal input." resolved="yes"/>
+    <change idref="t160" to="t159" to-position="0" resolved="yes">
+      <change idref="t160" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t160" attribute="title" type="string" to="Task 2.1. Develop one or more working models of the system including identifying solutions using different tools that may be best suited to the diversity of circumstances and existing capacities within a country."/>
+    </change>
+    <change idref="t161" to="t159" to-position="1" resolved="yes">
+      <change idref="t161" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t161" attribute="title" type="string" to="Task 2.2. Consult with staff from authorities involved in checking permit data on the ground (National Parks, Customs, police and others) and identify existing approaches and tools, what already works, problems encountered, and potential solutions."/>
+    </change>
+    <change idref="t162" to="t159" to-position="2" resolved="yes">
+      <change idref="t162" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t162" attribute="title" type="string" to="Task 2.3. Identify how checks by local level authorities can be most effectively linked to an online permit and monitoring system."/>
+    </change>
+    <change idref="t163" to="t159" to-position="3" resolved="yes">
+      <change idref="t163" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t163" attribute="title" type="string" to="Task 2.4. Arrange field tests of solutions such as barcodes, QR code readers, html embed codes etc. with relevant authorities and adapt solutions focusing on meeting actual needs. "/>
+    </change>
+    <change idref="t164" to="t159" to-position="4" resolved="yes">
+      <change idref="t164" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t164" attribute="title" type="string" to="Task 2.5. In consultation with relevant national/international collections identify appropriate options for the inclusion of permit identifiers in sample labels and sequence data. Identify opportunities for a networked approach with participating countries. "/>
+    </change>
+    <change idref="t172" to="t171" to-position="0" resolved="yes">
+      <change idref="t172" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t172" attribute="title" type="string" to="a) Lists the stages in the application procedure"/>
+    </change>
+    <change idref="t173" to="t171" to-position="1" resolved="yes">
+      <change idref="t173" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t173" attribute="title" type="string" to="b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. "/>
+    </change>
+    <change idref="t174" to="t171" to-position="2" resolved="yes">
+      <change idref="t174" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t174" attribute="title" type="string" to="c) Updates the record upon completion to show the next stage in the procedure and persons responsible."/>
+    </change>
+    <change idref="t175" to="t171" to-position="3" resolved="yes">
+      <change idref="t175" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t175" attribute="title" type="string" to="d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. "/>
+    </change>
+    <change idref="t201" to="t199" to-position="0" resolved="yes">
+      <change idref="t201" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t201" attribute="title" type="string" to="Task 1. Build online front page system and unique home page system for authorities and applicants."/>
+    </change>
+    <change idref="t202" to="t199" to-position="1" resolved="yes">
+      <change idref="t202" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t202" attribute="title" type="string" to="Task 2. Install secure password system for home page access."/>
+    </change>
+    <change idref="t203" to="t199" to-position="2" resolved="yes">
+      <change idref="t203" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t203" attribute="title" type="string" to="Task 3. Install, adapt or build the notification system between applicants and authorities and link the system to the database and data archive. "/>
+    </change>
+    <change idref="t204" to="t199" to-position="3" resolved="yes">
+      <change idref="t204" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t204" attribute="title" type="string" to="Task 4. Based on lessons learned from Component C, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities). (See also Element 3, task 4)."/>
+    </change>
+    <change idref="t196" to="t200" to-position="0" resolved="yes">
+      <change idref="t196" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t196" attribute="title" type="string" to="Task 1. Identify internal and external programming capacity for development and maintenance of the online system. (see Component C, task 1)."/>
+    </change>
+    <change idref="t197" to="t200" to-position="1" resolved="yes">
+      <change idref="t197" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t197" attribute="title" type="string" to="Task 2. As part of an open source network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code. "/>
+    </change>
+    <change idref="t198" to="t200" to-position="2" resolved="yes">
+      <change idref="t198" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t198" attribute="title" type="string" to="Task 3. Based on the outcomes of Component C and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context."/>
+    </change>
+    <change idref="t132" from="t128" from-position="0" to="t200" to-position="3" resolved="yes"/>
+    <change idref="t207" to="t206" to-position="0" resolved="yes">
+      <change idref="t207" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t207" attribute="title" type="string" to="Task 1. Develop scripts for key functions with components and elements."/>
+    </change>
+    <change idref="t208" to="t206" to-position="1" resolved="yes">
+      <change idref="t208" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t208" attribute="title" type="string" to="Task 2. Establish file register (file history) system using unique identifiers (e.g. BS20151234)."/>
+    </change>
+    <change idref="t209" to="t206" to-position="2" resolved="yes">
+      <change idref="t209" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t209" attribute="title" type="string" to="Task 3. Develop scripts to link to the Data Archive, Secure Backup and Physical Archive."/>
+    </change>
+    <change idref="t210" to="t206" to-position="3" resolved="yes">
+      <change idref="t210" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t210" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t210" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t210" attribute="title" type="string" to="Task 4. Identify and address additional software/coding needs for the generation of permits with particular attention to the technical aspects of:"/>
+    </change>
+    <change idref="t213" to="t206" to-position="4" resolved="yes">
+      <change idref="t213" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t213" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t213" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t213" attribute="title" type="string" to="Element 4. Data Archive"/>
+    </change>
+    <change idref="t218" to="t206" to-position="5" resolved="yes">
+      <change idref="t218" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t218" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t218" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t218" attribute="title" type="string" to="Element 5. Development Cycle Planning"/>
+    </change>
+    <change idref="t211" to="t210" to-position="0" resolved="yes">
+      <change idref="t211" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t211" attribute="title" type="string" to="a) QR Code based permit passes."/>
+    </change>
+    <change idref="t212" to="t210" to-position="1" resolved="yes">
+      <change idref="t212" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t212" attribute="title" type="string" to="b) Labels for specimen bags, specimens and related records."/>
+    </change>
+    <change idref="t214" to="t213" to-position="0" resolved="yes">
+      <change idref="t214" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t214" attribute="title" type="string" to="Task 1. Establish a Data archive including secure backups."/>
+    </change>
+    <change idref="t215" to="t213" to-position="1" resolved="yes">
+      <change idref="t215" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t215" attribute="title" type="string" to="Task 2. Identify and implement appropriate ways of outputting data to the physical archive while maintaining links with the unique identifier system. "/>
+    </change>
+    <change idref="t216" to="t213" to-position="2" resolved="yes">
+      <change idref="t216" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t216" attribute="title" type="string" to="Task 3. Cloud storage. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction and take appropriate decisions on adoption. [Legal element]"/>
+    </change>
+    <change idref="t217" to="t213" to-position="3" resolved="yes">
+      <change idref="t217" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t217" attribute="title" type="string" to="Task 4.  Secure offline storage. Identify appropriate options for secure offline storage of confidential information. "/>
+    </change>
+    <change idref="t219" to="t218" to-position="0" resolved="yes">
+      <change idref="t219" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
+      <change idref="t219" attribute="title" type="string" to="Task 1. Establish a procedure for updating the development plan for the online system (Component C, task 4)."/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Paul Oldham" date="2016-05-27T10:18:15.381Z" timestamp="2016-05-27T10:18:15.381Z">
+    <change idref="t39" from="t43" from-position="1" to="t40" to-position="0" resolved="yes"/>
+    <change idref="t38" from="t43" from-position="2" to="t40" to-position="1" resolved="yes"/>
+    <change idref="t37" from="t43" from-position="3" to="t40" to-position="2" resolved="yes"/>
+    <change idref="t36" from="t43" from-position="4" to="t40" to-position="3" resolved="yes"/>
+    <change idref="t171" from="t58" from-position="4" to="t43" to-position="3" resolved="yes"/>
+    <change idref="t80" attribute="title" type="string" from="Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]" to="Task 3. Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]" resolved="yes"/>
+    <change idref="t106" attribute="title" type="string" from="	g) Establish criteria for acceptance or rejection of commercial applications. " to="g) Establish criteria for acceptance or rejection of commercial applications. " resolved="yes"/>
+    <change idref="t107" attribute="title" type="string" from="	f) Establish criteria on Intellectual Property Rights. " to="f) Establish criteria on Intellectual Property Rights. " resolved="yes"/>
+    <change idref="t108" attribute="title" type="string" from="	e) Establish criteria for benefit-sharing. " to="e) Establish criteria for benefit-sharing. " resolved="yes"/>
+    <change idref="t109" attribute="title" type="string" from="	d) Establish environmental legislation and procedure criteria." to="d) Establish environmental legislation and procedure criteria." resolved="yes"/>
+    <change idref="t110" attribute="title" type="string" from="	c) Establish time frame for negotiations. " to="c) Establish time frame for negotiations. " resolved="yes"/>
+    <change idref="t111" attribute="title" type="string" from="	b) Identify standard list of participants in negotiations. " to="b) Identify standard list of participants in negotiations. " resolved="yes"/>
+    <change idref="t112" attribute="title" type="string" from="	a) Establish criteria for negotiations." to="a) Establish criteria for negotiations." resolved="yes"/>
+    <change idref="t113" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t113" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t113" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t113" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t113" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t113" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t113" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t112" from="t114" from-position="1" to="t113" to-position="0" resolved="yes"/>
+    <change idref="t111" from="t114" from-position="2" to="t113" to-position="1" resolved="yes"/>
+    <change idref="t110" from="t114" from-position="3" to="t113" to-position="2" resolved="yes"/>
+    <change idref="t109" from="t114" from-position="4" to="t113" to-position="3" resolved="yes"/>
+    <change idref="t108" from="t114" from-position="5" to="t113" to-position="4" resolved="yes"/>
+    <change idref="t107" from="t114" from-position="6" to="t113" to-position="5" resolved="yes"/>
+    <change idref="t106" from="t114" from-position="7" to="t113" to-position="6" resolved="yes"/>
+    <change idref="t213" from="t206" from-position="4" to="t128" to-position="3" resolved="yes"/>
+    <change idref="t218" from="t206" from-position="5" to="t128" to-position="4" resolved="yes"/>
+    <change idref="t175" attribute="title" type="string" from="d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. " to="d) Generates the permit and associated material (permit passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. " resolved="yes"/>
+    <change idref="t182" attribute="title" type="string" from="Task 1 Generate outputs from the core permit system (database) for use in the construction of search queries of scientific literature, patent literature, dna databases, product information and general web searches. " to="Task 1. Generate outputs from the core permit system (database) for use in the construction of search queries of scientific literature, patent literature, dna databases, product information and general web searches. " resolved="yes"/>
+    <change idref="t183" attribute="title" type="string" from="Task 2 Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches) (e.g. R, Python)." to="Task 2. Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches) (e.g. R, Python)." resolved="yes"/>
+    <change idref="t184" attribute="title" type="string" from="Task 3 Identify relevant commercial databases and analytics software to facilitate monitoring." to="Task 3. Identify relevant commercial databases and analytics software to facilitate monitoring." resolved="yes"/>
+    <change idref="t185" attribute="title" type="string" from="Task 4 Develop a plan for a phased transition from commercial to open sources tools (or appropriate mix of tools). " to="Task 4. Develop a plan for a phased transition from commercial to open sources tools (or appropriate mix of tools). " resolved="yes"/>
+    <change idref="t186" attribute="title" type="string" from="Task 5 Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the acquisition of programming and analytics skills. " to="Task 5. Provide training for key staff focusing on developing and sustaining local capacity and provide formal training opportunities to encourage the acquisition of programming and analytics skills. " resolved="yes"/>
+    <change idref="t187" attribute="title" type="string" from="Task 6 Implement monitoring following the basic workflow defined in Element 4.5 on Data Analysis in the model (Gather, Clean, Analyse, Visualise and Report)." to="Task 6. Implement monitoring following the basic workflow defined in Element 4.5 on Data Analysis in the model (Gather, Clean, Analyse, Visualise and Report)." resolved="yes"/>
+    <change idref="t188" attribute="title" type="string" from="Task 7 Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use." to="Task 7. Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use." resolved="yes"/>
+    <change idref="t189" attribute="title" type="string" from="Task 8 Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries." to="Task 8. Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries." resolved="yes"/>
+    <change idref="t190" attribute="title" type="string" from="Task 9 Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. " to="Task 9. Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. " resolved="yes"/>
+  </task-change-set>
+</changelog>
