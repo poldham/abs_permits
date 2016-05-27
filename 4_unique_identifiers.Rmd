@@ -17,11 +17,11 @@ This section discusses the use of unique identifiers for permits and related doc
 
 Unique identifiers associated with permits and associated documents will allow for sets of documents linked to a specific application to be stored within a retrievable register or file history. As such, unique identifiers will enable internal coherence within the permit system. 
 
-Unique identifiers linked to a permit and corresponding MAT (an ABS contract) are also the key to monitoring the outcomes of research including the genetic resources. We propose a system consisting of the following unique identifiers
+Unique identifiers linked to a permit and corresponding MAT (an ABS contract) are also the key to monitoring the outcomes of research and the genetic resources. We propose a system consisting of the following unique identifiers:
 
-1. Country Codes, dates and unique numbers (e.g. BS20151234)
-2. Bar codes
-3. QR Codes (Quick Response codes)
+1. Country Codes, dates and unique numbers (e.g. BS20151234).
+2. Bar codes.
+3. QR Codes (Quick Response codes).
 4. Html embed codes. 
 
 In proposing the use of unique identifiers we also suggest the application of the principle of triple redundancy, notably in labelling. The principle of triple redundancy is a well established engineering principle that involves three different systems performing the same function. In the event that one system fails a second system takes over the same function. If the second system fails then the third system takes over. Given that the failure of all three systems is unlikely the function of a particular system within a wider system is maintained. It is important to note that triple redundancy does not guarantee that a system will not fail completely, rather it reduces the likelihood of failure.  
@@ -56,7 +56,8 @@ The relevance of this type of numbering system becomes apparent when we consider
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/figx_Espacenet_specimen.png)
 
-In this case, the applicants make reference to a sponge specimen 23-XI-98-3-002 and a HBOI CatNo. 003:00973. Under the proposal advanced in this document the ABS domestic legislation, permit and associated MAT could require recipients of a permit to disclose the permit number (e.g. BS20151234) in any patent application arising from the research. 
+In this case, the applicants make reference to a sponge specimen 23-XI-98-3-002 and a HBOI CatNo. 003:00973. Under the proposal advanced in this document the ABS domestic legislation, permit and associated MAT could require recipients of a permit to disclose the permit number (e.g. BS20151234) in the description section of any patent application arising from the research.^[See Oldham and Burton (2010) Defusing Disclosure in Patent Applications, 
+[UNEP/CBD/COP/10/INF/44](https://www.cbd.int/doc/meetings/cop/cop-10/information/cop-10-inf-44-en.pdf) and Oldham, Hall and Forero (2013) [Biological Diversity in the Patent System. PLOS ONE](http://dx.doi.org/10.1371/journal.pone.0078737))].  
 
 ## Unique Identifiers and Registers
 
@@ -102,7 +103,7 @@ get_boldid(searchterm = "Prunus africana") # search for the dna barcode id for a
 
 ```
 
-More information from the URL can then be accessed in R or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable [here](http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949).
+More information from the URL can then be accessed in R as a data table or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable [here](http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949).
 
 ![](/Users/pauloldham17inch/Desktop/Permit\ System/abs_permits/images/figx_bold_1.png)
 

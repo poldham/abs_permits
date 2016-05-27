@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ##Introduction
 
-This section provides a draft workplan for countries interested in implementing the model for the online permit and monitoring system outlined in the previous sections.^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of outline headings for budget planning in the Annex.
+This section provides a draft workplan for governments interested in implementing the model for the online permit and monitoring system outlined in the previous sections.^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of headings for project planning in the downloadable [Annex](https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true).
 
 The workplan is presented in terms of activities to be carried out in individual countries interested in implementing the system. However, there is a strong case for a network approach between governments seeking to develop and implement the model to meet their needs. 
 
@@ -28,8 +28,8 @@ Network advantages would include:
 
 The draft workplan is divided into two sections:
 
-1. Preparatory Activities (labelled A-C).
-2. Components, elements and tasks (numbered by Components in the model).
+1. Preparatory Components (labelled A-C).
+2. Main Components, elements and tasks (numbered by Components in the model).
 
 The legal component (Component 3) is a cross-cutting issue and an indication of relevant tasks is provided within relevant tasks. The list of legal related tasks is indicative and may require further elaboration. 
 
@@ -37,11 +37,13 @@ The legal component (Component 3) is a cross-cutting issue and an indication of 
 
 ### A: Map Existing Research Permit Systems
 
-In countries where there is more than one permit authority, it is essential to gain an understanding of the research permit process in a country as a basis for understanding the responsibilities of different permit granting authorities and for consultations on potential ways forward in either improving existing systems or establishing new systems. These activities could logically focus on:
+*Objective*: Identify and map the existing national research permit system relevant to access and benefit-sharing.
+
+In countries where there is more than one permit authority, it is essential to gain an understanding of the research permit process as a basis for understanding the responsibilities of different permit granting authorities and for consultations on potential ways forward in either improving existing systems or establishing new systems. These activities could logically focus on:
 
 i. Identifying existing permit granting authorities in the country.
 ii. The legislative mandates of permit authorities.
-iii. Application forms and terms and conditions in the permits.
+iii. Application forms and the terms and conditions set out in permits.
 iv. Permit storage conditions.
 v. Experience to date in administering permits. 
 
@@ -51,7 +53,7 @@ This scoping exercise will allow the national permit system to be mapped and for
 
 *Task 2*. Identify the persons responsible for administering permits in the country as a basis for consultations. 
 
-*Task 3*. Consult with permit authorities on experience to date including what has worked for them and problem areas. Discuss options for accessing permit data held by the authority for use in Activity B and associated confidentiality issues. 
+*Task 3*. Consult with permit authorities on experience to date including what has worked for them and problem areas. Discuss options for accessing permit data held by the authority for use in Component B and associated confidentiality issues. 
 
 *Task 4*. Obtain copies and information on: 
 
@@ -64,7 +66,7 @@ d) Identify who has access to permit data and for what purposes.
 
 *Task 6*. Workshop to discuss existing experiences and the desirability (or otherwise) of a single electronic system serving permit granting authorities. 
 
-*Expected Outcomes:* 
+*Expected Outcome:* 
 
 1. Clarity on permit granting authorities in the country, their mandates, permit forms and terms and conditions, data administration and storage including the generation of a national permit process diagram. 
 
@@ -72,23 +74,29 @@ d) Identify who has access to permit data and for what purposes.
 
 ### B: Baseline data on scientific and patent literature.
 
+*Objective*: Establish baseline data on scientific research publications and patent activity relevant to access and benefit-sharing. 
+
 The prerequisite for this activity is access to permit data in either physical or (preferably) electronic form. Ideally complete data will be made available to maximise the utility of the outputs. However, if necessary sample data may be used.  
 
-*Task 1*. Obtain copies of permit data (preferably in electronic form) including use of confidentiality agreements and agreement on data storage (see Activity A, Task 3). 
+*Task 1*. Obtain copies of permit data (preferably in electronic form) including use of confidentiality agreements and agreement on data storage (see Component A, Task 3). 
 
 *Task 2*. Clean and then tidy permit data into formats that can used to carry out searches of scientific literature and patent databases.
 
-*Task 3*. Obtain data on the scientific literature for a specific country focusing on biodiversity, genetic resources and associated traditional knowledge as the basis for analysis and refinement. 
+*Task 3*. Obtain data on the scientific literature for a specific country focusing on biodiversity, genetic resources and associated traditional knowledge (indigenous peoples and local communities) as the basis for analysis and refinement. 
 
 *Task 4*. Develop search patterns for patent literature using patent databases and identify appropriate tools and match criteria to distinguish between positive and negative results. 
 
 *Task 5*. Identify, and, as appropriate, develop programmatic tools to facilitate automated literature and patent searches in future that minimise requirements for human intervention. Examples include the programmatic use of crossref or the EPO Open Patent Services or WIPO Patentscope databases and the rOpenSci and biosciences packages in languages such as R or Python. 
 
-*Expected Outcomes:* A clear baseline and overview of existing publication and patent activity that can be linked to existing research permits. This will typically involve permits issued prior to the entry into force of the Nagoya Protocol and is intended to create an evidence base and electronic repository of historic data on publications and patent data.  Historic data will also serve as a means to identify key researchers working in a country as a basis for engagement activities to discuss ways of improving the permit and reporting system following the entry into force of the Nagoya Protocol. Note that this outcome fundamentally depends on the availability of permit data for use in searches.  
+*Expected Outcome:* 
+
+1. A clear baseline and overview of existing publication and patent activity that can be linked to existing research permits. 
+
+This outcome will typically involve permits issued prior to the entry into force of the Nagoya Protocol and is intended to create an evidence base and electronic repository of historic data on publications and patent data.  Historic data will also serve as a means to identify key researchers working in a country as a basis for engagement activities to discuss ways of improving the permit and reporting system following the entry into force of the Nagoya Protocol. Note that this outcome fundamentally depends on the availability of permit data for use in searches.
 
 ### C: Development and Implementation Plan
 
-Establish a costed development and implementation plan for an online permit and monitoring system . 
+*Objective*: Establish a costed development and implementation plan for an online permit and monitoring system . 
 
 *Task 1*. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system consisting of:
 
@@ -99,7 +107,7 @@ Establish a costed development and implementation plan for an online permit and 
 - Component 5: Reporting
 - Component 6: The Core System
 
-*Task 2*: Develop a working Model and Engage in Field Testing 
+*Task 2*: Develop a working model and engage in field testing. 
 
 Develop an experimental working model to test different approaches, identify key tools and for demonstration purposes using dummy data. Note that the purpose of this activity is learning by doing to inform planning and accurate identification of resource requirements not the development of the final system. This task involves a set of sub-tasks. 
 
@@ -121,11 +129,11 @@ Develop an experimental working model to test different approaches, identify key
 
 *Task 6*. Where the project forms part of a network of participating countries and organisations, deposit working code and documentation in an open access repository (e.g. GitHub) for potential use and further development by partners.  
 
-*Expected Outcomes*: 
+*Expected Outcome*: 
 
 1. A clear costed development plan for the online system with partners and stakeholders identified over a three year period. 
 2. An experimental working model accompanied by documented code, experiences and lessons learned.
-3. Identification of software and hardware for the core system based on assessment of internal capacity and strengths (e.g. MySQL, Apache, ASP.NET, Node.js etc.).
+3. Identification of software and hardware for the core system based on assessment of existing internal capacity and strengths (e.g. MySQL, Apache, ASP.NET, Node.js etc.).
 
 ## System Implementation
 
@@ -174,7 +182,7 @@ The components of the overall system are provided below. The workplan focuses on
 	
 *Task 2*. Develop a template for standard MAT for commercial research taking into account that this may be a starting point for negotiations.
 
-*Task 2*. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component]
+*Task 3*. Establish checklist of environmental terms and conditions based on applicable laws and policies. [Legal component]
 
 *Element 1.4*. Approve/Reject [Legal component]
 
@@ -240,7 +248,7 @@ The components of the overall system are provided below. The workplan focuses on
 
 *Task 5*. Establish a system that: 
 
-a) Lists the stages in the application procedure
+a) Lists the stages in the application procedure.
 b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
 c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
 d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. 
@@ -339,7 +347,7 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 8*. Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries. 
 
-*Task 9*. Develop, or contribute to, an open access manual on ABS monitoring for use by staff and in training future trainers. 
+*Task 9*. Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. 
 
 *Expected Outcome*: A cost-effective electronic monitoring system adapted to the requirements of the participating country that is sustainable over the long term. 
 
@@ -369,11 +377,11 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Element 1. Preparatory*
 
-*Task 1*. Identify internal and external programming capacity for development and maintenance of the online system. (see Activity C, task 1).
+*Task 1*. Identify internal and external programming capacity for development and maintenance of the online system. (see Component C, task 1).
 
 *Task 2*. As part of an open source network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code. 
 
-*Task 3*. Based on the outcomes of Activity C and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context.
+*Task 3*. Based on the outcomes of Component C and Tasks 1 and 2 (above) identify the appropriate software and programming languages for system development within the national context.
 
 *Task 4*. Acquire relevant hardware, server and database software.
 
@@ -385,15 +393,15 @@ i) Other information on activities arising from the permit and associated MAT.
 
 *Task 3*. Install, adapt or build the notification system between applicants and authorities and link the system to the database and data archive. 
 
-*Task 4*. Based on lessons learned from Activity C, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities). (See also Element 3, task 4).
+*Task 4*. Based on lessons learned from Component C, implement the connection between the online system and authorities responsible for checking permits within national jurisdictions (e.g. park authorities, police, customs authorities). (See also Element 3, task 4).
 
 *Element 3. Database software*
 
-*Task 1*. Develop scripts for key functions with components and elements
+*Task 1*. Develop scripts for key functions with components and elements.
 
 *Task 2*. Establish file register (file history) system using unique identifiers (e.g. BS20151234).
 
-*Task 3*. Develop scripts to link to the Data Archive, Secure Backup and Physical Archive
+*Task 3*. Develop scripts to link to the Data Archive, Secure Backup and Physical Archive.
 
 *Task 4*. Identify and address additional software/coding needs for the generation of permits with particular attention to the technical aspects of:
 
@@ -406,13 +414,17 @@ b) Labels for specimen bags, specimens and related records
 
 *Task 2*. Identify and implement appropriate ways of outputting data to the physical archive while maintaining links with the unique identifier system. 
 
-*Task 3*. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction and take appropriate decisions on adoption. [Legal element]
+*Task 3*. Cloud storage. Assess the stability of existing infrastructure to determine the desirability of use of a cloud based server, cloud based storage and backups. Discuss the confidentiality and security implications of cloud based data storage outside national jurisdiction and take appropriate decisions on adoption. [Legal element]
 
-*Task 4*. Identify appropriate options for secure offline storage of confidential information. 
+*Task 4*. Secure offline storage. Identify appropriate options for secure offline storage of confidential information. 
 
 *Element 5.* Development Cycle Planning
 
-*Task 1*. Establish a procedure for updating the development plan for the online system (Activity C, task 4).
+*Task 1*. Establish a procedure for updating the development plan for the online system (Component C, task 4).
+
+*Expected Outcome:*
+
+A sustainable core system that operationalises and integrates the functions of the online permit and monitoring system.
 
 ### Resources List
 

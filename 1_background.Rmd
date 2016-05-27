@@ -63,8 +63,8 @@ Requirements for local research collaboration are important for the development 
 
 The outcomes of research collaborations enabled by permits include:
 
-1. Research funding for researchers and equipment in partner countries
-2. Training, including schemes for researcher exchanges and degree or advanced level qualifications
+1. Research funding for researchers and equipment in partner countries.
+2. Training, including schemes for researcher exchanges and degree or advanced level qualifications.
 3. Scientific publications, reports, datasets, deposits of samples etc. that improve the knowledge base about biodiversity and genetic resources in a country. 
 
 These outcomes are typically categorised as non-monetary benefits but are in practice supported by definable financial investments by external research agencies and contributions from local partner agencies and organisations. As such, there is a direct relationship between research permits and forms of benefit-sharing.
@@ -73,7 +73,7 @@ However, the extent to which the terms and conditions in research permits are le
 
 >"Provide for the issuance at the time of access of a permit or its equivalent as evidence of the decision to grant prior informed consent and of the establishment of mutually agreed terms, and notify the Access and Benefit-sharing Clearing-House accordingly (Article 6.3(e))"
 
-As this makes clear, under the Nagoya Protocol, there is a direct relationship between a research permit and the establishment of mutually agreed terms (MAT), with the MAT typically involving an ABS contract. In the paper we use the term research permit issued under the online system interchangeably to mean a research permit and associated MAT or ABS contract. 
+As this makes clear, under the Nagoya Protocol, there is a direct relationship between a research permit and the establishment of mutually agreed terms (MAT), with the MAT typically involving an ABS contract. In the paper we use the term research permit issued under the online system to mean a research permit and associated MAT or ABS contract. 
 
 The permit providing evidence of prior informed consent and mutually agreed terms is linked to monitoring provisions under Article 17 of the Nagoya Protocol which, inter alia, specifies that: 
 
@@ -132,11 +132,11 @@ Article 6.3(f) further specifies that Parties shall:
 
 >"Each Party shall take legislative, administrative or policy measures, as appropriate, in order that the benefits arising from the utilization of traditional knowledge associated with genetic resources are shared in a fair and equitable way with indigenous and local communities holding such knowledge. Such sharing shall be upon mutually agreed terms."
 
-The emphasis in the Protocol with respect to prior informed consent with respect to a permit and monitoring system is placed on ensuring, in the relevant circumstances, that prior informed consent is obtained and setting out criteria or process for obtaining prior informed consent. In this respect, the emphasis is likely to be placed on the provision of information on how an applicant for a research permit might go about obtaining prior informed consent from relevant indigenous peoples and local communities.^[See for example the recently developed voluntary guidelines on prior informed consent from the Ninth meeting of the Working Group on Article 8j and related provisions sent for consideration by COP13 in document [UNEP/CBD/COP/13/3](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjqk_aruffMAhVNFMAKHYF5D7YQFggdMAA&url=https%3A%2F%2Fwww.cbd.int%2Fkb%2Frecord%2FmeetingDocument%2F106434%3FRecordType%3DmeetingDocument&usg=AFQjCNE87t3Vkc3QiVSShwYanwGn-dLyEA&sig2=Xvusml34_LlUbMjqWk_wQQ) at I9/1.] 
+The emphasis in the Protocol with respect to prior informed consent with respect to a permit and monitoring system is placed on ensuring, in the relevant circumstances, that prior informed consent is obtained and setting out criteria or processes for obtaining prior informed consent. In this respect, the emphasis is likely to be placed on the provision of information on how an applicant for a research permit might go about obtaining prior informed consent from relevant indigenous peoples and local communities.^[See for example the recently developed voluntary guidelines on prior informed consent from the Ninth meeting of the Working Group on Article 8j and related provisions sent for consideration by COP13 in document [UNEP/CBD/COP/13/3](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjqk_aruffMAhVNFMAKHYF5D7YQFggdMAA&url=https%3A%2F%2Fwww.cbd.int%2Fkb%2Frecord%2FmeetingDocument%2F106434%3FRecordType%3DmeetingDocument&usg=AFQjCNE87t3Vkc3QiVSShwYanwGn-dLyEA&sig2=Xvusml34_LlUbMjqWk_wQQ) at I9/1.] 
 
 ### Avoidance of prior informed consent & mutually agreed terms
 
-A final situation of relevance to an online permit and monitoring system is a situation where an individual researcher or organisations seeks to avoid requirements for prior informed consent and mutually agreed terms altogether. In this situation the permit system will normally be blind. 
+A final situation of relevance to an online permit and monitoring system is a situation where researchers or organisations seeks to avoid requirements for prior informed consent and mutually agreed terms altogether. In this situation the permit system will normally be blind. 
 
 In this proposal we provide for a fall back position in the monitoring system that uses automated searches to capture publications, patent applications and other electronic materials making reference to a country and its biodiversity. While no system will be perfect, the growing availability of large scale digital data and digital methods will increasingly allow for the capture of cases of avoidance and, among member states of the European Union, failures to perform due diligence.^[[EU Regulation No.511/2014](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014R0511&from=EN).] 
 

@@ -9,4 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-There is nothing here yet... please check back later for the workplan files in excel and .csv. 
+The draft workplan is available in a variety of formats as a series of headings to assist in project planning. Delete columns as required.
+
+1. [All formats](https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true)
+2. [.csv](https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.csv)
+3. [Excel](https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan/draft_workplan.xlsx?raw=true)
+4. [XML for Microsoft Project](https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.xml)
+5. [.pdf](https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.pdf)
