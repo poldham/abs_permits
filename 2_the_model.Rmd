@@ -5,7 +5,10 @@ author:
 - Hartmut Meyer
 - Olivier Rukundo
 date: "26 May 2016"
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
