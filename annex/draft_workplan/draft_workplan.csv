@@ -74,12 +74,7 @@ WBS Number,Title,Start,End,Time,Effort,%Done,Cost,Assigned,Planned Start,Start V
 5.3.2,Task 2. Define a standard list of information request types (authority side) while allowing authorities to provide specific details (headings for the request and content or body of the request).,01/04/2016 08:00,01/04/2016 17:00,1d,1d,0%,,,,,,,,,,,0,,
 5.3.3,Task 3. Establish a system for applicants to respond to requests and channel (email) the response to the originator with a notification. ,01/04/2016 08:00,01/04/2016 17:00,1d,1d,0%,,,,,,,,,,,0,,
 5.3.4,Task 4. Establish a system linking unique identifiers (e.g. BS20151234) with notifications to create an integrated file register (file history) for applications within the data archive. ,01/04/2016 08:00,01/04/2016 17:00,1d,1d,0%,,,,,,,,,,,0,,
-5.4,"Task 5. Establish a system that: 
-
-a) Lists the stages in the application procedure
-b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
-c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
-d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. ",27/05/2016 08:00,27/05/2016 17:00,1d,4d,0%,,,,,,,27/05/2016 08:00,,,,,,
+5.4,Task 5. Establish a system that: ,27/05/2016 08:00,27/05/2016 17:00,1d,4d,0%,,,,,,,27/05/2016 08:00,,,,,,
 5.4.1,a) Lists the stages in the application procedure,27/05/2016 08:00,27/05/2016 17:00,1d,1d,0%,,,,,,,27/05/2016 08:00,,,,0,,
 5.4.2,b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. ,27/05/2016 08:00,27/05/2016 17:00,1d,1d,0%,,,,,,,27/05/2016 08:00,,,,0,,
 5.4.3,c) Updates the record upon completion to show the next stage in the procedure and persons responsible.,27/05/2016 08:00,27/05/2016 17:00,1d,1d,0%,,,,,,,27/05/2016 08:00,,,,0,,

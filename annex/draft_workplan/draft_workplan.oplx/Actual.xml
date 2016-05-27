@@ -704,12 +704,7 @@
     <start-no-earlier-than>2016-05-27T07:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t171">
-    <title>Task 5. Establish a system that: 
-
-a) Lists the stages in the application procedure
-b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
-c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
-d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. </title>
+    <title>Task 5. Establish a system that: </title>
     <type>group</type>
     <start-constraint-date>2016-05-27T07:00:00.000Z</start-constraint-date>
     <child-task idref="t172"/>

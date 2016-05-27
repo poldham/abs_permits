@@ -1738,7 +1738,7 @@
         <Task>
             <UID>171</UID>
             <ID>76</ID>
-            <Name>Task 5. Establish a system that: a) Lists the stages in the application procedure b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. c) Updates the record upon completion to show the next stage in the procedure and persons responsible. d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section.</Name>
+            <Name>Task 5. Establish a system that:</Name>
             <Type>0</Type>
             <IsNull>0</IsNull>
             <Priority>500</Priority>
@@ -4996,5 +4996,5 @@
             <Units>1</Units>
         </Assignment>
     </Assignments>
-    <!--  2016-05-27 12:49:09 +0000: OmniPlan 2.x MSPDI Exporter.  -->
+    <!--  2016-05-27 13:30:41 +0000: OmniPlan 2.x MSPDI Exporter.  -->
 </Project>

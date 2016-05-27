@@ -27,7 +27,7 @@
     <change idref="t14" attribute="title" type="string" from="Task 2. Obtain scientific literature for a specific country" to="Task 3. Obtain scientific literature for a specific country on biodiversity, genetic resources and associated traditional knowledge (indigenous peoples and local communities)" resolved="yes"/>
     <change idref="t15" attribute="title" type="string" from="Task 1. Obtain copies of permit data (preferably in electronic form) to " to="Task 1. Obtain copies of permit data (preferably in electronic form) to including use of confidentiality agreements and data storage." resolved="yes"/>
     <change idref="t17" attribute="title" type="string" from="Task 5. Report on experience gained and future development plans (Year 2, Year 3)" to="Task 6. Where the project forms part of a network of participating countries and organisations, deposit working code and documentation in an open access repository (e.g. GitHub) for potential use and further development by partners. " resolved="yes"/>
-    <change idref="t19" attribute="title" type="string" from="Task 3. Develop a pilot system at an early stage (Year 1) accommodating the principles of agile development 		(iterative and flexible software development) wherever possible." to="Task 4. Develop a costed development plan over a period of 3 years and projected costs for future years." resolved="yes"/>
+    <change idref="t19" attribute="title" type="string" from="Task 3. Develop a pilot system at an early stage (Year 1) accommodating the principles of agile development   (iterative and flexible software development) wherever possible." to="Task 4. Develop a costed development plan over a period of 3 years and projected costs for future years." resolved="yes"/>
     <change idref="t20" attribute="title" type="string" from="Task 2. Develop a costed plan of implementation over a period of 3 years" to="Task 3. Based on experience in Task 1 &amp; 2, including assessment of existing capacities and strengths, identify appropriate software and hardware requirements for the Core System (Component 6)." resolved="yes"/>
     <change idref="t28" attribute="title" type="string" from="Task 1. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system consisting of " to="Task 1. Identify organisations or partners in the country with the technical and programming capacity to develop an electronic permit system." resolved="yes"/>
     <change idref="t29" attribute="title" type="string" from="Element 4: Developing an online electronic permit and monitoring system" to="Component C: Development and Implementation Plan" resolved="yes"/>
@@ -56,12 +56,7 @@
       <change idref="t171" attribute="isGroup" type="real" from="0" to="1"/>
       <change idref="t171" attribute="noEarlierThanConstraintDate" type="date" to="2016-05-27T07:00:00.000Z"/>
       <change idref="t171" attribute="taskType" type="real" from="0" to="2"/>
-      <change idref="t171" attribute="title" type="string" to="Task 5. Establish a system that: 
-
-a) Lists the stages in the application procedure
-b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
-c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
-d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. "/>
+      <change idref="t171" attribute="title" type="string" to="Task 5. Establish a system that:   a) Lists the stages in the application procedure b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure.  c) Updates the record upon completion to show the next stage in the procedure and persons responsible. d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. "/>
     </change>
     <change idref="t60" attribute="title" type="string" from="Task 6. Investigate the use of either persistent identifiers(BS20151234) and QR/Barcodes/html tags to build redundancy into the system (e.g. triple redundancy principle)" to="Task 6. Test approaches, including “permit passes” with a selection of applicants and adjust based on lessons learned." resolved="yes"/>
     <change idref="t61" attribute="title" type="string" from="Task 5. Establish uniform persistent identifiers (BS20151234) for use in conjunction with publications, patents, products and electronic data. " to="Task 5. Provide instructions on the use of unique identifiers (e.g. BS20151234) in publications, patents, products, sequence and electronic data. " resolved="yes"/>
@@ -379,13 +374,13 @@ d) Generates the permit and associated material (passes, labels, embed codes) an
     <change idref="t36" from="t43" from-position="4" to="t40" to-position="3" resolved="yes"/>
     <change idref="t171" from="t58" from-position="4" to="t43" to-position="3" resolved="yes"/>
     <change idref="t80" attribute="title" type="string" from="Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]" to="Task 3. Define required uses of unique identifiers (BS20151234, QR codes, barcode, html embed codes) in reporting (see element 2.4, task 5). [Legal component]" resolved="yes"/>
-    <change idref="t106" attribute="title" type="string" from="	g) Establish criteria for acceptance or rejection of commercial applications. " to="g) Establish criteria for acceptance or rejection of commercial applications. " resolved="yes"/>
-    <change idref="t107" attribute="title" type="string" from="	f) Establish criteria on Intellectual Property Rights. " to="f) Establish criteria on Intellectual Property Rights. " resolved="yes"/>
-    <change idref="t108" attribute="title" type="string" from="	e) Establish criteria for benefit-sharing. " to="e) Establish criteria for benefit-sharing. " resolved="yes"/>
-    <change idref="t109" attribute="title" type="string" from="	d) Establish environmental legislation and procedure criteria." to="d) Establish environmental legislation and procedure criteria." resolved="yes"/>
-    <change idref="t110" attribute="title" type="string" from="	c) Establish time frame for negotiations. " to="c) Establish time frame for negotiations. " resolved="yes"/>
-    <change idref="t111" attribute="title" type="string" from="	b) Identify standard list of participants in negotiations. " to="b) Identify standard list of participants in negotiations. " resolved="yes"/>
-    <change idref="t112" attribute="title" type="string" from="	a) Establish criteria for negotiations." to="a) Establish criteria for negotiations." resolved="yes"/>
+    <change idref="t106" attribute="title" type="string" from=" g) Establish criteria for acceptance or rejection of commercial applications. " to="g) Establish criteria for acceptance or rejection of commercial applications. " resolved="yes"/>
+    <change idref="t107" attribute="title" type="string" from=" f) Establish criteria on Intellectual Property Rights. " to="f) Establish criteria on Intellectual Property Rights. " resolved="yes"/>
+    <change idref="t108" attribute="title" type="string" from=" e) Establish criteria for benefit-sharing. " to="e) Establish criteria for benefit-sharing. " resolved="yes"/>
+    <change idref="t109" attribute="title" type="string" from=" d) Establish environmental legislation and procedure criteria." to="d) Establish environmental legislation and procedure criteria." resolved="yes"/>
+    <change idref="t110" attribute="title" type="string" from=" c) Establish time frame for negotiations. " to="c) Establish time frame for negotiations. " resolved="yes"/>
+    <change idref="t111" attribute="title" type="string" from=" b) Identify standard list of participants in negotiations. " to="b) Identify standard list of participants in negotiations. " resolved="yes"/>
+    <change idref="t112" attribute="title" type="string" from=" a) Establish criteria for negotiations." to="a) Establish criteria for negotiations." resolved="yes"/>
     <change idref="t113" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
     <change idref="t113" attribute="multiResourceWorkType" type="real" from="0" resolved="yes"/>
     <change idref="t113" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
@@ -417,5 +412,13 @@ d) Generates the permit and associated material (passes, labels, embed codes) an
     <change idref="t188" attribute="title" type="string" from="Task 7 Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use." to="Task 7. Establish a system for ensuring that the outcomes of monitoring are documented and stored in the data archive for future use." resolved="yes"/>
     <change idref="t189" attribute="title" type="string" from="Task 8 Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries." to="Task 8. Improve internal capacity through participation in a network of staff and specialists engaged in monitoring from participating countries." resolved="yes"/>
     <change idref="t190" attribute="title" type="string" from="Task 9 Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. " to="Task 9. Develop, or contribute to, an open access Manual on ABS monitoring for use by staff and in training future trainers. " resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Paul Oldham" date="2016-05-27T13:29:40.582Z" timestamp="2016-05-27T13:29:40.582Z">
+    <change idref="t171" attribute="title" type="string" from="Task 5. Establish a system that: 
+
+a) Lists the stages in the application procedure
+b) Provides the name and contact details (within the system) for the person responsible for that stage of the procedure. 
+c) Updates the record upon completion to show the next stage in the procedure and persons responsible.
+d) Generates the permit and associated material (passes, labels, embed codes) and inform the applicant of availability by email. Accessed through the approvals section. " to="Task 5. Establish a system that: " resolved="yes"/>
   </task-change-set>
 </changelog>
