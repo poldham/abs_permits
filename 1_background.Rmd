@@ -15,12 +15,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Introduction
 In this concept paper we describe the use of the national research permit system as a platform for administering ABS permits, monitoring compliance and realising non-monetary and monetary benefits arising from collaborations with non-commercial and commercial researchers and research organisations under the Nagoya Protocol.^[The research in this paper was conducted with the support of [The Bahamas Environment, Science & Technology Commission (BEST)](http://www.best.gov.bs) of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas" as set out in *Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”*. The present paper was written with the additional support of [The ABS Capacity Development Initiative](http://www.abs-initiative.info) through the [Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)](https://www.giz.de/en/html/index.html). The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.] We describe a model for an online permit and monitoring system for the efficient administration of research permits that can be linked to monitoring of scientific literature, patents and commercial products. 
 
-The purpose of the model is to support the implementation of domestic access and benefit-sharing frameworks and implementation of the obligations under the following articles of the Nagoya Protocol: 
+The purpose of the model is to support the implementation of domestic access and benefit-sharing frameworks and implementation of the obligations under the Nagoya Protocol. We anticipate that the model will:
 
-1. Implementation of Article 6 on access to genetic resources, 
-2. Fair and equitable benefit-sharing in connection with research under Article 5, 
-3. Monitoring under Article 17
-4. National reporting under Article 29 of the Nagoya Protocol. 
+1. Support decision-making on whether proposed access to genetic resources and associated traditional knowledge falls within the scope of domestic ABS frameworks (Article 2 & Article 3 of the Nagoya Protocol);
+2. Support decision-making on the nature of intended utilizations and the appropriate elements for Mutually Agreed Terms (Article 8(a));
+3. Enable effective implementation of Article 6 on access to genetic resources; 
+4. Contribute to the realisation of fair and equitable benefit-sharing in connection with research under Article 5; 
+5. Enable monitoring of the utilization and commercialisation of genetic resources and associated traditional knowledge and associated products (Article 17);
+6. Contribute to the development of the ABS Clearing House Mechanism;
+7. Support national reporting under Article 29 of the Nagoya Protocol. 
 
 The proposal does not seek to promote a one size fits all approach but instead to provide a model that is flexible and can be readily adapted to the specific needs of individual Parties to the Nagoya Protocol. We envisage the creation of an informal open coalition of countries with a common interest in an electronic permit and monitoring system that can be adapted to meet their particular circumstances and needs.
 
