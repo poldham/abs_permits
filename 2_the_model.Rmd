@@ -2,13 +2,10 @@
 title: "A Model for an Online Permit and Monitoring System to support the Nagoya Protocol"
 author:
 - Paul Oldham
-- Hartmut Meyer
 - Olivier Rukundo
+- Hartmut Meyer
 date: "26 May 2016"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+output: html_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -28,7 +25,7 @@ This section begins with a brief discussion of the existing characteristics of r
 
 ## Existing Permit Systems
 
-The majority of countries are likely to possess research permit systems. Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as the collection of biological materials or research involving human subjects) or to research in specific places (e.g. protected areas, marine environments etc.). 
+Research permit systems typically involve the submission of formal applications for permission to conduct research within a country by researchers from outside the country or researchers based inside the country. Specific rules will often apply to particular types of research (such as the collection of biological materials or research involving human subjects) or to research in specific places (e.g. protected areas, marine environments etc.). 
 
 Research permit systems have typically evolved organically over time to meet a range of government needs. We have not been able to identify a literature on the general subject of research permit systems and no international overview of research permit systems appears to exist. However, existing experience suggests that research permit systems in many countries are likely to display some, or all, of the following features: 
 
@@ -74,7 +71,7 @@ The core model is discussed in more detail below but consists of the following c
 
 1. An Authorities Portal
 2. An Applicants Portal
-3. Legal (a cross-cutting issue)
+3. Legal Issues (a cross-cutting issue)
 4. Monitoring
 5. Reporting
 6. The Core System (the hub)
@@ -100,10 +97,13 @@ Figure 4 displays the core elements of the Authorities Portal displaying 7 funct
 *Principles*:
 
 a) Efficiency, timeliness and avoiding duplication of effort.
-b) Fulfil the Article 6 Access obligations of the Nagoya Protocol.
-c) Support implementation of Article 17 of the Nagoya Protocol (monitoring utilization of genetic resources and, as appropriate, associated traditional knowledge of indigenous peoples and local communities).
-d) Support Article 29 obligations (monitoring and reporting on national implementation of the Nagoya Protocol). 
-e) Support the ABS Clearing House Mechanism. 
+b) Support decision making in identifying the scope of requested access and intended utilization of genetic resources and associated traditional knowledge.
+c) Fulfil the Article 6 Access obligations of the Nagoya Protocol.
+d) Support implementation of Article 8 (a) of the Nagoya Protocol (special considerations for non-commercial research).
+e) Support implementation of Article 17 of the Nagoya Protocol (monitoring utilization of genetic resources and, as appropriate, associated traditional knowledge of indigenous peoples and local communities).
+f) Support the ABS Clearing House Mechanism. 
+g) Support Article 29 obligations (monitoring and reporting on national implementation of the Nagoya Protocol). 
+
 
 *Functions*:
 
@@ -121,7 +121,7 @@ b) Review completeness of documentation (checklist).
 
 c) Notification to applicant on the status of the application (complete/incomplete).
 
-d) If complete validate the unique identifier (e.g. BS20151234) for use in the system (the identifier will be automatically generated, but requires a visual check).
+d) If complete validate the unique identifier for use in the system (the identifier will be automatically generated, but requires a visual check).
 
 1.2.1 Review type of request (non-commercial, commercial, both).
 
@@ -180,7 +180,7 @@ b) A timeline for appeals
 c) Generates notifications for applicants on the progress with their appeal
 d) A clear written final decision.
 
-The appeals process is proposed as a response to Article 6 of the Nagoya Protocol requiring "fair and non-arbitrary rules and procedures on accessing genetic resources" (Art. 6.3(b)). The appeals process may potentially be useful with respect to the Compliance Committee of the Nagoya Protocol developed to assist Parties in complying with their obligations in so far that it provides a chain of evidence that due process has been followed in rejecting a request for access on non-arbitrary reasoned grounds. 
+The appeals process will assist Parties with demonstrating that rules and procedures on access to genetic resources are fair and non-arbitrary (Art. 6.3(b)).  
 
 The Monitoring and Reporting elements of the Authorities Portal are addressed under the respective main components of the system. This includes linkages with the ABS Clearing House Mechanism. 
 

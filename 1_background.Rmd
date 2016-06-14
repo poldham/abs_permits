@@ -3,13 +3,10 @@ title: Background to an Online Permit and Monitoring System to support the Nagoy
   Protocol
 author:
 - Paul Oldham
-- Hartmut Meyer
 - Olivier Rukundo
+- Hartmut Meyer
 date: "26 May 2016"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -25,7 +22,7 @@ The purpose of the model is to support the implementation of domestic access and
 3. Monitoring under Article 17
 4. National reporting under Article 29 of the Nagoya Protocol. 
 
-The aim of this proposal is not to promote a one size fits all approach but instead to provide a model that is flexible and can be readily adapted to the specific needs of individual Parties to the Nagoya Protocol. We envisage the creation of an informal open coalition of countries with a common interest in an electronic permit and monitoring system that can be adapted to meet their particular circumstances and needs.
+The proposal does not seek to promote a one size fits all approach but instead to provide a model that is flexible and can be readily adapted to the specific needs of individual Parties to the Nagoya Protocol. We envisage the creation of an informal open coalition of countries with a common interest in an electronic permit and monitoring system that can be adapted to meet their particular circumstances and needs.
 
 The core of this proposal is that Parties to the Protocol, and governments who intend to ratify the Protocol, may wish to adopt: 
 
@@ -43,7 +40,7 @@ More specifically we anticipate that implementation of the model will:
 1.	Make it easier for Parties to the Protocol to review and administer permit applications;
 2.	Make it easier for applicants to apply for and receive a permit and obtain legal certainty based on compliance with the terms and conditions of the Party providing access;
 3.	Enhance the capacity of Parties to the Protocol to determine if a permit application triggers domestic access and benefit sharing requirements and obligations under the Nagoya Protocol;
-4.	Enhance the capacity of Parties to the Protocol to realise non-monetary and monetary benefits arising from both non-commercial research and commercial research and development involving genetic resources and associated traditional knowledge over the long term;
+4.	Enhance the capacity of Parties to the Protocol to realise non-monetary and monetary benefits arising from non-commercial research, commercial research and development, and commercialisation involving genetic resources and associated traditional knowledge over the long term;
 5.	 Enhance the capacity of Parties to the Protocol to determine the actual and potential value of their genetic resources through a long term electronic monitoring system;
 6.	Make it easier for Parties to meet national and international reporting requirements under the Nagoya Protocol and related international environmental agreements.
 
@@ -62,7 +59,7 @@ In return for obtaining a permit, applicants  will normally be expected to meet 
 3. The provision or deposit of equipment used during the research with local partners. 
 4. Reports on activities and copies of publications. 
 
-Requirements for local research collaboration are important for the development of local research capacity in specialist areas and create the foundations for longer term research collaborations and interchanges between countries. Many countries, including the European Union, have developed special programmes to promote international research collaboration (such as the [UK Darwin Initiative](https://www.gov.uk/government/groups/the-darwin-initiative) among others) that emphasise benefits for partner countries and communities. 
+Requirements for local research collaboration are important for the development of local research capacity in specialist areas and create the foundations for longer term research collaborations and interchanges between countries. Many countries, including the European Union, have developed special programmes to promote international research collaboration that emphasise benefits for partner countries and communities. 
 
 The outcomes of research collaborations enabled by permits include:
 
@@ -85,7 +82,7 @@ The permit providing evidence of prior informed consent and mutually agreed term
 >2. A permit or its equivalent issued in accordance with Article 6, paragraph 3 (e) and made available to the Access and Benefit-sharing Clearing-House, shall constitute an internationally recognized certificate of compliance.
 >3. An internationally recognized certificate of compliance shall serve as evidence that the genetic resource which it covers has been accessed in accordance with prior informed consent and that mutually agreed terms have been established, as required by the domestic access and benefit-sharing legislation or regulatory requirements of the Party providing prior informed consent."
 
-There is therefore a close relationship between a permit under the Nagoya Protocol as evidence of prior informed consent and the establishment of MAT and monitoring of compliance. However, it is also important to recognise that there are distinctions between types of research involving genetic resources and associated traditional knowledge that may trigger different procedures and MAT under the Nagoya Protocol. 
+There is therefore a close relationship between a permit under the Nagoya Protocol as evidence of prior informed consent and the establishment of MAT and monitoring of compliance. However, it is also important to recognise that there are distinctions between types of research involving genetic resources and associated traditional knowledge that may trigger different procedures and MAT under the domestic ABS framework. 
 
 ## Types of Research
 
@@ -101,11 +98,11 @@ In practice, many (and possibly the majority) of cases of research involving bio
 
 As this makes clear Parties will create conditions to encourage research contributing to conservation and sustainable use including simplified measures on access for non-commercial research. 
 
-The implication of this for the research permit system is that simplified measures could be developed to provide access using standard mutually agreed terms. Where an applicant agrees to the standard mutually agreed terms for non-commercial research (which might simply involve a tick to a check box signifying acceptance of such terms), and subject to acceptance of any other non-ABS requirements, a permit could simply be granted. 
+The implication of this for the research permit system is that simplified measures could be developed to provide access using standard mutually agreed terms. Where an applicant agrees to the standard mutually agreed terms for non-commercial research (which might simply involve a tick to a check box signifying acceptance of such terms), and subject to acceptance of any other non-ABS requirements (e.g. environmental impact assessment), a permit could simply be granted. 
 
 ### Change of Intent
 
-However, as set out in Article 8(a) the negotiators of the Nagoya Protocol also recognised that what may begin as non-commercial research may become commercial research or "utilization" in the language of the Protocol.^[Article 2(c) specifies that: “Utilization of genetic resources” means to conduct research and development on the genetic and/or biochemical composition of genetic resources, including through the application of biotechnology as defined in Article 2 of the Convention]. It is therefore important that the terms and conditions of permits and associated standard MAT identify change of intent as a trigger for a requirement to return to the provider country for new or renewed prior informed consent and applicable mutually agreed terms for commercial research. 
+However, as set out in Article 8(a) the negotiators of the Nagoya Protocol also recognised that what may begin as non-commercial research may become commercial research. It is therefore important that the terms and conditions of permits and associated standard MAT identify change of intent as a trigger for a requirement to return to the provider country for new or renewed prior informed consent and applicable mutually agreed terms for commercial research. 
 
 ### Mixed Research
 
@@ -118,6 +115,8 @@ The fourth situation involves cases of explicit commercial research and collecti
 ### Research with Indigenous Peoples & Local Communities
 
 As noted above, research involving human subjects, such as indigenous peoples and local communities, is typically the subject of requirements for permits both from relevant authorities (such as Ministries for Indigenous Affairs or their equivalent), subject to requirements for ethical conduct (including by agencies funding the research) and the prior informed consent of the participating communities and research participants. 
+
+Access to the genetic resources and associated traditional knowledge of indigenous peoples and local communities for research purposes will require their prior informed consent and mutually agreed terms on benefit-sharing in accordance with the relevant provisions of the Nagoya Protocol and the domestic ABS framework. 
 
 Article 6.2 of the Nagoya Protocol specifies that: 
 
@@ -177,7 +176,7 @@ The use of electronic monitoring and analytics based on permit data and independ
 
 ###  Valuation of Genetic Resources and Traditional Knowledge
 
-One important challenge confronting countries involved in the negotiation of the Nagoya Protocol was the lack of reliable information on the economic value of genetic resources and associated traditional knowledge. Furthermore, as is now widely recognised, biodiversity and the knowledge, innovations and practices of indigenous peoples and local communities cannot be reduced purely to economic value. Rather, a broader approach to valuation, including ecosystem services, is required. A fundamental precondition for this type of analysis is data. The approach presented below would facilitate evidence based valuation of genetic resources and associated traditional knowledge over the long term and using a range of approaches to the definition of value. 
+One important challenge confronting countries involved in the negotiation of the Nagoya Protocol was the lack of reliable data on the economic value of genetic resources and associated traditional knowledge. Furthermore, as is now widely recognised, biodiversity and the knowledge, innovations and practices of indigenous peoples and local communities cannot be reduced purely to economic value. Rather, a broader approach to valuation, including ecosystem services, is required. A fundamental precondition for this type of analysis is data. The approach presented below would facilitate evidence based valuation of genetic resources and associated traditional knowledge over the long term and using a range of approaches to the definition of value. It would thus contribute to the creation of a clearly defined evidence base for the evaluation of the effectiveness of domestic ABS measures. 
 
 ## Conclusion
 

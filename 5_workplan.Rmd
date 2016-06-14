@@ -3,13 +3,10 @@ title: Draft Workplan for an Online Permit and Monitoring System to support the 
   Protocol
 author:
 - Paul Oldham
-- Hartmut Meyer
 - Olivier Rukundo
+- Hartmut Meyer
 date: "26 May 2016"
-output:
-  word_document: default
-  pdf_document: default
-  html_document: default
+output: html_document
 ---
 
 ```{r setup, include=FALSE}

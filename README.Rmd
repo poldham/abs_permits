@@ -10,4 +10,4 @@ Documents are made available as html, word, pdf and markdown along with accompan
 
 To download pdf and word versions navigate to the file (see sections) press on the name and then press Raw. The file will then download. 
 
-Please cite as: Oldham P; Meyer H; Rukundo O (2016) An Online Permit and Monitoring System under the Nagoya Protocol. Concept Paper. 
+Please cite as: Oldham, P; Rukundo, O; Meyer, H (2016) An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol. Concept Paper. [DOI to follow]
