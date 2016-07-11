@@ -4,10 +4,12 @@ author: "Paul Oldham"
 date: "21 May 2016"
 output: html_document
 ---
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.57420.svg)](http://dx.doi.org/10.5281/zenodo.57420)
+
 This repository contains documents and materials for a model online permit and monitoring system under the Nagoya Protocol. 
 
 Documents are made available as html, word, pdf and markdown along with accompanying presentations and images.
 
 To download pdf and word versions navigate to the file (see sections) press on the name and then press Raw. The file will then download. 
 
-Please cite as: Oldham, P; Rukundo, O; Meyer, H (2016) An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol. Concept Paper. [DOI to follow]
+Please cite as: Oldham, P; Rukundo, O; Meyer, H (2016) An Online Research Permit and Monitoring System to Support National Implementation of the Nagoya Protocol. Concept Paper. [DOI:http://dx.doi.org/10.5281/zenodo.57420](http://dx.doi.org/10.5281/zenodo.57420).

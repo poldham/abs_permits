@@ -26,7 +26,7 @@ The model was developed with the support of [The Bahamas Environment, Science & 
 
 ### Suggested Citation
 
-Oldham, P; Rukundo, O; Meyer, H (2016) An Online Research Permit and Monitoring System to Support National Implementation of the Nagoya Protocol. Concept Paper. [DOI to follow]
+Oldham, P; Rukundo, O; Meyer, H (2016) An Online Research Permit and Monitoring System to Support National Implementation of the Nagoya Protocol. Concept Paper. [DOI:http://dx.doi.org/10.5281/zenodo.57420](http://dx.doi.org/10.5281/zenodo.57420).
 
 ### About this Site
 
