@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "The Nagoya Protocol: A Model Online Research Permit and Monitoring System"
 output: html_document
 ---
 This is the project site for a model Online Research Permit and Monitoring System to support national implementation of the [Nagoya Protocol](https://www.cbd.int/abs/about/). 
