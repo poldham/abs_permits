@@ -23,6 +23,8 @@ navbar:
         href: annex.html
     - text: "Schematics"
       href: presentations/schematics/index.html
+    - text: "Resources"
+      href: resources.html
 output:
   html_document:
     theme: flatly

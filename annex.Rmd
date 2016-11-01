@@ -1,7 +1,5 @@
 ---
 title: "Annex"
-author: "Paul Oldham"
-date: "26 May 2016"
 output: html_document
 ---
 

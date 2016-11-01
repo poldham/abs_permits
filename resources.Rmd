@@ -1,0 +1,118 @@
+---
+title: "Resources"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The development of the model online ABS permit system to support implementation of the Nagoya Protocol is intended to be an open access initiative that allows countries to share tools and resources developed to meet their own needs with other countries. The implementation of an online ABS permit system will also require capacity development in a range of areas such as biodiversity informatics, scientific landscaping and patent analytics. 
+
+This page highlights samples of existing work and tools that can support countries interested in implementing the model. As we are very much in the initial stages of this project we provide a sample of existing work and tools that informed the development of the model system. Please feel welcome to submit suggestions for resources and the page will be updated as new resources become available. 
+
+### The ABS Clearing House Mechanism
+
+The [ABS Clearing House Mechanism](https://absch.cbd.int/) is the central home for information and resources on access and benefit-sharing. The model online permit system is intended to provide inputs into the ABS CHM.
+
+###Scientific Landscapes for Access and Benefit-Sharing 
+
+Scientific landscaping focuses on analysis of the presence of biodiversity and traditional knowledge in the scientific literature using a combination of text mining and data visualisation tools. 
+
+Between 2015 and 2016 the ABS Initiative supported the development of a range of scientific landscapes in the form of interactive Tableau workbooks that provide an overview of trends in research, key actors and key networks for ABS research in 10 African countries. 
+
+These landscapes can be accessed on a [Tableau Public website](http://public.tableau.com/profile/poldham#!/) and the individual country data can be accessed from the links below. 
+
+- [Algeria](http://public.tableau.com/profile/poldham#!/vizhome/Algeria_0/AlgeriaWalkthrough)
+- [Benin](http://public.tableau.com/profile/poldham#!/vizhome/Benin_0/Story1)
+- [Burundi](http://public.tableau.com/profile/poldham#!/vizhome/Burundidraft/OverviewDashboard)
+- [Cameroon](http://public.tableau.com/profile/poldham#!/vizhome/Cameroon_0/Cameroon)
+- [Kenya](http://public.tableau.com/profile/poldham#!/vizhome/Kenya_workbook/KenyaResearchLandscape)
+- [Madagascar](http://public.tableau.com/profile/poldham#!/vizhome/Madagascar/MadagascarResearch)
+- [Morocco](http://public.tableau.com/profile/poldham#!/vizhome/Morocco_0/Story1)
+- [Namibia](http://public.tableau.com/profile/poldham#!/vizhome/namibia/NamibiaWalkthrough)
+- [South Africa](http://public.tableau.com/profile/poldham#!/vizhome/SouthAfrica_4/Story1)
+- [Uganda](http://public.tableau.com/profile/poldham#!/vizhome/Uganda_0/Research)
+
+A regional landscape for research on ABS in Africa that combines the data above is approaching completion and can be accessed  [here](https://public.tableau.com/profile/poldham#!/vizhome/africa_region_30062016_0/Story1).
+
+<!---<iframe align = "center" width = "1000" height = "1000" src="http://public.tableau.com/profile/poldham#!/vizhome/africa_region_30062016_0/Story1"/> --->
+
+### Patent Landscapes
+
+Patent landscapes provide insights into trends in innovation that involved genetic resources and associated traditional knowledge. Here we highlight resources for devloping capacity in patent landscape analysis and then existing studies on patent landscapes. 
+
+**Resources on Patent Analytics**
+
+- [The WIPO Guidelines for Preparing Patent Landscape Reports](http://www.wipo.int/edocs/pubdocs/en/wipo_pub_946.pdf) is a resource for learning about the issues that need to be considered in preparing patent landscapes. 
+- [The WIPO Manual on Open Source Patent Analytics](https://wipo-analytics.github.io/) provides a set of practical walkthroughs for patent analytics including tools such as Tableau and network analysis with gephi. The Manual is presently in advanced draft format. 
+- [WIPO Patent Landscape Reports](http://www.wipo.int/patentscope/en/programs/patent_landscapes/) provides a list of patent landscapes prepared for WIPO and other landscapes submitted by organisations and researchers. 
+
+**Literature and Studies**
+
+- [Oldham P, Hall S & Forero O ‘Biological Diversity in the Patent System’. PLOS
+One DOI: 10.1371/journal.pone.0078737](http://journals.plos.org/plosone/article?id=10.
+1371/journal.pone.0078737)
+
+- Paul Oldham, Colin Barnes and Stephen Hall (2016) A Review of UK Patent Activity
+for Genetic Resources and associated Traditional Knowledge. UK Department for
+Evironment, Food and Rural Affairs (Defra). [Direct download (large
+file)](https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja
+&uact=8&ved=0ahUKEwjR7IucrpnPAhVHIMAKHatqAg0QFggqMAE&url=http%3A%2F%2Frandd.
+defra.gov.uk%2FDocument.aspx%3FDocument%3D13500_WC1068UKIPGR_Final_2015.pdf&usg=
+AFQjCNFpFtytdJuMSANlu1PtZ8jK_kZaEQ). [Research Gate DOI:
+10.13140/RG.2.1.1682.9849.](https://www.researchgate.net/publication/
+301625638_A_Review_of_UK_Patent_Activity_for_Genetic_Resources_and_associated_Tr
+aditional_Knowledge)
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Cameroon. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Cameroon. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others.  DOI: 10.13140/RG.2.1.3124.7767.
+Available from the ABS Initiative at: http://tinyurl.com/zqloo7t
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Kenya. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Kenya. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others. DOI: 10.13140/RG.2.1.2600.4889. Available
+from the ABS Initiative at: http://tinyurl.com/zexsa96
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Madagascar. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Madagascar. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others.  DOI: 10.13140/RG.2.1.3386.9206 .
+Available from the ABS Initiative at: http://tinyurl.com/jcp5pfg
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Mozambique. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Mozambique. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others. DOI: 10.13140/RG.2.1.4648.4885. Available
+from the ABS Initiative at: http://tinyurl.com/hcdgxsv
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Namibia. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Namibia. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others. DOI: 10.13140/RG.2.1.4795.9445 Available
+from the ABS Initiative at: http://tinyurl.com/j8vkzc9
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: Senegal. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to Senegal. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others. DOI: 10.13140/RG.2.1.2551.3362. Available
+from the ABS Initiative at: http://tinyurl.com/hzx98o9
+
+- Oldham P, Hall S and Barnes C (2013) Biodiversity in the Patent System: South Africa. A
+country study of genetic resources and traditional knowledge in the patent
+system of relevance to South Africa. Deutsche Gesellschaft für Internationale
+Zusammenarbeit (GIZ), UNEP and others.  DOI: 10.13140/RG.2.1.5172.7762.
+Available from the ABS Initiative at: http://tinyurl.com/gtvaa3z
+
+### Biodiversity Informatics and Analysis Tools
+
+The ability to monitor research activity involving genetic resources and associated traditional knowledge is tied to access to electronic data to facilitate searches and analysis. This typically involves the use of APIs (Application Programming Interfaces) or `webservices` that provide direct access to the databases behind websites.
+
+An example of a key resource for biodiversity informatics is the [Global Biodiversity Information Facility](http://www.gbif.org) which provides a free webservice to download biodiversity information on individual countries. 
+
+A set of important resources are being developed by the [ropensci](https://ropensci.org) in the form of [R packages](https://ropensci.org/packages/) that can be used to access and retrieve scientific data from a wide range of sources such as gbif, [crossref](http://www.crossref.org) and [pubmed](https://www.ncbi.nlm.nih.gov/pubmed). These and similar packages such as [rorcid](https://github.com/ropensci/rorcid) provide a platform for cost-effective monitoring of research activity. API clients have also been developed in more general languages such as Python and Ruby, with R being particularly well suited for statistical and analytics purposes. 
+
+In the case of patent data, free resources are presently limited with the exceptions of databases such as [WIPO Patentscope](https://patentscope.wipo.int/search/en/search.jsf) and [the Lens](https://www.lens.org/lens/). API access to patent databases is presently limited to the [EPO Open Patent Services](http://www.epo.org/searching-for-patents/technical/espacenet/ops.html) for which Paul Oldham is in the early stages of developing an R package as [opsr](https://github.com/poldham/opsrdev). The [Lens](https://www.lens.org/lens/) database is a powerful tool for ABS related research and a package to access the lens using R is under development as [lensr](https://github.com/poldham/lensr). The United States Patent and Trademark Office is also developing an API for access to its database in JSON at [Patents View](http://www.patentsview.org/api/doc.html). 
