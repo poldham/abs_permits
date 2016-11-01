@@ -9,39 +9,61 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Paul Oldham" />
-<meta name="author" content="Olivier Rukundo" />
-<meta name="author" content="Hartmut Meyer" />
 
-<meta name="date" content="2016-05-26" />
 
 <title>Unique Identifiers in an Online Permit and Monitoring System to support the Nagoya Protocol</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
+
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
   }
 </style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
-
 
 
 <style type="text/css">
@@ -98,37 +120,38 @@ button.code-folding-btn:focus {
 }
 </style>
 
+
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 60px;
+  padding-top: 51px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 
 .section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 .section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
+  padding-top: 56px;
+  margin-top: -56px;
 }
 </style>
 
@@ -183,20 +206,29 @@ $(document).ready(function () {
         <li>
   <a href="index.html">About</a>
 </li>
-<li>
-  <a href="executive_summary.html">Executive Summary</a>
-</li>
-<li>
-  <a href="1_background.html">Background</a>
-</li>
-<li>
-  <a href="2_the_model.html">The Model</a>
-</li>
-<li>
-  <a href="3_principles.html">Core Principles</a>
-</li>
-<li>
-  <a href="4_unique_identifiers.html">Unique Identifiers</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Sections
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="executive_summary.html">Executive Summary</a>
+    </li>
+    <li>
+      <a href="1_background.html">Background</a>
+    </li>
+    <li>
+      <a href="2_the_model.html">The Model</a>
+    </li>
+    <li>
+      <a href="3_principles.html">Core Principles</a>
+    </li>
+    <li>
+      <a href="4_unique_identifiers.html">Unique Identifiers</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="5_workplan.html">Draft Workplan</a>
@@ -220,10 +252,6 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Unique Identifiers in an Online Permit and Monitoring System to support the Nagoya Protocol</h1>
-<h4 class="author"><em>Paul Oldham</em></h4>
-<h4 class="author"><em>Olivier Rukundo</em></h4>
-<h4 class="author"><em>Hartmut Meyer</em></h4>
-<h4 class="date"><em>26 May 2016</em></h4>
 
 </div>
 
@@ -309,8 +337,8 @@ $(document).ready(function () {
 <p>Additional options include a requirement to use the basic unique identifier (BS20151234) in the documentation entered into databases for DNA and amino acid sequence data or html embed codes (for web publications).</p>
 <p>In the case of DNA data an example of the existing use of identifiers, and the ability to monitor DNA sequence and amino acid information is provided by the <a href="http://www.boldsystems.org">Barcode of Life Database (BOLD)</a>.</p>
 <p>Information using species names or identifiers can be retrieved using the <code>taxize</code> package in R using <a href="https://www.rstudio.com">RStudio</a> which generates the following link for a search for a species name.</p>
-<pre class="r"><code>library(taxize) # load the taxize package
-get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcode id for a species</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(taxize) <span class="co"># load the taxize package</span>
+<span class="kw">get_boldid</span>(<span class="dt">searchterm =</span> <span class="st">&quot;Prunus africana&quot;</span>) <span class="co"># search for the dna barcode id for a species</span></code></pre></div>
 <pre><code>## 
 ## Retrieving data for taxon &#39;Prunus africana&#39;</code></pre>
 <pre><code>## [1] &quot;191949&quot;
@@ -318,6 +346,10 @@ get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcod
 ## [1] &quot;boldid&quot;
 ## attr(,&quot;match&quot;)
 ## [1] &quot;found&quot;
+## attr(,&quot;multiple_matches&quot;)
+## [1] FALSE
+## attr(,&quot;pattern_match&quot;)
+## [1] FALSE
 ## attr(,&quot;uri&quot;)
 ## [1] &quot;http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949&quot;</code></pre>
 <p>More information from the URL can then be accessed in R as a data table or through the BOLD website. On the BOLD website this produces a list of sequence related records. The image below is viewable <a href="http://boldsystems.org/index.php/Taxbrowser_Taxonpage?taxid=191949">here</a>.</p>
@@ -365,6 +397,7 @@ get_boldid(searchterm = &quot;Prunus africana&quot;) # search for the dna barcod
 $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
+
 
 </script>
 

@@ -1,11 +1,6 @@
 ---
 title: Unique Identifiers in an Online Permit and Monitoring System to support the
   Nagoya Protocol
-author:
-- Paul Oldham
-- Olivier Rukundo
-- Hartmut Meyer
-date: "26 May 2016"
 output: html_document
 ---
 ```{r setup, include=FALSE}
