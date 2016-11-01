@@ -3,7 +3,7 @@ navbar:
   left:
     - text: "About"
       href: index.html
-    - text: "Sections"    
+    - text: "The Model"    
       menu: 
       - text: "Executive Summary"
         href: executive_summary.html
