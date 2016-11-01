@@ -15,15 +15,17 @@ navbar:
         href: 3_principles.html
       - text: "Unique Identifiers"
         href: 4_unique_identifiers.html 
-    - text: "Draft Workplan"
-      href: 5_workplan.html
+    - text: "Planning"
+      menu:
+      - text: "Draft Workplan"
+        href: 5_workplan.html
+      - text: "Annex"
+        href: annex.html
     - text: "Schematics"
       href: presentations/schematics/index.html
-    - text: "Annex"
-      href: annex.html
 output:
   html_document:
-    theme: cosmo
+    theme: flatly
     highlight: pygments
 output_dir: "."
     
