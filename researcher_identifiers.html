@@ -377,9 +377,12 @@ $(document).ready(function () {
 <p>ROpenSci has produced the <a href="https://github.com/ropensci/rorcid">rorcid package</a> which is on CRAN. Note that when you first try to use the package a browser window will open up and ask you to authenticate. Close the browser after signing in.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;rorcid&quot;</span>)</a></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(rorcid)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">oldham &lt;-<span class="st"> </span><span class="kw">orcid_works</span>(<span class="st">&quot;0000-0002-1013-4390&quot;</span>)</a></code></pre></div>
-<p>View the first record and note that there are a lot of columns of data that you probably won’t be needing.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">oldham<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1013-4390</span><span class="st">`</span><span class="op">$</span>group<span class="op">$</span><span class="st">`</span><span class="dt">work-summary</span><span class="st">`</span>[[<span class="dv">1</span>]] <span class="op">%&gt;%</span><span class="st"> </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
+<a class="sourceLine" id="cb2-2" data-line-number="2">oldham &lt;-<span class="st"> </span><span class="kw">works</span>(<span class="st">&quot;0000-0002-1013-4390&quot;</span>)</a></code></pre></div>
+<p>The works function converts the list of data frames that is returned from ORCID into a single data frame to make your life easier. Note that there are a lot of columns and so you will normally want to select relevant columns. Also not that the ORCID ID used as input does not appear in the return itself (consistently that is) so you will probably want to add a column (tibble::add_column()).</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">oldham <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span>tibble<span class="op">::</span><span class="kw">add_column</span>(<span class="dt">orcid_id =</span> <span class="st">&quot;0000-0002-1013-4390&quot;</span>) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">head</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="co"># show ten</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">  </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -403,6 +406,13 @@ $(document).ready(function () {
 <th align="left">publication-date.media-type</th>
 <th align="left">publication-date.year.value</th>
 <th align="left">publication-date.month.value</th>
+<th align="left">publication-date.month</th>
+<th align="left">source.source-orcid</th>
+<th align="left">source.source-client-id.uri</th>
+<th align="left">source.source-client-id.path</th>
+<th align="left">source.source-client-id.host</th>
+<th align="left">publication-date</th>
+<th align="left">orcid_id</th>
 </tr>
 </thead>
 <tbody>
@@ -427,175 +437,229 @@ $(document).ready(function () {
 <td align="left">NA</td>
 <td align="left">2016</td>
 <td align="left">05</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="right">24292767</td>
+<td align="left">REPORT</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/24292767</td>
+<td align="left">3</td>
+<td align="right">1.464084e+12</td>
+<td align="right">1.468231e+12</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a></td>
+<td align="left">0000-0002-1013-4390</td>
+<td align="left">orcid.org</td>
+<td align="left">Paul Oldham</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">A Review of UK Patent Activity for Genetic Resources and associated Traditional Knowledge</td>
+<td align="left">list(<code>external-id-type</code> = “doi”, <code>external-id-value</code> = “10.13140/RG.2.1.1682.9849”, <code>external-id-relationship</code> = “SELF”, <code>external-id-url.value</code> = “<a href="http://dx.doi.org/10.13140/RG.2.1.1682.9849" class="uri">http://dx.doi.org/10.13140/RG.2.1.1682.9849</a>”)</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2016</td>
+<td align="left">01</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="right">24472782</td>
+<td align="left">REPORT</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/24472782</td>
+<td align="left">23</td>
+<td align="right">1.464862e+12</td>
+<td align="right">1.464862e+12</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a></td>
+<td align="left">0000-0002-1013-4390</td>
+<td align="left">orcid.org</td>
+<td align="left">Paul Oldham</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">UK Company and Organisation Index for Genetic Resources and Traditional Knowledge</td>
+<td align="left">list(<code>external-id-type</code> = “doi”, <code>external-id-value</code> = “10.13140/RG.2.1.1125.9289.”, <code>external-id-relationship</code> = “SELF”, <code>external-id-url.value</code> = “<a href="http://dx.doi.org/10.13140/RG.2.1.1125.9289" class="uri">http://dx.doi.org/10.13140/RG.2.1.1125.9289</a>.”)</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2016</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="right">24292901</td>
+<td align="left">WEBSITE</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/24292901</td>
+<td align="left">6</td>
+<td align="right">1.464078e+12</td>
+<td align="right">1.464078e+12</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a></td>
+<td align="left">0000-0002-1013-4390</td>
+<td align="left">orcid.org</td>
+<td align="left">Paul Oldham</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">WIPO Manual on Open Source Patent Analytics project site</td>
+<td align="left">list()</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2015</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="right">23574682</td>
+<td align="left">JOURNAL_ARTICLE</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/23574682</td>
+<td align="left">0</td>
+<td align="right">1.460645e+12</td>
+<td align="right">1.460645e+12</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">CrossRef Metadata Search</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Mapping the landscape of climate engineering</td>
+<td align="left">list(<code>external-id-type</code> = “doi”, <code>external-id-value</code> = “10.1098/rsta.2014.0065”, <code>external-id-url</code> = NA, <code>external-id-relationship</code> = “SELF”)</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2014</td>
+<td align="left">11</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/client/0000-0002-3054-1567" class="uri">https://orcid.org/client/0000-0002-3054-1567</a></td>
+<td align="left">0000-0002-3054-1567</td>
+<td align="left">orcid.org</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="right">23611008</td>
+<td align="left">REPORT</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/23611008</td>
+<td align="left">1</td>
+<td align="right">1.460796e+12</td>
+<td align="right">1.464166e+12</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a></td>
+<td align="left">0000-0002-1013-4390</td>
+<td align="left">orcid.org</td>
+<td align="left">Paul Oldham</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Patent Landscape Report for Animal Genetic Resources</td>
+<td align="left">list(<code>external-id-type</code> = “doi”, <code>external-id-value</code> = “10.13140/RG.2.1.1214.9280”, <code>external-id-relationship</code> = “SELF”, <code>external-id-url.value</code> = “<a href="http://dx.doi.org/10.13140/RG.2.1.1214.9280" class="uri">http://dx.doi.org/10.13140/RG.2.1.1214.9280</a>”)</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2014</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">0000-0002-1013-4390</td>
 </tr>
 </tbody>
 </table>
-<p>View all works in a data frame (gets long fast as a large number of columns)</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">oldham[[<span class="st">&quot;0000-0002-1013-4390&quot;</span>]][[<span class="st">&quot;group&quot;</span>]][[<span class="st">&quot;work-summary&quot;</span>]] <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">bind_rows</span>()</a></code></pre></div>
-<p>Or use purrr to access and bind the list of data frames containing the publications and use select to just view the titles. You will normally want to add the orcid_id column. It is added here using dplyr::add_column</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">oldham <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">modify</span>(<span class="kw">c</span>(<span class="st">&quot;group&quot;</span>, <span class="st">&quot;work-summary&quot;</span>)) <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">flatten</span>() <span class="op">%&gt;%</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">bind_rows</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="st">  </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">title.title.value</span><span class="st">`</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="st">  </span><span class="kw">add_column</span>(., <span class="dt">orcid_id =</span> <span class="kw">names</span>(oldham)) <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">  </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
+</div>
+<div id="biographical-details-where-present" class="section level3">
+<h3>Biographical details (where present)</h3>
+<p>In some cases the bio is empty and will return NULL in the content field. In other cases it will return text in the content slot.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">fictitious_bio &lt;-<span class="st"> </span><span class="kw">orcid_bio</span>(<span class="st">&quot;0000-0002-1825-0097&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">fictitious_bio<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1825-0097</span><span class="st">`</span><span class="op">$</span>content</a></code></pre></div>
+<pre><code>## [1] &quot;Josiah Carberry is a fictitious person. This account is used as a demonstration account by ORCID, CrossRef and others who wish to demonstrate the interaction of ORCID with other scholarly communication systems without having to use a real-person&#39;s account.\r\n\r\nJosiah Stinkney Carberry is a fictional professor, created as a joke in 1929. He is said to still teach at Brown University, and to be known for his work in \&quot;psychoceramics\&quot;, the supposed study of \&quot;cracked pots\&quot;. See his Wikipedia entry for more details.&quot;</code></pre>
+</div>
+<div id="employment-details" class="section level3">
+<h3>Employment details</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">carberry &lt;-<span class="st"> </span><span class="kw">orcid_employments</span>(<span class="st">&quot;0000-0002-1825-0097&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">carberry<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1825-0097</span><span class="st">`</span><span class="op">$</span><span class="st">`</span><span class="dt">employment-summary</span><span class="st">`</span> <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="st">  </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">department-name</span><span class="st">`</span>, <span class="st">`</span><span class="dt">role-title</span><span class="st">`</span>, <span class="st">`</span><span class="dt">organization.name</span><span class="st">`</span>, <span class="st">`</span><span class="dt">organization.address.city</span><span class="st">`</span>, <span class="st">`</span><span class="dt">organization.address.country</span><span class="st">`</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="st">  </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
 <table>
 <thead>
 <tr class="header">
-<th align="left">title.title.value</th>
-<th align="left">orcid_id</th>
+<th align="left">department-name</th>
+<th align="left">role-title</th>
+<th align="left">organization.name</th>
+<th align="left">organization.address.city</th>
+<th align="left">organization.address.country</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol</td>
-<td align="left">0000-0002-1013-4390</td>
+<td align="left">Psychoceramics</td>
+<td align="left">Professor</td>
+<td align="left">Wesleyan University</td>
+<td align="left">Middletown</td>
+<td align="left">US</td>
 </tr>
 <tr class="even">
-<td align="left">A Review of UK Patent Activity for Genetic Resources and associated Traditional Knowledge</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">UK Company and Organisation Index for Genetic Resources and Traditional Knowledge</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">WIPO Manual on Open Source Patent Analytics project site</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Mapping the landscape of climate engineering</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Patent Landscape Report for Animal Genetic Resources</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Valuing the Deep: Marine Genetic Resources in Areas Beyond National Jurisdiction</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biological Diversity in the Patent System</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Biodiversity in the Patent System: South Africa.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biodiversity in the Patent System: Cameroon.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Biodiversity in the Patent System: Kenya</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biodiversity in the Patent System: Madagascar.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Biodiversity in the Patent System: Namibia.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biodiversity in the Patent System: Senegal.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Intellectual property, informatics and plant genetic resources.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Synthetic Biology Scientific Landscape</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Synthetic Biology: Mapping the Scientific Landscape</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">A review of patent activity in the cosmetics sector in the context of the ethical sourcing of biodiversity.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">‘We the peoples…’: The United Nations Declaration on the Rights of Indigenous Peoples</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biopiracy and the Bioeconomy</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Global Status and Trends in Intellectual Property Claims: Dataset for Biodiversity</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Global Status and Trends in Patent Activity for Biological and Genetic Material</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Indigenous Peoples and the CBD in 2003</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">The problem of representation and modern Amazonian indigenous political organisation: a re-assessment</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Cosmology, Shamanism and Medicinal Practice among the Wothïha of the Venezuelan Amazon</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Organizaciones indígenas y desarrollo sustentable en el amazonas venezolano</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">A European Patent Indicator for Access to Genetic Resources and Benefit-Sharing</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">An Access and Benefit-Sharing Commons? The Role of Commons/Open Source Licences in the International Regime on Access to Genetic Resources and Benefit-Sharing</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Biodiversity and the Patent System: An Introduction to Research Methods</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Biodiversity and the Patent System: Towards International Indicators</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Biodiversity in the Patent System: Mozambique.</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Defusing Disclosure in Patent Applications</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Global Status and Trends in Intellectual Property Claims: Genomics, Proteomics and Biotechnology</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">Global Status and Trends in Intellectual Property Claims: Microorganisms</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="odd">
-<td align="left">Negotiating Diversity: A Field Guide to the Convention on Biological Diversity</td>
-<td align="left">0000-0002-1013-4390</td>
-</tr>
-<tr class="even">
-<td align="left">The Impacts of Development and Indigenous Responses among the Piaroa of the Venezuelan Amazon</td>
-<td align="left">0000-0002-1013-4390</td>
+<td align="left">Psychoceramics</td>
+<td align="left">Professor</td>
+<td align="left">Brown University</td>
+<td align="left">Providence</td>
+<td align="left">US</td>
 </tr>
 </tbody>
 </table>
+</div>
+<div id="education-details" class="section level3">
+<h3>Education Details</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">oldham_education &lt;-<span class="st"> </span><span class="kw">orcid_educations</span>(<span class="st">&quot;0000-0002-1013-4390&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">oldham_education<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1013-4390</span><span class="st">`</span><span class="op">$</span><span class="st">`</span><span class="dt">education-summary</span><span class="st">`</span> <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="st">  </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">department-name</span><span class="st">`</span>, <span class="st">`</span><span class="dt">role-title</span><span class="st">`</span>, <span class="st">`</span><span class="dt">organization.name</span><span class="st">`</span>)</a></code></pre></div>
+<pre><code>##       department-name role-title
+## 1 Social Anthropology        PhD
+## 2 Social Anthropology      MPhil
+## 3   Religious Studies   BA(Hons)
+##                                  organization.name
+## 1 London School of Economics and Political Science
+## 2                          University of Cambridge
+## 3                             Lancaster University</code></pre>
+</div>
+<div id="email-details" class="section level3">
+<h3>Email Details</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">carberry_email &lt;-<span class="st"> </span><span class="kw">orcid_email</span>(<span class="st">&quot;0000-0002-1825-0097&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">carberry_email<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1825-0097</span><span class="st">`</span><span class="op">$</span>email</a></code></pre></div>
+<pre><code>##                  email path visibility verified primary put-code
+## 1 j.carberry@orcid.org   NA     PUBLIC    FALSE   FALSE       NA
+##   created-date.value last-modified-date.value source.source-client-id
+## 1         1.4434e+12               1.4434e+12                      NA
+##                 source.source-orcid.uri source.source-orcid.path
+## 1 https://orcid.org/0000-0002-1825-0097      0000-0002-1825-0097
+##   source.source-orcid.host source.source-name.value
+## 1                orcid.org          Josiah Carberry</code></pre>
 </div>
 
 

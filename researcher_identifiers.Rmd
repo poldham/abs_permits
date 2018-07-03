@@ -73,42 +73,104 @@ install.packages("rorcid")
 
 ```{r eval=FALSE}
 library(rorcid)
-oldham <- orcid_works("0000-0002-1013-4390")
-```
-
-
-```{r echo=FALSE}
-load("oldham.rda")
-```
-
-View the first record and note that there are a lot of columns of data that you probably won't be needing.
-
-```{r}
-oldham$`0000-0002-1013-4390`$group$`work-summary`[[1]] %>% knitr::kable()
+oldham <- works("0000-0002-1013-4390")
 ```
 
 ```{r eval=FALSE, echo=FALSE}
 save(oldham, file = "oldham.rda")
 ```
 
-View all works in a data frame (gets long fast as a large number of columns)
-
-```{r eval=FALSE}
-library(tidyverse)
-oldham[["0000-0002-1013-4390"]][["group"]][["work-summary"]] %>% bind_rows()
+```{r echo=FALSE}
+load("oldham.rda")
 ```
 
-Or use purrr to access and bind the list of data frames containing the publications and use select to just view the titles. You will normally want to add the orcid_id column. It is added here using `dplyr::add_column`
+The works function converts the list of data frames that is returned from ORCID into a single data frame to make your life easier. Note that there are a lot of columns and so you will normally want to select relevant columns. Also not that the ORCID ID used as input does not appear in the return itself (consistently that is) so you will probably want to add a column (tibble::add_column()).
 
 ```{r}
-library(tidyverse)
-oldham %>% 
-  modify(c("group", "work-summary")) %>%
-  flatten() %>%
-  bind_rows() %>% 
-  select(`title.title.value`) %>% 
-  add_column(., orcid_id = names(oldham)) %>% 
+oldham %>%
+  tibble::add_column(orcid_id = "0000-0002-1013-4390") %>%
+  head() %>% # show ten
   knitr::kable()
 ```
 
+
+### Biographical details (where present)
+
+In some cases the bio is empty and will return NULL in the content field. In other cases it will return text in the content slot.
+
+```{r eval=FALSE}
+fictitious_bio <- orcid_bio("0000-0002-1825-0097")
+```
+
+```{r echo=FALSE, eval=FALSE}
+save(fictitious_bio, file = "fictitious_bio.rda")
+```
+
+```{r echo = FALSE}
+load("fictitious_bio.rda")
+```
+
+```{r}
+fictitious_bio$`0000-0002-1825-0097`$content
+```
+
+### Employment details
+
+```{r eval=FALSE}
+carberry <- orcid_employments("0000-0002-1825-0097")
+```
+
+```{r eval=FALSE, echo=FALSE}
+save(carberry, file = "carberry.rda")
+```
+
+```{r echo=FALSE}
+load("carberry.rda")
+```
+
+```{r}
+carberry$`0000-0002-1825-0097`$`employment-summary` %>%
+  select(`department-name`, `role-title`, `organization.name`, `organization.address.city`, `organization.address.country`) %>% 
+  knitr::kable()
+```
+
+### Education Details
+
+```{r eval=FALSE}
+oldham_education <- orcid_educations("0000-0002-1013-4390")
+```
+
+```{r eval=FALSE, echo=FALSE}
+save(oldham_education, file = "oldham_education.rda")
+```
+
+```{r echo=FALSE}
+load("oldham_education.rda")
+```
+
+
+
+```{r}
+oldham_education$`0000-0002-1013-4390`$`education-summary` %>% 
+  select(`department-name`, `role-title`, `organization.name`)
+```
+
+
+### Email Details
+
+```{r eval=FALSE}
+carberry_email <- orcid_email("0000-0002-1825-0097")
+```
+
+```{r echo=FALSE, eval=FALSE}
+save(carberry_email, file = "carberry_email.rda")
+```
+
+```{r echo=FALSE}
+load("carberry_email.rda")
+```
+
+```{r}
+carberry_email$`0000-0002-1825-0097`$email
+```
 
