@@ -1,0 +1,29 @@
+---
+title: "Create an API"
+author: "Paul Oldham"
+date: "03/07/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The online permit and monitoring system is intended to be built as a REST API. This approach is mainly intended to allow permit authorities, who are frequently in different departments or ministries, to pull or post data to the system. The API approach also allows for authentication of endpoints. 
+
+In general Swagger is the preferred tool for API design and documentation. 
+
+
+
+
+### Python Tutorials
+
+The following are walkthroughs to help get started. 
+
+1. [Building a Basic RestFul API in Python](https://www.codementor.io/sagaragarwal94/building-a-basic-restful-api-in-python-58k02xsiq). Using Flask.
+2. [This is how easy it is to create a REST API](https://codeburst.io/this-is-how-easy-it-is-to-create-a-rest-api-8a25122ab1f3). Using Flask
+3. [Full Stack Python: API Creation](https://www.fullstackpython.com/api-creation.html). A list of options for Python, see Flask and Flask Restful for example.
+
+### R Tutorials
+
+

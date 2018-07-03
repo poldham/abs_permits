@@ -1,0 +1,68 @@
+---
+title: "Scientific Literature Data Sources"
+author: "Paul Oldham"
+date: "23/06/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Scientific Literature
+
+There are three main choices when attempting to engage in ABS monitoring of the scientific literature
+
+a) commercial databases (such as Web of Science or Scopus)
+b) Free databases such as crossref or core.ac.uk
+c) Combinations of the above
+
+Below we list packages in Python and R for accessing the scientific literature. If you know of packages in other languages (such as Ruby or in Javascript) please raise an [issue on Github](https://github.com/poldham/abs_permits/issues). The list is not meant to be comprehensive but for ABS monitoring tools such as Crossref should be sufficient as a starting point. 
+
+### Commercial Databases
+
+Commercial databases such as Web of Science from Clarivate Analytics or Scopus are widely used in Universities. If seeking to build up a collection one option is to retrieve dois for a subject from the commercial provider and then to retrieve open access metadata from a service such as crossref. 
+
+### Tools
+
+The R community is well served by a range of packages from [ROpenSci](https://ropensci.org/packages/). These include packages such as [fulltext](https://github.com/ropensci/fulltext) for searching across multiple data sources and utilities such as [pdftools](https://github.com/ropensci/pdftools) or [extractr](https://github.com/ropensci/extractr) for working with pdfs, [tabulizer](https://github.com/ropensci/tabulizer) for extracting tables from pdfs etc. Equivalent tools may be available in Python or other languages and will be documented here as they become available. Please raise an [issue on Github](https://github.com/poldham/abs_permits/issues) if you have suggestions. 
+
+## Open Access Databases
+
+### [Crossref](https://www.crossref.org/)
+
+The main open access database for scientific literature is Crossref which contains meta data on over 96 million publications. Use cases include looking up researchers by author name and affiliation. Or, where a list of DOIs is available send the DOIs to retrieve the metadata. Note that search capacity in Crossref is limited at present and multi-phrase searching may produce unexpected results.
+
+1. [Crossref](https://www.crossref.org/)
+1. [Crossref API](https://github.com/CrossRef/rest-api-doc)
+3. [Crossref Python](https://github.com/sckott/habanero)
+4. [Crossref R package](https://github.com/ropensci/rcrossref)
+5. [Crossref Ruby gem](https://github.com/sckott/serrano)
+6. [Crossref Javascript](https://github.com/ropensci/rcrossref)
+
+A text mining client for crossref is also available in R as [crminer](https://github.com/ropenscilabs/crminer)
+
+### [core.ac.uk](https://core.ac.uk/)
+
+Provides full text search and open access to over 133 million publications. You need to register for an API key [here](https://core.ac.uk/api-keys/register).
+
+1. [CORE API documentation](https://core.ac.uk/docs/)
+2. [rcoreoa Package](https://github.com/ropensci/rcoreoa)
+3. [Python pyoacore](https://github.com/oacore/pyoacore)
+
+### [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/)
+
+PubMed contains publications that are related to medicine
+
+1. [PubMed API](https://www.ncbi.nlm.nih.gov/pmc/tools/developers/)
+2. [rentrez R Package](https://cran.r-project.org/web/packages/rentrez/index.html)
+3. [easyPubMed R Package](https://cran.r-project.org/web/packages/easyPubMed/index.html)
+4. [Python Biopython package](https://biopython.org/) and see this [gist](https://gist.github.com/bonzanini/5a4c39e4c02502a8451d)
+
+### Arxiv databases
+
+There are a range of open access preprint databases that have become increasingly popular
+
+1. [Arxiv](https://arxiv.org/)
+2. [SocArxiv](https://socopen.org/)
+3. [BioArxiv](https://www.biorxiv.org/)

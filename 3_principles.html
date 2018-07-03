@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -19,6 +19,7 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 
 
@@ -71,6 +72,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -134,7 +138,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -206,7 +209,31 @@ $(document).ready(function () {
   <a href="presentations/schematics/index.html">Schematics</a>
 </li>
 <li>
-  <a href="resources.html">Resources</a>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -225,7 +252,7 @@ $(document).ready(function () {
 </div>
 
 
-<p>The development of a streamlined electronic system requires consideration of the principles that inform the development and maintenance of the system over a time frame involving decades.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> The following are a set of Core Principles that focus on the objective, how the objective is to be realised, and the features of the system.</p>
+<p>The development of a streamlined electronic system requires consideration of the principles that inform the development and maintenance of the system over a time frame involving decades.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The following are a set of Core Principles that focus on the objective, how the objective is to be realised, and the features of the system.</p>
 <div id="design-principles" class="section level3">
 <h3>Design Principles</h3>
 <p>These principles refer to the design and implementation of the online permit and monitoring system.</p>
@@ -292,7 +319,7 @@ $(document).ready(function () {
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 
@@ -304,8 +331,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
@@ -316,7 +346,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+
+
+<title>Taxonomic Data Sources</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    The Model
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="executive_summary.html">Executive Summary</a>
+    </li>
+    <li>
+      <a href="1_background.html">Background</a>
+    </li>
+    <li>
+      <a href="2_the_model.html">The Model</a>
+    </li>
+    <li>
+      <a href="3_principles.html">Core Principles</a>
+    </li>
+    <li>
+      <a href="4_unique_identifiers.html">Unique Identifiers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Planning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="5_workplan.html">Draft Workplan</a>
+    </li>
+    <li>
+      <a href="annex.html">Annex</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Taxonomic Data Sources</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>22/06/2018</em></h4>
+
+</div>
+
+
+<div id="taxonomic-data" class="section level2">
+<h2>Taxonomic Data</h2>
+<p>Taxonomic data is central to the ability of countries to monitor access to genetic resources and benefit-sharing. The reason for this is that it is not possible to monitor something you don’t have.</p>
+<p>Here are the principal taxonomic data resources. R users should note that they are very well served by the range of API taxonomic packages from <a href="https://ropensci.org/">ROpenSci</a> thanks to the work of <a href="https://github.com/sckott">Scott Chamberlain</a> and collaborators. In this article I will focus on some of the major data sources by pointing to the APIs, R packages and python or other versions. You will also want to take a look at Scott’s article on taxonomic data in R <a href="https://github.com/ropensci/taxonomy">here</a>.</p>
+<p>If you are an R user then the logical starting point will be the <a href="https://github.com/ropensci/taxonomy">taxize package</a> as this provides access to many different taxonomic data sources (including almost all of those listed below). So… start there!. If you will be using the data at scale then also check out <a href="https://cran.rstudio.com/web/packages/taxizedb/index.html">taxizedb</a>. If you are a Python fan you should try Scott’s <a href="https://github.com/sckott/pytaxize">pytaxize</a>. Both packages are written by the legendary <a href="https://github.com/sckott">Scott Chamberlain</a>. Note that one advantage of the Python version is that it can be used in a web app more easily than the R version (where Shiny would be needed, and would be slower). However, bear in mind that <code>pytaxize</code> may be a little behind <code>taxize</code>.</p>
+<p>While taxize will normally take you where you want to go, the individual packages may provide you with more specialised data or easier access for some purposes. So bear in mind that if taxize doesn’t meet your immediate needs… or seems complicated… try the dedicated package first. That is also often a good way to get your head around the basics of how things work before launching into taxize.</p>
+<p>We will focus here on data sources that can be used to build up a picture of national level data.</p>
+<div id="the-global-environmental-information-facility-gbif" class="section level3">
+<h3>The Global Environmental Information Facility (GBIF)</h3>
+<p>GBIF is the major source for global species occurrence (georeferenced) dara and taxonomic data and aggregates the major data services mentioned below</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.gbif.org/">Website</a></li>
+<li><a href="https://www.gbif.org/developer/summary">RESTFUL API</a></li>
+<li><a href="https://github.com/gbif">GitHub Repository</a></li>
+<li><a href="https://www.gbif.org/developer/maps">Maps API</a></li>
+<li>R Packages <a href="https://github.com/ropensci/rgbif">rgbif</a> and <a href="https://github.com/ropensci/taxize">taxise</a></li>
+<li><a href="https://github.com/sckott/pygbif">Python pygbif library</a></li>
+</ol>
+<p>You can find an introductory tutorial on <code>rbgif</code> <a href="https://ropensci.org/tutorials/rgbif_tutorial/">here</a>. My tutorial on accessing GBIF with rgbif is <a href="https://poldham.github.io/abs/gbif.html">here</a> includes importing larger datasets and exploring issues with occurrence data. A second extended piece looks at <a href="https://poldham.github.io/abs/mapgbif.html">mapping GBIF data with Leaflet</a>, some of the issues you will run into and ideas on how to handle them. A <code>taxize</code> tutorial is <a href="https://ropensci.org/tutorials/taxize_tutorial/">here</a>.</p>
+</div>
+<div id="the-catalogue-of-life-and-the-integrated-taxonomic-information-service-itis" class="section level3">
+<h3>The Catalogue of Life and the Integrated Taxonomic Information Service (ITIS)</h3>
+<p>You can access COL and ITIS through <a href="https://github.com/ropensci/taxonomy">taxize</a>.</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.catalogueoflife.org/col/">COL website</a></li>
+<li><a href="http://www.catalogueoflife.org/content/web-services">COL Webservices</a>, see the <a href="http://webservice.catalogueoflife.org/col/webservice">latest version</a></li>
+<li><a href="https://github.com/sckott/pytaxize">COL in Python through pytaxize</a></li>
+<li><a href="https://github.com/ropensci/taxonomy">COL in R through taxize</a></li>
+<li><a href="https://www.itis.gov/">ITIS web site</a></li>
+<li><a href="https://www.itis.gov/ws_description.html">ITIS Web service</a></li>
+</ol>
+</div>
+<div id="species-names" class="section level3">
+<h3>Species Names</h3>
+<p>Species names are messy and it is important to capture name variants wherever possible. The main source for species names and their variants at scale form part of the Global Names Architecture project. These include:</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://gni.globalnames.org/">The Global Names Index</a>. Accessible through <a href="https://github.com/ropensci/taxize">taxize</a></li>
+<li><a href="https://github.com/dimus/gni/wiki/api">GNI API</a>. Accessible through <a href="https://github.com/ropensci/taxize">taxize</a></li>
+<li><a href="http://resolver.globalnames.org/api">The Global Names Resolver</a>. Accessible through <a href="https://github.com/ropensci/taxize">taxize</a></li>
+<li><a href="https://github.com/gnames">The Global Names Architecture</a> provides a suite of packages for species name identification in texts. Particular attention is drawn to <a href="https://github.com/gnames/gnfinder">gnfinder</a> written in Go. This uses a combination of dictionary based approaches and machine learning to identify species names in text files. The author <a href="https://github.com/dimus">Dmitry Mozzherin</a> has been able to identify species in 50 million pages on a 40 core machine in 3 hours. The go packages for Linux, Mac and Windows are basically brand new and the instructions are a bit thin at the moment but that will improve with time as Dmitry irons out any bugs and gets to the user side of this.</li>
+<li><a href="https://github.com/gnames/bhlindex">Biodiversity Heritage Library name finder</a></li>
+</ol>
+</div>
+<div id="marine-species" class="section level3">
+<h3>Marine Species</h3>
+<p>Marine species data is served through GBIF. The following are primary sources for GBIFs coverage of marine species.</p>
+<p><strong>WoRMS</strong></p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.marinespecies.org/">World Register of Marine Species</a>. Accessible through <a href="https://github.com/ropensci/taxize">taxize</a>.</li>
+<li><a href="https://github.com/ropensci/worrms">worms Rpackage</a></li>
+<li><a href="http://www.marinespecies.org/aphia.php?p=webservice&amp;type=python">Worms Python example</a></li>
+<li><a href="http://www.iobis.org/">OBIS</a></li>
+<li><a href="https://github.com/sckott/pyobis">OBIS Python</a></li>
+</ol>
+<p><strong>OBIS</strong></p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.iobis.org/">The Ocean Biogeographic Information System</a></li>
+<li><a href="http://www.iobis.org/manual/api/">The Ocean Biogeographic Information System API documentation</a></li>
+<li><a href="https://github.com/iobis/robis">The robis R package (also on CRAN)</a></li>
+<li><a href="https://github.com/sckott/pyobis">Python pyobis</a></li>
+</ol>
+<p>For more specialised data you may want also to look at:</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.marinespecies.org/deepsea%20/">WoRDDS : The World Register of Deep Sea Species</a></li>
+</ol>
+</div>
+<div id="plant-species" class="section level3">
+<h3>Plant Species</h3>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.theplantlist.org/">The Plant List</a>. Accessible through <a href="https://github.com/ropensci/taxize">taxize</a></li>
+</ol>
+</div>
+<div id="viruses" class="section level3">
+<h3>Viruses</h3>
+<p>GBIF does not really deal with viruses, except by accident,. For data on viruses you may wish to try the International Committee on the Taxonomy of Viruses (ICTV) which provides an annual list in an excel spreadsheet that can be accessed <a href="https://talk.ictvonline.org/files/master-species-lists/m/msl/7185/download">here</a>.</p>
+</div>
+<div id="dna-sequence-and-dna-barcode-data" class="section level3">
+<h3>DNA Sequence and DNA Barcode Data</h3>
+<p>Note that I have not yet dug into the data available from bioconductor</p>
+<p>For Barcode of Life Data</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://www.boldsystems.org/">BOLD website</a></li>
+<li><a href="http://www.boldsystems.org/index.php/api_home">BOLD APIs</a></li>
+<li><a href="https://github.com/ropensci/bold">BOLD R Package</a></li>
+<li><a href="https://pypi.org/project/pybold/">pybold Python package’</a>. Note last release, 2016.</li>
+<li><a href="https://pypi.org/project/bold_retriever/">bold_retriever Python package</a>. Note last release, 2014.</li>
+</ol>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

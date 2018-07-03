@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>patent.utf8.md</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    The Model
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="executive_summary.html">Executive Summary</a>
+    </li>
+    <li>
+      <a href="1_background.html">Background</a>
+    </li>
+    <li>
+      <a href="2_the_model.html">The Model</a>
+    </li>
+    <li>
+      <a href="3_principles.html">Core Principles</a>
+    </li>
+    <li>
+      <a href="4_unique_identifiers.html">Unique Identifiers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Planning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="5_workplan.html">Draft Workplan</a>
+    </li>
+    <li>
+      <a href="annex.html">Annex</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<table>
+<tbody>
+<tr class="odd">
+<td>title: “Patent Data Sources”</td>
+</tr>
+<tr class="even">
+<td>author: “Paul Oldham”</td>
+</tr>
+<tr class="odd">
+<td>date: “22/06/2018”</td>
+</tr>
+<tr class="even">
+<td>output: html_document</td>
+</tr>
+</tbody>
+</table>
+<div id="patent-data" class="section level1">
+<h1>Patent Data</h1>
+<p>Programmatic access to patent databases is presently limited. However, for ABS monitoring searches based on inventor, organisations and species name will be possible with free services. If you are completely new to working with patent data the <a href="https://wipo-analytics.github.io/introduction.html">WIPO Manual on Open Source Patent Analytics</a> is recommended reading. In particular see the section on <a href="https://wipo-analytics.github.io/datafields.html">patent data fields</a></p>
+<p>For ABS monitoring we will typically want to perform look ups by:</p>
+<ol style="list-style-type: lower-alpha">
+<li>inventor</li>
+<li>applicant (also known as assignees)</li>
+<li>species</li>
+</ol>
+<p>To avoid extremely noisy results (the John Smith problem) and bearing in mind issues such as name variants (Kirk, James T or Kirk James) it is important to combine search operators where possibe. An example might be inventor name AND Applicant AND species. More detail on options will be provided in future.</p>
+<div id="open-access-databases" class="section level2">
+<h2>Open Access Databases</h2>
+<div id="the-lens" class="section level3">
+<h3>The Lens</h3>
+<p><a href="https://www.lens.org/">The Lens</a> is a free open access patent database that seeks to make patent data and now scientific literature available without restrictions. No API is available but the data is open access. Please respect the robots.txt.</p>
+<p>An R package is available that uses <code>rvest</code> to retrieve data from the main data fields from the Lens (while respecting the database). In contrast with the EPO OPS and Patentsview (below), full text searching is available through the Lens and for that reason it is ranked first.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://github.com/poldham/lensr">lensr</a></li>
+</ol>
+<p>You will need to install devtools <code>install.packages(&quot;devtools&quot;)</code> to install the package from Github.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">install_git</span>(<span class="st">&quot;poldham/lensr&quot;</span>)</a></code></pre></div>
+</div>
+<div id="united-states-patent-and-trademark-office" class="section level3">
+<h3>United States Patent and Trademark Office</h3>
+<p>The USPTO has an antiquated public database interface BUT has created a number of RESTFul APIs returning JSON</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://developer.uspto.gov/api-catalog">USPTO Open Data Portal</a></li>
+<li><a href="http://www.patentsview.org/api/query-language.html">Patentsview API</a></li>
+<li><a href="https://github.com/ropensci/patentsview">Patentsview R Package</a></li>
+<li><a href="https://github.com/CSSIP-AIR/PatentsView-APIWrapper">Patentsview Python</a></li>
+<li><a href="http://www.patentsview.org/api/query-language.html">Patentsview Query language</a></li>
+</ol>
+<p>For ABS monitoring the <a href="http://www.patentsview.org/download/">patentsview data download</a> page offers options including a complete set of inventor and cleaned inventor names. This could be used to generate a lookup table. However, note that patentsview download data is a set of tables for joining on a key field and the titles and asbstracts are not presently included as downloads. The full text of all patent documents can be made available for download on request.</p>
+</div>
+<div id="european-patent-office-open-patent-services-ops" class="section level3">
+<h3>European Patent Office Open Patent Services (OPS)</h3>
+<p>Throttling on this service is common and the number of records that can be retrieved through calls are also limited. OPS is pretty hard to use and the output in either XML or JSON is complex and consists of lists of varying lengths.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://github.com/Patent2net/P2N">Python Patent2Net</a>. Access the European Patent Office Open Patent Services using Python. Note that free registration and an OAuth token are needed from the <a href="http://www.epo.org/searching-for-patents/data/web-services/ops.html#tab-1">Open Patent Services</a>. There are significant limitations on what can be searched using the OPS service.</li>
+</ol>
+<p>See this publication for an example of the use of <a href="https://www.researchgate.net/publication/303715502_Example_of_open-source_OPS_Open_Patent_Services_for_patent_education_and_information_using_the_computational_tool_Patent2Net">Patent2Net</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li><code>opsr</code> An R client for accessing and searching. Presently archived.</li>
+</ol>
+</div>
+<div id="wipo-patentscope" class="section level3">
+<h3><a href="http://www.wipo.int/patentscope/en/">WIPO Patentscope</a></h3>
+<p>The World Intellectual Property Organisation offers full text search through <a href="http://www.wipo.int/patentscope/en/">Patentscope</a>. It is unusual among patent databases because it offers chemical structure search. It also has particularly good translation facilities for search and data retrieval. See the <a href="https://patentscope.wipo.int/search/en/tutorial.jsf">video tutorials</a> for more details.</p>
+<p>A SOAP based API is available for 600 Swiss francs per year. For details see this <a href="http://www.wipo.int/patentscope/en/data/">page</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -23,6 +23,7 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 
 
@@ -75,6 +76,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -138,7 +142,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -210,7 +213,31 @@ $(document).ready(function () {
   <a href="presentations/schematics/index.html">Schematics</a>
 </li>
 <li>
-  <a href="resources.html">Resources</a>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -233,12 +260,12 @@ $(document).ready(function () {
 </div>
 
 
-<p>This paper sets out the concept and model for an online research permit and monitoring system to facilitate national implementation of the access, benefit sharing, monitoring and reporting provisions of the <a href="https://www.cbd.int/abs/about/">Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization</a> to the <a href="https://www.cbd.int">United Nations Convention on Biological Diversity</a>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>This paper sets out the concept and model for an online research permit and monitoring system to facilitate national implementation of the access, benefit sharing, monitoring and reporting provisions of the <a href="https://www.cbd.int/abs/about/">Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization</a> to the <a href="https://www.cbd.int">United Nations Convention on Biological Diversity</a>.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>The core of this proposal is that Parties to the Protocol, and governments who intend to ratify or accede to the Protocol, may wish to adopt:</p>
 <blockquote>
-<p>“A single electronic permit system that makes it easy to apply for permits and for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol.”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>“A single electronic permit system that makes it easy to apply for permits and for government authorities to review and approve applications, monitor compliance and report on the access, benefit-sharing, compliance and reporting provisions of the Nagoya Protocol.”<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 </blockquote>
-<p>The majority of Parties to the Protocol will already possess national permit systems for research involving biodiversity and genetic resources within their jurisdiction and, in the case of indigenous peoples and local communities, for research involving human subjects.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Research permit systems are normally the first point of contact between researchers seeking to carry out research on biodiversity and traditional knowledge and government authorities. Research permit systems have an important role to play in:</p>
+<p>The majority of Parties to the Protocol will already possess national permit systems for research involving biodiversity and genetic resources within their jurisdiction and, in the case of indigenous peoples and local communities, for research involving human subjects.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Research permit systems are normally the first point of contact between researchers seeking to carry out research on biodiversity and traditional knowledge and government authorities. Research permit systems have an important role to play in:</p>
 <ol style="list-style-type: decimal">
 <li>Implementation of the permit providing evidence of prior informed consent and mutually agreed terms foreseen in <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-06">Article 6.3(a)</a> of the Nagoya Protocol on access to genetic resources.</li>
 <li>Creating simplified measures on access for non-commercial research purposes under <a href="https://www.cbd.int/abs/text/articles/default.shtml?sec=abs-08">Article 8a</a> with due regard to the need to address change of intent.</li>
@@ -274,9 +301,9 @@ $(document).ready(function () {
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of the multi-donor <a href="http://www.abs-initiative.info">ABS Capacity Development Initiative</a> hosted by the German Federal Ministry for Economic Cooperation and Development (BMZ) and implemented by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of The Bahamas, BMZ, GIZ or the ABS Initiative.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Oldham, P (2015) <em>Concepts for an Electronic Monitoring Tool</em>. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”.<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>In decision XII/12 F para.1 the Conference of the Parties decided “to use the terminology “indigenous peoples and local communities” in future decisions and secondary documents under the Convention, as appropriate.” This paper uses this terminology in accordance with decision XII/12.<a href="#fnref3">↩</a></p></li>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <em>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</em>. The present paper was written with the additional support of the multi-donor <a href="http://www.abs-initiative.info">ABS Capacity Development Initiative</a> hosted by the German Federal Ministry for Economic Cooperation and Development (BMZ) and implemented by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of The Bahamas, BMZ, GIZ or the ABS Initiative.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Oldham, P (2015) <em>Concepts for an Electronic Monitoring Tool</em>. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>In decision XII/12 F para.1 the Conference of the Parties decided “to use the terminology “indigenous peoples and local communities” in future decisions and secondary documents under the Convention, as appropriate.&quot; This paper uses this terminology in accordance with decision XII/12.<a href="#fnref3" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 
@@ -288,8 +315,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
@@ -300,7 +330,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

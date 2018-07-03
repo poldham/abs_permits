@@ -1,0 +1,99 @@
+---
+title: "Taxonomic Data Sources"
+author: "Paul Oldham"
+date: "22/06/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Taxonomic Data
+
+Taxonomic data is central to the ability of countries to monitor access to genetic resources and benefit-sharing. The reason for this is that it is not possible to monitor something you don't have. 
+
+Here are the principal taxonomic data resources. R users should note that they are very well served by the range of API taxonomic packages from [ROpenSci](https://ropensci.org/) thanks to the work of [Scott Chamberlain](https://github.com/sckott) and collaborators. In this article I will focus on some of the major data sources by pointing to the APIs, R packages and python or other versions. You will also want to take a look at Scott's article on taxonomic data in R [here](https://github.com/ropensci/taxonomy).
+
+If you are an R user then the logical starting point will be the [taxize package](https://github.com/ropensci/taxonomy) as this provides access to many different taxonomic data sources (including almost all of those listed below). So... start there!. If you will be using the data at scale then also check out [taxizedb](https://cran.rstudio.com/web/packages/taxizedb/index.html). If you are a Python fan you should try Scott's [pytaxize](https://github.com/sckott/pytaxize). Both packages are written by the legendary [Scott Chamberlain](https://github.com/sckott). Note that one advantage of the Python version is that it can be used in a web app more easily than the R version (where Shiny would be needed, and would be slower). However, bear in mind that `pytaxize` may be a little behind `taxize`.
+
+While taxize will normally take you where you want to go, the individual packages may provide you with more specialised data or easier access for some purposes. So bear in mind that if taxize doesn't meet your immediate needs... or seems complicated... try the dedicated package first. That is also often a good way to get your head around the basics of how things work before launching into taxize. 
+
+We will focus here on data sources that can be used to build up a picture of national level data.
+
+### The Global Environmental Information Facility (GBIF)
+
+GBIF is the major source for global species occurrence (georeferenced) dara and taxonomic data and aggregates the major data services mentioned below
+
+1. [Website](https://www.gbif.org/)
+2. [RESTFUL API](https://www.gbif.org/developer/summary)
+3. [GitHub Repository](https://github.com/gbif)
+4. [Maps API](https://www.gbif.org/developer/maps)
+3. R Packages [rgbif](https://github.com/ropensci/rgbif) and [taxise](https://github.com/ropensci/taxize)
+4. [Python pygbif library](https://github.com/sckott/pygbif) 
+
+You can find an introductory tutorial on `rbgif` [here](https://ropensci.org/tutorials/rgbif_tutorial/). My tutorial on accessing GBIF with rgbif is [here](https://poldham.github.io/abs/gbif.html) includes importing larger datasets and exploring issues with occurrence data. A second extended piece looks at [mapping GBIF data with Leaflet](https://poldham.github.io/abs/mapgbif.html), some of the issues you will run into and ideas on how to handle them. A `taxize` tutorial is [here](https://ropensci.org/tutorials/taxize_tutorial/).
+
+### The Catalogue of Life and the Integrated Taxonomic Information Service (ITIS)
+
+You can access COL and ITIS through [taxize](https://github.com/ropensci/taxonomy). 
+
+1. [COL website](http://www.catalogueoflife.org/col/)
+2. [COL Webservices](http://www.catalogueoflife.org/content/web-services), see the [latest version](http://webservice.catalogueoflife.org/col/webservice)
+3. [COL in Python through pytaxize](https://github.com/sckott/pytaxize)
+4. [COL in R through taxize](https://github.com/ropensci/taxonomy)
+5. [ITIS web site](https://www.itis.gov/)
+6. [ITIS Web service](https://www.itis.gov/ws_description.html)
+
+### Species Names
+
+Species names are messy and it is important to capture name variants wherever possible. The main source for species names and their variants at scale form part of the Global Names Architecture project. These include:
+
+1. [The Global Names Index](http://gni.globalnames.org/). Accessible through [taxize](https://github.com/ropensci/taxize)
+2. [GNI API](https://github.com/dimus/gni/wiki/api). Accessible through [taxize](https://github.com/ropensci/taxize)
+3. [The Global Names Resolver](http://resolver.globalnames.org/api). Accessible through [taxize](https://github.com/ropensci/taxize)
+3. [The Global Names Architecture](https://github.com/gnames) provides a suite of packages for species name identification in texts. Particular attention is drawn to [gnfinder](https://github.com/gnames/gnfinder) written in Go. This uses a combination of dictionary based approaches and machine learning to identify species names in text files. The author [Dmitry Mozzherin](https://github.com/dimus) has been able to identify species in 50 million pages on a 40 core machine in 3 hours. The go packages for Linux, Mac and Windows are basically brand new and the instructions are a bit thin at the moment but that will improve with time as Dmitry irons out any bugs and gets to the user side of this. 
+4. [Biodiversity Heritage Library name finder](https://github.com/gnames/bhlindex)
+
+### Marine Species
+
+Marine species data is served through GBIF. The following are primary sources for GBIFs coverage of marine species. 
+
+__WoRMS__
+
+1. [World Register of Marine Species](http://www.marinespecies.org/). Accessible through [taxize](https://github.com/ropensci/taxize).
+2. [worms Rpackage](https://github.com/ropensci/worrms) 
+3. [Worms Python example](http://www.marinespecies.org/aphia.php?p=webservice&type=python)
+4. [OBIS](http://www.iobis.org/)
+5. [OBIS Python](https://github.com/sckott/pyobis)
+
+__OBIS__
+
+1. [The Ocean Biogeographic Information System](http://www.iobis.org/)
+2. [The Ocean Biogeographic Information System API documentation](http://www.iobis.org/manual/api/)
+3. [The robis R package (also on CRAN)](https://github.com/iobis/robis)
+4. [Python pyobis](https://github.com/sckott/pyobis)
+
+For more specialised data you may want also to look at:
+
+1. [WoRDDS : The World Register of Deep Sea Species](http://www.marinespecies.org/deepsea%20/)
+
+### Plant Species
+
+1. [The Plant List](http://www.theplantlist.org/). Accessible through [taxize](https://github.com/ropensci/taxize)
+
+### Viruses
+
+GBIF does not really deal with viruses, except by accident,. For data on viruses you may wish to try the International Committee on the Taxonomy of Viruses (ICTV) which provides an annual list in an excel spreadsheet that can be accessed [here](https://talk.ictvonline.org/files/master-species-lists/m/msl/7185/download).
+
+### DNA Sequence and DNA Barcode Data
+
+Note that I have not yet dug into the data available from bioconductor
+
+For Barcode of Life Data
+
+1. [BOLD website](http://www.boldsystems.org/)
+2. [BOLD APIs](http://www.boldsystems.org/index.php/api_home)
+3. [BOLD R Package](https://github.com/ropensci/bold)
+4. [pybold Python package'](https://pypi.org/project/pybold/). Note last release, 2016.
+5. [bold_retriever Python package](https://pypi.org/project/bold_retriever/). Note last release, 2014.

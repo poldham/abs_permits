@@ -1,0 +1,66 @@
+--
+title: "Patent Data Sources"
+author: "Paul Oldham"
+date: "22/06/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Patent Data
+
+Programmatic access to patent databases is presently limited. However, for ABS monitoring searches based on inventor, organisations and species name will be possible with free services. If you are completely new to working with patent data the [WIPO Manual on Open Source Patent Analytics](https://wipo-analytics.github.io/introduction.html) is recommended reading. In particular see the section on [patent data fields](https://wipo-analytics.github.io/datafields.html)
+
+For ABS monitoring we will typically want to perform look ups by: 
+
+a) inventor
+b) applicant (also known as assignees)
+c) species
+
+To avoid extremely noisy results (the John Smith problem) and bearing in mind issues such as name variants (Kirk, James T or Kirk James) it is important to combine search operators where possibe. An example might be inventor name AND Applicant AND species. More detail on options will be provided in future. 
+
+## Open Access Databases
+
+### The Lens
+
+[The Lens](https://www.lens.org/) is a free open access patent database that seeks to make patent data and now scientific literature available without restrictions. No API is available but the data is open access. Please respect the robots.txt.
+
+An R package is available that uses `rvest` to retrieve data from the main data fields from the Lens (while respecting the database). In contrast with the EPO OPS and Patentsview (below), full text searching is available through the Lens and for that reason it is ranked first.
+
+1. [lensr](https://github.com/poldham/lensr)
+
+You will need to install devtools `install.packages("devtools")` to install the package from Github.
+
+```{r eval=FALSE}
+devtools::install_git("poldham/lensr")
+```
+
+### United States Patent and Trademark Office
+
+The USPTO has an antiquated public database interface BUT has created a number of RESTFul APIs returning JSON
+
+1. [USPTO Open Data Portal](https://developer.uspto.gov/api-catalog)
+2. [Patentsview API](http://www.patentsview.org/api/query-language.html)
+3. [Patentsview R Package](https://github.com/ropensci/patentsview)
+4. [Patentsview Python](https://github.com/CSSIP-AIR/PatentsView-APIWrapper)
+5. [Patentsview Query language](http://www.patentsview.org/api/query-language.html)
+
+For ABS monitoring the [patentsview data download](http://www.patentsview.org/download/) page offers options including a complete set of inventor and cleaned inventor names. This could be used to generate a lookup table. However, note that patentsview download data is a set of tables for joining on a key field and the titles and asbstracts are not presently included as downloads. The full text of all patent documents can be made available for download on request. 
+
+### European Patent Office Open Patent Services (OPS)
+
+Throttling on this service is common and the number of records that can be retrieved through calls are also limited. OPS is pretty hard to use and the output in either XML or JSON is complex and consists of lists of varying lengths. 
+
+1. [Python Patent2Net](https://github.com/Patent2net/P2N). Access the European Patent Office Open Patent Services using Python. Note that free registration and an OAuth token are needed from the [Open Patent Services](http://www.epo.org/searching-for-patents/data/web-services/ops.html#tab-1). There are significant limitations on what can be searched using the OPS service.
+
+See this publication for an example of the use of [Patent2Net](https://www.researchgate.net/publication/303715502_Example_of_open-source_OPS_Open_Patent_Services_for_patent_education_and_information_using_the_computational_tool_Patent2Net)
+
+2. `opsr` An R client for accessing and searching. Presently archived.
+
+### [WIPO Patentscope](http://www.wipo.int/patentscope/en/)
+
+The World Intellectual Property Organisation offers full text search through [Patentscope](http://www.wipo.int/patentscope/en/). It is unusual among patent databases because it offers chemical structure search. It also has particularly good translation facilities for search and data retrieval. See the [video tutorials](https://patentscope.wipo.int/search/en/tutorial.jsf) for more details.
+
+A SOAP based API is available for 600 Swiss francs per year. For details see this [page](http://www.wipo.int/patentscope/en/data/).

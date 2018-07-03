@@ -9,9 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Paul Oldham" />
 
 
-<title>Annex</title>
+<title>Geographic Data Sources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -247,19 +248,43 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Annex</h1>
+<h1 class="title toc-ignore">Geographic Data Sources</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>27/06/2018</em></h4>
 
 </div>
 
 
-<p>The draft workplan is available in a variety of formats as a series of headings to assist in project planning. Delete columns as required.</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true">All formats</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.csv">.csv</a></li>
-<li><a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan/draft_workplan.xlsx?raw=true">Excel</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.xml">XML for Microsoft Project</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.pdf">.pdf</a></li>
+<p>Geographic data sources are desirable for ABS monitoring in order to identify:</p>
+<ol style="list-style-type: lower-alpha">
+<li>locations where applicants for ABS permits and agreements propose to conduct research</li>
+<li>Identifying protected areas</li>
+<li>text mining published research conducted abouy a country in order to develop a national repository with links to place names</li>
+<li>text mining patent data for information on</li>
+<li>retrieving web based data referencing places</li>
 </ol>
+<div id="sources-of-geographic-data" class="section level2">
+<h2>Sources of Geographic Data</h2>
+<ol style="list-style-type: lower-alpha">
+<li>Geonames</li>
+</ol>
+<p>The Geonames web service provides open access to georeferenced place name data for many countries.</p>
+<ul>
+<li>The <a href="https://github.com/poldham/places">places package</a> in R provides access to an archive of all country data and to individual daily georeferenced files</li>
+<li>The Python geonames package converts an individual geonames file to a shapefile</li>
+</ul>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Google Maps</li>
+</ol>
+<p>The Google Maps API is available through Google Cloud. Users are allowed to geocode or reverse geocode up to 2,500 places per day for free. This will normally be perfectly adequate for sites that have low intensity daily use. Note that Google has recently updated its terms and the free allocation may have changed to a free credit of $200 per month.</p>
+<p>To get an API key go <a href="https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key">here</a></p>
+<p>For a guide to using the Maps API to geocode affiliation names from the scientific literature see this <a href="https://www.pauloldham.net/geocoding-scientific-literature-with-r/">article</a></p>
+<div id="protected-area-data" class="section level3">
+<h3>Protected Area Data</h3>
+<p><a href="https://www.protectedplanet.net/">Protected Planet</a> provides access to the UNEP-WCMC World Directory of Protected Areas with data that can be downloaded in .csv, kml or shape file formats.</p>
+<p>Individual country files can be downloaded from the relevant country pages. For example Kenya is <a href="https://www.protectedplanet.net/country/KE" class="uri">https://www.protectedplanet.net/country/KE</a> with the two letter country code marking the country. Note that the files are not available for commercial use without prior written permission from UNEP-WCMC.</p>
+</div>
+</div>
 
 
 

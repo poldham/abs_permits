@@ -9,9 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Paul Oldham" />
 
 
-<title>Annex</title>
+<title>Scientific Literature Data Sources</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -247,19 +248,75 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Annex</h1>
+<h1 class="title toc-ignore">Scientific Literature Data Sources</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>23/06/2018</em></h4>
 
 </div>
 
 
-<p>The draft workplan is available in a variety of formats as a series of headings to assist in project planning. Delete columns as required.</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true">All formats</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.csv">.csv</a></li>
-<li><a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan/draft_workplan.xlsx?raw=true">Excel</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.xml">XML for Microsoft Project</a></li>
-<li><a href="https://github.com/poldham/abs_permits/raw/gh-pages/annex/draft_workplan/draft_workplan.pdf">.pdf</a></li>
+<div id="scientific-literature" class="section level2">
+<h2>Scientific Literature</h2>
+<p>There are three main choices when attempting to engage in ABS monitoring of the scientific literature</p>
+<ol style="list-style-type: lower-alpha">
+<li>commercial databases (such as Web of Science or Scopus)</li>
+<li>Free databases such as crossref or core.ac.uk</li>
+<li>Combinations of the above</li>
 </ol>
+<p>Below we list packages in Python and R for accessing the scientific literature. If you know of packages in other languages (such as Ruby or in Javascript) please raise an <a href="https://github.com/poldham/abs_permits/issues">issue on Github</a>. The list is not meant to be comprehensive but for ABS monitoring tools such as Crossref should be sufficient as a starting point.</p>
+<div id="commercial-databases" class="section level3">
+<h3>Commercial Databases</h3>
+<p>Commercial databases such as Web of Science from Clarivate Analytics or Scopus are widely used in Universities. If seeking to build up a collection one option is to retrieve dois for a subject from the commercial provider and then to retrieve open access metadata from a service such as crossref.</p>
+</div>
+<div id="tools" class="section level3">
+<h3>Tools</h3>
+<p>The R community is well served by a range of packages from <a href="https://ropensci.org/packages/">ROpenSci</a>. These include packages such as <a href="https://github.com/ropensci/fulltext">fulltext</a> for searching across multiple data sources and utilities such as <a href="https://github.com/ropensci/pdftools">pdftools</a> or <a href="https://github.com/ropensci/extractr">extractr</a> for working with pdfs, <a href="https://github.com/ropensci/tabulizer">tabulizer</a> for extracting tables from pdfs etc. Equivalent tools may be available in Python or other languages and will be documented here as they become available. Please raise an <a href="https://github.com/poldham/abs_permits/issues">issue on Github</a> if you have suggestions.</p>
+</div>
+</div>
+<div id="open-access-databases" class="section level2">
+<h2>Open Access Databases</h2>
+<div id="crossref" class="section level3">
+<h3><a href="https://www.crossref.org/">Crossref</a></h3>
+<p>The main open access database for scientific literature is Crossref which contains meta data on over 96 million publications. Use cases include looking up researchers by author name and affiliation. Or, where a list of DOIs is available send the DOIs to retrieve the metadata. Note that search capacity in Crossref is limited at present and multi-phrase searching may produce unexpected results.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.crossref.org/">Crossref</a></li>
+<li><a href="https://github.com/CrossRef/rest-api-doc">Crossref API</a></li>
+<li><a href="https://github.com/sckott/habanero">Crossref Python</a></li>
+<li><a href="https://github.com/ropensci/rcrossref">Crossref R package</a></li>
+<li><a href="https://github.com/sckott/serrano">Crossref Ruby gem</a></li>
+<li><a href="https://github.com/ropensci/rcrossref">Crossref Javascript</a></li>
+</ol>
+<p>A text mining client for crossref is also available in R as <a href="https://github.com/ropenscilabs/crminer">crminer</a></p>
+</div>
+<div id="core.ac.uk" class="section level3">
+<h3><a href="https://core.ac.uk/">core.ac.uk</a></h3>
+<p>Provides full text search and open access to over 133 million publications. You need to register for an API key <a href="https://core.ac.uk/api-keys/register">here</a>.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://core.ac.uk/docs/">CORE API documentation</a></li>
+<li><a href="https://github.com/ropensci/rcoreoa">rcoreoa Package</a></li>
+<li><a href="https://github.com/oacore/pyoacore">Python pyoacore</a></li>
+</ol>
+</div>
+<div id="pubmed" class="section level3">
+<h3><a href="https://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a></h3>
+<p>PubMed contains publications that are related to medicine</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/tools/developers/">PubMed API</a></li>
+<li><a href="https://cran.r-project.org/web/packages/rentrez/index.html">rentrez R Package</a></li>
+<li><a href="https://cran.r-project.org/web/packages/easyPubMed/index.html">easyPubMed R Package</a></li>
+<li><a href="https://biopython.org/">Python Biopython package</a> and see this <a href="https://gist.github.com/bonzanini/5a4c39e4c02502a8451d">gist</a></li>
+</ol>
+</div>
+<div id="arxiv-databases" class="section level3">
+<h3>Arxiv databases</h3>
+<p>There are a range of open access preprint databases that have become increasingly popular</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://arxiv.org/">Arxiv</a></li>
+<li><a href="https://socopen.org/">SocArxiv</a></li>
+<li><a href="https://www.biorxiv.org/">BioArxiv</a></li>
+</ol>
+</div>
+</div>
 
 
 

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+
+
+<title>Researcher Identifiers</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    The Model
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="executive_summary.html">Executive Summary</a>
+    </li>
+    <li>
+      <a href="1_background.html">Background</a>
+    </li>
+    <li>
+      <a href="2_the_model.html">The Model</a>
+    </li>
+    <li>
+      <a href="3_principles.html">Core Principles</a>
+    </li>
+    <li>
+      <a href="4_unique_identifiers.html">Unique Identifiers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Planning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="5_workplan.html">Draft Workplan</a>
+    </li>
+    <li>
+      <a href="annex.html">Annex</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Researcher Identifiers</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>28/06/2018</em></h4>
+
+</div>
+
+
+<p>The use of researcher identifiers as part of research permit systems opens up the possibility of automating the retrieval of a researchers publications. This could form the basis for the creation of an electronic national repository of data on biodiversity research, or research in general.</p>
+<p>Research identifiers are intended to overcome the problem of name ambiguity. That is the problem of distinguishing one John Smith or Jose Garcia from a researcher with the same name. The use of unique identifiers for a researcher goes some way to solving this problem.</p>
+<p>A number of researcher identifiers are in operation from commercial and non-commercial sources. A review of identifiers is provided <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5451540/">here</a>. Some of these are commercial, for example Clarivate Analytics offers <a href="https://clarivate.com/products/researcherid/">Researcher ID</a> and Scopus has something similar. However, they are only of use to subscribers to these commercial databases. Google Scholar offers an ID but there is no Google Scholar API making it of no use for ABS monitoring. In practice, this means that the most practical solution is the ORCID identifier system.</p>
+<div id="orcid" class="section level3">
+<h3>ORCID</h3>
+<p>ORCID is a researcher identifier system run on a non-profit basis. To date 4.9 million ORCID identifiers have been issued and take up of the system has been growing rapidly.</p>
+<p>ORCID is a unique numeric identifier that is linked to a public profile <a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a>. The basic idea is that the ORCID identifier will distinguish between people of the same name. For example Paul Oldham with ORCID ID <a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a> shares the same basic name with Paul Oldham with ORCID ID <a href="https://orcid.org/0000-0002-0628-5540" class="uri">https://orcid.org/0000-0002-0628-5540</a>. When searching a database the records for both Paul Oldhams would appear to belong to the same individual, when in practice they are separte persons. The ORCID ID distinguishes between them.</p>
+<p>An ORCID profile belongs to the researcher and consists of public and private elements. The researcher who holds the ORCID chooses what elements of the profile are public or private.</p>
+</div>
+<div id="orcid-and-abs-monitoring" class="section level3">
+<h3>ORCID and ABS Monitoring</h3>
+<p>ORCID is important for ABS monitoring for three main reasons.</p>
+<ol style="list-style-type: decimal">
+<li><p>Organisations that are members of ORCID can allow users to log in to their systems using their ORCID credentials. This makes it easy for the user to use their ORCID id to manage sign in for funding organisations, publishers and potentially research permit applications. A growing number of funding organisations and publishers now offer ORCID sign in or require ORCID identifiers.</p></li>
+<li><p>ORCID can be used to automate the retrieval of information from a users profile and their publications. This can save a researcher time in entering basic information.</p></li>
+<li><p>ORCID can be used to automate retrieval of publications and other records. The ORCID system also automatically updates profiles with publication records linked to the user using services such as Crossref. This data can then form part of a publicly accessible thematic or national repository of publications about a country.</p></li>
+</ol>
+</div>
+<div id="the-orcid-api" class="section level3">
+<h3>The ORCID API</h3>
+<p>A fully <a href="https://orcid.org/organizations/integrators/API">REST API</a> is available for ORCID and is divided into a <a href="https://support.orcid.org/knowledgebase/articles/343182">Public API</a> and a <a href="https://orcid.org/content/register-client-application-0">Members API</a> including a <a href="https://orcid.org/content/register-client-application-sandbox">Sandbox for testing</a>. A <a href="https://groups.google.com/forum/#!forum/orcid-api-users">Google Group</a> is available for users to ask questions.</p>
+<p>For the full documentation see the <a href="https://github.com/ORCID/ORCID-Source/blob/master/orcid-model/src/main/resources/record_2.0/README.md#read-sections">Github site</a></p>
+</div>
+<div id="orcid-workflows" class="section level3">
+<h3>ORCID Workflows</h3>
+<p>The easiest way to get started is to use one of the <a href="https://members.orcid.org/api/workflow">sample workflows</a></p>
+<p>Two workflows are particularly relevant for permit systems</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://members.orcid.org/api/workflow/funding-systems">Funding Submission Systems</a> The closest to research permit systems</p></li>
+<li><p><a href="https://members.orcid.org/api/workflow/repository">Repository Systems</a></p></li>
+</ol>
+<p>These Workflows basically consist of</p>
+<ol style="list-style-type: lower-alpha">
+<li>Adding an ORCID button to your site</li>
+<li>Authentication (using three legged OAuth)</li>
+<li>Gaining approval from the ID holder to read/write data to their profiles. For example, funding organisations may wish to write the details of an awarded grant to the profile. Note this step is handled during authentication by asking for approval for your app.</li>
+<li>Display the ID of the researcher within the system (so they know they are logged in)</li>
+<li>Collect information from the ORCID profile (affiliation, publications etc)</li>
+<li>Synchronize with ORCID for updates</li>
+<li>Add information to ORCID profiles where appropriate.</li>
+</ol>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

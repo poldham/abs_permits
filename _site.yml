@@ -23,8 +23,20 @@ navbar:
         href: annex.html
     - text: "Schematics"
       href: presentations/schematics/index.html
-    - text: "Resources"
+    - text: "Publications"
       href: resources.html
+    - text: "Resources for Developers"
+      menu:
+      - text: "Researcher Identifiers"
+        href: researcher_identifiers.html
+      - text: "Scientific Literature"
+        href: literature.html
+      - text: "Geographic"
+        href: geographic.html
+      - text: "Patent Data"
+        href: patent.html
+      - text: "Taxonomy"
+        href: taxonomy.html
 output:
   html_document:
     theme: flatly

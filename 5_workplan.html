@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
@@ -19,6 +19,7 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 
 
@@ -71,6 +72,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -134,7 +138,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -206,7 +209,31 @@ $(document).ready(function () {
   <a href="presentations/schematics/index.html">Schematics</a>
 </li>
 <li>
-  <a href="resources.html">Resources</a>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -225,9 +252,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<p>This section provides a draft workplan for governments interested in implementing the model for the online permit and monitoring system outlined in the previous sections.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of headings for project planning in the downloadable <a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true">Annex</a>.</p>
+<p>##Introduction</p>
+<p>This section provides a draft workplan for governments interested in implementing the model for the online permit and monitoring system outlined in the previous sections.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The draft workplan is intended to assist countries and authorities interested in implementing the model by identifying tasks for components and elements of the model for resource planning and costing. The draft workplan is intended as a guide and should be adapted in accordance with existing internal capacities and needs. The draft workplan is presented as a set of headings for project planning in the downloadable <a href="https://github.com/poldham/abs_permits/blob/gh-pages/annex/draft_workplan.zip?raw=true">Annex</a>.</p>
 <p>The workplan is presented in terms of activities to be carried out in individual countries interested in implementing the system. However, there is a strong case for a network approach between governments seeking to develop and implement the model to meet their needs.</p>
 <p>Network advantages would include:</p>
 <ol style="list-style-type: decimal">
@@ -243,7 +269,6 @@ $(document).ready(function () {
 <li>Main Components, elements and tasks (numbered by Components in the model).</li>
 </ol>
 <p>The legal component (Component 3) is a cross-cutting issue and an indication of relevant tasks is provided within relevant tasks. The list of legal related tasks is indicative and may require further elaboration.</p>
-</div>
 <div id="preparatory-activities" class="section level2">
 <h2>Preparatory Activities</h2>
 <div id="a-map-existing-research-permit-systems" class="section level3">
@@ -325,17 +350,11 @@ $(document).ready(function () {
 <div id="system-implementation" class="section level2">
 <h2>System Implementation</h2>
 <p>The components of the overall system are provided below. The workplan focuses on the identification of tasks associated with the functional elements of each component.</p>
-<div class="figure">
-<img src="images/schematics/schematics.002.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.002.png" /></p>
 <div id="component-1-authorities-portal" class="section level3">
 <h3>Component 1: Authorities Portal</h3>
 <p><strong>Objective</strong>: Establish an authorities portal for the administration of permit applications.</p>
-<div class="figure">
-<img src="images/schematics/schematics.004.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.004.png" /></p>
 <p><strong>Element 1.1</strong>. Enquiries [Legal component]</p>
 <p><strong>Task 1</strong>. Establish standard responses to enquiries as inputs into the online permit system.</p>
 <p><strong>Element 1.2</strong>. Review [Legal component]</p>
@@ -371,14 +390,9 @@ h) Define written notifications. [Legal component]</code></pre>
 <p><strong>Task 4</strong>. Generate standard notifications for appeals to be sent to applicants on the stage in the procedure.</p>
 <p><strong>Task 5</strong>. Define the form of a clear final decision.</p>
 <p><strong>Expected Outcome</strong>: An easy to use authorities portal with a clear and transparent procedure and decision-making process that serves the needs of multiple permit granting authorities over the long term.</p>
-</div>
-<div id="component-2.-applicants-portal" class="section level3">
-<h3>Component 2. Applicants Portal</h3>
+<p>###Component 2. Applicants Portal</p>
 <p><strong>Objective</strong>: Create a single online space for applicants to submit applications with supporting information/guidelines, to receive notifications and monitor the progress of applications, to receive permits and fulfil reporting requirements.</p>
-<div class="figure">
-<img src="images/schematics/schematics.011.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.011.png" /></p>
 <p><strong>Element 2.1.</strong> Information.</p>
 <p><strong>Task 1</strong>. Develop a guide for applicants.</p>
 <p><strong>Task 2</strong>. Develop a checklist of required information for applicants.</p>
@@ -449,10 +463,7 @@ h) Define written notifications. [Legal component]</code></pre>
 <div id="component-4-monitoring" class="section level3">
 <h3>Component 4: Monitoring</h3>
 <p><strong>Objective</strong>: Establish an effective electronic monitoring system for compliance with the terms of research permits and mutually agreed terms under the Nagoya Protocol.</p>
-<div class="figure">
-<img src="images/schematics/schematics.019.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.019.png" /></p>
 <p><strong>Task 1</strong>. Generate outputs from the core permit system (database) for use in the construction of search queries of scientific literature, patent literature, dna databases, product information and general web searches.</p>
 <p><strong>Task 2</strong>. Identify programmatic open source tools to automate search and retrieval of data from relevant sources (scientific literature, patents, product information and general web searches) (e.g. R, Python).</p>
 <p><strong>Task 3</strong>. Identify relevant commercial databases and analytics software to facilitate monitoring.</p>
@@ -467,10 +478,7 @@ h) Define written notifications. [Legal component]</code></pre>
 <div id="component-5-reporting" class="section level3">
 <h3>Component 5: Reporting</h3>
 <p><strong>Objective</strong>: Facilitate national and international reporting under the Nagoya Protocol and other relevant agreements linked to the permit system.</p>
-<div class="figure">
-<img src="images/schematics/schematics.030.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.030.png" /></p>
 <p><strong>Task 1</strong>. Identify national and international reporting requirements under the Nagoya Protocol and, as appropriate, related international environmental agreements.</p>
 <p><strong>Task 2</strong>. Identify components of permit and related datasets that can contribute to meeting reporting requirements.</p>
 <p><strong>Task 3</strong>. Establish templates to automate data generation to meet reporting requirements in the formats required.</p>
@@ -481,10 +489,7 @@ h) Define written notifications. [Legal component]</code></pre>
 <div id="component-6-core-system" class="section level3">
 <h3>Component 6: Core System</h3>
 <p><strong>Objective</strong>: Establish an efficient, secure, robust, cost effective and sustainable Core System to perform the functions described in Components 1-5 and additional functions described for the Core System on archiving and the security of permit data.</p>
-<div class="figure">
-<img src="images/schematics/schematics.033.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.033.png" /></p>
 <p><strong>Element 1. Preparatory</strong></p>
 <p><strong>Task 1</strong>. Identify internal and external programming capacity for development and maintenance of the online system. (see Component C, task 1).</p>
 <p><strong>Task 2</strong>. As part of an open source network approach, identify existing system elements (code) shared by network participants and consider potential adoption or adaptation of existing code.</p>
@@ -517,16 +522,13 @@ h) Define written notifications. [Legal component]</code></pre>
 <div id="resources-list" class="section level3">
 <h3>Resources List</h3>
 <p>The figure below provides an indicative list of resources to assist with planning. Note that analytics tools such as VantagePoint and Tableau are available in a range of paid and (in the case of Tableau), free versions. Paid software is included as part of a phased approach from paid to open source software over time. This is also true for databases of the scientific literature and patent databases where commercial tools such as Thomson Innovation offer convenience in data access but significant cost while open source options require significant investments in knowledge of their use (e.g. R or Python resources).</p>
-<div class="figure">
-<img src="images/schematics/schematics.035.png" />
-
-</div>
+<p><img src="/Users/pauloldham17inch/Desktop/Permit%20System/abs_permits/images/schematics/schematics.035.png" /></p>
 </div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <strong>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</strong>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>The research in this paper was conducted with the support of <a href="http://www.best.gov.bs">The Bahamas Environment, Science &amp; Technology Commission (BEST)</a> of the Government of the Bahamas under the UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas” as set out in <strong>Oldham, P (2015) Concepts for an Electronic Monitoring Tool. UNEP/GEF project “Strengthening Access and Benefit Sharing (ABS) in the Bahamas”</strong>. The present paper was written with the additional support of <a href="http://www.abs-initiative.info">The ABS Capacity Development Initiative</a> through the <a href="https://www.giz.de/en/html/index.html">Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)</a>. The views expressed are solely those of the authors and should not be interpreted as reflecting the views of the Government of the Bahamas, the ABS Initiative or GIZ.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 
@@ -538,8 +540,11 @@ h) Define written notifications. [Legal component]</code></pre>
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
@@ -550,7 +555,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

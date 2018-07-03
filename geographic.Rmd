@@ -1,0 +1,40 @@
+---
+title: "Geographic Data Sources"
+author: "Paul Oldham"
+date: "27/06/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Geographic data sources are desirable for ABS monitoring in order to identify:
+
+a) locations where applicants for ABS permits and agreements propose to conduct research
+b) Identifying protected areas
+c) text mining published research conducted abouy a country in order to develop a national repository with links to place names
+d) text mining patent data for information on 
+e) retrieving web based data referencing places
+
+## Sources of Geographic Data
+
+a) Geonames
+
+The Geonames web service provides open access to georeferenced place name data for many countries. 
+
+- The [places package](https://github.com/poldham/places) in R provides access to an archive of all country data and to individual daily georeferenced files
+- The Python geonames package converts an individual geonames file to a shapefile
+
+b) Google Maps
+
+The Google Maps API is available through Google Cloud. Users are allowed to geocode or reverse geocode up to 2,500 places per day for free. This will normally be perfectly adequate for sites that have low intensity daily use. Note that Google has recently updated its terms and the free allocation may have changed to a free credit of $200 per month.
+
+To get an API key go [here](https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key)
+
+For a guide to using the Maps API to geocode affiliation names from the scientific literature see this [article](https://www.pauloldham.net/geocoding-scientific-literature-with-r/)
+
+### Protected Area Data
+
+[Protected Planet](https://www.protectedplanet.net/) provides access to the UNEP-WCMC World Directory of Protected Areas with data that can be downloaded in .csv, kml or shape file formats.
+
+Individual country files can be downloaded from the relevant country pages. For example Kenya is [https://www.protectedplanet.net/country/KE](https://www.protectedplanet.net/country/KE) with the two letter country code marking the country. Note that the files are not available for commercial use without prior written permission from UNEP-WCMC.
