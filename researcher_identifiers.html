@@ -23,6 +23,77 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
 
 
 <style type="text/css">
@@ -296,6 +367,235 @@ $(document).ready(function () {
 <li>Synchronize with ORCID for updates</li>
 <li>Add information to ORCID profiles where appropriate.</li>
 </ol>
+</div>
+<div id="orcid-with-python" class="section level3">
+<h3>ORCID with Python</h3>
+<p>ORCID provides <a href="https://github.com/ORCID/python-orcid">python-orcid</a> as an API wrapper. Check that it is up to date when using. For memebrs a python script is also available for <a href="https://github.com/ORCID/public-data-sync">public data sync</a></p>
+</div>
+<div id="orcid-with-r" class="section level3">
+<h3>ORCID with R</h3>
+<p>ROpenSci has produced the <a href="https://github.com/ropensci/rorcid">rorcid package</a> which is on CRAN. Note that when you first try to use the package a browser window will open up and ask you to authenticate. Close the browser after signing in.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;rorcid&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(rorcid)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">oldham &lt;-<span class="st"> </span><span class="kw">orcid_works</span>(<span class="st">&quot;0000-0002-1013-4390&quot;</span>)</a></code></pre></div>
+<p>View the first record and note that there are a lot of columns of data that you probably won’t be needing.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">oldham<span class="op">$</span><span class="st">`</span><span class="dt">0000-0002-1013-4390</span><span class="st">`</span><span class="op">$</span>group<span class="op">$</span><span class="st">`</span><span class="dt">work-summary</span><span class="st">`</span>[[<span class="dv">1</span>]] <span class="op">%&gt;%</span><span class="st"> </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">put-code</th>
+<th align="left">type</th>
+<th align="left">visibility</th>
+<th align="left">path</th>
+<th align="left">display-index</th>
+<th align="right">created-date.value</th>
+<th align="right">last-modified-date.value</th>
+<th align="left">source.source-client-id</th>
+<th align="left">source.source-orcid.uri</th>
+<th align="left">source.source-orcid.path</th>
+<th align="left">source.source-orcid.host</th>
+<th align="left">source.source-name.value</th>
+<th align="left">title.subtitle</th>
+<th align="left">title.translated-title</th>
+<th align="left">title.title.value</th>
+<th align="left">external-ids.external-id</th>
+<th align="left">publication-date.day</th>
+<th align="left">publication-date.media-type</th>
+<th align="left">publication-date.year.value</th>
+<th align="left">publication-date.month.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">24470994</td>
+<td align="left">ONLINE_RESOURCE</td>
+<td align="left">PUBLIC</td>
+<td align="left">/0000-0002-1013-4390/work/24470994</td>
+<td align="left">7</td>
+<td align="right">1.464872e+12</td>
+<td align="right">1.477919e+12</td>
+<td align="left">NA</td>
+<td align="left"><a href="https://orcid.org/0000-0002-1013-4390" class="uri">https://orcid.org/0000-0002-1013-4390</a></td>
+<td align="left">0000-0002-1013-4390</td>
+<td align="left">orcid.org</td>
+<td align="left">Paul Oldham</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol</td>
+<td align="left">list(<code>external-id-type</code> = “doi”, <code>external-id-value</code> = “<a href="http://dx.doi.org/10.5281/zenodo.57420" class="uri">http://dx.doi.org/10.5281/zenodo.57420</a>”, <code>external-id-relationship</code> = “SELF”, <code>external-id-url.value</code> = “<a href="http://dx.doi.org/10.5281/zenodo.57420" class="uri">http://dx.doi.org/10.5281/zenodo.57420</a>”)</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">2016</td>
+<td align="left">05</td>
+</tr>
+</tbody>
+</table>
+<p>View all works in a data frame (gets long fast as a large number of columns)</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">oldham[[<span class="st">&quot;0000-0002-1013-4390&quot;</span>]][[<span class="st">&quot;group&quot;</span>]][[<span class="st">&quot;work-summary&quot;</span>]] <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">bind_rows</span>()</a></code></pre></div>
+<p>Or use purrr to access and bind the list of data frames containing the publications and use select to just view the titles. You will normally want to add the orcid_id column. It is added here using dplyr::add_column</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">oldham <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">modify</span>(<span class="kw">c</span>(<span class="st">&quot;group&quot;</span>, <span class="st">&quot;work-summary&quot;</span>)) <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">flatten</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">bind_rows</span>() <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="st">  </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">title.title.value</span><span class="st">`</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="st">  </span><span class="kw">add_column</span>(., <span class="dt">orcid_id =</span> <span class="kw">names</span>(oldham)) <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">  </span>knitr<span class="op">::</span><span class="kw">kable</span>()</a></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">title.title.value</th>
+<th align="left">orcid_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">An Online Research Permit and Monitoring System to Support Implementation of the Nagoya Protocol</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">A Review of UK Patent Activity for Genetic Resources and associated Traditional Knowledge</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">UK Company and Organisation Index for Genetic Resources and Traditional Knowledge</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">WIPO Manual on Open Source Patent Analytics project site</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Mapping the landscape of climate engineering</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Patent Landscape Report for Animal Genetic Resources</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Valuing the Deep: Marine Genetic Resources in Areas Beyond National Jurisdiction</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biological Diversity in the Patent System</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Biodiversity in the Patent System: South Africa.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biodiversity in the Patent System: Cameroon.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Biodiversity in the Patent System: Kenya</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biodiversity in the Patent System: Madagascar.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Biodiversity in the Patent System: Namibia.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biodiversity in the Patent System: Senegal.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Intellectual property, informatics and plant genetic resources.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Synthetic Biology Scientific Landscape</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Synthetic Biology: Mapping the Scientific Landscape</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">A review of patent activity in the cosmetics sector in the context of the ethical sourcing of biodiversity.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">‘We the peoples…’: The United Nations Declaration on the Rights of Indigenous Peoples</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biopiracy and the Bioeconomy</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Global Status and Trends in Intellectual Property Claims: Dataset for Biodiversity</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Global Status and Trends in Patent Activity for Biological and Genetic Material</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Indigenous Peoples and the CBD in 2003</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">The problem of representation and modern Amazonian indigenous political organisation: a re-assessment</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Cosmology, Shamanism and Medicinal Practice among the Wothïha of the Venezuelan Amazon</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Organizaciones indígenas y desarrollo sustentable en el amazonas venezolano</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">A European Patent Indicator for Access to Genetic Resources and Benefit-Sharing</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">An Access and Benefit-Sharing Commons? The Role of Commons/Open Source Licences in the International Regime on Access to Genetic Resources and Benefit-Sharing</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Biodiversity and the Patent System: An Introduction to Research Methods</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Biodiversity and the Patent System: Towards International Indicators</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Biodiversity in the Patent System: Mozambique.</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Defusing Disclosure in Patent Applications</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Global Status and Trends in Intellectual Property Claims: Genomics, Proteomics and Biotechnology</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">Global Status and Trends in Intellectual Property Claims: Microorganisms</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="odd">
+<td align="left">Negotiating Diversity: A Field Guide to the Convention on Biological Diversity</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+<tr class="even">
+<td align="left">The Impacts of Development and Indigenous Responses among the Piaroa of the Venezuelan Amazon</td>
+<td align="left">0000-0002-1013-4390</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 

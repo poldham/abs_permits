@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE, message = FALSE)
 ```
 
 The use of researcher identifiers as part of research permit systems opens up the possibility of automating the retrieval of a researchers publications. This could form the basis for the creation of an electronic national repository of data on biodiversity research, or research in general.
@@ -58,3 +58,57 @@ d) Display the ID of the researcher within the system (so they know they are log
 e) Collect information from the ORCID profile (affiliation, publications etc)
 f) Synchronize with ORCID for updates
 g) Add information to ORCID profiles where appropriate.
+
+### ORCID with Python
+
+ORCID provides [ python-orcid](https://github.com/ORCID/python-orcid) as an API wrapper. Check that it is up to date when using. For memebrs a python script is also available for [public data sync](https://github.com/ORCID/public-data-sync)
+
+### ORCID with R
+
+ROpenSci has produced the [rorcid package](https://github.com/ropensci/rorcid) which is on CRAN. Note that when you first try to use the package a browser window will open up and ask you to authenticate. Close the browser after signing in.
+
+```{r eval=FALSE}
+install.packages("rorcid")
+```
+
+```{r eval=FALSE}
+library(rorcid)
+oldham <- orcid_works("0000-0002-1013-4390")
+```
+
+
+```{r echo=FALSE}
+load("oldham.rda")
+```
+
+View the first record and note that there are a lot of columns of data that you probably won't be needing.
+
+```{r}
+oldham$`0000-0002-1013-4390`$group$`work-summary`[[1]] %>% knitr::kable()
+```
+
+```{r eval=FALSE, echo=FALSE}
+save(oldham, file = "oldham.rda")
+```
+
+View all works in a data frame (gets long fast as a large number of columns)
+
+```{r eval=FALSE}
+library(tidyverse)
+oldham[["0000-0002-1013-4390"]][["group"]][["work-summary"]] %>% bind_rows()
+```
+
+Or use purrr to access and bind the list of data frames containing the publications and use select to just view the titles. You will normally want to add the orcid_id column. It is added here using `dplyr::add_column`
+
+```{r}
+library(tidyverse)
+oldham %>% 
+  modify(c("group", "work-summary")) %>%
+  flatten() %>%
+  bind_rows() %>% 
+  select(`title.title.value`) %>% 
+  add_column(., orcid_id = names(oldham)) %>% 
+  knitr::kable()
+```
+
+
