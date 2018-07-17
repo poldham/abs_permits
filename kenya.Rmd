@@ -1,0 +1,16 @@
+---
+title: "Kenya Prototype"
+author: "Paul Oldham"
+date: "03/07/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+An open source prototype for an online permit and monitoring system in Kenya has been developed in .php and is available on Github at [https://github.com/ekariz/ABSPermits](https://github.com/ekariz/ABSPermits). The prototype has entered the development phase and will be fully documented. 
+
+A working version of the prototype can be accessed at [https://abskenya.tk/](https://abskenya.tk/). A development version will be made available in due course.
+
+As this is an open source initiative please feel free to request information by raising an issue on Github [https://github.com/poldham/abs_permits/issues](https://github.com/poldham/abs_permits/issues).

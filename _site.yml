@@ -27,6 +27,8 @@ navbar:
       href: resources.html
     - text: "Resources for Developers"
       menu:
+      - text: "Kenya Prototype"
+        href: kenya.html
       - text: "Researcher Identifiers"
         href: researcher_identifiers.html
       - text: "Scientific Literature"
