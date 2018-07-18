@@ -41,6 +41,8 @@ navbar:
         href: taxonomy.html
     - text: "ABS Monitoring Handbook"
       href: "https://poldham.github.io/abs/index.html"
+    - text:  "The Blog"
+      href: "https://www.pauloldham.net/"
 output:
   html_document:
     theme: flatly
