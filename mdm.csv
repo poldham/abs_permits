@@ -1,0 +1,41 @@
+category,source,type,url,r,python,description
+geographic,GBIF,api,https://www.gbif.org/developer/maps,NA,NA,Mapping API for taxonomic data from GBIF
+geographic,geonames,text,http://download.geonames.org/export/dump/allCountries.zip,NA,NA,11 million georeferences place names.Field headings in main page read me
+geographic,google,api,https://cloud.google.com/maps-platform/,NA,NA,maps and places services
+literature,crossref,api,https://github.com/CrossRef/rest-api-doc,rcrossref,habanero,"literature metadata, restful, json, R and python packages, solr search syntax"
+literature,core.ac.uk,api,https://core.ac.uk/docs/#!/all/search,rcoreoa,pyoacore,full texts of scientific literature
+literature,unpaywall,api,https://unpaywall.org/products/api,roadoi,NA,identify open access publications in crossref
+literature,Biodiversity Heritage Library,api,https://biodivlib.wikispaces.com/Developer+Tools+and+API,rbhl,NA,Historic biodiversity publications
+literature,Open Academic Graph,text,https://aminer.org/open-academic-graph,NA,NA,metadata for 330 million scientific publications
+patent,patentsview,text,http://www.patentsview.org/download/,NA,NA,US patent data in table format
+patent,patentsview,api,http://www.patentsview.org/api/patent.html,NA,NA,"US patents end point. Limited text search, lookup for inventors or applicants"
+patent,USPTO,xml,http://patents.reedtech.com/parbft.php,NA,NA,US patent applications full text
+patent,USPTO,xml,http://patents.reedtech.com/pgrbft.php,NA,NA,US granted full text
+patent,abspat,text,https://storage.googleapis.com/owa/countries_index.zip,NA,NA,"machine learning resource, patent documents with country names"
+patent,abspat,text,https://storage.googleapis.com/owa/abspat_index.zip,NA,NA,"machine learning resource, patent documents with species names"
+patent,EPO,xml,csc@epo.org,NA,NA,"machine learning, Backfile to be ordered"
+patent,WIPO,xml,http://www.wipo.int/patentscope/en/data/,NA,NA,"machine learning, To be ordered 3900 swiss francs"
+patent,EPO,api,http://www.epo.org/searching-for-patents/data/web-services/ops.html#tab-1,NA,NA,"lookup inventor and applicant names, xml/json"
+patent,EPO,database,https://forms.epo.org/service-support/ordering/patstat-order-form.html,NA,NA,"PATSTAT Global (raw data) - 2018, SQL database"
+patent,India Patent Office,NA,NA,NA,NA,Full text of india patent documents
+researcher,National Biodiversity Authority,NA,NA,NA,NA,permit applicant data
+researcher,ORCID,api,https://orcid.org/organizations/integrators/API,rorcid,python-orcid,enables researcher login and automated retrieval of public profile and publications. R and Python packages.
+taxonomic,GBIF,text,http://api.gbif.org/v1/occurrence/download/request/0048726-180508205500799.zip,NA,NA,India taxonomic data
+taxonomic,GBIF,text,http://api.gbif.org/v1/occurrence/download/request/0048727-180508205500799.zip,NA,NA,India full taxonomic data
+taxonomic,GBIF,api,https://www.gbif.org/developer/summary,rgbif,pygbif,GBIF Restful API
+taxonomic,BSI,"NA",NA,NA,NA,Biological Survey of India
+taxonomic,IUCN,api,http://apiv3.iucnredlist.org/,rredlist,NA,API for redlist of endangered species
+taxonomic,BOLD,api,http://v4.boldsystems.org/index.php/api_home,bold,pybold,API to Barcode of Life Databse
+taxonomic,GenBank,api,https://www.ncbi.nlm.nih.gov/home/develop/api/,rentrez,Biopython,DNA sequence data
+taxonomic,World Register of Marine Species,api,http://www.marinespecies.org/aphia.php?p=webservice,worrms/taxize,NA,marine species data
+taxonomic,Ocean Biogeographic Information System,api,http://www.iobis.org/manual/api/,robis,pyobis,Marine species data
+taxonomic,Global Names Index,api,http://gni.globalnames.org/,taxize,NA,All known species names including spelling variants
+taxonomic,Global Names Finder,GO,https://github.com/gnames/gnfinder,NA,NA,Go programme for identifying species names in texts
+taxonomic,ZSI,NA,NA,NA,NA,Zoological Survey of India
+taxonomic,French Institute of Pondicherry,NA,NA,NA,NA,NA
+taxonomic,WII,NA,NA,NA,NA,NA
+taxonomic,ICAR,NA,NA,NA,NA,NA
+taxonomic,DST/UGC,NA,NA,NA,NA,NA
+taxonomic,India Institute of Sciences,NA,NA,NA,NA,NA
+traditional knowledge,TKDL,NA,http://www.tkdl.res.in/tkdl/langdefault/common/Home.asp?GL=Eng,NA,NA,traditional knowledge data for India
+traditional knowledge,FRHL,NA,http://envis.frlht.org/bot_search,NA,NA,Database of medicinal plants in India

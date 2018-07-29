@@ -39,6 +39,8 @@ navbar:
         href: patent.html
       - text: "Taxonomy"
         href: taxonomy.html
+      - text: "Master Data Management"
+        href: mdm.html
     - text: "ABS Monitoring Handbook"
       href: "https://poldham.github.io/abs/index.html"
     - text:  "The Blog"

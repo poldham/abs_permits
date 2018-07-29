@@ -1,0 +1,31 @@
+---
+title: "Master Data Management"
+author: "Paul Oldham"
+date: "29/07/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+```
+
+This document aims to support Master Data Management planning by identifying the main data sources for development of a Monitoring System for Access and Benefit Sharing. The table below can be downloaded as a csv file [here]()
+
+```{r echo=FALSE, eval=FALSE}
+library(readxl)
+mdm <- read_excel("~/Desktop/open_source_master/india_r/mdm.xlsx")
+View(mdm)
+```
+
+```{r echo=FALSE, eval=FALSE}
+save(mdm, file = "mdm.rda")
+```
+
+```{r echo=FALSE}
+load("mdm.rda")
+```
+
+```{r echo=FALSE}
+knitr::kable(mdm)
+```
+

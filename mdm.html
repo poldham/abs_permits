@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Paul Oldham" />
+
+
+<title>Master Data Management</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    The Model
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="executive_summary.html">Executive Summary</a>
+    </li>
+    <li>
+      <a href="1_background.html">Background</a>
+    </li>
+    <li>
+      <a href="2_the_model.html">The Model</a>
+    </li>
+    <li>
+      <a href="3_principles.html">Core Principles</a>
+    </li>
+    <li>
+      <a href="4_unique_identifiers.html">Unique Identifiers</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Planning
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="5_workplan.html">Draft Workplan</a>
+    </li>
+    <li>
+      <a href="annex.html">Annex</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="presentations/schematics/index.html">Schematics</a>
+</li>
+<li>
+  <a href="resources.html">Publications</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Resources for Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="kenya.html">Kenya Prototype</a>
+    </li>
+    <li>
+      <a href="researcher_identifiers.html">Researcher Identifiers</a>
+    </li>
+    <li>
+      <a href="literature.html">Scientific Literature</a>
+    </li>
+    <li>
+      <a href="geographic.html">Geographic</a>
+    </li>
+    <li>
+      <a href="patent.html">Patent Data</a>
+    </li>
+    <li>
+      <a href="taxonomy.html">Taxonomy</a>
+    </li>
+    <li>
+      <a href="mdm.html">Master Data Management</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="https://poldham.github.io/abs/index.html">ABS Monitoring Handbook</a>
+</li>
+<li>
+  <a href="https://www.pauloldham.net/">The Blog</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Master Data Management</h1>
+<h4 class="author"><em>Paul Oldham</em></h4>
+<h4 class="date"><em>29/07/2018</em></h4>
+
+</div>
+
+
+<p>This document aims to support Master Data Management planning by identifying the main data sources for development of a Monitoring System for Access and Benefit Sharing. The table below can be downloaded as a csv file <a href="">here</a></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="left">source</th>
+<th align="left">type</th>
+<th align="left">url</th>
+<th align="left">r</th>
+<th align="left">python</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">geographic</td>
+<td align="left">GBIF</td>
+<td align="left">api</td>
+<td align="left"><a href="https://www.gbif.org/developer/maps" class="uri">https://www.gbif.org/developer/maps</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Mapping API for taxonomic data from GBIF</td>
+</tr>
+<tr class="even">
+<td align="left">geographic</td>
+<td align="left">geonames</td>
+<td align="left">text</td>
+<td align="left"><a href="http://download.geonames.org/export/dump/allCountries.zip" class="uri">http://download.geonames.org/export/dump/allCountries.zip</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">11 million georeferences place names.Field headings in main page read me</td>
+</tr>
+<tr class="odd">
+<td align="left">geographic</td>
+<td align="left">google</td>
+<td align="left">api</td>
+<td align="left"><a href="https://cloud.google.com/maps-platform/" class="uri">https://cloud.google.com/maps-platform/</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">maps and places services</td>
+</tr>
+<tr class="even">
+<td align="left">literature</td>
+<td align="left">crossref</td>
+<td align="left">api</td>
+<td align="left"><a href="https://github.com/CrossRef/rest-api-doc" class="uri">https://github.com/CrossRef/rest-api-doc</a></td>
+<td align="left">rcrossref</td>
+<td align="left">habanero</td>
+<td align="left">literature metadata, restful, json, R and python packages, solr search syntax</td>
+</tr>
+<tr class="odd">
+<td align="left">literature</td>
+<td align="left">core.ac.uk</td>
+<td align="left">api</td>
+<td align="left"><a href="https://core.ac.uk/docs/#!/all/search" class="uri">https://core.ac.uk/docs/#!/all/search</a></td>
+<td align="left">rcoreoa</td>
+<td align="left">pyoacore</td>
+<td align="left">full texts of scientific literature</td>
+</tr>
+<tr class="even">
+<td align="left">literature</td>
+<td align="left">unpaywall</td>
+<td align="left">api</td>
+<td align="left"><a href="https://unpaywall.org/products/api" class="uri">https://unpaywall.org/products/api</a></td>
+<td align="left">roadoi</td>
+<td align="left">NA</td>
+<td align="left">identify open access publications in crossref</td>
+</tr>
+<tr class="odd">
+<td align="left">literature</td>
+<td align="left">Biodiversity Heritage Library</td>
+<td align="left">api</td>
+<td align="left"><a href="https://biodivlib.wikispaces.com/Developer+Tools+and+API" class="uri">https://biodivlib.wikispaces.com/Developer+Tools+and+API</a></td>
+<td align="left">rbhl</td>
+<td align="left">NA</td>
+<td align="left">Historic biodiversity publications</td>
+</tr>
+<tr class="even">
+<td align="left">literature</td>
+<td align="left">Open Academic Graph</td>
+<td align="left">text</td>
+<td align="left"><a href="https://aminer.org/open-academic-graph" class="uri">https://aminer.org/open-academic-graph</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">metadata for 330 million scientific publications</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">patentsview</td>
+<td align="left">text</td>
+<td align="left"><a href="http://www.patentsview.org/download/" class="uri">http://www.patentsview.org/download/</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">US patent data in table format</td>
+</tr>
+<tr class="even">
+<td align="left">patent</td>
+<td align="left">patentsview</td>
+<td align="left">api</td>
+<td align="left"><a href="http://www.patentsview.org/api/patent.html" class="uri">http://www.patentsview.org/api/patent.html</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">US patents end point. Limited text search, lookup for inventors or applicants</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">USPTO</td>
+<td align="left">xml</td>
+<td align="left"><a href="http://patents.reedtech.com/parbft.php" class="uri">http://patents.reedtech.com/parbft.php</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">US patent applications full text</td>
+</tr>
+<tr class="even">
+<td align="left">patent</td>
+<td align="left">USPTO</td>
+<td align="left">xml</td>
+<td align="left"><a href="http://patents.reedtech.com/pgrbft.php" class="uri">http://patents.reedtech.com/pgrbft.php</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">US granted full text</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">abspat</td>
+<td align="left">text</td>
+<td align="left"><a href="https://storage.googleapis.com/owa/countries_index.zip" class="uri">https://storage.googleapis.com/owa/countries_index.zip</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">machine learning resource, patent documents with country names</td>
+</tr>
+<tr class="even">
+<td align="left">patent</td>
+<td align="left">abspat</td>
+<td align="left">text</td>
+<td align="left"><a href="https://storage.googleapis.com/owa/abspat_index.zip" class="uri">https://storage.googleapis.com/owa/abspat_index.zip</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">machine learning resource, patent documents with species names</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">EPO</td>
+<td align="left">xml</td>
+<td align="left"><a href="mailto:csc@epo.org">csc@epo.org</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">machine learning, Backfile to be ordered</td>
+</tr>
+<tr class="even">
+<td align="left">patent</td>
+<td align="left">WIPO</td>
+<td align="left">xml</td>
+<td align="left"><a href="http://www.wipo.int/patentscope/en/data/" class="uri">http://www.wipo.int/patentscope/en/data/</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">machine learning, To be ordered 3900 swiss francs</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">EPO</td>
+<td align="left">api</td>
+<td align="left"><a href="http://www.epo.org/searching-for-patents/data/web-services/ops.html#tab-1" class="uri">http://www.epo.org/searching-for-patents/data/web-services/ops.html#tab-1</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">lookup inventor and applicant names, xml/json</td>
+</tr>
+<tr class="even">
+<td align="left">patent</td>
+<td align="left">EPO</td>
+<td align="left">database</td>
+<td align="left"><a href="https://forms.epo.org/service-support/ordering/patstat-order-form.html" class="uri">https://forms.epo.org/service-support/ordering/patstat-order-form.html</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">PATSTAT Global (raw data) - 2018, SQL database</td>
+</tr>
+<tr class="odd">
+<td align="left">patent</td>
+<td align="left">India Patent Office</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Full text of india patent documents</td>
+</tr>
+<tr class="even">
+<td align="left">researcher</td>
+<td align="left">National Biodiversity Authority</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">permit applicant data</td>
+</tr>
+<tr class="odd">
+<td align="left">researcher</td>
+<td align="left">ORCID</td>
+<td align="left">api</td>
+<td align="left"><a href="https://orcid.org/organizations/integrators/API" class="uri">https://orcid.org/organizations/integrators/API</a></td>
+<td align="left">rorcid</td>
+<td align="left">python-orcid</td>
+<td align="left">enables researcher login and automated retrieval of public profile and publications. R and Python packages.</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">GBIF</td>
+<td align="left">text</td>
+<td align="left"><a href="http://api.gbif.org/v1/occurrence/download/request/0048726-180508205500799.zip" class="uri">http://api.gbif.org/v1/occurrence/download/request/0048726-180508205500799.zip</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">India taxonomic data</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">GBIF</td>
+<td align="left">text</td>
+<td align="left"><a href="http://api.gbif.org/v1/occurrence/download/request/0048727-180508205500799.zip" class="uri">http://api.gbif.org/v1/occurrence/download/request/0048727-180508205500799.zip</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">India full taxonomic data</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">GBIF</td>
+<td align="left">api</td>
+<td align="left"><a href="https://www.gbif.org/developer/summary" class="uri">https://www.gbif.org/developer/summary</a></td>
+<td align="left">rgbif</td>
+<td align="left">pygbif</td>
+<td align="left">GBIF Restful API</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">BSI</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Biological Survey of India</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">IUCN</td>
+<td align="left">api</td>
+<td align="left"><a href="http://apiv3.iucnredlist.org/" class="uri">http://apiv3.iucnredlist.org/</a></td>
+<td align="left">rredlist</td>
+<td align="left">NA</td>
+<td align="left">API for redlist of endangered species</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">BOLD</td>
+<td align="left">api</td>
+<td align="left"><a href="http://v4.boldsystems.org/index.php/api_home" class="uri">http://v4.boldsystems.org/index.php/api_home</a></td>
+<td align="left">bold</td>
+<td align="left">pybold</td>
+<td align="left">API to Barcode of Life Databse</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">GenBank</td>
+<td align="left">api</td>
+<td align="left"><a href="https://www.ncbi.nlm.nih.gov/home/develop/api/" class="uri">https://www.ncbi.nlm.nih.gov/home/develop/api/</a></td>
+<td align="left">rentrez</td>
+<td align="left">Biopython</td>
+<td align="left">DNA sequence data</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">World Register of Marine Species</td>
+<td align="left">api</td>
+<td align="left"><a href="http://www.marinespecies.org/aphia.php?p=webservice" class="uri">http://www.marinespecies.org/aphia.php?p=webservice</a></td>
+<td align="left">worrms/taxize</td>
+<td align="left">NA</td>
+<td align="left">marine species data</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">Ocean Biogeographic Information System</td>
+<td align="left">api</td>
+<td align="left"><a href="http://www.iobis.org/manual/api/" class="uri">http://www.iobis.org/manual/api/</a></td>
+<td align="left">robis</td>
+<td align="left">pyobis</td>
+<td align="left">Marine species data</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">Global Names Index</td>
+<td align="left">api</td>
+<td align="left"><a href="http://gni.globalnames.org/" class="uri">http://gni.globalnames.org/</a></td>
+<td align="left">taxize</td>
+<td align="left">NA</td>
+<td align="left">All known species names including spelling variants</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">Global Names Finder</td>
+<td align="left">GO</td>
+<td align="left"><a href="https://github.com/gnames/gnfinder" class="uri">https://github.com/gnames/gnfinder</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Go programme for identifying species names in texts</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">ZSI</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Zoological Survey of India</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">French Institute of Pondicherry</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">WII</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">ICAR</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">taxonomic</td>
+<td align="left">DST/UGC</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">taxonomic</td>
+<td align="left">India Institute of Sciences</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">traditional knowledge</td>
+<td align="left">TKDL</td>
+<td align="left">NA</td>
+<td align="left"><a href="http://www.tkdl.res.in/tkdl/langdefault/common/Home.asp?GL=Eng" class="uri">http://www.tkdl.res.in/tkdl/langdefault/common/Home.asp?GL=Eng</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">traditional knowledge data for India</td>
+</tr>
+<tr class="even">
+<td align="left">traditional knowledge</td>
+<td align="left">FRHL</td>
+<td align="left">NA</td>
+<td align="left"><a href="http://envis.frlht.org/bot_search" class="uri">http://envis.frlht.org/bot_search</a></td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Database of medicinal plants in India</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
