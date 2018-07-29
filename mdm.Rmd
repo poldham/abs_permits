@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
-This document aims to support Master Data Management planning by identifying the main data sources for development of a Monitoring System for Access and Benefit Sharing. The table below can be downloaded as a csv file [here](https://github.com/poldham/abs_permits/blob/gh-pages/mdm.csv.zip?raw=true)
+This document aims to support Master Data Management planning by identifying the main data sources for development of a Monitoring System for Access and Benefit Sharing. The table below can be downloaded as a csv file [here](https://github.com/poldham/abs_permits/blob/gh-pages/mdm.zip?raw=true).
 
 ```{r echo=FALSE, eval=FALSE}
 library(readxl)
