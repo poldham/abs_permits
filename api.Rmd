@@ -13,9 +13,6 @@ The online permit and monitoring system is intended to be built as a REST API. T
 
 In general Swagger is the preferred tool for API design and documentation. 
 
-
-
-
 ### Python Tutorials
 
 The following are walkthroughs to help get started. 

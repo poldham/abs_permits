@@ -1,0 +1,59 @@
+---
+title: "Draft Data Dictionary"
+author: "Paul Oldham"
+date: "30/07/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This document provides an initial draft data dictionary for Master Data Management. It is work in progress and subject to change. 
+
+Observations: 
+
+a) Data fields from NBA application forms to be included in the dictionary and correlated
+b) Funding type added
+c) Research type added. This refers to whether research is commercial or non commercial based on applicant answer to questions in form and to use of lookup table for key terms to be generated from literature and patent data as a flag in UI)
+d) Products. The idea is to flag if commercial products involving a species are known to be on the market. This needs clearer definition and is exploratory at present. 
+e) Taxonomic is taken from the existing field headings from GBIF data downloads and may merit refinement to focus on monitoring needs
+f) Data fields linked to one category link to other categories (e.g. geographic data from literature and patents)
+g) Helper tables are add on tables. 
+
+```{r echo=FALSE, eval=FALSE}
+library(tidyverse)
+taxonomic <- names(antarctica) %>% 
+  tibble::tibble(attributes = .) %>% 
+  mutate(category = "taxonomic") %>% 
+  mutate(notes = "gbif simple scheme") %>% 
+  select(2, 1, 3)
+```
+
+```{r echo=FALSE, eval=FALSE}
+dictionary <- bind_rows(draft_dictionary, taxonomic)
+
+research_type <- tibble(category = "research type", attributes = "research type classification", notes = "commercial/non-commercial/mixed/other")
+
+product <- tibble(category = "products", attributes = "product data", notes = "to be clearly explored and defined")
+
+dictionary <- bind_rows(dictionary, research_type) %>% 
+  bind_rows(product) %>% arrange(category)
+
+save(dictionary, file = "dictionary.rda")
+write_csv(dictionary, "dictionary.csv")
+```
+
+```{r echo=FALSE}
+load("dictionary.rda")
+```
+
+```{r echo=FALSE}
+knitr::kable(dictionary)
+```
+
+
+
+
+
+

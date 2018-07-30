@@ -1,0 +1,119 @@
+category,attributes,notes
+funding,funding organisation,NA
+funding,contract number,NA
+funding,contract value,monetary value
+funding,contract holder,principle investigators holding contract
+funding,contract institutions,NA
+funding,contract record link,URL to published contract data
+geographic,place names,NA
+geographic,alternate place names,known variants
+geographic,address (domicile),includes postal and zip codes
+geographic,Geographic coordinates,includes shapefiles for line string and polygons
+geographic,geographic feature classification,NA
+literature,author names,NA
+literature,author affiliation,NA
+literature,author country,NA
+literature,publication country,NA
+literature,publication language,NA
+literature,document identifiers,"DOI, ISBN, ISSN"
+literature,title,NA
+literature,abstract,NA
+literature,full text,NA
+literature,author keywords,NA
+literature,subject area description,includes classification
+literature,source,publication source
+literature,publication type,"journal, chapter, book, etc."
+literature,references/bibliography,literature references in text
+literature,citations of articles,forward citations
+literature,researcher idenfitier,"ORCID, Researcher ID"
+literature,funding acknowledgements,NA
+patent,inventor name,NA
+patent,disambiguated inventor name,see helper tables
+patent,applicant name,NA
+patent,disambiguated applicant name,see helper tables
+patent,priority date,NA
+patent,application date,NA
+patent,publicationn date,NA
+patent,priority country,geographic
+patent,application country,geographic
+patent,publication country,geographic
+patent,address (domicile),geographic
+patent,inventor country,geographic
+patent,applicant country,geographic
+patent,international patent classification,IPC codes
+patent,cooperative patent classificationb,CPC codes
+patent,title,NA
+patent,abstract,NA
+patent,description,also known as specification
+patent,claims,NA
+patent,genetic sequence data,NA
+patent,drawings,NA
+patent,patent family members,NA
+patent,legal status,NA
+patent,international patent classification thesaurus,helper table
+patent,cooperative patent classification thesaurus,helper table
+patent,IPC to standard industrial classification table,helper table
+patent,OECD Harmonized Applicant Name (HAN),"helper table, name disambiguation"
+patent,OECD REGPAT database,"helper table,"
+patent,EEE-PPAT,"helper table, name disambiguation, PATSTAT add on"
+patent,patentsview inventor/applicant disambiguation,helper table
+products,product data,to be clearly explored and defined
+research type,research type classification,commercial/non-commercial/mixed/other
+researcher identifier,ORCID identifier,NA
+researcher identifier,alternate names,ORCID records
+researcher identifier,Researcher ID,Clarivate Analytics
+researcher identifier,Pub Med ID,NA
+researcher identifier,Other researcher identifies,NA
+taxonomic,Genetic sequence data,To Be Done
+taxonomic,genetic bar codes,To Be Done
+taxonomic,plant varieties,IDs
+taxonomic,viruses,NA
+taxonomic,gbifid,gbif simple scheme
+taxonomic,datasetkey,gbif simple scheme
+taxonomic,occurrenceid,gbif simple scheme
+taxonomic,kingdom,gbif simple scheme
+taxonomic,phylum,gbif simple scheme
+taxonomic,class,gbif simple scheme
+taxonomic,order,gbif simple scheme
+taxonomic,family,gbif simple scheme
+taxonomic,genus,gbif simple scheme
+taxonomic,species,gbif simple scheme
+taxonomic,infraspecificepithet,gbif simple scheme
+taxonomic,taxonrank,gbif simple scheme
+taxonomic,scientificname,gbif simple scheme
+taxonomic,countrycode,gbif simple scheme
+taxonomic,locality,gbif simple scheme
+taxonomic,publishingorgkey,gbif simple scheme
+taxonomic,decimallatitude,gbif simple scheme
+taxonomic,decimallongitude,gbif simple scheme
+taxonomic,coordinateuncertaintyinmeters,gbif simple scheme
+taxonomic,coordinateprecision,gbif simple scheme
+taxonomic,elevation,gbif simple scheme
+taxonomic,elevationaccuracy,gbif simple scheme
+taxonomic,depth,gbif simple scheme
+taxonomic,depthaccuracy,gbif simple scheme
+taxonomic,eventdate,gbif simple scheme
+taxonomic,day,gbif simple scheme
+taxonomic,month,gbif simple scheme
+taxonomic,year,gbif simple scheme
+taxonomic,taxonkey,gbif simple scheme
+taxonomic,specieskey,gbif simple scheme
+taxonomic,basisofrecord,gbif simple scheme
+taxonomic,institutioncode,gbif simple scheme
+taxonomic,collectioncode,gbif simple scheme
+taxonomic,catalognumber,gbif simple scheme
+taxonomic,recordnumber,gbif simple scheme
+taxonomic,identifiedby,gbif simple scheme
+taxonomic,license,gbif simple scheme
+taxonomic,rightsholder,gbif simple scheme
+taxonomic,recordedby,gbif simple scheme
+taxonomic,typestatus,gbif simple scheme
+taxonomic,establishmentmeans,gbif simple scheme
+taxonomic,lastinterpreted,gbif simple scheme
+taxonomic,mediatype,gbif simple scheme
+taxonomic,issue,gbif simple scheme
+traditional knowledge,vernacular or common species names,taxonomic
+traditional knowledge,species names,taxonomic
+traditional knowledge,indigenous or tribal peoples names,NA
+traditional knowledge,language group names,names of languages as proxy for indigenous/tribal peoples or community names
+traditional knowledge,place names,geographic
