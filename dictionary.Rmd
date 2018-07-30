@@ -15,7 +15,7 @@ Observations:
 
 a) Data fields from NBA application forms to be included in the dictionary and correlated
 b) Funding type added
-c) Research type added. This refers to whether research is commercial or non commercial based on applicant answer to questions in form and to use of lookup table for key terms to be generated from literature and patent data as a flag in UI)
+c) Research type added. This refers to whether research is commercial or non commercial based on applicant answer to questions in applicatio forms _and_ to use of lookup table for key terms to be generated from literature and patent data as a flag in UI)
 d) Products. The idea is to flag if commercial products involving a species are known to be on the market. This needs clearer definition and is exploratory at present. 
 e) Taxonomic is taken from the existing field headings from GBIF data downloads and may merit refinement to focus on monitoring needs
 f) Data fields linked to one category link to other categories (e.g. geographic data from literature and patents)
