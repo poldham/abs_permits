@@ -384,8 +384,10 @@ $(document).ready(function () {
 <li><a href="https://github.com/ropensci/patentsview">Patentsview R Package</a></li>
 <li><a href="https://github.com/CSSIP-AIR/PatentsView-APIWrapper">Patentsview Python</a></li>
 <li><a href="http://www.patentsview.org/api/query-language.html">Patentsview Query language</a></li>
+<li><a href="https://github.com/USPTO/PatentPublicData">Code for Bulk Download and Parsing of USPTO files</a></li>
 </ol>
 <p>For ABS monitoring the <a href="http://www.patentsview.org/download/">patentsview data download</a> page offers options including a complete set of inventor and cleaned inventor names. This could be used to generate a lookup table. However, note that patentsview download data is a set of tables for joining on a key field and the titles and asbstracts are not presently included as downloads. The full text of all patent documents can be made available for download on request.</p>
+<p>For working with text data the MySQL tables available from the PatentsView data download page avoid the need to parse the XML from the bulk download. The text of the detailed descriptions are available as .tsv downloads from PatentsView on request and take the form of six zipped files of about 39GB each. Title and Abstract fields area available for text mining in the Patent table and the Claims are available as a distinct table.</p>
 </div>
 <div id="european-patent-office-open-patent-services-ops" class="section level3">
 <h3>European Patent Office Open Patent Services (OPS)</h3>

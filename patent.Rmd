@@ -46,8 +46,11 @@ The USPTO has an antiquated public database interface BUT has created a number o
 3. [Patentsview R Package](https://github.com/ropensci/patentsview)
 4. [Patentsview Python](https://github.com/CSSIP-AIR/PatentsView-APIWrapper)
 5. [Patentsview Query language](http://www.patentsview.org/api/query-language.html)
+6. [Code for Bulk Download and Parsing of USPTO files](https://github.com/USPTO/PatentPublicData)
 
 For ABS monitoring the [patentsview data download](http://www.patentsview.org/download/) page offers options including a complete set of inventor and cleaned inventor names. This could be used to generate a lookup table. However, note that patentsview download data is a set of tables for joining on a key field and the titles and asbstracts are not presently included as downloads. The full text of all patent documents can be made available for download on request. 
+
+For working with text data the MySQL tables available from the PatentsView data download page avoid the need to parse the XML from the bulk download. The text of the detailed descriptions are available as .tsv downloads from PatentsView on request and take the form of six zipped files of about 39GB each. Title and Abstract fields area available for text mining in the Patent table and the Claims are available as a distinct table. 
 
 ### European Patent Office Open Patent Services (OPS)
 

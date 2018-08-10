@@ -38,7 +38,9 @@ research_type <- tibble(category = "research type", attributes = "research type 
 product <- tibble(category = "products", attributes = "product data", notes = "to be clearly explored and defined")
 
 dictionary <- bind_rows(dictionary, research_type) %>% 
-  bind_rows(product) %>% arrange(category)
+  bind_rows(product) %>% 
+  arrange(category) %>% 
+  replace_na(list(notes = ""))
 
 save(dictionary, file = "dictionary.rda")
 write_csv(dictionary, "dictionary.csv")
