@@ -13,7 +13,7 @@ This article documents the process for creating an interactive taxonomic dashboa
 
 The process basically consists of taking a dataset of taxonomic information about a country and linking it dynamically with other information such as publications, patent data, DNA sequences, images or web searches.
 
-A dashboard can use three sources of data
+A dashboard can use three sources of data:
 
 a) Data from a backend database
 b) Make a call and ingest data from an API (responsiveness issue)
@@ -43,11 +43,9 @@ The dashboard can be visited [here](https://public.tableau.com/profile/poldham#!
 
 Note that the embedded dashboard below will display in a slightly crunched form inside a web page
 
-In this view the focus is on presenting a summary of the data on a species and providing hyperlinks from the species names and the dots (showing the coordinates for the known occurrence of the species)
+In this view the focus is on presenting a summary of the data on a species and providing hyperlinks from the species names and the dots (showing the coordinates for the known occurrence of the species.
 
-<iframe align = "center" width = "1200" height = "1000" src="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes"/>
-
-The existing links are to 
+The existing links are to: 
 
 a) scientific literature (crossref and core.ac.uk)
 b) patent literature (using the Lens database)
@@ -70,7 +68,6 @@ This gives an idea of the possiblity of triggering lookups from a species list (
 ### Map Layer Options
 
 It would in future be desirable to add a map layer showing protected areas (national parks) to this kind of visualisation
-
 
 ## Conservation Status
 
@@ -146,5 +143,6 @@ For summaries of the data as above note that a combination will be needed of cou
 
 When datasets are available from the scientific literature or the patent literature it is possible to construct dashboards that combine the different data sources, Thus, in reviewing an application for an ABS permit or in reviewing the outputs of research we might want to look 
 
+## The Dashboard Example
 
-
+<iframe align = "center" width = "1200" height = "1000" src="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes"/>

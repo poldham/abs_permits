@@ -443,7 +443,7 @@ $(document).ready(function () {
 
 <p>This article documents the process for creating an interactive taxonomic dashboard and options for linking a taxonomic dashboard with other data components.</p>
 <p>The process basically consists of taking a dataset of taxonomic information about a country and linking it dynamically with other information such as publications, patent data, DNA sequences, images or web searches.</p>
-<p>A dashboard can use three sources of data</p>
+<p>A dashboard can use three sources of data:</p>
 <ol style="list-style-type: lower-alpha">
 <li>Data from a backend database</li>
 <li>Make a call and ingest data from an API (responsiveness issue)</li>
@@ -469,9 +469,8 @@ $(document).ready(function () {
 <p>An example of a taxonomy dashboard is presented below using 6 million species occurrence records from India. The example is built in Tableau because it is easy to use to create mock ups. However, dashboards can be built with a range of other tools such as Javascript …notably see D3, Flexdashboards in R and others.</p>
 <p>The dashboard can be visited <a href="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes">here</a></p>
 <p>Note that the embedded dashboard below will display in a slightly crunched form inside a web page</p>
-<p>In this view the focus is on presenting a summary of the data on a species and providing hyperlinks from the species names and the dots (showing the coordinates for the known occurrence of the species)</p>
-<iframe align = "center" width = "1200" height = "1000" src="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes"/>
-<p>The existing links are to</p>
+<p>In this view the focus is on presenting a summary of the data on a species and providing hyperlinks from the species names and the dots (showing the coordinates for the known occurrence of the species.</p>
+<p>The existing links are to:</p>
 <ol style="list-style-type: lower-alpha">
 <li>scientific literature (crossref and core.ac.uk)</li>
 <li>patent literature (using the Lens database)</li>
@@ -546,6 +545,10 @@ $(document).ready(function () {
 <div id="combining-dashboards" class="section level2">
 <h2>Combining Dashboards</h2>
 <p>When datasets are available from the scientific literature or the patent literature it is possible to construct dashboards that combine the different data sources, Thus, in reviewing an application for an ABS permit or in reviewing the outputs of research we might want to look</p>
+</div>
+<div id="the-dashboard-example" class="section level2">
+<h2>The Dashboard Example</h2>
+<iframe align = "center" width = "1200" height = "1000" src="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes"/>
 </div>
 
 
