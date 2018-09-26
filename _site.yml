@@ -39,6 +39,8 @@ navbar:
         href: patent.html
       - text: "Taxonomy"
         href: taxonomy.html
+      - text: "Taxonomic Dashboards"
+        href: taxonomic_dashboards.html
       - text: "Master Data Management"
         href: mdm.html
       - text: "Data Dictionary"

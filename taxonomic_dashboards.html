@@ -12,7 +12,7 @@
 <meta name="author" content="Paul Oldham" />
 
 
-<title>Untitled</title>
+<title>Creating a Dashboard of Taxonomic Information</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -434,31 +434,118 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Untitled</h1>
+<h1 class="title toc-ignore">Creating a Dashboard of Taxonomic Information</h1>
 <h4 class="author"><em>Paul Oldham</em></h4>
-<h4 class="date"><em>28/06/2018</em></h4>
+<h4 class="date"><em>25/09/2018</em></h4>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">summary</span>(cars)</a></code></pre></div>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>This article documents the process for creating an interactive taxonomic dashboard and options for linking a taxonomic dashboard with other data components.</p>
+<p>The process basically consists of taking a dataset of taxonomic information about a country and linking it dynamically with other information such as publications, patent data, DNA sequences, images or web searches.</p>
+<p>A dashboard can use three sources of data</p>
+<ol style="list-style-type: lower-alpha">
+<li>Data from a backend database</li>
+<li>Make a call and ingest data from an API (responsiveness issue)</li>
+<li>A simple web link that opens the results in a pane in the same page. Or a new tab (target=&quot;_blank&quot;). Link break issue</li>
+</ol>
+<p>A dashboard offers a summary of data that a user can interact with to answer questions. This is normally facilitated using a set of filters of various kinds. For example, filtering the data by kingdom to show only plants.</p>
+<p>In order to address specific issues a set of dashboards will normally be needed presenting specific views of the data for exploration. For ABS Monitoring under the Nagoya Protocol this will normally involve</p>
+<ol style="list-style-type: lower-alpha">
+<li>Taxonomy dashboard</li>
+</ol>
+<p>Use case: An applicant wants to collect particular species in a region in India. The desk officer wants to rapidly know:</p>
+<ol style="list-style-type: lower-alpha">
+<li>where this species is known to be located in India,</li>
+<li>whether it has been the subject of earlier research</li>
+<li>What the conservation status of the species is</li>
+<li>Whether the research is proposed to take place in a protected area or not</li>
+<li>Whether the species is linked with traditional knowledge</li>
+<li>Whether there is existing commercial research and development revealed in patent data (as an indicator of potential or actual commercial interest)</li>
+<li>Whether thete is genetic sequence data for the species or a DNA bar code</li>
+</ol>
+<div id="a-taxonomic-dash" class="section level3">
+<h3>A Taxonomic Dash</h3>
+<p>An example of a taxonomy dashboard is presented below using 6 million species occurrence records from India. The example is built in Tableau because it is easy to use to create mock ups. However, dashboards can be built with a range of other tools such as Javascript …notably see D3, Flexdashboards in R and others.</p>
+<p>The dashboard can be visited <a href="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes">here</a></p>
+<p>Note that the embedded dashboard below will display in a slightly crunched form inside a web page</p>
+<p>In this view the focus is on presenting a summary of the data on a species and providing hyperlinks from the species names and the dots (showing the coordinates for the known occurrence of the species)</p>
+<iframe align = "center" width = "1200" height = "1000" src="https://public.tableau.com/profile/poldham#!/vizhome/india_gbif/TaxonomyDashboard?publish=yes"/>
+<p>The existing links are to</p>
+<ol style="list-style-type: lower-alpha">
+<li>scientific literature (crossref and core.ac.uk)</li>
+<li>patent literature (using the Lens database)</li>
+<li>Google Search for the species including traditional knowledge</li>
+<li>Google Search including the word India</li>
+<li>A lookup on GenBank for DNA sequence records (just for the species)</li>
+</ol>
+<p>This approach focuses on triggering external links. An alternative approach is to embed a blank web page and trigger the response into that web page. An example of this is this page from the same Tableau workbook under Embedded Web Page.</p>
+<p>Note that in Tableau this does not work particularly well in the public online version. It does work in the workbook in the desktop version of Tableau. In some cases nothing is displayed.</p>
+<p>To see results experiments with</p>
+<ul>
+<li>Lookup in Patent Title Abstract or Claims</li>
+<li>Lookup in Patent</li>
+<li>Lookup Genbank</li>
+</ul>
+<p>This gives an idea of the possiblity of triggering lookups from a species list (or a person list) to assist a desk officer with assessing applications.</p>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="developers_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+<div id="map-layer-options" class="section level3">
+<h3>Map Layer Options</h3>
+<p>It would in future be desirable to add a map layer showing protected areas (national parks) to this kind of visualisation</p>
+</div>
+<div id="conservation-status" class="section level2">
+<h2>Conservation Status</h2>
+<p>The IUCN Red List provides information on the conservation status of species. However, it is not so easy to construct hyperlinks to the Red List and this would need to be done by passing the species to the Red List API service to retrieve the Red List Identifiers</p>
+<div id="a-note-on-the-taxonomic-data" class="section level3">
+<h3>A note on the taxonomic data</h3>
+<p>The raw data for these views comes from GBIF for India with 6 million occurrence (observation) records [insert DOI].</p>
+<p>The main information from this table that will typically be of interest (for finding out about the species) is</p>
+<ul>
+<li>kingdom</li>
+<li>phylum</li>
+<li>class</li>
+<li>order</li>
+<li>family</li>
+<li>genus</li>
+<li>species</li>
+<li>scientific name</li>
+<li>decimal latitude</li>
+<li>decimal longitude</li>
+</ul>
+<p>Additional information of interest is</p>
+<ul>
+<li>Locality</li>
+<li>Issues (which refer to issues with the observation data itself and mainly of interest for data preparation)</li>
+</ul>
+<p>Important Keyas are</p>
+<ul>
+<li>gbifid (which relates in this data to the occurrence record)</li>
+<li>taxonkey</li>
+<li>specieskey</li>
+</ul>
+<p>The specieskey (which is often but not always the same as the taxonkey) is used in the GBIF API and database for lookup. In the raw data (not shown here) the first row in the gbif data is for Threskiornis melanocephalus or the Black headed Ibis. We can select the records on the species key,</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">india_raw <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="st">  </span><span class="kw">filter</span>(specieskey <span class="op">==</span><span class="st"> &quot;2480767&quot;</span>)</a></code></pre></div>
+<p>That would give us 25,114 observations of this species in India.</p>
+<p>If we wanted to link out to the GBIF database or retrieve more data using the GBIF API then we would use the specieskey.</p>
+<p>On the public website that would be here: <a href="https://www.gbif.org/species/2480767" class="uri">https://www.gbif.org/species/2480767</a></p>
+<p>Note that the species key is simply added to the end of the URL and leads to this page.</p>
+<p>When working with GBIF data (as discussed in detail <a href="https://poldham.github.io/abs/gbif.html">here</a>) note that many of the observation records will be for birds. Bird data will often flood the dataset.</p>
+<p>Other searches of taxonomic data sources can be added such as</p>
+<p>The encyclopedia of life</p>
+<p><a href="http://eol.org/search/q=Threskiornis%20melanocephalus">http://eol.org/search/q=Threskiornis%20melanocephalus</a></p>
+<p>The Biodiversity Heritage Library (for older digitised texts)</p>
+<p><a href="http://www.biodiversitylibrary.org/name/Threskiornis_melanocephalus" class="uri">http://www.biodiversitylibrary.org/name/Threskiornis_melanocephalus</a></p>
+<p>Note that creating these links requires attention to the specific URL structures for the external sources.</p>
+</div>
+<div id="summarising-the-data" class="section level3">
+<h3>Summarising the Data</h3>
+<p>For summaries of the data as above note that a combination will be needed of count and count distinct. Thus count would be used to count up the occurrences associated with a species. Count distinct would be used to count up the number of species in a kingdom for this data. It is important to check the counts to avoid unexpected results.</p>
+</div>
+</div>
+<div id="combining-dashboards" class="section level2">
+<h2>Combining Dashboards</h2>
+<p>When datasets are available from the scientific literature or the patent literature it is possible to construct dashboards that combine the different data sources, Thus, in reviewing an application for an ABS permit or in reviewing the outputs of research we might want to look</p>
 </div>
 
 
